@@ -1,0 +1,17 @@
+# Third-party original inputs MUST NEVER be committed here
+annotated_misalignments.json
+**/annotated_misalignments.json
+**/*raw*session*.json
+**/*private*.xlsx
+**/*confidential*
+__pycache__/
+*.pyc
+*.log
+*.aux
+*.out
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+.DS_Store
+# Reproduction outputs should be reviewed before manual inclusion
+*_check.json

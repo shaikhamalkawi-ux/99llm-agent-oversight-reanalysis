@@ -1,0 +1,11 @@
+# Source, validity, and publication boundaries
+
+The derivative scientific identity of Project 99llm is a secondary analysis of original authors' released categorical labels. Source: Tang et al., EMNLP 2026, DOI `10.18653/2026.emnlp-main.1011`; raw-file commit `c887cc920129b2db0bdf218c8550e98f74f42f7c`; source SHA-256 `7e0693675242a625bdb586bcd8cef23f5da76c65cf840108c3c24b6b479b9f57`.
+
+The source was defined through developer pushback/correction. It is **not** a random sample of all agent tasks, all silent errors, or all agents. The source's DS2 label requires applied, reversible state change; RS1 requires explicit resolution signal in the same conversation. Consequently shared trace observability can correlate the two labels even in session-matched analysis. Differences are **associations of recorded labels**, not causal severity effects, correction efficacy, fieldwide reliability, or a prevention intervention.
+
+Original author validation is deliberately distinguished from our work: arXiv v1 Appendix A.2 Table 5, two-annotator damage-severity agreement 0.71; LLM judge damage-severity accuracy 0.64, on 100 annotated records. Status-axis counterparts 0.92 and 0.96. This does **not** provide a DS1/DS2 misclassification matrix or a correction factor, and no second human coder or independent label validation was performed here. A worst-case 223-relabel mathematical witness is NOT an assertion that 223 source records are incorrect.
+
+RS2 is unknown, not observed failure. All unknown eventual RV2 outcomes admit both signs of the severity-group difference. The equal-unknown-rate 88.56% tipping point is an **assumption-specific** formula. No external outcome dataset was added.
+
+Public repository is deliberately restricted to own code, own manuscript/supplement, own figure, and derived aggregate outputs. No original 16,118 episode rows, original chat histories, nonredistributable third-party PDFs, private bibliography spreadsheets, passwords, personal user identifiers or original-source license claims are included. The MDPI submission class/template is also **not** redistributed here. The public repository URL is https://github.com/shaikhamalkawi-ux/99llm-agent-oversight-reanalysis; no DOI has been assigned. The repository contains a working manuscript, not an accepted publication.

@@ -1,0 +1,33 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=25mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,booktabs,tabularx,graphicx,float,hyperref,csquotes,microtype}
+\usepackage{fancyhdr}
+\hypersetup{colorlinks=true,linkcolor=black,citecolor=blue,urlcolor=blue,pdfcreator={99llm reproducible scientific preprint},pdftitle={Resolution Visibility Is Not Recovery}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\setlength{\emergencystretch}{2em}
+\setlength{\headheight}{14pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\scriptsize 99llm --- Unreviewed author draft}
+\fancyhead[R]{\scriptsize 8 November 2026}
+\fancyfoot[C]{\small\thepage}
+\title{\bfseries\LARGE Resolution Visibility Is Not Recovery:\\[5pt] A Partial-Identification Reanalysis of 16,118 Coding-Agent Misalignment Episodes}
+\author{Research authorship under confirmation\\\small Public draft for discussion; not submitted or peer reviewed}
+\date{8 November 2026}
+\begin{document}
+\maketitle
+\noindent\textbf{Abstract.} Observational coding-agent studies can conflate a resolution recorded in a transcript with eventual recovery. We reanalyzed a pinned 16,118-episode developer--agent misalignment release using source stratification, matched repositories and sessions, repository-nested resampling, and outcome/label sensitivity bounds. Of 16,118 episodes, 1,504 had visible resolution; among these, 1,376 (91.49\%) were resolved after developer pushback, while 14,614 had unknown terminal outcomes. Visible resolution occurred in 330/1,361 easily reversible-damage episodes (DS2), versus 1,174/14,587 effort/trust-only episodes (DS1), a difference of 16.20 percentage points. The difference persisted in both acquisition sources, 414 repositories containing both labels (equal-repository mean +15.87 points), and 853 matched sessions from 352 repositories (equal-session mean +13.96 points; repository-nested descriptive interval +10.72 to +17.30). However, the sign of eventual post-pushback recovery remains unidentified without assumptions. Under an unverified common unknown-case recovery rate, reversal requires a rate above 88.56\%. Separately, 223 targeted DS1/DS2 severity-label reclassifications suffice to erase the pooled visible-resolution ordering in a worst-case test. These are label-based, noncausal analyses, not independent annotation validation or estimates of fieldwide recovery.
+
+\noindent\textbf{Keywords.} Coding agents; human oversight; missing outcomes; partial identification; developer--agent misalignment; reproducibility.
+
+\medskip\noindent\textit{Preprint notice:} This public reader copy does not use the MDPI journal template, does not bear an assigned DOI, and is not a record of journal acceptance or submission. A finalized citation requires confirmed authorship metadata; for now cite the dated public working version by its repository URL and cite the original dataset creators separately.
+\input{article_body}
+\section*{Declarations (author review only)}
+\noindent\textbf{Author contributions:} CRediT roles and author identities pending confirmation.\par
+\noindent\textbf{Funding and conflicts:} To be verified by the human authors.\par
+\noindent\textbf{Data and code:} Public reanalysis code, non-identifying aggregate results, and smoke tests: \url{https://github.com/shaikhamalkawi-ux/99llm-agent-oversight-reanalysis}. Original annotation data must be obtained from Tang et al.'s author-pinned source; no original third-party episode rows are redistributed.\par
+\noindent\textbf{AI assistance:} ChatGPT assisted literature selection, source checking, code construction, analysis, and writing. Human authors must verify outputs and approve the precise disclosure and all findings.\par
+\section*{References}
+\input{references}
+\end{document}
