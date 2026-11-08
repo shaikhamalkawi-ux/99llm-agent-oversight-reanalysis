@@ -13,6 +13,8 @@
 - The observed positive **visibility** contrast can be erased in a restricted algebraic worst-case example by reclassifying **223 selected DS2/RS1 labels to DS1/RS1**. This is not evidence that those labels are wrong or a calibrated label-error probability.
 - Original-author **arXiv v1** per-axis quality audit reports **0.64 severity-axis label accuracy** on a 100-episode test sample, while resolution-status accuracy is **0.96**. The authors' quality metrics are not an independent 99llm validation and supply no DS1/DS2-specific confusion matrix.
 
+**Current repository-facing document: MR25 (8 November 2026), Appendix A integrated after Conclusion.** Prior MR24 separate 3-page supplement remains available in earlier Git history; the primary MR25 paper is a single PDF. Science, counts and claim boundaries are unchanged.
+
 ## Folder structure
 
 | Path | Purpose |
@@ -21,9 +23,9 @@
 | `scripts/reproduce_nested_robustness.py` | Repository-nested resampling, class-error certificate, exploratory checks |
 | `scripts/reproduce_sensitivity_figure.py` | Figure regeneration; requires Matplotlib and NumPy |
 | `results/aggregate_results.json` | Published **aggregate results only**; no episode-level rows or session IDs |
-| `paper/author_review_preprint.pdf` | Neutral non-MDPI public working preprint, without assigned DOI |
-| `paper/technical_supplement.pdf` | Separate technical supplement |
-| `paper/preprint.tex`, `paper/article_body.tex`, `paper/references.tex`, `paper/supplement.tex`, `paper/figures` | Sources for neutral public preprint/supplement |
+| `paper/author_review_preprint.pdf` | **MR25 integrated working preprint (22 pages)**: body + Appendix A + references, no assigned DOI |
+| `paper/appendix_a.tex` | Integrated technical appendix, subsections A.1–A.5 and tables A1–A3; **no separate supplementary file** |
+| `paper/preprint.tex`, `paper/article_body.tex`, `paper/references.tex`, `paper/figures` | Sources for the integrated neutral preprint with Appendix A |
 | `tests/` and `.github/workflows/` | Standard-library smoke checks on synthetic fixtures (not source reproduction) |
 | `REPRODUCE.md` | Author-source acquisition, hash pin, replay, and limitations |
 | `PROVENANCE_AND_LIMITATIONS.md` | Dataset provenance and claim restrictions |

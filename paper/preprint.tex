@@ -23,11 +23,19 @@
 
 \medskip\noindent\textit{Preprint notice:} This public reader copy does not use the MDPI journal template, does not bear an assigned DOI, and is not a record of journal acceptance or submission. A finalized citation requires confirmed authorship metadata; for now cite the dated public working version by its repository URL and cite the original dataset creators separately.
 \input{article_body}
+\clearpage
+\appendix
+\renewcommand{\thetable}{A\arabic{table}}
+\renewcommand{\theHtable}{appendix.table.\arabic{table}}
+\renewcommand{\theequation}{A\arabic{equation}}
+\renewcommand{\theHequation}{appendix.equation.\arabic{equation}}
+\setcounter{table}{0}
+\setcounter{equation}{0}
+\input{appendix_a}
 \section*{Declarations (author review only)}
 \noindent\textbf{Author contributions:} CRediT roles and author identities pending confirmation.\par
 \noindent\textbf{Funding and conflicts:} To be verified by the human authors.\par
 \noindent\textbf{Data and code:} Public reanalysis code, non-identifying aggregate results, and smoke tests: \url{https://github.com/shaikhamalkawi-ux/99llm-agent-oversight-reanalysis}. Original annotation data must be obtained from Tang et al.'s author-pinned source; no original third-party episode rows are redistributed.\par
 \noindent\textbf{AI assistance:} ChatGPT assisted literature selection, source checking, code construction, analysis, and writing. Human authors must verify outputs and approve the precise disclosure and all findings.\par
-\section*{References}
 \input{references}
 \end{document}

@@ -1,17 +1,9 @@
-\documentclass[10pt,a4paper]{article}
-\usepackage[margin=23mm]{geometry}
-\usepackage[T1]{fontenc}
-\usepackage{lmodern,amsmath,booktabs,tabularx,graphicx,xcolor,hyperref}
-\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue}
-\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
-\title{Supplementary Methods and Source-Integrity Audit\\\large Resolution Visibility Is Not Recovery (Public-reproducibility update)}
-\author{Author review copy; authorship pending confirmation}
-\date{8 November 2026}
-\begin{document}
-\maketitle
-\noindent\textbf{Status and scope.} This technical supplement documents deterministic reanalysis of a public annotation file and post-hoc descriptive stability checks. It is \emph{not} independent label validation, a human-coder study, a systematic literature sample, or an estimate of causal severity effects. The original author-annotated rows are not redistributed.
+% MR25: Original MR24 three-page supplementary methods integrated as one Appendix A.
+% All underlying data, equations and counts are preserved.
+\section{Technical Methods and Source-Integrity Audit}\label{app:methods}
+\noindent\textbf{Status and scope.} This appendix documents deterministic reanalysis of a public annotation file and post-hoc descriptive stability checks. It is \emph{not} independent label validation, a human-coder study, a systematic literature sample, or an estimate of causal severity effects. The original author-annotated rows are not redistributed.
 
-\section*{S1. Frozen data, provenance, and admission gates}
+\subsection{Frozen data, provenance, and admission gates}\label{app:provenance}
 The unique source is the public annotation object supporting Tang et al., \emph{How Coding Agents Fail Their Users: A Large-Scale Analysis of Developer--Agent Misalignment in 20,574 Real-World Sessions} (EMNLP 2026; DOI \href{https://doi.org/10.18653/2026.emnlp-main.1011}{10.18653/2026.emnlp-main.1011}). Our calculation uses the fixed code-release commit and path:
 \par
 \noindent\href{https://github.com/ND-SaNDwichLAB/coding-agent-misalignment/blob/c887cc920129b2db0bdf218c8550e98f74f42f7c/data/core/annotated_misalignments.json}{\textbf{Pinned GitHub source file}}.\\
@@ -23,6 +15,7 @@ The unique source is the public annotation object supporting Tang et al., \emph{
 \begin{table}[h!]
 \centering\small
 \caption{Preserved source partitions. RS2 is unknown, not failure.}
+\label{tab:appendix-source-partitions}
 \begin{tabular}{lrrr}
 \toprule
 Subset & Episodes & Visible RS1 & Visible RV2\\\midrule
@@ -37,14 +30,15 @@ Total & 16,118 & 1,504 & 1,376\\
 
 \noindent\textbf{Observation--classification coupling.} The original codebook requires evidence of an applied, reversible code/state change for DS2, while RS1 requires visible confirmation of correction. Both labels are inferred from the same textual record. This leaves open common-visibility and classification mechanisms even after repository/session matching; the source provides no linked dual-annotator DS1/DS2 confusion matrix to separate them.
 
-\section*{S2. Units, weights and dependence}
+\subsection{Units, weights and dependence}\label{app:weights}
 Our primary descriptive endpoint is $Y_i=\mathbf{1}\{\mathrm{resolution\_status}_i=\mathrm{RS1}\}$, where $Y=0$ means no recorded visible resolution rather than known failure. In a session $s$ containing both classes, define $D_s=\bar{Y}_{\mathrm{DS2},s}-\bar{Y}_{\mathrm{DS1},s}$. The equal-session estimator is $\bar{D}_{S}=|S|^{-1}\sum_{s\in S} D_s$. There are 853 paired sessions with 2,775 eligible episodes, represented by 352 distinct source--repository keys. The equal-session estimate is $0.1396122927$.
 
-To preserve clustering beyond the session level, the MR22 descriptive bootstrap selects 352 source--repository clusters with replacement, keeping \emph{all} matched sessions within each draw. The equal-session mean is recomputed over the resampled sessions (3,000 draws; fixed seed 993720); the 2.5th and 97.5th nearest-order percentiles are $[0.1071711681,0.1729976896]$. The older whole-session resampling interval, $[0.1090339418,0.1702394909]$ (seed 993719), is shown only for comparison because sessions are nested in repositories. The alternative equal-repository estimator gives each of the 352 repository means of session differences equal weight: $0.1405407792$, with repository-resampling percentiles $[0.1017798217,0.1809355907]$.
+To preserve clustering beyond the session level, the repository-nested descriptive bootstrap selects 352 source--repository clusters with replacement, keeping \emph{all} matched sessions within each draw. The equal-session mean is recomputed over the resampled sessions (3,000 draws; fixed seed 993720); the 2.5th and 97.5th nearest-order percentiles are $[0.1071711681,0.1729976896]$. The older whole-session resampling interval, $[0.1090339418,0.1702394909]$ (seed 993719), is shown only for comparison because sessions are nested in repositories. The alternative equal-repository estimator gives each of the 352 repository means of session differences equal weight: $0.1405407792$, with repository-resampling percentiles $[0.1017798217,0.1809355907]$.
 
 \begin{table}[h!]
 \centering\small
-\caption{MR22 robustness endpoints (all values in percentage points). Each interval is a descriptive resampling band for this observed nonrandom file.}
+\caption{Nested robustness endpoints (all values in percentage points). Each interval is a descriptive resampling band for this observed nonrandom file.}
+\label{tab:appendix-robustness}
 \begin{tabularx}{\linewidth}{@{}YrrrY@{}}
 \toprule
 Restriction/weighting & Sessions & Repos & Mean & Repo-level 2.5--97.5 band\\\midrule
@@ -58,7 +52,7 @@ Exactly one episode of each class & 307 & 171 & +16.94 & +11.73 to +22.36\\
 
 Removing each repository in turn from the 853-session calculation yields an equal-session mean in $[0.1355586404,0.1435967878]$. In the matched sessions, the DS2 rate exceeds the DS1 rate in 201 sessions, is lower in 99, and ties in 553. The original \texttt{confidence} attribute measures support for episode extraction, not certainty of damage-severity coding. Subset comparisons were chosen \emph{after} viewing available fields, are exploratory, and may select a nonrepresentative fraction of the file. No adjustment for an exploratory search over many candidates is claimed; no inferential $p$-values are reported.
 
-\section*{S3. Logical bounds and assumption frontier}
+\subsection{Logical bounds and assumption frontier}\label{app:bounds}
 Let $r_g$ be the visible RV2 share among all episodes in severity group $g$, and $u_g$ the fraction with unknown final status. Define $q_g\in[0,1]$ as a \emph{hypothetical} eventual RV2 fraction among currently unknown cases. Then
 \[
 \theta_g=r_g+u_gq_g,\qquad
@@ -73,6 +67,7 @@ q_1=\frac{296/1361-1080/14587}{13413/14587}+\frac{1031/1361}{13413/14587}q_2\app
 \begin{table}[h!]
 \centering\small
 \caption{Illustrative \emph{assumption} thresholds, not observed recovery estimates.}
+\label{tab:appendix-frontier}
 \begin{tabular}{rr}
 \toprule $q_2$: unknown DS2 RV2 share & $q_1$ threshold for a tie \\ \midrule
 0\% & 15.60\%\\
@@ -82,10 +77,10 @@ q_1=\frac{296/1361-1080/14587}{13413/14587}+\frac{1031/1361}{13413/14587}q_2\app
 100\% & 97.98\%\\\bottomrule
 \end{tabular}
 \end{table}
-The special restriction $q_1=q_2=q$ gives $q=0.8856$ as a sign crossing. Without a defensible restriction on $q_1,q_2$, the sign of eventual recovery is not identified. The plotted line in the main manuscript visualizes this algebra; it is not a fitted empirical curve.
+The special restriction $q_1=q_2=q$ gives $q=0.8856$ as a sign crossing. Without a defensible restriction on $q_1,q_2$, the sign of eventual recovery is not identified. Figure~\ref{fig:frontier} in the main text visualizes this algebra; it is not a fitted empirical curve.
 
-\section*{S4. Worst-case severity-reclassification certificate}
-This check is separate from the missing-eventual-outcome model in Section S3. We hold the observed binary RS1/RS2 outcomes fixed and allow the source severity label to move between DS1 and DS2 (no DS0/DS3/DS4 changes). The observed 2-by-2 table is DS1 (RS1=1,174; RS2=13,413) and DS2 (RS1=330; RS2=1,031). To lower the observed DS2-minus-DS1 difference, it can be beneficial to move an RS1 from DS2 to DS1 (count $x$) or an RS2 from DS1 to DS2 (count $y$). Moves in the reverse directions only increase the positive contrast until crossing. Under the allowed changes, the modified comparison is
+\subsection{Worst-case severity-reclassification certificate}\label{app:relabel}
+This check is separate from the missing-eventual-outcome model in Appendix~\ref{app:bounds}. We hold the observed binary RS1/RS2 outcomes fixed and allow the source severity label to move between DS1 and DS2 (no DS0/DS3/DS4 changes). The observed 2-by-2 table is DS1 (RS1=1,174; RS2=13,413) and DS2 (RS1=330; RS2=1,031). To lower the observed DS2-minus-DS1 difference, it can be beneficial to move an RS1 from DS2 to DS1 (count $x$) or an RS2 from DS1 to DS2 (count $y$). Moves in the reverse directions only increase the positive contrast until crossing. Under the allowed changes, the modified comparison is
 \[
 \frac{330-x}{1361-x+y}\ \leq\ \frac{1174+x}{14587+x-y},\quad 0\leq x\leq330,\quad 0\leq y\leq13413.
 \]
@@ -100,8 +95,8 @@ SWE & 341/3,726 & 75/254 & 55 & 1.3819\%\\\bottomrule
 \end{center}
 The source validation sample does not tell us whether even one such targeted flip is actually warranted. Consequently these minima are \emph{worst-case algebraic perturbation budgets, not estimated annotation error rates, not adjusted results, and not confidence limits}. The observed endpoint depends on classification validity; the unknown eventual recovery endpoint remains separately unidentified even if every severity label were flawless.
 
-\section*{S5. Reproduction and claim gates}
-Run the scripts with Python 3 (standard library only), after obtaining \texttt{annotated\_misalignments.json} from the pinned author source. Use the exact source file above; the script refuses any other SHA-256. In the Overleaf source ZIP, execute:
+\subsection{Reproduction and claim gates}\label{app:reproduction}
+Run the scripts with Python 3 (standard library only), after obtaining \path{annotated_misalignments.json} from the pinned author source. Use the exact source file above; the script refuses any other SHA-256. From the project root directory, execute:
 \begin{verbatim}
 python reproduce_visibility_robustness.py \
   --annotations /path/to/annotated_misalignments.json \
@@ -113,4 +108,3 @@ python reproduce_nested_robustness.py \
 The JSON output is aggregate-only and includes a deterministic integer-search certificate for minimum severity relabeling budgets. The script enumerates all outcome-concordant DS1/DS2 switches, verifies each candidate by exact integer cross-products, and keeps RS1/RS2 fixed. The complete source records are never copied into the public manuscript or supplementary ZIP. The post-hoc checks are explicitly marked exploratory. Assertions enforce the frozen input, source partitions, 414 mixed-label repositories, 853 mixed-label sessions, 352 repositories supporting those sessions, 801 high-confidence mixed-label sessions, and 307 one-to-one mixed-label sessions.
 
 \noindent\textbf{Interpretive holds.} Neither a repository bootstrap nor matching across recorded sessions can validate the authors' original DS1/DS2 classification, determine RS2 terminal outcomes, or support causal intervention estimates. The original source's 91.49\% post-pushback resolution proportion is valid \emph{only conditional on the visibly resolved 1,504 episodes}. Source-reported validation on the severity axis is materially weaker than on the resolution-status axis in the explicitly identified May 2026 arXiv v1, and no new human reannotation is claimed in this work. Publisher template updates, authorship, CRediT, funding, conflict declaration, exact AI-use disclosure and author-approved persistent public deposit remain separate administrative checks.
-\end{document}

@@ -19,12 +19,13 @@ Public code: https://github.com/shaikhamalkawi-ux/99llm-agent-oversight-reanalys
    python scripts/reproduce_sensitivity_figure.py
    ```
    Figure script saves to `scripts/figures/` by default. The canonical published figure is `paper/figures/mr22_sensitivity_frontier.pdf` and is generated from stated aggregate counts; the plot is conceptual, not a data fit.
-5. Recompile neutral public preprint with TeX Live (pdfLaTeX) from `paper/`:
+5. Recompile the **integrated manuscript and Appendix A** with TeX Live (pdfLaTeX) from `paper/`:
    ```bash
    cd paper
    pdflatex -interaction=nonstopmode preprint.tex
    pdflatex -interaction=nonstopmode preprint.tex
-   pdflatex -interaction=nonstopmode supplement.tex
    ```
 
 **What this procedure cannot reproduce:** extraction of initial episodes from raw conversations, original LLM annotation decisions, original source authors' human agreement/accuracy audit, eventual unknown recoveries, real deployment causal outcomes, other works' full published trial pipelines, or a peer-review verdict. Repository-nested bootstrap intervals describe the observed finite release and its cluster heterogeneity; they are not representative-sample confidence intervals.
+
+The standalone supplement was consolidated into `paper/appendix_a.tex` in MR25 and is automatically included by `paper/preprint.tex`; do not compile `appendix_a.tex` by itself. The publicly hosted `paper/author_review_preprint.pdf` is the integrated 22-page working paper.
