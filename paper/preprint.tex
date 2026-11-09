@@ -10,14 +10,14 @@
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[L]{\scriptsize 99llm --- Unreviewed author draft}
-\fancyhead[R]{\scriptsize 8 November 2026}
+\fancyhead[R]{\scriptsize 9 November 2026}
 \fancyfoot[C]{\small\thepage}
 \title{\bfseries\LARGE Resolution Visibility Is Not Recovery:\\[5pt] A Partial-Identification Reanalysis of 16,118 Coding-Agent Misalignment Episodes}
 \author{Research authorship under confirmation\\\small Public draft for discussion; not submitted or peer reviewed}
-\date{8 November 2026}
+\date{9 November 2026}
 \begin{document}
 \maketitle
-\noindent\textbf{Abstract.} Observational coding-agent studies can conflate a resolution recorded in a transcript with eventual recovery. We reanalyzed a pinned 16,118-episode developer--agent misalignment release using source stratification, matched repositories and sessions, repository-nested resampling, and outcome/label sensitivity bounds. Of 16,118 episodes, 1,504 had visible resolution; among these, 1,376 (91.49\%) were resolved after developer pushback, while 14,614 had unknown terminal outcomes. Visible resolution occurred in 330/1,361 easily reversible-damage episodes (DS2), versus 1,174/14,587 effort/trust-only episodes (DS1), a difference of 16.20 percentage points. The difference persisted in both acquisition sources, 414 repositories containing both labels (equal-repository mean +15.87 points), and 853 matched sessions from 352 repositories (equal-session mean +13.96 points; repository-nested descriptive interval +10.72 to +17.30). However, the sign of eventual post-pushback recovery remains unidentified without assumptions. Under an unverified common unknown-case recovery rate, reversal requires a rate above 88.56\%. Separately, 223 targeted DS1/DS2 severity-label reclassifications suffice to erase the pooled visible-resolution ordering in a worst-case test. These are label-based, noncausal analyses, not independent annotation validation or estimates of fieldwide recovery.
+\noindent\textbf{Abstract.} Observational coding-agent corpora can record a visible resolution without revealing the eventual outcome; the original study explicitly documented this missingness. We reanalyze its hash-pinned 16,118-episode release to quantify severity-conditioned visibility, matching restrictions, and identification limits. Only 1,504 episodes have a visible resolution; 14,614 final outcomes are unknown. Visible resolution is recorded for 330/1,361 DS2 episodes versus 1,174/14,587 DS1 episodes (+16.20 percentage points). Across 853 sessions containing both labels (9.93\% of two-class sessions; 2,775/15,948 eligible episodes), the equal-session difference is +13.96 points (repository-nested descriptive band +10.72 to +17.30). Of 553 tied sessions, 528 have zero recorded visible resolution in both classes. The eventual post-pushback DS2-minus-DS1 contrast remains partially identified, with logical bounds of -77.61 to +90.10 points. Under an unverified common recovery share among unknown cases, the sign changes at 88.56\%. A deliberately targeted reclassification of 223 DS2/RS1 labels can erase the pooled visible-resolution ordering; those flips would comprise 67.6\% of visible DS2 resolutions, not an estimated source-label error rate. The findings characterize released-label measurement limits, not causal severity effects or fieldwide recovery.
 
 \noindent\textbf{Keywords.} Coding agents; human oversight; missing outcomes; partial identification; developer--agent misalignment; reproducibility.
 
@@ -32,6 +32,11 @@
 \setcounter{table}{0}
 \setcounter{equation}{0}
 \input{appendix_a}
+% Appendix B is independent of the technical audit in Appendix A.
+\setcounter{table}{0}
+\renewcommand{\thetable}{B\arabic{table}}
+\renewcommand{\theHtable}{appendixB.table.\arabic{table}}
+\input{appendix_b}
 \section*{Declarations (author review only)}
 \noindent\textbf{Author contributions:} CRediT roles and author identities pending confirmation.\par
 \noindent\textbf{Funding and conflicts:} To be verified by the human authors.\par

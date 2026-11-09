@@ -31,7 +31,7 @@ Total & 16,118 & 1,504 & 1,376\\
 \noindent\textbf{Observation--classification coupling.} The original codebook requires evidence of an applied, reversible code/state change for DS2, while RS1 requires visible confirmation of correction. Both labels are inferred from the same textual record. This leaves open common-visibility and classification mechanisms even after repository/session matching; the source provides no linked dual-annotator DS1/DS2 confusion matrix to separate them.
 
 \subsection{Units, weights and dependence}\label{app:weights}
-Our primary descriptive endpoint is $Y_i=\mathbf{1}\{\mathrm{resolution\_status}_i=\mathrm{RS1}\}$, where $Y=0$ means no recorded visible resolution rather than known failure. In a session $s$ containing both classes, define $D_s=\bar{Y}_{\mathrm{DS2},s}-\bar{Y}_{\mathrm{DS1},s}$. The equal-session estimator is $\bar{D}_{S}=|S|^{-1}\sum_{s\in S} D_s$. There are 853 paired sessions with 2,775 eligible episodes, represented by 352 distinct source--repository keys. The equal-session estimate is $0.1396122927$.
+Our primary descriptive endpoint is $Y_i=\mathbf{1}\{\mathrm{resolution\_status}_i=\mathrm{RS1}\}$, where $Y=0$ means no recorded visible resolution rather than known failure. In a session $s$ containing both classes, define $D_s=\bar{Y}_{\mathrm{DS2},s}-\bar{Y}_{\mathrm{DS1},s}$. The equal-session estimator is $\bar{D}_{S}=|S|^{-1}\sum_{s\in S} D_s$. The matched sample comprises 853 sessions and 2,775 episodes in 352 source-qualified repositories. The equal-session estimate is $0.1396122927$. The matching gate admits 853/8,590 (9.93\%) sessions and 2,775/15,948 (17.40\%) eligible episodes, across 352/1,229 source-qualified repository keys. The signed difference is positive in 201 sessions, negative in 99, and tied in 553. Of the ties, 528 have zero visible-resolution rates for both severity groups, 22 have rates of one for both, and 3 have equal intermediate rates. The data are nonrandom and this admitted subset is not representative by design.
 
 To preserve clustering beyond the session level, the repository-nested descriptive bootstrap selects 352 source--repository clusters with replacement, keeping \emph{all} matched sessions within each draw. The equal-session mean is recomputed over the resampled sessions (3,000 draws; fixed seed 993720); the 2.5th and 97.5th nearest-order percentiles are $[0.1071711681,0.1729976896]$. The older whole-session resampling interval, $[0.1090339418,0.1702394909]$ (seed 993719), is shown only for comparison because sessions are nested in repositories. The alternative equal-repository estimator gives each of the 352 repository means of session differences equal weight: $0.1405407792$, with repository-resampling percentiles $[0.1017798217,0.1809355907]$.
 
@@ -84,7 +84,7 @@ This check is separate from the missing-eventual-outcome model in Appendix~\ref{
 \[
 \frac{330-x}{1361-x+y}\ \leq\ \frac{1174+x}{14587+x-y},\quad 0\leq x\leq330,\quad 0\leq y\leq13413.
 \]
-We enumerate integer $k=x+y=0,1,\ldots$ and all feasible pairs $0\leq x\leq k$ using exact cross-multiplication, stopping at the first non-positive difference. The first witness occurs at $k=223$, $(x,y)=(223,0)$; all $k<223$ fail the inequality. The witness produces 107/1,138 (9.4025\%) versus 1,397/14,810 (9.4328\%), respectively, and alters 223/15,948 (1.3983\%) original two-class labels. Restricting the same exercise to each acquisition source separately yields the following exact minima:
+We enumerate integer $k=x+y=0,1,\ldots$ and all feasible pairs $0\leq x\leq k$ using exact cross-multiplication, stopping at the first non-positive difference. The first witness occurs at $k=223$, $(x,y)=(223,0)$; all $k<223$ fail the inequality. The witness produces 107/1,138 (9.4025\%) versus 1,397/14,810 (9.4328\%), respectively, and alters 223/15,948 (1.3983\%) original two-class labels; these 223 switches are also 67.58\% of the 330 originally visibly resolved DS2 cases. The latter denominator highlights the concentrated adversarial nature of the witness, not a measured mislabeling prevalence. Restricting the same exercise to each acquisition source separately yields the following exact minima:
 \begin{center}
 \begin{tabularx}{\linewidth}{@{}lrrrY@{}}
 \toprule Stratum & DS1 visible/N & DS2 visible/N & Min. flips & Fraction of eligible labels\\\midrule
@@ -96,15 +96,23 @@ SWE & 341/3,726 & 75/254 & 55 & 1.3819\%\\\bottomrule
 The source validation sample does not tell us whether even one such targeted flip is actually warranted. Consequently these minima are \emph{worst-case algebraic perturbation budgets, not estimated annotation error rates, not adjusted results, and not confidence limits}. The observed endpoint depends on classification validity; the unknown eventual recovery endpoint remains separately unidentified even if every severity label were flawless.
 
 \subsection{Reproduction and claim gates}\label{app:reproduction}
-Run the scripts with Python 3 (standard library only), after obtaining \path{annotated_misalignments.json} from the pinned author source. Use the exact source file above; the script refuses any other SHA-256. From the project root directory, execute:
+Run the scripts with Python 3 (standard library only), after obtaining \path{annotated_misalignments.json} from the pinned author source. Use the exact source file above; the scripts reject any other SHA-256. \emph{From the public GitHub repository root}, use the \texttt{scripts/} paths:
+\begingroup\footnotesize
 \begin{verbatim}
-python reproduce_visibility_robustness.py \
+python scripts/reproduce_visibility_robustness.py \
   --annotations /path/to/annotated_misalignments.json \
-  --output MR21_check.json
-python reproduce_nested_robustness.py \
+  --output visibility_check.json
+python scripts/reproduce_nested_robustness.py \
   --annotations /path/to/annotated_misalignments.json \
-  --output MR22_check.json
+  --output nested_check.json
+python scripts/reproduce_matched_coverage.py \
+  --annotations /path/to/annotated_misalignments.json \
+  --output coverage_check.json
+python scripts/verify_replay.py nested_check.json \
+  results/aggregate_results.json
 \end{verbatim}
+\endgroup
+In the \emph{Overleaf source ZIP}, the three analysis scripts sit at the ZIP root rather than in \texttt{scripts/}; omit that prefix for a local extracted-archive replay, and check the original aggregate JSON against the bundled \texttt{MR22\_Aggregate\_Results.json}. The new \texttt{MR26\_Matched\_Coverage\_Results.json} is additional descriptive evidence, not a replacement for the locked original aggregate output.
 The JSON output is aggregate-only and includes a deterministic integer-search certificate for minimum severity relabeling budgets. The script enumerates all outcome-concordant DS1/DS2 switches, verifies each candidate by exact integer cross-products, and keeps RS1/RS2 fixed. The complete source records are never copied into the public manuscript or supplementary ZIP. The post-hoc checks are explicitly marked exploratory. Assertions enforce the frozen input, source partitions, 414 mixed-label repositories, 853 mixed-label sessions, 352 repositories supporting those sessions, 801 high-confidence mixed-label sessions, and 307 one-to-one mixed-label sessions.
 
 \noindent\textbf{Interpretive holds.} Neither a repository bootstrap nor matching across recorded sessions can validate the authors' original DS1/DS2 classification, determine RS2 terminal outcomes, or support causal intervention estimates. The original source's 91.49\% post-pushback resolution proportion is valid \emph{only conditional on the visibly resolved 1,504 episodes}. Source-reported validation on the severity axis is materially weaker than on the resolution-status axis in the explicitly identified May 2026 arXiv v1, and no new human reannotation is claimed in this work. Publisher template updates, authorship, CRediT, funding, conflict declaration, exact AI-use disclosure and author-approved persistent public deposit remain separate administrative checks.

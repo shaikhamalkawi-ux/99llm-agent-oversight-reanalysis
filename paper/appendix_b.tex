@@ -1,0 +1,37 @@
+% MR26: Formerly in the main contextual section; retained for source transparency.
+% These audits are auxiliary observations from cited publisher tables, not the
+% primary released-record contribution and not reruns of their original models.
+\section{Contextual Source-Table and Release-Edition Checks}\label{app:context}
+Published aggregate metrics can be reconstructed without rerunning an agent; the scope of that reconstruction must be reported just as carefully as the result. Table~\ref{tab:rechecks} distinguishes checks on displayed tables from a complete recount of released categorical labels. In particular, a source-internal table discrepancy is not evidence that the original experimental pipeline was wrong, whereas an incomplete outcome ascertainment problem can persist even when every released record has been counted.
+
+\begin{table}[H]
+\centering\small
+\caption{Bounded reconstructions from published tables or publicly released labels. Counts reflect the study-specific eligible units; none estimates a fieldwide error rate.}
+\label{tab:rechecks}
+\begin{tabularx}{\textwidth}{@{}p{0.23\textwidth}p{0.33\textwidth}Y@{}}
+\toprule
+\textbf{Source and evidence} & \textbf{Independent check} & \textbf{Interpretive boundary}\\
+\midrule
+Dark Patterns, Table 3 \cite{ref22} & Across 16 categories: 10 strictly better under supervision, 4 tied, 2 worse; 14 are non-worse. & A non-worse count is not 14 strict improvements or statistical significance across categories.\\
+Computer-use oversight, tables \cite{ref16} & Among 192 sessions: 54 no occurrence, 29 successful interventions and 109 uncorrected. & Recounts do not replicate participant-clustered inference or identify a causal pathway.\\
+PULSE, seven printed score pairs \cite{ref36} & Ordinary unweighted Pearson $r=+0.302898$; table and prose present negative values ($-0.18$ and $-0.11$). & Printed-pair calculation does not reconstruct the unreported original regression or rating-to-arm experiment.\\
+DRIFT-BENCH, publisher tables \cite{ref28} & One cell prints 46.33 without and 65.33 with clarification, but gain $+9.00$ rather than arithmetic $+19.00$. & The discrepancy is in printed table arithmetic, not a rerun of agent rollouts.\\
+Developer--agent misalignment release \cite{ref35} & 16,118 labels: 1,504 visibly resolved, 14,614 unknown; eventual after-pushback share bounded by 8.54--99.21\%. & The 91.49\% reported among visible resolutions is conditional; the wide logical bounds do not validate the source classifier.\\
+CAR-bench editions \cite{ref40} & Published task groups $100+90+50=240$; later competition groups $100+98+56=254$. & Different releases cannot be pooled as one task sample without record matching.\\
+ClarifyBench, Table 2 \cite{ref41} & Printed total 716; explicit 241, ambiguous 213 and infeasible 198 sum to 652, leaving 64 unallocated by the printed categories. & This does not show why the 64 are unaccounted for or that the raw experiment omitted them.\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{An operator or edition can change a source claim}
+The source prose in Dark Patterns Meet GUI Agents describes fourteen of sixteen dark-pattern tasks as less susceptible under human supervision. Its printed avoidance-rate rows, however, yield ten strict increases, four ties and two decreases. Fourteen is the count of non-worse rows, not of strictly improved rows \cite{ref22}. Importantly, participants in the oversight arm watched prerecorded Operator trajectories, with pauses and confirmations simulated by the interviewer; the experiment does not test whether a live agent would have adapted after each intervention. This qualifies the interpretation of the direction count without erasing the observed supervised-condition benefits or the original study's qualitative analysis. Category directions alone do not supply within-participant significance tests.
+
+For DRIFT-BENCH, the final ICML publisher edition and an earlier preprint contain related but noninterchangeable tables. The publisher's printed gain for one GPT-5.2 parameter-fault cell is ten percentage points lower than its displayed with-minus-without arithmetic \cite{ref28}. Its service-oriented appendix also contains both positive and negative clarification contrasts, so a blanket statement that clarification always helps or always hurts is unsupported. The original model-level and persona-specific inputs required to resolve the publisher's printed discrepancies are not available here. Reanalysis of a small, selected model roster cannot support population-level significance simply by adjusting multiple $p$-values; consequently we omit those exploratory significance calculations from the main scientific argument and retain them only in the internal evidence archive.
+
+An especially clear operator distinction appears in CAR-bench. On the publisher's original 50 disambiguation tasks, the printed GPT-5 \(\mathrm{Pass@3}=68\%\) corresponds to 34 tasks with at least one success in three runs, while \(\mathrm{Pass}^{3}=36\%\) corresponds to 18 tasks successful in all three runs \cite{ref40}. These metrics answer different consistency questions. The publisher narrative also uses the label \(\mathrm{Pass@5}\) at one location for the value defined as \(\mathrm{Pass@3}\) in the source methods and table; this is a source-label conflict, not proof of additional undocumented trials. The later 254-task competition inventory is a different release from the 240-task paper and should be identified as such. In the published ClarifyBench table, domain-specific differences between the stated domain totals and the three enumerated query-type counts sum to 64; the source table alone cannot determine whether a fourth category, omitted rows or another reporting convention explains them \cite{ref41}. These checks illustrate why a numerator or printed label requires a versioned denominator before comparative interpretation.
+
+
+\subsection{What a public feature release cannot reproduce}
+PULSE combines observed developer feedback with prediction-assisted evaluation to compare software-agent designs and reports a reduction in confidence-interval width across its experiments \cite{ref36}. The seven published benchmark-versus-user-score pairs have an ordinary Pearson correlation of $+0.302898$ when recomputed from the printed values, whereas the published summary gives a negative sign. This sign difference is not explained by ordinary rounding of those displayed pairs. It nevertheless does not establish which transformation, weighting or unrounded records the authors used; the original calculation is a source-verification HOLD rather than a demonstrated error in their broader design comparison. The inspected public feature release contains 1,746 rated rows against 1,747 mentioned in the paper, but lacks the user-level treatment-arm joins and original fitted model inputs needed to rerun its four prediction-powered effect estimates. The reported original intervals and reduction are therefore attributed to the authors, not independently reproduced here.
+
+

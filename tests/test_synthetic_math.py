@@ -38,6 +38,19 @@ class SyntheticMath(unittest.TestCase):
         raw=json.dumps(obj)
         for unsafe in ['session_sha','session_timestamp','user_turns','misalignment_id','session_001','repository_id']:
             self.assertNotIn('"'+unsafe+'"',raw)
+    def test_mr26_matched_coverage_aggregate_and_ties(self):
+        obj=json.loads((ROOT/'results'/'matched_coverage_results.json').read_text())
+        self.assertEqual(obj['matched_session_count'],853)
+        self.assertEqual(obj['two_class_distinct_source_sessions'],8590)
+        self.assertEqual(obj['matched_session_episode_count'],2775)
+        self.assertEqual(obj['two_class_episode_count'],15948)
+        self.assertEqual(obj['matched_session_tie_components'],
+                         {'both_rates_zero':528,'both_rates_one':22,'equal_interior_rates':3})
+        self.assertEqual(obj['matched_session_sign_counts'],
+                         {'positive':201,'negative':99,'tie':553})
+        self.assertEqual(obj['original_rows_republished'],0)
+        self.assertNotIn('session_id',json.dumps(obj))
+
     def test_committed_replay_hash(self):
         file=ROOT/'results'/'aggregate_results.json'
         self.assertTrue(verify(file,file))
