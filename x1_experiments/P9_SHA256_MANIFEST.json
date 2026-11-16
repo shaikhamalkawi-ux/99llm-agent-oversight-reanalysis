@@ -1,0 +1,16 @@
+{
+  "baseline": "P8 frozen, MR30 frozen",
+  "created": "2026-11-16",
+  "files": {
+    "P9_EVIDENCE_ACQUISITION_PLAN_EN.md": "0dee516e963b69fb0799061828cbbc89dea9ae892fe529f792982b15fd1f28e4",
+    "README_FIRST.md": "3f3eee47345df532a2b16d199a4c4c413d6a1de0370f89ded16ef807d2375504",
+    "examples/SYNTHETIC_decision_only.jsonl": "af2f6d88a7364787ea7b348328834f8ef86fea144ab45ab2df1d80df0f9726e0",
+    "examples/SYNTHETIC_oracle_AFTER_SEAL.jsonl": "b2b6b1cad4d90e9b38cf3e99a668662f6c2568b372eaa00fb3a11901b332c2c3",
+    "notes/P9_METHOD_AR.md": "65e396f5a0e5dbf7507dce59f5d192ce407506c0b6b11f08d9f86670952af2e1",
+    "scripts/p9_decide.py": "baea708bacf643bdf6110d5c0ba3a584d8ad0783f993bfe481f96ce8149ae6fd",
+    "scripts/p9_reveal.py": "9a085621ef31e214f4b5b3c6bd43d26aea6ce2657c1cc2d515e8d50930325013",
+    "tests/test_p9.py": "e79460243a280df4fa78ea77f7fcf294a073c132413e492148b2d5cb99254378"
+  },
+  "phase": "P9_source_acquisition_protocol_NOT empirical outcomes",
+  "project": "99llm-X1"
+}

@@ -1,0 +1,49 @@
+name: X1 P9 protocol smoke (SYNTHETIC ONLY, NOT TASK ORACLE)
+
+on:
+  push:
+    branches:
+      - x1-p9-public-bootstrap-20261116
+    paths:
+      - 'x1_experiments/**'
+      - '.github/workflows/x1-p9-smoke.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: x1-p9-smoke-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  synthetic-protocol:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Checkout the exact SHA
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Check Python version
+        run: python3 --version
+      - name: Synthetic and negative-corruption unit tests (no external agent)
+        run: python3 -m unittest discover -s x1_experiments/tests -v
+      - name: Demonstrate decision sealing before synthetic reveal
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 x1_experiments/scripts/p9_decide.py \
+            --input x1_experiments/examples/SYNTHETIC_decision_only.jsonl \
+            --out "$RUNNER_TEMP/x1-p9-seal"
+          python3 x1_experiments/scripts/p9_reveal.py \
+            --sealed-dir "$RUNNER_TEMP/x1-p9-seal" \
+            --oracle x1_experiments/examples/SYNTHETIC_oracle_AFTER_SEAL.jsonl \
+            --out "$RUNNER_TEMP/x1-p9-synthetic-score.json"
+          python3 - "$RUNNER_TEMP/x1-p9-synthetic-score.json" <<'PYVERIFY'
+          import json, sys
+          p=json.load(open(sys.argv[1],encoding='utf8'))
+          assert p['oracle_admitted']==2 and p['oracle_pass']==1 and p['oracle_fail']==1
+          assert p['total_decisions']==2
+          print('PASS: 2 SYNTHETIC fixtures only. No independent code oracle executed.')
+          PYVERIFY
