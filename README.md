@@ -1,6 +1,21 @@
 # Resolution Visibility Is Not Recovery
 
-**Project 99llm — MR26 source-locked secondary reanalysis** (9 November 2026).  
+## Current research materials — MR31R9 EP2 (22 November 2026)
+
+The **current author-review manuscript** and public, source-derived MR31 reproducibility materials are now available here. This is a working research archive, **not** a journal submission, acceptance or published article.
+
+- **[Current 33-page author-review paper (PDF)](paper/99llm_MR31R9_EP2_GitHubSynced_AUTHOR_REVIEW.pdf)** — contains the updated GitHub data-availability passages on pages 3 and 27.
+- **[MR31 derived datasets, exact label-sensitivity frontier, plotting code, six vector figures, and documentation](mr31/README.md)** — the complete new derived-artifact subdirectory.
+- **[Offline checks](mr31/tests/test_published_results.py)** and [figure-generation scripts](mr31/code/) — evaluated on the frozen derived inputs; the [MR31 GitHub Actions workflow](.github/workflows/mr31-offline-checks.yml) runs these checks.
+- **[MR31 SHA-256 manifest](mr31/SHA256SUMS.txt)** — protects the currently released derived artifacts; the root SHA256SUMS file retains coverage of the older repository-root material.
+
+The original Tang et al. annotated episode records are **not redistributed**. Raw-to-derived verification requires independent access to the exact original source and additional derivation machinery; passing the public offline checks does not establish independent source-label truth, full raw recomputation, or coding-agent repair success.
+
+---
+
+## MR26 archival research record (9 November 2026)
+
+**Historical Project 99llm — MR26 source-locked secondary reanalysis** (9 November 2026).  
 This is a **public working manuscript and reproducibility repository**, not a submitted, peer-reviewed or accepted article. There is **no assigned manuscript or software DOI**. Author order, affiliations, contributions and disclosures remain under human-author review.
 
 ## Scientific identity and core results
@@ -21,8 +36,8 @@ The original DS2 severity code and RS1 visible-resolution code are both inferred
 
 ## Files and reproducibility
 
-- `paper/author_review_preprint.pdf` — current neutral **MR26 working preprint with Appendix A and Appendix B integrated**; no journal DOI or MDPI publisher template.
-- `paper/preprint.tex`, `paper/article_body.tex`, `paper/appendix_a.tex`, `paper/appendix_b.tex`, `paper/references.tex` and `paper/figures/` — current reader-source document; Appendix A is the technical audit, Appendix B preserves lower-priority cross-paper arithmetic and version checks.
+- `paper/author_review_preprint.pdf` — historical neutral **MR26 working preprint with Appendix A and Appendix B integrated**; no journal DOI or MDPI publisher template.
+- `paper/preprint.tex`, `paper/article_body.tex`, `paper/appendix_a.tex`, `paper/appendix_b.tex`, `paper/references.tex` and `paper/figures/` — historical MR26 reader-source document; Appendix A is the technical audit, Appendix B preserves lower-priority cross-paper arithmetic and version checks.
 - `scripts/reproduce_visibility_robustness.py` and `scripts/reproduce_nested_robustness.py` — source-locked complete primary results, plus label-flip certificate and repository-nested resampling.
 - `scripts/reproduce_matched_coverage.py` — **MR26 additive coverage/tie-composition audit**.
 - `results/aggregate_results.json` — byte-identical frozen original-derived aggregate output; `results/matched_coverage_results.json` — additive MR26 aggregates. **Neither contains original episode rows or identifiers.**
