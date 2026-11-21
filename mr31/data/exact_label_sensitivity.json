@@ -1,0 +1,1603 @@
+{
+  "all_original_source_labels_untouched": true,
+  "complete_exact_budget_frontier_to_first_nonpositive": [
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 0,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.13961229274828338,
+        "exact": "6669/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.13961229274828338,
+        "exact": "6669/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 1,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.13843995980572768,
+        "exact": "6613/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.13843995980572768,
+        "exact": "6613/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 2,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.137267626863172,
+        "exact": "6557/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.137267626863172,
+        "exact": "6557/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 3,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.1360952939206163,
+        "exact": "6501/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.1360952939206163,
+        "exact": "6501/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 4,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.1349229609780606,
+        "exact": "6445/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.1349229609780606,
+        "exact": "6445/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 5,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.13375062803550494,
+        "exact": "6389/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.13375062803550494,
+        "exact": "6389/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 6,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.13257829509294924,
+        "exact": "6333/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.13257829509294924,
+        "exact": "6333/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 7,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.13140596215039357,
+        "exact": "6277/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.13140596215039357,
+        "exact": "6277/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 8,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.13023362920783788,
+        "exact": "6221/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.13023362920783788,
+        "exact": "6221/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 9,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.1290612962652822,
+        "exact": "6165/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.1290612962652822,
+        "exact": "6165/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 10,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.1278889633227265,
+        "exact": "6109/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.1278889633227265,
+        "exact": "6109/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 11,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.12671663038017084,
+        "exact": "6053/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.12671663038017084,
+        "exact": "6053/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 12,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.12554429743761514,
+        "exact": "5997/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.12554429743761514,
+        "exact": "5997/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 13,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.12437196449505945,
+        "exact": "5941/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.12437196449505945,
+        "exact": "5941/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 14,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.12319963155250377,
+        "exact": "5885/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.12319963155250377,
+        "exact": "5885/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 15,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.12202729860994808,
+        "exact": "5829/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.12202729860994808,
+        "exact": "5829/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 16,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.1208549656673924,
+        "exact": "5773/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.1208549656673924,
+        "exact": "5773/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 17,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.11968263272483672,
+        "exact": "5717/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.11968263272483672,
+        "exact": "5717/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 18,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.11851029978228103,
+        "exact": "5661/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.11851029978228103,
+        "exact": "5661/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 19,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.11733796683972533,
+        "exact": "5605/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.11733796683972533,
+        "exact": "5605/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 20,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.11616563389716965,
+        "exact": "5549/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.11616563389716965,
+        "exact": "5549/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 21,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.11499330095461396,
+        "exact": "5493/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.11499330095461396,
+        "exact": "5493/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 22,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.11382096801205828,
+        "exact": "5437/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.11382096801205828,
+        "exact": "5437/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 23,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.1126486350695026,
+        "exact": "5381/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.1126486350695026,
+        "exact": "5381/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 24,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.11147630212694691,
+        "exact": "5325/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.11147630212694691,
+        "exact": "5325/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 25,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.11030396918439123,
+        "exact": "5269/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.11030396918439123,
+        "exact": "5269/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 26,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.10913163624183554,
+        "exact": "5213/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.10913163624183554,
+        "exact": "5213/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 27,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.10795930329927986,
+        "exact": "5157/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.10795930329927986,
+        "exact": "5157/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 28,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.10678697035672417,
+        "exact": "5101/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.10678697035672417,
+        "exact": "5101/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 29,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.10561463741416847,
+        "exact": "5045/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.10561463741416847,
+        "exact": "5045/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 30,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.10444230447161279,
+        "exact": "4989/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.10444230447161279,
+        "exact": "4989/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 31,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.1032699715290571,
+        "exact": "4933/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.1032699715290571,
+        "exact": "4933/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 32,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.10209763858650142,
+        "exact": "4877/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.10209763858650142,
+        "exact": "4877/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 33,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.10092530564394574,
+        "exact": "4821/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.10092530564394574,
+        "exact": "4821/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 34,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.09975297270139005,
+        "exact": "4765/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.09975297270139005,
+        "exact": "4765/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 35,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.09858063975883437,
+        "exact": "4709/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.09858063975883437,
+        "exact": "4709/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 36,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.09740830681627868,
+        "exact": "4653/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.09740830681627868,
+        "exact": "4653/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 37,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.096235973873723,
+        "exact": "4597/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.096235973873723,
+        "exact": "4597/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 38,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.09506364093116731,
+        "exact": "4541/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.09506364093116731,
+        "exact": "4541/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 39,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.09389130798861162,
+        "exact": "4485/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.09389130798861162,
+        "exact": "4485/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 40,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.09271897504605593,
+        "exact": "4429/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.09271897504605593,
+        "exact": "4429/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 41,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.09154664210350025,
+        "exact": "4373/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.09154664210350025,
+        "exact": "4373/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 42,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.09037430916094456,
+        "exact": "4317/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.09037430916094456,
+        "exact": "4317/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 43,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.08920197621838888,
+        "exact": "4261/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.08920197621838888,
+        "exact": "4261/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 44,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.0880296432758332,
+        "exact": "4205/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.0880296432758332,
+        "exact": "4205/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 45,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.08685731033327751,
+        "exact": "4149/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.08685731033327751,
+        "exact": "4149/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 46,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.08568497739072183,
+        "exact": "4093/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.08568497739072183,
+        "exact": "4093/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 47,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.08451264444816614,
+        "exact": "4037/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.08451264444816614,
+        "exact": "4037/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 48,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.08334031150561046,
+        "exact": "3981/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.08334031150561046,
+        "exact": "3981/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 49,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.08216797856305476,
+        "exact": "3925/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.08216797856305476,
+        "exact": "3925/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 50,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.08099564562049907,
+        "exact": "3869/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.08099564562049907,
+        "exact": "3869/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 51,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.07982331267794339,
+        "exact": "3813/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.07982331267794339,
+        "exact": "3813/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 52,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.0786509797353877,
+        "exact": "3757/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.0786509797353877,
+        "exact": "3757/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 53,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.07747864679283202,
+        "exact": "3701/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.07747864679283202,
+        "exact": "3701/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 54,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.07630631385027634,
+        "exact": "3645/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.07630631385027634,
+        "exact": "3645/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 55,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.07513398090772065,
+        "exact": "3589/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.07513398090772065,
+        "exact": "3589/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 56,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.07396164796516497,
+        "exact": "3533/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.07396164796516497,
+        "exact": "3533/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 57,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.07278931502260928,
+        "exact": "3477/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.07278931502260928,
+        "exact": "3477/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 58,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.0716169820800536,
+        "exact": "3421/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.0716169820800536,
+        "exact": "3421/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 59,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.0704446491374979,
+        "exact": "3365/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.0704446491374979,
+        "exact": "3365/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 60,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.06927231619494222,
+        "exact": "3309/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.06927231619494222,
+        "exact": "3309/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 61,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.06809998325238653,
+        "exact": "3253/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.06809998325238653,
+        "exact": "3253/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 62,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.06692765030983085,
+        "exact": "3197/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.06692765030983085,
+        "exact": "3197/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 63,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.06575531736727516,
+        "exact": "3141/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.06575531736727516,
+        "exact": "3141/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 64,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.06458298442471948,
+        "exact": "3085/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.06458298442471948,
+        "exact": "3085/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 65,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.0634106514821638,
+        "exact": "3029/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.0634106514821638,
+        "exact": "3029/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 66,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.06223831853960811,
+        "exact": "2973/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.06223831853960811,
+        "exact": "2973/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 67,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.06106598559705242,
+        "exact": "2917/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.06106598559705242,
+        "exact": "2917/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 68,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.05989365265449673,
+        "exact": "2861/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.05989365265449673,
+        "exact": "2861/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 69,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.05872131971194105,
+        "exact": "2805/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.05872131971194105,
+        "exact": "2805/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 70,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.057548986769385364,
+        "exact": "2749/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.057548986769385364,
+        "exact": "2749/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 71,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.05637665382682968,
+        "exact": "2693/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.05637665382682968,
+        "exact": "2693/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 72,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.05520432088427399,
+        "exact": "2637/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.05520432088427399,
+        "exact": "2637/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 73,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.054031987941718304,
+        "exact": "2581/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.054031987941718304,
+        "exact": "2581/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 74,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.05285965499916262,
+        "exact": "2525/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.05285965499916262,
+        "exact": "2525/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 75,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.051687322056606935,
+        "exact": "2469/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.051687322056606935,
+        "exact": "2469/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 76,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.05051498911405125,
+        "exact": "2413/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.05051498911405125,
+        "exact": "2413/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 77,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.04934265617149556,
+        "exact": "2357/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.04934265617149556,
+        "exact": "2357/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 78,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.048170323228939875,
+        "exact": "2301/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.048170323228939875,
+        "exact": "2301/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 79,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.04699799028638419,
+        "exact": "2245/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.04699799028638419,
+        "exact": "2245/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 80,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.045825657343828506,
+        "exact": "2189/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.045825657343828506,
+        "exact": "2189/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 81,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.04465332440127282,
+        "exact": "2133/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.04465332440127282,
+        "exact": "2133/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 82,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.04348099145871713,
+        "exact": "2077/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.04348099145871713,
+        "exact": "2077/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 83,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.042308658516161446,
+        "exact": "2021/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.042308658516161446,
+        "exact": "2021/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 84,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.04113632557360576,
+        "exact": "1965/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.04113632557360576,
+        "exact": "1965/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 85,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.03996399263105008,
+        "exact": "1909/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.03996399263105008,
+        "exact": "1909/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 86,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.03879165968849439,
+        "exact": "1853/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.03879165968849439,
+        "exact": "1853/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 87,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.0376193267459387,
+        "exact": "1797/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.0376193267459387,
+        "exact": "1797/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 88,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.03644699380338302,
+        "exact": "1741/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.03644699380338302,
+        "exact": "1741/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 89,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.03527466086082733,
+        "exact": "1685/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.03527466086082733,
+        "exact": "1685/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 90,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.03410232791827165,
+        "exact": "1629/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.03410232791827165,
+        "exact": "1629/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 91,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.032929994975715964,
+        "exact": "1573/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.032929994975715964,
+        "exact": "1573/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 92,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.03175766203316027,
+        "exact": "1517/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.03175766203316027,
+        "exact": "1517/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 93,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.030585329090604588,
+        "exact": "1461/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.030585329090604588,
+        "exact": "1461/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 94,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.029412996148048903,
+        "exact": "1405/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.029412996148048903,
+        "exact": "1405/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 95,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.02824066320549322,
+        "exact": "1349/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.02824066320549322,
+        "exact": "1349/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 96,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.02706833026293753,
+        "exact": "1293/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.02706833026293753,
+        "exact": "1293/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 97,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.025895997320381847,
+        "exact": "1237/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.025895997320381847,
+        "exact": "1237/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 98,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.02472366437782616,
+        "exact": "1181/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.02472366437782616,
+        "exact": "1181/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 99,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.023551331435270474,
+        "exact": "1125/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.023551331435270474,
+        "exact": "1125/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 100,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.02237899849271479,
+        "exact": "1069/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.02237899849271479,
+        "exact": "1069/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 101,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.021206665550159102,
+        "exact": "1013/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.021206665550159102,
+        "exact": "1013/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 102,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.020034332607603417,
+        "exact": "957/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.020034332607603417,
+        "exact": "957/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 103,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.01886199966504773,
+        "exact": "901/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.01886199966504773,
+        "exact": "901/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 104,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.017689666722492045,
+        "exact": "845/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.017689666722492045,
+        "exact": "845/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 105,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.01651733377993636,
+        "exact": "789/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.01651733377993636,
+        "exact": "789/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 106,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.015345000837380673,
+        "exact": "733/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.015345000837380673,
+        "exact": "733/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 107,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.014172667894824987,
+        "exact": "677/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.014172667894824987,
+        "exact": "677/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 108,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.013000334952269302,
+        "exact": "621/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.013000334952269302,
+        "exact": "621/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 109,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.011828002009713616,
+        "exact": "565/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.011828002009713616,
+        "exact": "565/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 110,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.01065566906715793,
+        "exact": "509/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.01065566906715793,
+        "exact": "509/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 111,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.009483336124602244,
+        "exact": "453/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.009483336124602244,
+        "exact": "453/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 112,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.00831100318204656,
+        "exact": "397/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.00831100318204656,
+        "exact": "397/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 113,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.007138670239490872,
+        "exact": "341/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.007138670239490872,
+        "exact": "341/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 114,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.005966337296935187,
+        "exact": "285/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.005966337296935187,
+        "exact": "285/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 115,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.004794004354379501,
+        "exact": "229/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.004794004354379501,
+        "exact": "229/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 116,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.003621671411823815,
+        "exact": "173/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.003621671411823815,
+        "exact": "173/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 117,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.0024493384692681293,
+        "exact": "117/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.0024493384692681293,
+        "exact": "117/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 118,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.0012770055267124435,
+        "exact": "61/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.0012770055267124435,
+        "exact": "61/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 119,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": 0.00010467258415675766,
+        "exact": "5/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": 0.00010467258415675766,
+        "exact": "5/47768"
+      }
+    },
+    {
+      "attains_analytic_bound": true,
+      "budget_k": 120,
+      "minimum_attainable_equal_session_difference": {
+        "decimal": -0.0010676603583989282,
+        "exact": "-51/47768"
+      },
+      "universal_one_switch_lower_bound": {
+        "decimal": -0.0010676603583989282,
+        "exact": "-51/47768"
+      }
+    }
+  ],
+  "fraction_of_all_DS1_DS2_episodes_changed": 0.007524454477050414,
+  "fraction_of_matched_episodes_changed": 0.043243243243243246,
+  "lowest_achievable_difference_by_exact_flip_budget_selected": {
+    "0": {
+      "decimal": 0.13961229274828338,
+      "exact": "6669/47768"
+    },
+    "1": {
+      "decimal": 0.13843995980572768,
+      "exact": "6613/47768"
+    },
+    "10": {
+      "decimal": 0.1278889633227265,
+      "exact": "6109/47768"
+    },
+    "100": {
+      "decimal": 0.02237899849271479,
+      "exact": "1069/47768"
+    },
+    "119": {
+      "decimal": 0.00010467258415675766,
+      "exact": "5/47768"
+    },
+    "120": {
+      "decimal": -0.0010676603583989282,
+      "exact": "-51/47768"
+    },
+    "2": {
+      "decimal": 0.137267626863172,
+      "exact": "6557/47768"
+    },
+    "20": {
+      "decimal": 0.11616563389716965,
+      "exact": "5549/47768"
+    },
+    "40": {
+      "decimal": 0.09271897504605593,
+      "exact": "4429/47768"
+    },
+    "5": {
+      "decimal": 0.13375062803550494,
+      "exact": "6389/47768"
+    },
+    "60": {
+      "decimal": 0.06927231619494222,
+      "exact": "3309/47768"
+    },
+    "80": {
+      "decimal": 0.045825657343828506,
+      "exact": "2189/47768"
+    }
+  },
+  "matched_episodes": 2775,
+  "matched_sessions": 853,
+  "max_session_episodes": 10,
+  "method": "Complete per-session enumeration of four possible severity switch types and exact integer DP minimizing DS2 minus DS1 RS1-rate contrast for each global EXACT switch count. Original 853 matched sessions, status fixed, severity DS1/DS2 membership fixed, both labels nonempty per session.",
+  "minimal_number_of_severity_switches_to_nonpositive_contrast": 120,
+  "not_a_population_or_causal_claim": true,
+  "not_the_original_pooled_223_flip_threshold": true,
+  "optimal_witness_changed_sessions": 70,
+  "optimal_witness_difference": {
+    "decimal": -0.0010676603583989282,
+    "exact": "-51/47768"
+  },
+  "optimal_witness_flip_type_counts": {
+    "DS1_RS1_to_DS2_RS1": 0,
+    "DS1_RS2_to_DS2_RS2": 60,
+    "DS2_RS1_to_DS1_RS1": 60,
+    "DS2_RS2_to_DS1_RS2": 0
+  },
+  "original_equal_session_RS1_difference": {
+    "decimal": 0.13961229274828338,
+    "exact": "6669/47768"
+  },
+  "scale_lcm_exact": 2520,
+  "schema": "99llm_MR31_exact_adversarial_relabeling_within_original_matched_sessions_v1",
+  "source_rows_redistributed": 0,
+  "source_sha256": "7e0693675242a625bdb586bcd8cef23f5da76c65cf840108c3c24b6b479b9f57",
+  "strictly_smaller_budgets_cannot_reach_zero_exact_DP_certificate": true,
+  "summary_witness_by_anonymous_count_patterns": [
+    {
+      "count_of_sessions": 50,
+      "final_pattern": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "moves_DS1_RS1_to_DS2_RS1__DS1_RS2_to_DS2_RS2__DS2_RS1_to_DS1_RS1__DS2_RS2_to_DS1_RS2": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "original_pattern_DS1_RS1_DS1_RS2_DS2_RS1_DS2_RS2": [
+        0,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "count_of_sessions": 10,
+      "final_pattern": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "moves_DS1_RS1_to_DS2_RS1__DS1_RS2_to_DS2_RS2__DS2_RS1_to_DS1_RS1__DS2_RS2_to_DS1_RS2": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "original_pattern_DS1_RS1_DS1_RS2_DS2_RS1_DS2_RS2": [
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "count_of_sessions": 10,
+      "final_pattern": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "moves_DS1_RS1_to_DS2_RS1__DS1_RS2_to_DS2_RS2__DS2_RS1_to_DS1_RS1__DS2_RS2_to_DS1_RS2": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "original_pattern_DS1_RS1_DS1_RS2_DS2_RS1_DS2_RS2": [
+        1,
+        1,
+        1,
+        0
+      ]
+    }
+  ],
+  "this_is_not_a_measured_misclassification_rate": true,
+  "unique_original_session_patterns": 74
+}

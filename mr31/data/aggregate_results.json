@@ -1,0 +1,283 @@
+{
+  "source_sha256": "7e0693675242a625bdb586bcd8cef23f5da76c65cf840108c3c24b6b479b9f57",
+  "source_episode_count": 16118,
+  "original_severity_values_used": [
+    "DS1",
+    "DS2"
+  ],
+  "excluded_other_severity_episodes": 170,
+  "by_source_and_severity": {
+    "ALL/DS1": {
+      "episodes": 14587,
+      "visibly_resolved": 1174,
+      "pushback_visible": 1080
+    },
+    "ALL/DS2": {
+      "episodes": 1361,
+      "visibly_resolved": 330,
+      "pushback_visible": 296
+    },
+    "specstory/DS1": {
+      "episodes": 10861,
+      "visibly_resolved": 833,
+      "pushback_visible": 751
+    },
+    "specstory/DS2": {
+      "episodes": 1107,
+      "visibly_resolved": 255,
+      "pushback_visible": 225
+    },
+    "swe/DS1": {
+      "episodes": 3726,
+      "visibly_resolved": 341,
+      "pushback_visible": 329
+    },
+    "swe/DS2": {
+      "episodes": 254,
+      "visibly_resolved": 75,
+      "pushback_visible": 71
+    }
+  },
+  "all_severity": {
+    "DS1": {
+      "episodes": 14587,
+      "visibly_resolved": 1174,
+      "after_pushback_visible": 1080,
+      "visibility_fraction": 0.08048262151230548,
+      "eventual_after_pushback_lower": 0.07403852745595393,
+      "eventual_after_pushback_upper": 0.9935559059436484,
+      "after_pushback_among_visible": 0.919931856899489,
+      "unknown_fraction": 0.9195173784876945
+    },
+    "DS2": {
+      "episodes": 1361,
+      "visibly_resolved": 330,
+      "after_pushback_visible": 296,
+      "visibility_fraction": 0.24246877296105804,
+      "eventual_after_pushback_lower": 0.21748714180749448,
+      "eventual_after_pushback_upper": 0.9750183688464364,
+      "after_pushback_among_visible": 0.896969696969697,
+      "unknown_fraction": 0.7575312270389419
+    }
+  },
+  "visible_risk_difference_ds2_minus_ds1": 0.16198615144875256,
+  "repository_matched": {
+    "all_source_repositories": 1229,
+    "repositories_with_both_labels": 414,
+    "episodes_in_matched_repositories": 12643,
+    "signs": {
+      "positive": 163,
+      "negative": 94,
+      "tie": 157
+    },
+    "equal_cluster_mean_visible_risk_difference": 0.15867834119348542,
+    "resample_2p5_97p5": [
+      0.12602601017277018,
+      0.19285368579866724
+    ],
+    "bootstrap_seed": 993718,
+    "bootstrap_replicates": 3000
+  },
+  "session_matched": {
+    "all_source_sessions_in_ds1_ds2": 8590,
+    "sessions_with_both_labels": 853,
+    "episodes_in_matched_sessions": 2775,
+    "episode_rates": {
+      "DS1": {
+        "episodes": 1772,
+        "visibly_resolved": 183,
+        "visibility_fraction": 0.10327313769751693
+      },
+      "DS2": {
+        "episodes": 1003,
+        "visibly_resolved": 240,
+        "visibility_fraction": 0.23928215353938184
+      }
+    },
+    "signs": {
+      "positive": 201,
+      "negative": 99,
+      "tie": 553
+    },
+    "equal_cluster_mean_visible_risk_difference": 0.13961229274828338,
+    "resample_2p5_97p5": [
+      0.10903394182995589,
+      0.17023949087255066
+    ],
+    "bootstrap_seed": 993719,
+    "bootstrap_replicates": 3000,
+    "strata": {
+      "source=specstory": {
+        "matched_sessions": 698,
+        "equal_session_mean_difference": 0.1251876108609633
+      },
+      "source=swe": {
+        "matched_sessions": 155,
+        "equal_session_mean_difference": 0.20456989247311827
+      },
+      "session_type=IDE": {
+        "matched_sessions": 597,
+        "equal_session_mean_difference": 0.11621600063811119
+      },
+      "session_type=CLI": {
+        "matched_sessions": 256,
+        "equal_session_mean_difference": 0.19417317708333334
+      }
+    }
+  },
+  "logical_eventual_after_pushback_diff_ds2_minus_ds1_bounds": [
+    -0.7760687641361539,
+    0.9009798413904825
+  ],
+  "missing_outcome_sensitivity": {
+    "definition": "q_g is the fraction of RS2/unknown cases in severity group g that would eventually receive resolver RV2.",
+    "zero_difference_frontier": [
+      {
+        "ds2_unknown_eventual_rv2_rate": 0.0,
+        "ds1_rate_at_zero_difference": 0.15600424495235382
+      },
+      {
+        "ds2_unknown_eventual_rv2_rate": 0.25,
+        "ds1_rate_at_zero_difference": 0.361963165567001
+      },
+      {
+        "ds2_unknown_eventual_rv2_rate": 0.5,
+        "ds1_rate_at_zero_difference": 0.5679220861816481
+      },
+      {
+        "ds2_unknown_eventual_rv2_rate": 0.75,
+        "ds1_rate_at_zero_difference": 0.7738810067962951
+      },
+      {
+        "ds2_unknown_eventual_rv2_rate": 1.0,
+        "ds1_rate_at_zero_difference": 0.9798399274109422
+      }
+    ],
+    "equal_unknown_rate_zero_difference": 0.8855609758524526,
+    "interpretation": "Under q1=q2=q only, DS2 remains higher until q exceeds the crossing. Without this assumption, the sign remains unidentified."
+  },
+  "interpretation": "Visible resolution is observed. The DS2-DS1 visibility contrast persists within source streams, matched repositories, and matched sessions. Eventual after-pushback recovery remains unidentified without assumptions about RS2 outcomes. Original labels are not independently validated; the corpus is nonrandom; resampling intervals are descriptive only.",
+  "third_party_rows_exported": 0,
+  "mr22_adversarial_severity_relabeling_certificates": {
+    "all": {
+      "minimum_reclassifications": 223,
+      "optimal_DS2_RS1_to_DS1_RS1": 223,
+      "optimal_DS1_RS2_to_DS2_RS2": 0,
+      "eligible_episode_denominator": 15948,
+      "fraction_of_eligible_episodes": 0.013982944569852019,
+      "original_fraction_ds1": 0.08048262151230548,
+      "original_fraction_ds2": 0.24246877296105804,
+      "relabelled_fraction_ds1": 0.09432815665091154,
+      "relabelled_fraction_ds2": 0.09402460456942004,
+      "strictly_smaller_k_certified_impossible_by_exhaustive_integer_search": true,
+      "model": "Allowed DS1/DS2 severity switches only, fixed RS1/RS2; two outcome-concordant directions enumerated exhaustively. Not an empirical misclassification estimate."
+    },
+    "specstory": {
+      "minimum_reclassifications": 170,
+      "optimal_DS2_RS1_to_DS1_RS1": 170,
+      "optimal_DS1_RS2_to_DS2_RS2": 0,
+      "eligible_episode_denominator": 11968,
+      "fraction_of_eligible_episodes": 0.014204545454545454,
+      "original_fraction_ds1": 0.07669643679219225,
+      "original_fraction_ds2": 0.23035230352303523,
+      "relabelled_fraction_ds1": 0.09092557338409936,
+      "relabelled_fraction_ds2": 0.09071504802561366,
+      "strictly_smaller_k_certified_impossible_by_exhaustive_integer_search": true,
+      "model": "Allowed DS1/DS2 severity switches only, fixed RS1/RS2; two outcome-concordant directions enumerated exhaustively. Not an empirical misclassification estimate."
+    },
+    "swe": {
+      "minimum_reclassifications": 55,
+      "optimal_DS2_RS1_to_DS1_RS1": 54,
+      "optimal_DS1_RS2_to_DS2_RS2": 1,
+      "eligible_episode_denominator": 3980,
+      "fraction_of_eligible_episodes": 0.013819095477386936,
+      "original_fraction_ds1": 0.09151905528717123,
+      "original_fraction_ds2": 0.2952755905511811,
+      "relabelled_fraction_ds1": 0.10452500661550675,
+      "relabelled_fraction_ds2": 0.1044776119402985,
+      "strictly_smaller_k_certified_impossible_by_exhaustive_integer_search": true,
+      "model": "Allowed DS1/DS2 severity switches only, fixed RS1/RS2; two outcome-concordant directions enumerated exhaustively. Not an empirical misclassification estimate."
+    }
+  },
+  "mr22_nested_repository_resampling_of_matched_sessions": {
+    "matched_sessions": 853,
+    "matched_repositories": 352,
+    "matched_episodes": 2775,
+    "equal_session_mean_difference": 0.13961229274828338,
+    "repo_level_cluster_resample_equal_session_mean_2p5_97p5": [
+      0.10717116811052602,
+      0.17299768964189452
+    ],
+    "equal_repository_mean_of_session_differences": 0.14054077919907632,
+    "repo_level_cluster_resample_equal_repository_mean_2p5_97p5": [
+      0.1017798217484882,
+      0.1809355907480072
+    ],
+    "leave_one_repository_out_equal_session_mean_range": [
+      0.13555864041729768,
+      0.14359678782755705
+    ],
+    "bootstrap_seed": 993720,
+    "bootstrap_replicates": 3000,
+    "resampling_unit": "source + repository; all matched sessions in each selected repository retained",
+    "estimand_definition": "Per-session DS2 minus DS1 observed RS1 rate. Equal-session mean weights each included session equally; equal-repository mean weights each included repository equally."
+  },
+  "mr22_high_confidence_session_matched_exploratory": {
+    "matched_sessions": 801,
+    "matched_repositories": 339,
+    "matched_episodes": 2537,
+    "equal_session_mean_difference": 0.14295226205338565,
+    "repo_level_cluster_resample_equal_session_mean_2p5_97p5": [
+      0.10865528601377658,
+      0.17657164954148713
+    ],
+    "equal_repository_mean_of_session_differences": 0.1436644029054666,
+    "repo_level_cluster_resample_equal_repository_mean_2p5_97p5": [
+      0.10382233097941061,
+      0.18439669556926194
+    ],
+    "leave_one_repository_out_equal_session_mean_range": [
+      0.138650893230567,
+      0.14723173001861525
+    ],
+    "bootstrap_seed": 993721,
+    "bootstrap_replicates": 3000,
+    "resampling_unit": "source + repository; all matched sessions in each selected repository retained",
+    "estimand_definition": "Per-session DS2 minus DS1 observed RS1 rate. Equal-session mean weights each included session equally; equal-repository mean weights each included repository equally."
+  },
+  "mr22_exactly_one_episode_per_severity_session_matched_exploratory": {
+    "matched_sessions": 307,
+    "matched_repositories": 171,
+    "matched_episodes": 614,
+    "equal_session_mean_difference": 0.16938110749185667,
+    "repo_level_cluster_resample_equal_session_mean_2p5_97p5": [
+      0.11730205278592376,
+      0.22356495468277945
+    ],
+    "equal_repository_mean_of_session_differences": 0.16701899676728052,
+    "repo_level_cluster_resample_equal_repository_mean_2p5_97p5": [
+      0.10317884082186142,
+      0.23202874335597448
+    ],
+    "leave_one_repository_out_equal_session_mean_range": [
+      0.1611842105263158,
+      0.17627118644067796
+    ],
+    "bootstrap_seed": 993722,
+    "bootstrap_replicates": 3000,
+    "resampling_unit": "source + repository; all matched sessions in each selected repository retained",
+    "estimand_definition": "Per-session DS2 minus DS1 observed RS1 rate. Equal-session mean weights each included session equally; equal-repository mean weights each included repository equally."
+  },
+  "mr22_scope_and_cautions": {
+    "original_annotations_unchanged": true,
+    "author_validation_source_version": "Tang et al. arXiv:2605.29442v1 Appendix A.2 Table 5: expert 100-record axis checks; severity judge accuracy 0.64 and inter-human agreement 0.71; original-author QC, not our reannotation.",
+    "label_reclassification_threshold_is_adversarial_not_calibrated": true,
+    "source_sha256_verified": true,
+    "third_party_episode_rows_exported": 0,
+    "high_confidence_and_one_to_one_subsets_are_post_hoc_robustness_checks": true,
+    "multiple_exploratory_checks_not_for_confirmatory_hypothesis_tests": true,
+    "nonrandom_corpus_does_not_support_population_CI": true,
+    "repo_level_cluster_resampling_is_preferred_over_naive_session_resampling_for_nested_dependence": true,
+    "interpretation": "Robustness of visibility association within labeled records only. No causal severity effect, external label validity, or eventual recovery estimate."
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "baseline": "MR31R6",
+  "review_proposals_only": true,
+  "manuscript_changed": false,
+  "source_hashes": {
+    "aggregate_results.json": "2020eafd809b3a6888fefa35c48ad036322f3c4faaab0056303168791b60f7e1",
+    "matched_coverage_results.json": "511a62d44f6c0e38ecda840d23c26431beb8b94d653cc584da17c22268b898d3"
+  },
+  "figures": {
+    "N1_Visibility_And_Unknown": {
+      "rows": [
+        {
+          "severity": "DS1",
+          "episodes": 14587,
+          "visible_RS1": 1174,
+          "unknown_RS2": 13413,
+          "visible_percent": 8.048262151230547,
+          "unknown_percent": 91.95173784876945,
+          "source": "aggregate_results.json:all_severity.DS1"
+        },
+        {
+          "severity": "DS2",
+          "episodes": 1361,
+          "visible_RS1": 330,
+          "unknown_RS2": 1031,
+          "visible_percent": 24.246877296105804,
+          "unknown_percent": 75.75312270389419,
+          "source": "aggregate_results.json:all_severity.DS2"
+        }
+      ],
+      "source_total": 16118,
+      "other_severity_excluded": 170,
+      "caption": "Recorded resolution visibility and unknown final status in the pinned release. Percentages use the stated episode denominators; DS1 and DS2 constitute 15,948 of the 16,118 original episodes. RS1 records a source-labelled visible resolution. Unknown final status is not an observed repair failure, and visible resolution does not independently verify terminal code correctness."
+    },
+    "N2_Matched_Session_Ties": {
+      "source": "matched_coverage_results.json:matched_session_sign_counts and matched_session_tie_components",
+      "panels": [
+        {
+          "title": "(a) All matched-session contrasts",
+          "rows": [
+            {
+              "category": "positive",
+              "count": 201,
+              "denominator": 853,
+              "percent": 23.563892145369284
+            },
+            {
+              "category": "negative",
+              "count": 99,
+              "denominator": 853,
+              "percent": 11.606096131301289
+            },
+            {
+              "category": "tie",
+              "count": 553,
+              "denominator": 853,
+              "percent": 64.83001172332942
+            }
+          ]
+        },
+        {
+          "title": "(b) Composition of the tied sessions",
+          "rows": [
+            {
+              "category": "both_rates_zero",
+              "count": 528,
+              "denominator": 553,
+              "percent": 95.47920433996383
+            },
+            {
+              "category": "both_rates_one",
+              "count": 22,
+              "denominator": 553,
+              "percent": 3.9783001808318263
+            },
+            {
+              "category": "equal_interior_rates",
+              "count": 3,
+              "denominator": 553,
+              "percent": 0.5424954792043399
+            }
+          ]
+        }
+      ],
+      "caption": "Distribution of recorded RS1 contrasts in the 853 original matched sessions. Panel (a) reports the sign of the within-session DS2-minus-DS1 visibility difference. Panel (b) decomposes the 553 ties, of which 528 have no recorded resolution in either class. The denominators differ between panels. A zero visibility contrast does not establish equal eventual recovery."
+    },
+    "N3_Repository_Resampling": {
+      "rows": [
+        {
+          "label": "Primary, equal-session weights",
+          "sessions": 853,
+          "repositories": 352,
+          "mean_pp": 13.961229274828337,
+          "band_pp": [
+            10.717116811052602,
+            17.29976896418945
+          ],
+          "post_hoc_restricted_cohort": false,
+          "source": "aggregate_results.json:mr22_nested_repository_resampling_of_matched_sessions",
+          "mean_key": "equal_session_mean_difference",
+          "band_key": "repo_level_cluster_resample_equal_session_mean_2p5_97p5",
+          "resample_replicates": 3000,
+          "resample_seed": 993720
+        },
+        {
+          "label": "Equal-repository weights",
+          "sessions": 853,
+          "repositories": 352,
+          "mean_pp": 14.054077919907632,
+          "band_pp": [
+            10.17798217484882,
+            18.09355907480072
+          ],
+          "post_hoc_restricted_cohort": false,
+          "source": "aggregate_results.json:mr22_nested_repository_resampling_of_matched_sessions",
+          "mean_key": "equal_repository_mean_of_session_differences",
+          "band_key": "repo_level_cluster_resample_equal_repository_mean_2p5_97p5",
+          "resample_replicates": 3000,
+          "resample_seed": 993720
+        },
+        {
+          "label": "Extraction confidence = high",
+          "sessions": 801,
+          "repositories": 339,
+          "mean_pp": 14.295226205338565,
+          "band_pp": [
+            10.865528601377658,
+            17.657164954148712
+          ],
+          "post_hoc_restricted_cohort": true,
+          "source": "aggregate_results.json:mr22_high_confidence_session_matched_exploratory",
+          "mean_key": "equal_session_mean_difference",
+          "band_key": "repo_level_cluster_resample_equal_session_mean_2p5_97p5",
+          "resample_replicates": 3000,
+          "resample_seed": 993721
+        },
+        {
+          "label": "One DS1 and one DS2 per session",
+          "sessions": 307,
+          "repositories": 171,
+          "mean_pp": 16.938110749185668,
+          "band_pp": [
+            11.730205278592376,
+            22.356495468277945
+          ],
+          "post_hoc_restricted_cohort": true,
+          "source": "aggregate_results.json:mr22_exactly_one_episode_per_severity_session_matched_exploratory",
+          "mean_key": "equal_session_mean_difference",
+          "band_key": "repo_level_cluster_resample_equal_session_mean_2p5_97p5",
+          "resample_replicates": 3000,
+          "resample_seed": 993722
+        }
+      ],
+      "band_definition": "Repository-cluster resampling; descriptive 2.5th-97.5th percentiles, not population confidence intervals",
+      "caption": "Recorded RS1 visibility contrast under alternative weights and restricted matched cohorts. Points are DS2-minus-DS1 differences; horizontal bands show the 2.5th-97.5th percentiles from repository-level resampling of the observed clusters. These are descriptive resampling bands, not population confidence intervals. The two restricted cohorts are post-hoc checks and do not independently validate severity labels or eventual repair."
+    }
+  },
+  "layout_checks": {
+    "N1_Visibility_And_Unknown": {
+      "numeric_and_editorial_labels_intersecting_plot": [],
+      "external_text_overlaps": [],
+      "figure_size_inches": [
+        10.4,
+        6.5
+      ],
+      "font": "DejaVu Sans",
+      "PDF_font_type": 42
+    },
+    "N2_Matched_Session_Ties": {
+      "numeric_and_editorial_labels_intersecting_plot": [],
+      "external_text_overlaps": [],
+      "figure_size_inches": [
+        10.4,
+        8.5
+      ],
+      "font": "DejaVu Sans",
+      "PDF_font_type": 42
+    },
+    "N3_Repository_Resampling": {
+      "numeric_and_editorial_labels_intersecting_plot": [],
+      "external_text_overlaps": [],
+      "figure_size_inches": [
+        10.4,
+        7.6
+      ],
+      "font": "DejaVu Sans",
+      "PDF_font_type": 42
+    }
+  }
+}

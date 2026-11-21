@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="748.8pt" height="468pt" viewBox="0 0 748.8 468" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-21T16:57:20.313337</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 468 
+L 748.8 468 
+L 748.8 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 127.296 244.764 
+L 696.384 244.764 
+L 696.384 134.784 
+L 127.296 134.784 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 127.296 244.764 
+L 127.296 134.784 
+" clip-path="url(#pb23a2f619d)" style="fill: none; stroke: #e4e9ed; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2">
+      <defs>
+       <path id="mfbb99a9c1d" d="M 0 0 
+L 0 3.2 
+" style="stroke: #556878; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#mfbb99a9c1d" x="127.296" y="244.764" style="fill: #556878; stroke: #556878; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #556878" x="127.296" y="262.942359" transform="rotate(-0 127.296 262.942359)">0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 241.1136 244.764 
+L 241.1136 134.784 
+" clip-path="url(#pb23a2f619d)" style="fill: none; stroke: #e4e9ed; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#mfbb99a9c1d" x="241.1136" y="244.764" style="fill: #556878; stroke: #556878; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #556878" x="241.1136" y="262.942359" transform="rotate(-0 241.1136 262.942359)">20</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 354.9312 244.764 
+L 354.9312 134.784 
+" clip-path="url(#pb23a2f619d)" style="fill: none; stroke: #e4e9ed; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#mfbb99a9c1d" x="354.9312" y="244.764" style="fill: #556878; stroke: #556878; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #556878" x="354.9312" y="262.942359" transform="rotate(-0 354.9312 262.942359)">40</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <path d="M 468.7488 244.764 
+L 468.7488 134.784 
+" clip-path="url(#pb23a2f619d)" style="fill: none; stroke: #e4e9ed; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#mfbb99a9c1d" x="468.7488" y="244.764" style="fill: #556878; stroke: #556878; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #556878" x="468.7488" y="262.942359" transform="rotate(-0 468.7488 262.942359)">60</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_9">
+      <path d="M 582.5664 244.764 
+L 582.5664 134.784 
+" clip-path="url(#pb23a2f619d)" style="fill: none; stroke: #e4e9ed; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#mfbb99a9c1d" x="582.5664" y="244.764" style="fill: #556878; stroke: #556878; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #556878" x="582.5664" y="262.942359" transform="rotate(-0 582.5664 262.942359)">80</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_11">
+      <path d="M 696.384 244.764 
+L 696.384 134.784 
+" clip-path="url(#pb23a2f619d)" style="fill: none; stroke: #e4e9ed; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#mfbb99a9c1d" x="696.384" y="244.764" style="fill: #556878; stroke: #556878; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #556878" x="696.384" y="262.942359" transform="rotate(-0 696.384 262.942359)">100</text>
+     </g>
+    </g>
+    <g id="text_7">
+     <text style="font-size: 11.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #17344b" x="411.84" y="277.864234" transform="rotate(-0 411.84 277.864234)">Share of episodes within each severity group (%)</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2"/>
+   <g id="patch_3">
+    <path d="M 127.296 172.987579 
+L 173.097694 172.987579 
+L 173.097694 148.676211 
+L 127.296 148.676211 
+z
+" clip-path="url(#pb23a2f619d)" style="fill: #2471a3"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 127.296 230.871789 
+L 265.282069 230.871789 
+L 265.282069 206.560421 
+L 127.296 206.560421 
+z
+" clip-path="url(#pb23a2f619d)" style="fill: #2471a3"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 173.097694 172.987579 
+L 696.384 172.987579 
+L 696.384 148.676211 
+L 173.097694 148.676211 
+z
+" clip-path="url(#pb23a2f619d)" style="fill: #c5cdd5"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 265.282069 230.871789 
+L 696.384 230.871789 
+L 696.384 206.560421 
+L 265.282069 206.560421 
+z
+" clip-path="url(#pb23a2f619d)" style="fill: #c5cdd5"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 127.296 244.764 
+L 696.384 244.764 
+" style="fill: none; stroke: #c5cdd5; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+  </g>
+  <g id="text_8">
+   <text style="font-weight: 600; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #17344b" x="44.928" y="38.013188" transform="rotate(-0 44.928 38.013188)">Recorded resolution and unknown final status</text>
+  </g>
+  <g id="text_9">
+   <text style="font-size: 11.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #556878" x="44.928" y="61.204516" transform="rotate(-0 44.928 61.204516)">Episode-level source labels | DS1 and DS2 together: 15,948 episodes</text>
+  </g>
+  <g id="text_10">
+   <text style="font-weight: 600; font-size: 13.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #17344b" x="44.928" y="159.409051" transform="rotate(-0 44.928 159.409051)">DS1</text>
+  </g>
+  <g id="text_11">
+   <text style="font-size: 10.7px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #556878" x="44.928" y="176.420426" transform="rotate(-0 44.928 176.420426)">n = 14,587</text>
+  </g>
+  <g id="text_12">
+   <text style="font-weight: 600; font-size: 13.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #17344b" x="44.928" y="217.293262" transform="rotate(-0 44.928 217.293262)">DS2</text>
+  </g>
+  <g id="text_13">
+   <text style="font-size: 10.7px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #556878" x="44.928" y="234.304637" transform="rotate(-0 44.928 234.304637)">n = 1,361</text>
+  </g>
+  <g id="text_14">
+   <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #556878" x="44.928" y="315.9" transform="rotate(-0 44.928 315.9)">Original label</text>
+  </g>
+  <g id="text_15">
+   <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #556878" x="187.2" y="315.9" transform="rotate(-0 187.2 315.9)">Visible RS1: count / total (%)</text>
+  </g>
+  <g id="text_16">
+   <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #556878" x="464.256" y="315.9" transform="rotate(-0 464.256 315.9)">Unknown: count / total (%)</text>
+  </g>
+  <g id="text_17">
+   <text style="font-weight: 600; font-size: 12.2px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #17344b" x="44.928" y="344.448" transform="rotate(-0 44.928 344.448)">DS1</text>
+  </g>
+  <g id="text_18">
+   <text style="font-size: 12.2px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #2471a3" x="187.2" y="344.448" transform="rotate(-0 187.2 344.448)">1,174 / 14,587  (8.05%)</text>
+  </g>
+  <g id="text_19">
+   <text style="font-size: 12.2px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #17344b" x="464.256" y="344.448" transform="rotate(-0 464.256 344.448)">13,413 / 14,587  (91.95%)</text>
+  </g>
+  <g id="text_20">
+   <text style="font-weight: 600; font-size: 12.2px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #17344b" x="44.928" y="372.996" transform="rotate(-0 44.928 372.996)">DS2</text>
+  </g>
+  <g id="text_21">
+   <text style="font-size: 12.2px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #2471a3" x="187.2" y="372.996" transform="rotate(-0 187.2 372.996)">330 / 1,361  (24.25%)</text>
+  </g>
+  <g id="text_22">
+   <text style="font-size: 12.2px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #17344b" x="464.256" y="372.996" transform="rotate(-0 464.256 372.996)">1,031 / 1,361  (75.75%)</text>
+  </g>
+  <g id="text_23">
+   <text style="font-size: 10.6px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #556878" x="44.928" y="411.84" transform="rotate(-0 44.928 411.84)">The 170 other-severity episodes in the 16,118-episode release are outside these bars.</text>
+  </g>
+  <g id="text_24">
+   <text style="font-size: 10.6px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #556878" x="44.928" y="431.964" transform="rotate(-0 44.928 431.964)">Unknown status is not an observed failure. RS1 does not independently verify terminal repair.</text>
+  </g>
+  <g id="legend_1">
+   <g id="patch_8">
+    <path d="M 126.144 101.42625 
+L 141.824 101.42625 
+L 141.824 93.58625 
+L 126.144 93.58625 
+z
+" style="fill: #2471a3"/>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 11.2px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #17344b" x="150.784" y="101.42625" transform="rotate(-0 150.784 101.42625)">Recorded visible resolution (RS1)</text>
+   </g>
+   <g id="patch_9">
+    <path d="M 358.7155 101.42625 
+L 374.3955 101.42625 
+L 374.3955 93.58625 
+L 358.7155 93.58625 
+z
+" style="fill: #c5cdd5"/>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 11.2px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #17344b" x="383.3555" y="101.42625" transform="rotate(-0 383.3555 101.42625)">Unknown final status (RS2)</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pb23a2f619d">
+   <rect x="127.296" y="134.784" width="569.088" height="109.98"/>
+  </clipPath>
+ </defs>
+</svg>

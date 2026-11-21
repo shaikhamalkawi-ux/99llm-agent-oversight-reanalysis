@@ -1,0 +1,340 @@
+{
+  "RV2_partial_identification": {
+    "M": 853,
+    "assumption_frontier_q2_to_q1": {
+      "0": {
+        "inside_unit_square": true,
+        "q1_for_equal_zero": 0.13098777280991283,
+        "q2": 0.0
+      },
+      "1": {
+        "inside_unit_square": true,
+        "q1_for_equal_zero": 0.9748745679127945,
+        "q2": 1.0
+      },
+      "1/2": {
+        "inside_unit_square": true,
+        "q1_for_equal_zero": 0.5529311703613536,
+        "q2": 0.5
+      },
+      "1/4": {
+        "inside_unit_square": true,
+        "q1_for_equal_zero": 0.3419594715856332,
+        "q2": 0.25
+      },
+      "3/4": {
+        "inside_unit_square": true,
+        "q1_for_equal_zero": 0.7639028691370741,
+        "q2": 0.75
+      }
+    },
+    "claim_limits": [
+      "Observed RS1 visible difference is NOT the same as observed RV2 difference d0.",
+      "RS2 None is unknown, not a failed repair.",
+      "The bounds are exact logical finite-frame constraints, not statistical intervals, causal effects or population frequency.",
+      "q1 and q2 are hypothetical common-fraction scenarios, not estimated or calibrated probabilities."
+    ],
+    "confirmed_RV2_DS2_minus_DS1_difference_d0": {
+      "exact": "16787/143304",
+      "value": 0.11714257801596606
+    },
+    "equal_unknown_RV2_completion_rate_zero_crossing": {
+      "exact": "16787/20007",
+      "value": 0.8390563302844004
+    },
+    "estimand": "Equal-session mean over ORIGINAL 853 matched sessions of per-session eventual RV2-rate DS2 minus DS1; known RS1 resolver fields fixed, all RS2/None outcomes free to complete as RV2 or non-RV2.",
+    "hypothetical_eventual_RV2_difference_sharp_bounds": [
+      {
+        "exact": "-7955/10236",
+        "value": -0.7771590465025401
+      },
+      {
+        "exact": "124937/143304",
+        "value": 0.8718319097861889
+      }
+    ],
+    "independent_formula_replay": "PASS exact rational per-session endpoint summation matched aggregated formula",
+    "matched_groups": {
+      "DS1": {
+        "episodes": 1772,
+        "rs1_visible": 183,
+        "rs2_unknown": 1589,
+        "rv2_visible": 175
+      },
+      "DS2": {
+        "episodes": 1003,
+        "rs1_visible": 240,
+        "rs2_unknown": 763,
+        "rv2_visible": 214
+      }
+    },
+    "mathematical_form": "D(q1,q2)=d0+U2*q2-U1*q1, q in [0,1]; bounds D in [d0-U1,d0+U2].",
+    "observed_RS1_equal_session_difference": {
+      "exact": "6669/47768",
+      "value": 0.13961229274828338
+    },
+    "observed_RS1_equal_session_risks": {
+      "DS1": {
+        "exact": "5049/47768",
+        "value": 0.10569837548149388
+      },
+      "DS2": {
+        "exact": "837/3412",
+        "value": 0.24531066822977726
+      }
+    },
+    "observed_confirmed_RV2_equal_session_lower_risks": {
+      "DS1": {
+        "exact": "14419/143304",
+        "value": 0.10061826606375258
+      },
+      "DS2": {
+        "exact": "743/3412",
+        "value": 0.21776084407971863
+      }
+    },
+    "original_source_sha256": "7e0693675242a625bdb586bcd8cef23f5da76c65cf840108c3c24b6b479b9f57",
+    "sharpness": "All independent RS2 completions allowed. Set all unknown DS2 to non-RV2 and DS1 to RV2 for lower bound; reverse for upper bound; the endpoints are achievable on the actual matched-session rows.",
+    "unknown_RS2_equal_session_shares": {
+      "DS1": {
+        "exact": "42719/47768",
+        "value": 0.8943016245185061
+      },
+      "DS2": {
+        "exact": "2575/3412",
+        "value": 0.7546893317702228
+      }
+    }
+  },
+  "baseline_MR30_unchanged": true,
+  "first_paper_only": true,
+  "matched_session_eligibility": {
+    "DS1_fraction_in_matched_episodes": "1772/14587",
+    "DS2_fraction_in_matched_episodes": "1003/1361",
+    "all_DS1_DS2_sessions": {
+      "counts": {
+        "DS1_RS1": 1174,
+        "DS1_RS2": 13413,
+        "DS1_RV2": 1080,
+        "DS1_episodes": 14587,
+        "DS1_sessions_with_label": 8263,
+        "DS2_RS1": 330,
+        "DS2_RS2": 1031,
+        "DS2_RV2": 296,
+        "DS2_episodes": 1361,
+        "DS2_sessions_with_label": 1180,
+        "any_visible_RS1": 1300,
+        "any_visible_RV2": 1188,
+        "episodes": 15948,
+        "repositories": 1229,
+        "sessions": 8590
+      },
+      "session_metadata": {
+        "agent": {
+          "Claude Code": 2870,
+          "Codex": 61,
+          "Copilot CLI": 1,
+          "Copilot IDE": 131,
+          "Cursor CLI": 11,
+          "Cursor IDE": 1240,
+          "Gemini CLI": 14,
+          "OpenCode": 174,
+          "Unknown": 4088
+        },
+        "alignment_goal": {
+          "MIXED_WITHIN_SESSION": 3283,
+          "both": 1786,
+          "instruction": 2983,
+          "intention": 538
+        },
+        "confidence": {
+          "MIXED_WITHIN_SESSION": 750,
+          "high": 7656,
+          "medium": 184
+        },
+        "session_type": {
+          "CLI": 3289,
+          "IDE": 5301
+        },
+        "source": {
+          "specstory": 6322,
+          "swe": 2268
+        }
+      },
+      "session_size": {
+        "histogram": {
+          "1": 4407,
+          "10": 2,
+          "2": 2281,
+          "3": 1106,
+          "4": 494,
+          "5": 188,
+          "6": 75,
+          "7": 22,
+          "8": 14,
+          "9": 1
+        },
+        "max": 10,
+        "mean": 1.8565774155995343,
+        "median": 1.0,
+        "min": 1
+      },
+      "within_session_metadata_inconsistency": {
+        "alignment_goal": 3283,
+        "confidence": 750
+      }
+    },
+    "all_counts_reconciled": true,
+    "definition": "DS1/DS2 episodes only; unique session key=(source,repository_id,session_id); matched iff at least one DS1 and one DS2. This is a STRUCTURAL selection, not a random sample.",
+    "eligibility_mechanism_caution": "A matched session must contain both DS1 and DS2, so size and label mix are selection prerequisites; these contrasts diagnose scope, not a causal selection-bias correction.",
+    "matched_sessions": {
+      "counts": {
+        "DS1_RS1": 183,
+        "DS1_RS2": 1589,
+        "DS1_RV2": 175,
+        "DS1_episodes": 1772,
+        "DS1_sessions_with_label": 853,
+        "DS2_RS1": 240,
+        "DS2_RS2": 763,
+        "DS2_RV2": 214,
+        "DS2_episodes": 1003,
+        "DS2_sessions_with_label": 853,
+        "any_visible_RS1": 325,
+        "any_visible_RV2": 298,
+        "episodes": 2775,
+        "repositories": 352,
+        "sessions": 853
+      },
+      "session_metadata": {
+        "agent": {
+          "Claude Code": 236,
+          "Codex": 4,
+          "Copilot CLI": 1,
+          "Copilot IDE": 6,
+          "Cursor CLI": 1,
+          "Cursor IDE": 139,
+          "Gemini CLI": 2,
+          "OpenCode": 6,
+          "Unknown": 458
+        },
+        "alignment_goal": {
+          "MIXED_WITHIN_SESSION": 708,
+          "both": 31,
+          "instruction": 110,
+          "intention": 4
+        },
+        "confidence": {
+          "MIXED_WITHIN_SESSION": 153,
+          "high": 700
+        },
+        "session_type": {
+          "CLI": 256,
+          "IDE": 597
+        },
+        "source": {
+          "specstory": 698,
+          "swe": 155
+        }
+      },
+      "session_size": {
+        "histogram": {
+          "10": 2,
+          "2": 307,
+          "3": 261,
+          "4": 147,
+          "5": 77,
+          "6": 39,
+          "7": 10,
+          "8": 9,
+          "9": 1
+        },
+        "max": 10,
+        "mean": 3.253223915592028,
+        "median": 3,
+        "min": 2
+      },
+      "within_session_metadata_inconsistency": {
+        "alignment_goal": 708,
+        "confidence": 153
+      }
+    },
+    "no_population_generalization": true,
+    "nonmatched_sessions": {
+      "counts": {
+        "DS1_RS1": 991,
+        "DS1_RS2": 11824,
+        "DS1_RV2": 905,
+        "DS1_episodes": 12815,
+        "DS1_sessions_with_label": 7410,
+        "DS2_RS1": 90,
+        "DS2_RS2": 268,
+        "DS2_RV2": 82,
+        "DS2_episodes": 358,
+        "DS2_sessions_with_label": 327,
+        "any_visible_RS1": 975,
+        "any_visible_RV2": 890,
+        "episodes": 13173,
+        "repositories": 1164,
+        "sessions": 7737
+      },
+      "session_metadata": {
+        "agent": {
+          "Claude Code": 2634,
+          "Codex": 57,
+          "Copilot IDE": 125,
+          "Cursor CLI": 10,
+          "Cursor IDE": 1101,
+          "Gemini CLI": 12,
+          "OpenCode": 168,
+          "Unknown": 3630
+        },
+        "alignment_goal": {
+          "MIXED_WITHIN_SESSION": 2575,
+          "both": 1755,
+          "instruction": 2873,
+          "intention": 534
+        },
+        "confidence": {
+          "MIXED_WITHIN_SESSION": 597,
+          "high": 6956,
+          "medium": 184
+        },
+        "session_type": {
+          "CLI": 3033,
+          "IDE": 4704
+        },
+        "source": {
+          "specstory": 5624,
+          "swe": 2113
+        }
+      },
+      "session_size": {
+        "histogram": {
+          "1": 4407,
+          "2": 1974,
+          "3": 845,
+          "4": 347,
+          "5": 111,
+          "6": 36,
+          "7": 12,
+          "8": 5
+        },
+        "max": 8,
+        "mean": 1.7025979061651804,
+        "median": 1,
+        "min": 1
+      },
+      "within_session_metadata_inconsistency": {
+        "alignment_goal": 2575,
+        "confidence": 597
+      }
+    },
+    "selected_episode_fraction_decimal": 0.1740030097817908,
+    "selected_session_fraction": "853/8590",
+    "selected_session_fraction_decimal": 0.09930151338766006,
+    "source_mixed_stage": true
+  },
+  "schema": "99llm_MR31_posthoc_same_matched_session_RV2_bounds_and_selection_v1",
+  "source_rows_redistributed": 0,
+  "status": "POSTHOC_SECONDARY_ANALYSIS_NOT_NEW_SOURCE_VALIDATION"
+}

@@ -1,0 +1,33 @@
+{
+  "adversarial_reclassification_certificate_fraction_of_all_two_class_records": 0.013982944569852019,
+  "adversarial_reclassification_certificate_fraction_of_visible_DS2": 0.6757575757575758,
+  "fraction_of_ties_with_no_visible_resolution_in_either_class": 0.9547920433996383,
+  "matched_episode_fraction_of_two_class_episodes": 0.1740030097817908,
+  "matched_repo_fraction_of_two_class_repositories": 0.28641171684296174,
+  "matched_session_count": 853,
+  "matched_session_episode_count": 2775,
+  "matched_session_fraction_of_two_class_sessions": 0.09930151338766006,
+  "matched_session_sign_counts": {
+    "negative": 99,
+    "positive": 201,
+    "tie": 553
+  },
+  "matched_session_sign_fractions": {
+    "negative": 0.1160609613130129,
+    "positive": 0.23563892145369286,
+    "tie": 0.6483001172332943
+  },
+  "matched_session_tie_components": {
+    "both_rates_one": 22,
+    "both_rates_zero": 528,
+    "equal_interior_rates": 3
+  },
+  "original_episode_count": 16118,
+  "original_rows_republished": 0,
+  "original_source_sha256": "7e0693675242a625bdb586bcd8cef23f5da76c65cf840108c3c24b6b479b9f57",
+  "repositories_containing_at_least_one_matched_session": 352,
+  "scope": "Descriptive, released-label selection audit. The matched subset is not assumed representative; tie and label-error analyses do not identify eventual recovery or a causal intervention effect.",
+  "two_class_distinct_source_repositories": 1229,
+  "two_class_distinct_source_sessions": 8590,
+  "two_class_episode_count": 15948
+}

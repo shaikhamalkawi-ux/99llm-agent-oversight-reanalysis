@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="748.8pt" height="612pt" viewBox="0 0 748.8 612" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-21T16:57:20.701681</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 612 
+L 748.8 612 
+L 748.8 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 243.36 264.996 
+L 554.112 264.996 
+L 554.112 139.536 
+L 243.36 139.536 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 243.36 264.996 
+L 243.36 139.536 
+" clip-path="url(#pe1e16822e9)" style="fill: none; stroke: #e4e9ed; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2">
+      <defs>
+       <path id="m3921ec8782" d="M 0 0 
+L 0 3.2 
+" style="stroke: #556878; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m3921ec8782" x="243.36" y="264.996" style="fill: #556878; stroke: #556878; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #556878" x="243.36" y="283.174359" transform="rotate(-0 243.36 283.174359)">0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 321.048 264.996 
+L 321.048 139.536 
+" clip-path="url(#pe1e16822e9)" style="fill: none; stroke: #e4e9ed; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m3921ec8782" x="321.048" y="264.996" style="fill: #556878; stroke: #556878; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #556878" x="321.048" y="283.174359" transform="rotate(-0 321.048 283.174359)">25</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 398.736 264.996 
+L 398.736 139.536 
+" clip-path="url(#pe1e16822e9)" style="fill: none; stroke: #e4e9ed; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m3921ec8782" x="398.736" y="264.996" style="fill: #556878; stroke: #556878; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #556878" x="398.736" y="283.174359" transform="rotate(-0 398.736 283.174359)">50</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <path d="M 476.424 264.996 
+L 476.424 139.536 
+" clip-path="url(#pe1e16822e9)" style="fill: none; stroke: #e4e9ed; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#m3921ec8782" x="476.424" y="264.996" style="fill: #556878; stroke: #556878; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #556878" x="476.424" y="283.174359" transform="rotate(-0 476.424 283.174359)">75</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_9">
+      <path d="M 554.112 264.996 
+L 554.112 139.536 
+" clip-path="url(#pe1e16822e9)" style="fill: none; stroke: #e4e9ed; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#m3921ec8782" x="554.112" y="264.996" style="fill: #556878; stroke: #556878; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #556878" x="554.112" y="283.174359" transform="rotate(-0 554.112 283.174359)">100</text>
+     </g>
+    </g>
+    <g id="text_6">
+     <text style="font-size: 11.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #17344b" x="398.736" y="298.096234" transform="rotate(-0 398.736 298.096234)">Share of 853 matched sessions (%)</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2"/>
+   <g id="patch_3">
+    <path d="M 243.36 149.991 
+L 316.585266 149.991 
+L 316.585266 170.901 
+L 243.36 170.901 
+z
+" clip-path="url(#pe1e16822e9)" style="fill: #2471a3"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 243.36 191.811 
+L 279.426176 191.811 
+L 279.426176 212.721 
+L 243.36 212.721 
+z
+" clip-path="url(#pe1e16822e9)" style="fill: #208574"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 243.36 233.631 
+L 444.820558 233.631 
+L 444.820558 254.541 
+L 243.36 254.541 
+z
+" clip-path="url(#pe1e16822e9)" style="fill: #c5cdd5"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 243.36 264.996 
+L 554.112 264.996 
+" style="fill: none; stroke: #c5cdd5; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_7">
+    <path d="M 243.36 479.196 
+L 554.112 479.196 
+L 554.112 353.736 
+L 243.36 353.736 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_3">
+    <g id="xtick_6">
+     <g id="line2d_11">
+      <path d="M 243.36 479.196 
+L 243.36 353.736 
+" clip-path="url(#pb4512ae974)" style="fill: none; stroke: #e4e9ed; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#m3921ec8782" x="243.36" y="479.196" style="fill: #556878; stroke: #556878; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #556878" x="243.36" y="497.374359" transform="rotate(-0 243.36 497.374359)">0</text>
+     </g>
+    </g>
+    <g id="xtick_7">
+     <g id="line2d_13">
+      <path d="M 321.048 479.196 
+L 321.048 353.736 
+" clip-path="url(#pb4512ae974)" style="fill: none; stroke: #e4e9ed; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_14">
+      <g>
+       <use xlink:href="#m3921ec8782" x="321.048" y="479.196" style="fill: #556878; stroke: #556878; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #556878" x="321.048" y="497.374359" transform="rotate(-0 321.048 497.374359)">25</text>
+     </g>
+    </g>
+    <g id="xtick_8">
+     <g id="line2d_15">
+      <path d="M 398.736 479.196 
+L 398.736 353.736 
+" clip-path="url(#pb4512ae974)" style="fill: none; stroke: #e4e9ed; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_16">
+      <g>
+       <use xlink:href="#m3921ec8782" x="398.736" y="479.196" style="fill: #556878; stroke: #556878; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #556878" x="398.736" y="497.374359" transform="rotate(-0 398.736 497.374359)">50</text>
+     </g>
+    </g>
+    <g id="xtick_9">
+     <g id="line2d_17">
+      <path d="M 476.424 479.196 
+L 476.424 353.736 
+" clip-path="url(#pb4512ae974)" style="fill: none; stroke: #e4e9ed; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_18">
+      <g>
+       <use xlink:href="#m3921ec8782" x="476.424" y="479.196" style="fill: #556878; stroke: #556878; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #556878" x="476.424" y="497.374359" transform="rotate(-0 476.424 497.374359)">75</text>
+     </g>
+    </g>
+    <g id="xtick_10">
+     <g id="line2d_19">
+      <path d="M 554.112 479.196 
+L 554.112 353.736 
+" clip-path="url(#pb4512ae974)" style="fill: none; stroke: #e4e9ed; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_20">
+      <g>
+       <use xlink:href="#m3921ec8782" x="554.112" y="479.196" style="fill: #556878; stroke: #556878; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #556878" x="554.112" y="497.374359" transform="rotate(-0 554.112 497.374359)">100</text>
+     </g>
+    </g>
+    <g id="text_12">
+     <text style="font-size: 11.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #17344b" x="398.736" y="512.296234" transform="rotate(-0 398.736 512.296234)">Share of 553 ties (%)</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_4"/>
+   <g id="patch_8">
+    <path d="M 243.36 364.191 
+L 540.063537 364.191 
+L 540.063537 385.101 
+L 243.36 385.101 
+z
+" clip-path="url(#pb4512ae974)" style="fill: #2471a3"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 243.36 406.011 
+L 255.722647 406.011 
+L 255.722647 426.921 
+L 243.36 426.921 
+z
+" clip-path="url(#pb4512ae974)" style="fill: #208574"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 243.36 447.831 
+L 245.045816 447.831 
+L 245.045816 468.741 
+L 243.36 468.741 
+z
+" clip-path="url(#pb4512ae974)" style="fill: #c5cdd5"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 243.36 479.196 
+L 554.112 479.196 
+" style="fill: none; stroke: #c5cdd5; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+  </g>
+  <g id="text_13">
+   <text style="font-weight: 600; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #17344b" x="44.928" y="45.501188" transform="rotate(-0 44.928 45.501188)">What the 853 matched-session contrasts contain</text>
+  </g>
+  <g id="text_14">
+   <text style="font-size: 11.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #556878" x="44.928" y="77.282203" transform="rotate(-0 44.928 77.282203)">Within-session DS2-minus-DS1 differences in source-recorded RS1 visibility</text>
+  </g>
+  <g id="text_15">
+   <text style="font-weight: 600; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #17344b" x="44.928" y="99.756" transform="rotate(-0 44.928 99.756)">(a) All matched-session contrasts</text>
+  </g>
+  <g id="text_16">
+   <text style="font-size: 10.8px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #556878" x="591.552" y="129.744" transform="rotate(-0 591.552 129.744)">Count / 853 (%)</text>
+  </g>
+  <g id="text_17">
+   <text style="font-size: 11.3px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #17344b" x="44.928" y="163.564094" transform="rotate(-0 44.928 163.564094)">DS2 RS1 rate higher</text>
+  </g>
+  <g id="text_18">
+   <text style="font-size: 11.2px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #17344b" x="591.552" y="163.5365" transform="rotate(-0 591.552 163.5365)">201 / 853  (23.56%)</text>
+  </g>
+  <g id="text_19">
+   <text style="font-size: 11.3px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #17344b" x="44.928" y="205.384094" transform="rotate(-0 44.928 205.384094)">DS1 RS1 rate higher</text>
+  </g>
+  <g id="text_20">
+   <text style="font-size: 11.2px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #17344b" x="591.552" y="205.3565" transform="rotate(-0 591.552 205.3565)">99 / 853  (11.61%)</text>
+  </g>
+  <g id="text_21">
+   <text style="font-size: 11.3px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #17344b" x="44.928" y="247.204094" transform="rotate(-0 44.928 247.204094)">Equal recorded RS1 rates</text>
+  </g>
+  <g id="text_22">
+   <text style="font-size: 11.2px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #17344b" x="591.552" y="247.1765" transform="rotate(-0 591.552 247.1765)">553 / 853  (64.83%)</text>
+  </g>
+  <g id="text_23">
+   <text style="font-weight: 600; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #17344b" x="44.928" y="313.956" transform="rotate(-0 44.928 313.956)">(b) Composition of the tied sessions</text>
+  </g>
+  <g id="text_24">
+   <text style="font-size: 10.8px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #556878" x="591.552" y="343.944" transform="rotate(-0 591.552 343.944)">Count / 553 (%)</text>
+  </g>
+  <g id="text_25">
+   <text style="font-size: 11.3px; font-family: 'DejaVu Sans'; fill: #17344b" transform="translate(44.928 371.222674)">No visible RS1</text>
+   <text style="font-size: 11.3px; font-family: 'DejaVu Sans'; fill: #17344b" transform="translate(44.928 384.305514)">in either class</text>
+  </g>
+  <g id="text_26">
+   <text style="font-size: 11.2px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #17344b" x="591.552" y="377.7365" transform="rotate(-0 591.552 377.7365)">528 / 553  (95.48%)</text>
+  </g>
+  <g id="text_27">
+   <text style="font-size: 11.3px; font-family: 'DejaVu Sans'; fill: #17344b" transform="translate(44.928 413.042674)">All episodes visibly resolved</text>
+   <text style="font-size: 11.3px; font-family: 'DejaVu Sans'; fill: #17344b" transform="translate(44.928 426.125514)">in both classes</text>
+  </g>
+  <g id="text_28">
+   <text style="font-size: 11.2px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #17344b" x="591.552" y="419.5565" transform="rotate(-0 591.552 419.5565)">22 / 553  (3.98%)</text>
+  </g>
+  <g id="text_29">
+   <text style="font-size: 11.3px; font-family: 'DejaVu Sans'; fill: #17344b" transform="translate(44.928 454.862674)">Equal intermediate</text>
+   <text style="font-size: 11.3px; font-family: 'DejaVu Sans'; fill: #17344b" transform="translate(44.928 467.945514)">RS1 rates</text>
+  </g>
+  <g id="text_30">
+   <text style="font-size: 11.2px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #17344b" x="591.552" y="461.3765" transform="rotate(-0 591.552 461.3765)">3 / 553  (0.54%)</text>
+  </g>
+  <g id="text_31">
+   <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #556878" x="44.928" y="543.456" transform="rotate(-0 44.928 543.456)">Panel (b) uses the 553 ties as its denominator; 528/553 (95.48%) have no visible RS1 in either class.</text>
+  </g>
+  <g id="text_32">
+   <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #556878" x="44.928" y="567.324" transform="rotate(-0 44.928 567.324)">Equal recorded visibility does not establish equal eventual recovery or verified terminal repair.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pe1e16822e9">
+   <rect x="243.36" y="139.536" width="310.752" height="125.46"/>
+  </clipPath>
+  <clipPath id="pb4512ae974">
+   <rect x="243.36" y="353.736" width="310.752" height="125.46"/>
+  </clipPath>
+ </defs>
+</svg>
