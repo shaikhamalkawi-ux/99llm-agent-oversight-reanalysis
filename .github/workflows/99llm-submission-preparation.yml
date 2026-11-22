@@ -1,0 +1,48 @@
+name: 99llm MR31R9 scientific-lock manuscript and supplement package
+on:
+  push:
+    branches:
+      - mr31r9-submission-closure-20261122
+      - main
+    paths:
+      - 'submission_preparation/**'
+      - '.github/workflows/99llm-submission-preparation.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install PDF inspection and packaging library
+        run: python -m pip install 'pypdf==6.3.0'
+      - name: Split exact current source and prepare author approval delivery
+        run: python submission_preparation/build_pdf_review_bundle.py | tee submission_preparation/build_log.json
+      - name: Verify ZIP archives and source presence
+        run: |
+          unzip -t submission_preparation/out/99llm_MR31R9_EP2_AuthorApproval_SubmissionPreparation.zip
+          unzip -t submission_preparation/out/99llm_MR31R9_EP2_Paper_and_Supplement_Only.zip
+          python - <<'PY'
+          from pypdf import PdfReader
+          from pathlib import Path
+          root=Path('submission_preparation/out/99llm_MR31R9_EP2_AuthorApproval_Closure')
+          m=PdfReader(root/'01_Journal_Review'/'Manuscript_Main.pdf')
+          s=PdfReader(root/'01_Journal_Review'/'Supplementary_Computational_Record.pdf')
+          c=PdfReader(root/'02_Reader_Copy'/'Manuscript_and_Supplement_Combined.pdf')
+          assert len(m.pages)+len(s.pages)==len(c.pages)
+          print('PAGE COUNTS',len(m.pages),len(s.pages),len(c.pages))
+          PY
+      - name: Upload author approval, paper and supplement, and QA record
+        uses: actions/upload-artifact@v4
+        with:
+          name: 99llm-MR31R9-EP2-AUTHOR-APPROVAL-PACKAGES
+          path: |
+            submission_preparation/out/99llm_MR31R9_EP2_AuthorApproval_SubmissionPreparation.zip
+            submission_preparation/out/99llm_MR31R9_EP2_Paper_and_Supplement_Only.zip
+            submission_preparation/build_log.json
+          retention-days: 90
