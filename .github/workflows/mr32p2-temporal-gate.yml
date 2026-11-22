@@ -1,0 +1,33 @@
+name: MR32P2 conservative temporal gate
+on:
+  push:
+    branches: [mr32p2-temporal-evidence-gate]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  temporal:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Fetch exact independent source revision
+        run: |
+          git init /tmp/independent-source
+          git -C /tmp/independent-source remote add origin https://github.com/gsmoon97/swe-agent-eval.git
+          git -C /tmp/independent-source fetch --depth=1 origin 2b8d930540ddaf0ae1290e718f1bd0741c70005e
+          git -C /tmp/independent-source checkout --detach FETCH_HEAD
+          test "$(git -C /tmp/independent-source rev-parse HEAD)" = "2b8d930540ddaf0ae1290e718f1bd0741c70005e"
+      - name: Audit all 500 trajectories with frozen time-order rules
+        run: |
+          python mr32/temporal_audit_candidate.py --source '/tmp/independent-source/evaluation/python/verified/20250329_OpenHands_Claude-3.5-Sonnet(Oct)' --out 'mr32/temporal_out'
+          echo '### MR32P2 temporal observation scope: explicit editor events only' >> "$GITHUB_STEP_SUMMARY"
+          cat mr32/temporal_out/TEMPORAL_GATE.json >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MR32P2-CONDITIONAL-TEMPORAL-GATE
+          path: mr32/temporal_out/TEMPORAL_GATE.json
+          retention-days: 90
