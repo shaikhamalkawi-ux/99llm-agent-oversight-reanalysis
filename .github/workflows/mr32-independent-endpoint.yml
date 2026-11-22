@@ -1,0 +1,45 @@
+name: MR32 independent endpoint-contract challenge
+on:
+  pull_request:
+    paths:
+      - 'mr32/**'
+      - '.github/workflows/mr32-independent-endpoint.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'mr32/**'
+      - '.github/workflows/mr32-independent-endpoint.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  external-contract-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Synthetic-only unit checks
+        run: python -m unittest discover -s mr32/tests -p 'test_*.py' -v
+      - name: Fetch pinned independent public archive
+        run: |
+          git init /tmp/swe-agent-eval-external
+          git -C /tmp/swe-agent-eval-external remote add origin https://github.com/gsmoon97/swe-agent-eval.git
+          git -C /tmp/swe-agent-eval-external fetch --depth=1 origin 2b8d930540ddaf0ae1290e718f1bd0741c70005e
+          git -C /tmp/swe-agent-eval-external checkout --detach FETCH_HEAD
+          test "$(git -C /tmp/swe-agent-eval-external rev-parse HEAD)" = '2b8d930540ddaf0ae1290e718f1bd0741c70005e'
+      - name: Analyze all 500 trajectories from pinned source
+        run: |
+          python mr32/code/audit_endpoint_contract.py \
+            --source '/tmp/swe-agent-eval-external/evaluation/python/verified/20250329_OpenHands_Claude-3.5-Sonnet(Oct)' \
+            --out mr32/results
+          cat mr32/results/MR32P1_REPORT.md >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MR32P1-aggregate-audit-only
+          path: |
+            mr32/results/MR32P1_AUDIT.json
+            mr32/results/MR32P1_REPORT.md
+          retention-days: 90

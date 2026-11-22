@@ -1,0 +1,68 @@
+% MR32P1 candidate addition. Do not insert before full manuscript source review.
+\subsection{An external test of the endpoint-reporting distinction}
+\label{sec:external_contract}
+A separate public OpenHands/Claude-3.5-Sonnet evaluation archive contains 500
+SWE-bench Verified task identifiers, recorded model/tool messages, and
+third-party task-verdict labels. The input repository is
+\url{https://github.com/gsmoon97/swe-agent-eval}, pinned to commit
+\texttt{2b8d930540ddaf0ae1290e718f1bd0741c70005e}.
+This source does not contain the developer-pushback episodes analyzed elsewhere
+in this article; the cohorts and their numerators are not pooled.
+
+Before aggregate inspection, we fixed literal, rule-based extraction for
+three observable signals: whether the last recorded model response explicitly
+stated that tests passed, whether that response explicitly stated a completed
+fix, and whether any tool output recorded a passing local test. The first
+two are model statements; the third is a test receipt in the agent's environment.
+None is an independent benchmark test verdict. The source's explicit ID lists
+enumerate 195 evaluator-resolved tasks, 252 evaluator-unresolved tasks and
+53 no-patch/error cases. All 500 IDs have one readable trajectory. Our
+two-status descriptive comparison includes 447 tasks. The source's summary
+counters disagree with the lengths of several ID lists; these disagreements
+are retained in the public reproducibility audit.
+
+\begin{table}[htbp]
+\centering
+\caption{One independent benchmark cohort: agent statements and local tests
+versus third-party reported task-verdict labels. The evaluator tests were not
+rerun in this study. These are not developer-pushback outcomes.}
+\label{tab:external_contract}
+\small
+\begin{tabularx}{\textwidth}{@{}Xrrr@{}}
+\toprule
+Recorded signal & Resolved (of 195) & Unresolved (of 252) &
+Unresolved among signal-positive \\
+\midrule
+Last response asserts passing tests & 81 & 37 & 37/118 (31.36\%) \\
+Last response asserts fix completion & 59 & 35 & 35/94 (37.23\%) \\
+Passing local-test receipt anywhere & 77 & 46 & 46/123 (37.40\%) \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+In a post-hoc cross-tabulation of the two recorded signals, 75 runs
+contained both an affirmative model test claim and a local test-pass receipt;
+57 were evaluator-resolved and 18 (24.00\%) were evaluator-unresolved.
+This secondary description strengthens the distinction among evidence
+stages, but was not a separately predeclared or independently replicated
+test.
+
+Of 118 runs where the last recorded response claimed tests passed, 81
+(68.64\%) were evaluator-resolved and 37 (31.36\%) were
+evaluator-unresolved. The positive statement is thus associated with a
+higher resolved fraction but does not certify the later benchmark verdict.
+Similarly, local test receipts appear in 46 evaluator-unresolved runs.
+This does not show false reporting or deception: internal tests may
+check a different scope, may precede later code edits, or may use different
+environments. Published SWE-bench Verified verdicts themselves are
+imperfect; subsequent audits report mismatched and problematic test
+specifications. See
+\url{https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/}.
+
+This cross-dataset challenge supports a reporting distinction: model
+assertion, local tool receipt, and external benchmark verdict are distinct
+observations. It does not independently verify a terminal repair, estimate
+human-oversight intervention benefit, or validate the unresolved outcomes
+in the original 16,118-episode observational corpus. The pattern matcher
+was not independently human-validated; no human or LLM subjective coding
+was introduced.
