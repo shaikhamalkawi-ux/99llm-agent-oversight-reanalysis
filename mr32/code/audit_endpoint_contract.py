@@ -163,6 +163,14 @@ def markdown(report):
           label,z["resolved_yes"],z["resolved_denominator"],
           z["unresolved_yes"],z["unresolved_denominator"],
           "%.2f%%"%(100*p) if p is not None else "N/A"))
+    lines.extend(["","## Joint measurement (post-hoc descriptive; no new rules)","",
+        "| Claim test pass? | Local test receipt? | Benchmark resolved | Benchmark unresolved |",
+        "| --- | --- | ---: | ---: |"])
+    for a in ("0","1"):
+        for b in ("0","1"):
+            r=report["claim_receipt_outcome_joint"].get(a+"|"+b+"|resolved",0)
+            u=report["claim_receipt_outcome_joint"].get(a+"|"+b+"|unresolved",0)
+            lines.append("| %s | %s | %s | %s |"%(a,b,r,u))
     lines.extend(["","## Source-integrity warnings",""])
     lines.extend("- "+s for s in report["source_integrity"]["summary_counter_warnings"])
     lines.extend(["","## Claim boundary","",
