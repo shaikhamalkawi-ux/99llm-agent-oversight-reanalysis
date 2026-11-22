@@ -24,6 +24,19 @@ Three inconsistencies exist **in the upstream source's own summary counters**: e
 
 The complement matters: among the 118 cases where the last response claimed test success, 81 were benchmark-resolved (68.64%). Thus the model statement provides a **descriptive positive association** with evaluator success within the 447-case set, but does not certify that the task passed the benchmark. The result should not be misreported as if all positive statements were worthless or deceptive.
 
+## Post-hoc joint signal table (same fixed rules)
+
+Both signals must be separately recorded: a last-response affirmative test-pass claim and a tool log local-test-pass receipt. This is a cross-tabulation of the same frozen features, not a new fitted threshold.
+
+| Last response claims tests passed? | Local test-pass receipt anywhere? | Evaluator resolved | Evaluator unresolved | Unresolved fraction |
+| --- | --- | ---: | ---: | ---: |
+| No | No | 94 | 187 | 187/281 = 66.55% |
+| No | Yes | 20 | 28 | 28/48 = 58.33% |
+| Yes | No | 24 | 19 | 19/43 = 44.19% |
+| **Yes** | **Yes** | **57** | **18** | **18/75 = 24.00%** |
+
+Even when **both** an affirmative final message and a passing local-test receipt are present, **18/75 = 24.00%** have an unresolved benchmark verdict in this single run. Thus combining the two recorded signals is descriptively more informative than either alone, but does not turn local process evidence into the benchmark's external task-status evidence. This joint table is an exploratory, after-the-fact descriptive cross-tab; do not claim confirmation on a new holdout.
+
 ## What this adds and what it does not
 
 This separate-source case provides a task-evaluation outcome that was absent from the original Tang et al. conversation corpus; it makes the distinction between recorded model statements, partial local test outputs, and a third-party benchmark test result concrete. It is not verification of the original 16,118 cases and cannot be pooled with MR31 denominators.
