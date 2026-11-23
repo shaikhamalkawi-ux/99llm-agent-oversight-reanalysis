@@ -25,7 +25,8 @@ class TestExactCertificate(unittest.TestCase):
         d=x["delete_entire_repository"]
         self.assertEqual(s["minimum_number_of_source_qualified_repositories"],1)
         self.assertEqual(d["minimum_number_of_source_qualified_repositories"],2)
-        self.assertLess(s["mean_after_last_repository_exact"],"z")  # basic output type
+        self.assertLessEqual(Fraction(s["mean_after_last_repository_exact"]),0)
+        self.assertGreater(Fraction(s["mean_before_last_repository_exact"]),0)
         self.assertTrue(s["optimality_proof"].startswith("For any k"))
 
     def test_tie_stable(self):
