@@ -1,0 +1,52 @@
+name: Exact outcome-ascertainment frontier (review candidate)
+on:
+  push:
+    branches: [novelty-ascertainment-frontier-gate]
+    paths:
+      - 'novelty_ascertainment/**'
+      - '.github/workflows/novelty-ascertainment-frontier.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  pinned-source-verification:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Synthetic exact-cardinality tests
+        run: python novelty_ascertainment/optimal_unknown_outcome_frontier.py --selftest
+      - name: Retrieve pinned original-author annotations for ephemeral analysis
+        run: |
+          python - <<'PY'
+          import urllib.request, hashlib
+          url = "https://raw.githubusercontent.com/ND-SaNDwichLAB/coding-agent-misalignment/c887cc920129b2db0bdf218c8550e98f74f42f7c/data/core/annotated_misalignments.json"
+          expected = "7e0693675242a625bdb586bcd8cef23f5da76c65cf840108c3c24b6b479b9f57"
+          b=urllib.request.urlopen(url, timeout=120).read()
+          assert hashlib.sha256(b).hexdigest() == expected, "Pinned SHA-256 mismatch"
+          open('/tmp/99llm_original_annotations.json','wb').write(b)
+          print("PINNED RAW SOURCE VERIFIED, bytes:",len(b))
+          PY
+      - name: Recompute exact endpoint-width and best-case sign thresholds
+        run: |
+          python novelty_ascertainment/optimal_unknown_outcome_frontier.py --annotations /tmp/99llm_original_annotations.json --output /tmp/99llm_aggregate_frontier.json
+          python - <<'PY'
+          import json
+          x=json.load(open('/tmp/99llm_aggregate_frontier.json'))
+          f=x['fractional_width_reduction_certificates']
+          s=x['best_case_sign_certificates']
+          assert x['source_episodes']==16118 and x['unknown_episodes']==2352
+          assert (f['25pct']['k'],f['50pct']['k'],f['75pct']['k'],f['90pct']['k'])==(352,704,1257,1773)
+          assert (s['positive_best_case']['k'],s['negative_best_case']['k'])==(663,744)
+          assert (s['complete_sessions_positive_best_case']['k'],s['complete_sessions_negative_best_case']['k'])==(332,372)
+          assert (s['complete_repositories_positive_best_case']['k'],s['complete_repositories_negative_best_case']['k'])==(49,63)
+          assert x['raw_rows_or_source_ids_exported'] is False
+          print('FULL PINNED-SOURCE EXACT GATE: PASS; checked counts, bounds and cardinality thresholds')
+          PY
+      - name: Do not retain original author records
+        if: always()
+        run: rm -f /tmp/99llm_original_annotations.json
