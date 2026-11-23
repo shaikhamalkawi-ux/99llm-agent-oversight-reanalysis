@@ -1,0 +1,43 @@
+name: Novelty candidate - exact repository-coherent sensitivity
+on:
+  push:
+    branches:
+      - novelty-repository-coherent-gates
+    paths:
+      - 'novelty_candidate/**'
+      - '.github/workflows/novelty-cluster-gates.yml'
+  pull_request:
+    paths:
+      - 'novelty_candidate/**'
+      - '.github/workflows/novelty-cluster-gates.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-exact-certificate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Pure synthetic proof checks
+        run: python -m unittest discover -s novelty_candidate/tests -v
+      - name: Download exact 2026 original-author source version
+        run: |
+          git init /tmp/original-agent-labels
+          git -C /tmp/original-agent-labels remote add origin https://github.com/ND-SaNDwichLAB/coding-agent-misalignment.git
+          git -C /tmp/original-agent-labels fetch --depth=1 origin c887cc920129b2db0bdf218c8550e98f74f42f7c
+          git -C /tmp/original-agent-labels checkout --detach FETCH_HEAD
+          test "$(git -C /tmp/original-agent-labels rev-parse HEAD)" = 'c887cc920129b2db0bdf218c8550e98f74f42f7c'
+      - name: Exact rational original-label structured sensitivities
+        run: |
+          python novelty_candidate/exact_repository_coherent_certificates.py \
+            --annotations /tmp/original-agent-labels/data/core/annotated_misalignments.json \
+            --out novelty_candidate/results/repository_coherent_aggregate.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: 99llm-exact-repository-novelty-aggregate-only
+          path: novelty_candidate/results/repository_coherent_aggregate.json
+          retention-days: 90

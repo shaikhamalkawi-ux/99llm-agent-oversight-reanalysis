@@ -1,0 +1,94 @@
+% Author-review ADDITIVE candidate. Do not insert before scientific and typesetting checks.
+% Original source: pinned Tang et al. release SHA-256 7e0693675242a625...
+% Code: novelty_candidate/exact_repository_coherent_certificates.py
+% This extends the existing MR31R9 analysis without changing locked numbers.
+
+\subsection{Exact sensitivity to repository-coherent disturbances}
+
+The preceding analysis fixes each source-assigned damage-severity label and
+reports repository-nested resampling for the 853 paired sessions. Such
+resampling does not answer a distinct worst-case question: how many entire
+source-qualified repositories would have to be disturbed before the positive
+\emph{recorded-resolution visibility} contrast could change sign?
+To distinguish mechanisms, we analyze two separate hypothetical operations:
+(i) exchanging DS1 and DS2 on all eligible episodes within a selected
+source-qualified repository, while retaining its sessions; and
+(ii) excluding every matched session from a selected repository while keeping
+the other labels unchanged. Neither operation is observed misclassification,
+nor does it identify eventual recovery.
+
+For session $s$ define
+$d_s=p_{2s}^{RS1}-p_{1s}^{RS1}$, and for repository $r$ let
+$T_r=\sum_{s\in r}d_s$ and $m_r$ denote its number of paired sessions.
+The exact original sum is $S=\sum_r T_r=6669/56$, and the recorded mean is
+$S/853=6669/47768$ (13.9612 percentage points). For a set $A$ of
+source-qualified repositories, the sign-changing conditions are
+\begin{align}
+ \text{Whole-repository severity exchange:}\quad&
+ \overline d_A^{\mathrm{exchange}} =
+      \frac{S-2\sum_{r\in A}T_r}{853}\le0,
+ \label{eq:repo_exchange}\\
+ \text{Whole-repository exclusion:}\quad&
+ \overline d_A^{\mathrm{exclusion}} =
+      \frac{S-\sum_{r\in A}T_r}
+           {853-\sum_{r\in A}m_r}\le0,
+ \quad \sum_{r\in A}m_r<853.
+ \label{eq:repo_exclusion}
+\end{align}
+The source-qualified repository contributions are additive in each sign
+inequality. Consequently, among all subsets of any given cardinality $k$,
+their $k$ largest contributions have the greatest possible sum. This exchange
+argument yields an exact minimum cardinality under each declared operation;
+it does not require an approximation or a probabilistic label-error model.
+
+\begin{table}[htbp]
+\centering
+\caption{Source-locked exact adversarial repository-level sign thresholds
+for the \emph{observed RS1} equal-session contrast. These are hypothetical,
+post-hoc worst-case stress tests, not estimated source-label error rates or
+probabilities of verified terminal repair.}
+\label{tab:repository_coherent_sensitivity}
+\small
+\begin{tabularx}{\textwidth}{@{}Xrrrr@{}}
+\toprule
+Operation on source-qualified repositories &
+Minimum repos & Before threshold (pp) & At threshold (pp) &
+Paired sessions touched \\
+\midrule
+Swap all DS1/DS2 labels in each selected repository,
+preserve all 853 sessions & 20/352 & $+0.33090$ (19) &
+$-0.13803$ (20) & 189 \\
+Exclude all paired sessions of each selected repository &
+74/352 & $+0.17573$ (73) &
+$-0.00811$ (74) & 310 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+For exchange, the largest 19 repository contributions sum to $872/15$,
+below $S/2=6669/112$, whereas the largest 20 sum to $902/15$, above the
+threshold. For exclusion, the corresponding sums are $1772/15$ for 73 and
+$1787/15$ for 74, straddling $S=6669/56$. Each inequality was recomputed
+with exact rational arithmetic on the pinned 16,118-episode release. The
+deterministic exchange witness touches 558 matched episodes (and 3,326
+eligible two-class episodes in the affected repositories); the exclusion
+witness touches 927 matched episodes. Thus neither 20/352 nor 74/352 can
+be interpreted as a measured percentage of incorrect labels or a realistic
+frequency of corrupt repositories.
+
+These new diagnostics add a coherent-unit stress that is absent from the
+single-repository deletion range and the individual-label 120-switch
+certificate. They do not provide evidence of accurate underlying severity
+labels, a plausible repository-level error process, outcome completion, or
+population representativeness. Robustness to these particular disturbances
+is logically separate from the wide missing-eventual-outcome interval
+reported above. The general idea of worst-case data removal or sensitivity
+analysis is established in statistics (e.g., Rosenbaum 2004; Giordano,
+Meager and Broderick 2026; Huang et al. 2025); the present numerical
+thresholds are a \emph{source-specific exact secondary analysis}, not a
+new general statistical method.
+
+% Add appropriate formal bibliography entries for:
+% Rosenbaum (2004), Biometrika 91(1), 153-164.
+% Giordano, Meager & Broderick (2026), Phil. Trans. R. Soc. A 384, 20250001.
+% Huang et al. (2025), TMLR, Approximations to worst-case data dropping.
