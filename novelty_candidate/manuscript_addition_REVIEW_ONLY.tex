@@ -23,7 +23,7 @@ $T_r=\sum_{s\in r}d_s$ and $m_r$ denote its number of paired sessions.
 The exact original sum is $S=\sum_r T_r=6669/56$, and the recorded mean is
 $S/853=6669/47768$ (13.9612 percentage points). For a set $A$ of
 source-qualified repositories, the sign-changing conditions are
-\begin{align}
+\begin{align*}
  \text{Whole-repository severity exchange:}\quad&
  \overline d_A^{\mathrm{exchange}} =
       \frac{S-2\sum_{r\in A}T_r}{853}\le0,
@@ -33,8 +33,7 @@ source-qualified repositories, the sign-changing conditions are
       \frac{S-\sum_{r\in A}T_r}
            {853-\sum_{r\in A}m_r}\le0,
  \quad \sum_{r\in A}m_r<853.
- \label{eq:repo_exclusion}
-\end{align}
+ \end{align*}
 The source-qualified repository contributions are additive in each sign
 inequality. Consequently, among all subsets of any given cardinality $k$,
 their $k$ largest contributions have the greatest possible sum. This exchange
@@ -43,11 +42,10 @@ it does not require an approximation or a probabilistic label-error model.
 
 \begin{table}[htbp]
 \centering
-\caption{Source-locked exact adversarial repository-level sign thresholds
+\caption*{Table N1 (additive research candidate). Source-locked exact adversarial repository-level sign thresholds
 for the \emph{observed RS1} equal-session contrast. These are hypothetical,
 post-hoc worst-case stress tests, not estimated source-label error rates or
 probabilities of verified terminal repair.}
-\label{tab:repository_coherent_sensitivity}
 \small
 \begin{tabularx}{\textwidth}{@{}Xrrrr@{}}
 \toprule
