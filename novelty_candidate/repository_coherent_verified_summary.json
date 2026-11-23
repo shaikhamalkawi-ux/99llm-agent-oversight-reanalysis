@@ -1,0 +1,48 @@
+{
+  "project": "99llm",
+  "candidate_version": "MR33P1",
+  "status": "verified_additive_candidate_not_in_manuscript",
+  "upstream_commit": "c887cc920129b2db0bdf218c8550e98f74f42f7c",
+  "original_source_sha256": "7e0693675242a625bdb586bcd8cef23f5da76c65cf840108c3c24b6b479b9f57",
+  "github_actions_verified_run": "https://github.com/shaikhamalkawi-ux/99llm-agent-oversight-reanalysis/actions/runs/45179212927",
+  "source_episodes": 16118,
+  "two_class_episodes": 15948,
+  "eligible_matched_sessions": 853,
+  "matched_source_qualified_repositories": 352,
+  "original_contrast": {
+    "exact": "6669/47768",
+    "pp": 13.961229274828337
+  },
+  "whole_repo_label_swap": {
+    "minimum_repos": 20,
+    "minimum_proof_prefix19": "872/15",
+    "prefix20": "902/15",
+    "required": "6669/112",
+    "contrast_at19_pp": 0.33090492938089655,
+    "contrast_at20_pp": -0.13802824764137775,
+    "witness_matched_sessions": 189,
+    "witness_matched_episodes": 558,
+    "witness_total_source_DS1_DS2_episodes_in_selected_repos": 3326,
+    "witness_repo_sources": {
+      "specstory": 14,
+      "swe": 6
+    }
+  },
+  "whole_repo_deletion": {
+    "minimum_repos": 74,
+    "prefix73": "1772/15",
+    "prefix74": "1787/15",
+    "required": "6669/56",
+    "contrast_at73_pp": 0.1757265406162465,
+    "contrast_at74_pp": -0.008111900377093747,
+    "witness_matched_sessions": 310,
+    "witness_matched_episodes": 927,
+    "witness_total_source_DS1_DS2_episodes_in_selected_repos": 5191,
+    "witness_repo_sources": {
+      "specstory": 61,
+      "swe": 13
+    }
+  },
+  "interpretation": "Source-specific sharp sign-reversal certificates under two separate hypothetical repository-coherent perturbations. Not source-label validation, causal repair evidence, or statistical method novelty.",
+  "raw_identifiers_published": false
+}
