@@ -1,5 +1,13 @@
 # Resolution Visibility Is Not Recovery
 
+## New research evidence (23 November 2026): repository-coherent sensitivity candidate
+
+A new [MR33P1 source-locked exact sensitivity analysis](novelty_candidate/README.md) tests how the *observed*, 853-session RS1 contrast responds to (i) hypothetical whole-repository DS1/DS2 label reversal and (ii) hypothetical whole-repository exclusion. The minimal sign-changing sets under those distinct operations contain **20** and **74** of the 352 source-qualified repositories with matched sessions, respectively. [Reproduction code](novelty_candidate/exact_repository_coherent_certificates.py), [aggregate-only verified result](novelty_candidate/repository_coherent_verified_summary.json), [candidate manuscript addition](novelty_candidate/manuscript_addition_REVIEW_ONLY.tex), and [successful pinned-source CI](https://github.com/shaikhamalkawi-ux/99llm-agent-oversight-reanalysis/actions/runs/45179212927) are available.
+
+**Science status:** This is a separate candidate extension; it has not been incorporated into the approved MR31R9-EP2 article or its BDCC PDF. It does not estimate actual mislabeling, independent task repair, or causal benefit. Worst-case removal and sensitivity analysis are existing statistical techniques; no first-ever method claim is made.
+
+---
+
 ## Current research materials — MR31R9 EP2 (22 November 2026)
 
 The **current author-review manuscript** and public, source-derived MR31 reproducibility materials are now available here. This is a working research archive, **not** a journal submission, acceptance or published article.
