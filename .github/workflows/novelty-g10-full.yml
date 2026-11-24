@@ -1,0 +1,36 @@
+name: G10 complete frozen 13-run test-version crossover
+on:
+  push:
+    branches: [novelty-g10-full-frozen-cohort]
+    paths: ['novelty_g10/**', '.github/workflows/novelty-g10-full.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  crossover:
+    strategy:
+      fail-fast: false
+      max-parallel: 6
+      matrix:
+        case: [{"setting":"laguna_verified","verdict":"nonpass","rank":1},{"setting":"laguna_verified","verdict":"nonpass","rank":2},{"setting":"laguna_verified","verdict":"nonpass","rank":3},{"setting":"laguna_verified","verdict":"pass","rank":0},{"setting":"laguna_verified","verdict":"pass","rank":1},{"setting":"laguna_verified","verdict":"pass","rank":2},{"setting":"laguna_verified","verdict":"pass","rank":3},{"setting":"laguna_verified","verdict":"pass","rank":4},{"setting":"laguna_verified","verdict":"pass","rank":5},{"setting":"qwen3coder_verified_minisweagent","verdict":"pass","rank":0},{"setting":"laguna_verified","verdict":"nonpass","rank":0}]
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install --disable-pip-version-check pyarrow==22.0.0
+      - name: Frozen cohort controlled experiment
+        run: |
+          mkdir -p /tmp/g10_full_out
+          python novelty_g10/run_pilot.py --setting ${{ matrix.case.setting }} --verdict ${{ matrix.case.verdict }} --rank ${{ matrix.case.rank }} --root /tmp/g10_data --out /tmp/g10_full_out/aggregate.json
+      - if: always()
+        run: rm -rf /tmp/g10_data
+      - uses: actions/upload-artifact@v4
+        with:
+          name: G10-full-${{ matrix.case.setting }}-${{ matrix.case.verdict }}-${{ matrix.case.rank }}
+          path: /tmp/g10_full_out/
+          if-no-files-found: error
