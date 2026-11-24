@@ -27,11 +27,13 @@ def examine(path):
     if len(rows)!=16118:raise ValueError("Unexpected original source rows")
     sessions=defaultdict(lambda: {"DS1":[0,0,0,0],"DS2":[0,0,0,0],"license":set(),"source":set()})
     two_class=0
+    repo_license=defaultdict(set)
     for a in rows:
         g=a.get("damage_severity")
         if g not in ("DS1","DS2"):continue
         two_class+=1
         key=(str(a["source"]),str(a["repository_id"]),str(a["session_id"]))
+        repo_license[key[:2]].add(str(a.get("license_type")))
         p=sessions[key]
         p["license"].add(str(a.get("license_type")))
         p["source"].add(str(a["source"]))
@@ -42,9 +44,12 @@ def examine(path):
         z[3]+=int(a.get("resolution_status")=="RS1" and a.get("resolver")=="RV2")
         if z[1]+z[2]!=z[0]:raise ValueError("Unexpected status")
     if (two_class,len(sessions))!=(15948,8590):raise ValueError("Source admission frame shifted")
+    if len(repo_license)!=1229 or any(len(x)!=1 for x in repo_license.values()):
+        raise ValueError("Repository-level licence metadata was not stable")
     bins={c:{"matched_sessions":0,"size_hist":Counter(),"n":0,"weight":0} for c in ("NO_LICENSE","OTHER")}
     rv2=rs1=u1=u2=matched=episodes=0
     no_license_swe=0
+    matched_repo={"NO_LICENSE":set(),"OTHER":set()}
     for key,p in sessions.items():
         if len(p["license"])!=1 or len(p["source"])!=1:
             raise ValueError("Inconsistent source metadata within session")
@@ -54,6 +59,7 @@ def examine(path):
         episodes+=a[0]+b[0]
         group="NO_LICENSE" if "NO_LICENSE" in p["license"] else "OTHER"
         v=bins[group]
+        matched_repo[group].add(key[:2])
         v["matched_sessions"]+=1
         if group=="NO_LICENSE" and key[0]=="swe":no_license_swe+=1
         for z in (a,b):
@@ -67,6 +73,7 @@ def examine(path):
         u1+=a[1]*(SCALE//a[0]);u2+=b[1]*(SCALE//b[0])
     if (matched,episodes,rs1,rv2,u1,u2,no_license_swe)!=(853,2775,300105,251805,1922355,1622250,0):
         raise AssertionError("Original result numerical lock mismatch")
+    assert (len(matched_repo["NO_LICENSE"]),len(matched_repo["OTHER"]))==(215,137)
     assert bins["NO_LICENSE"]["n"]==1347 and bins["NO_LICENSE"]["matched_sessions"]==451
     assert bins["NO_LICENSE"]["weight"]==1942518 and bins["NO_LICENSE"]["size_hist"][1]==441
     assert bins["OTHER"]["n"]==1005 and bins["OTHER"]["matched_sessions"]==402
@@ -105,9 +112,9 @@ def examine(path):
         "matched_sessions":matched,
         "unknown_episode_statuses":2352,
         "denominator_exact":DEN,
-        "no_license_metadata":{"unknown":1347,"matched_sessions":451,
+        "no_license_metadata":{"unknown":1347,"matched_sessions":451,"matched_repositories":215,"all_specstory":True,
             "width_units":1942518,"n1_unknown":441},
-        "other_metadata":{"unknown":1005,"matched_sessions":402,
+        "other_metadata":{"unknown":1005,"matched_sessions":402,"matched_repositories":137,
             "width_units":1602087,"n1_unknown":412},
         "width_pp_initial":100*FULL_WIDTH/DEN,
         "max_shrink_pct_excluding_no_license":100*1602087/FULL_WIDTH,
