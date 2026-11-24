@@ -1,0 +1,366 @@
+{
+  "version": "G6",
+  "verification_run": 45466464302,
+  "verification_commit": "b13a793b84fd8514f58ae738441bac480a113a52",
+  "upstream_commit": "c887cc920129b2db0bdf218c8550e98f74f42f7c",
+  "scope": "Aggregate-only extraction from successful source-locked CI logs. Original rows and quotes omitted.",
+  "source_rows": {
+    "annotated": 16118,
+    "annotated_not_valid": 0,
+    "invalid": 13778,
+    "per_field_matches": {
+      "agent": 16118,
+      "agent_turns": 16118,
+      "alignment_goal": 16118,
+      "confidence": 16118,
+      "license_type": 16118,
+      "misalignment_id": 16118,
+      "num_commits": 16118,
+      "repository_id": 16118,
+      "session_count_id": 16118,
+      "session_id": 16118,
+      "session_sha": 16118,
+      "session_timestamp": 16118,
+      "session_type": 16118,
+      "source": 16118,
+      "user_turns": 16118
+    },
+    "released": 7760,
+    "shared_fields_checked": 15,
+    "valid": 16118,
+    "valid_not_annotated": 0,
+    "validation": 29896
+  },
+  "all_original_invalid_categories": {
+    "collaboration_style_without_pushback": 585,
+    "custom:ambiguous": 15,
+    "evidence_contradicts_description": 477,
+    "intention_claim_without_pushback": 2697,
+    "invisible_agent_action": 4910,
+    "invisible_project_context": 1198,
+    "session_terminated_before_completion": 1784,
+    "truncation": 52,
+    "unrequested_action_without_pushback": 2060
+  },
+  "matched_gate_counts": {
+    "all": {
+      "RS1": 423,
+      "RS1_and_RS2_sessions": 303,
+      "RS1_sessions": 325,
+      "RS1_signed_units": 300105,
+      "RV2_signed_units": 251805,
+      "episodes": 2775,
+      "hypothetical_perfect_ascertainment": {
+        "either_sign_possible_after_favorable_completion": true,
+        "fraction_width_pct": 100,
+        "greatest_lower_pp": 87.18319097861888,
+        "residual_width_pp": 0,
+        "smallest_upper_pp": -77.715904650254
+      },
+      "invalid_records": 595,
+      "sessions": 853,
+      "strict_rejected_records": 211,
+      "unknown_weight_units": 3544605,
+      "unknowns": 2352
+    },
+    "any_rejection": {
+      "RS1": 199,
+      "RS1_and_RS2_sessions": 143,
+      "RS1_sessions": 155,
+      "RS1_signed_units": 133095,
+      "RV2_signed_units": 121755,
+      "episodes": 1348,
+      "hypothetical_perfect_ascertainment": {
+        "either_sign_possible_after_favorable_completion": true,
+        "fraction_width_pct": 50.57023279039554,
+        "greatest_lower_pp": 5.673951878523977,
+        "residual_width_pp": 81.5092391000949,
+        "smallest_upper_pp": 3.7933344498408976
+      },
+      "invalid_records": 595,
+      "sessions": 428,
+      "strict_rejected_records": 211,
+      "unknown_weight_units": 1792515,
+      "unknowns": 1149
+    },
+    "broad_evidence_rejection": {
+      "RS1": 106,
+      "RS1_and_RS2_sessions": 80,
+      "RS1_sessions": 84,
+      "RS1_signed_units": 47247,
+      "RV2_signed_units": 43467,
+      "episodes": 804,
+      "hypothetical_perfect_ascertainment": {
+        "either_sign_possible_after_favorable_completion": false,
+        "fraction_width_pct": 29.96009428413039,
+        "greatest_lower_pp": -28.311980126165356,
+        "residual_width_pp": 115.49517110478423,
+        "smallest_upper_pp": 37.77926645453023
+      },
+      "invalid_records": 384,
+      "sessions": 247,
+      "strict_rejected_records": 211,
+      "unknown_weight_units": 1061967,
+      "unknowns": 698
+    },
+    "invisible_agent_action": {
+      "RS1": 60,
+      "RS1_and_RS2_sessions": 45,
+      "RS1_sessions": 46,
+      "RS1_signed_units": 21525,
+      "RV2_signed_units": 17745,
+      "episodes": 427,
+      "hypothetical_perfect_ascertainment": {
+        "either_sign_possible_after_favorable_completion": false,
+        "fraction_width_pct": 16.01095185500218,
+        "greatest_lower_pp": -51.313989839781165,
+        "residual_width_pp": 138.49718081840004,
+        "smallest_upper_pp": 60.781276168146036
+      },
+      "invalid_records": 210,
+      "sessions": 133,
+      "strict_rejected_records": 156,
+      "unknown_weight_units": 567525,
+      "unknowns": 367
+    },
+    "session_terminated_before_completion": {
+      "RS1": 23,
+      "RS1_and_RS2_sessions": 16,
+      "RS1_sessions": 17,
+      "RS1_signed_units": -693,
+      "RV2_signed_units": -693,
+      "episodes": 200,
+      "hypothetical_perfect_ascertainment": {
+        "either_sign_possible_after_favorable_completion": false,
+        "fraction_width_pct": 7.445314781195648,
+        "greatest_lower_pp": -65.43864790933958,
+        "residual_width_pp": 152.62183888795846,
+        "smallest_upper_pp": 74.90593423770446
+      },
+      "invalid_records": 101,
+      "sessions": 59,
+      "strict_rejected_records": 74,
+      "unknown_weight_units": 263907,
+      "unknowns": 177
+    },
+    "strict_endpoint_visibility_rejection": {
+      "RS1": 78,
+      "RS1_and_RS2_sessions": 58,
+      "RS1_sessions": 60,
+      "RS1_signed_units": 24927,
+      "RV2_signed_units": 21147,
+      "episodes": 595,
+      "hypothetical_perfect_ascertainment": {
+        "either_sign_possible_after_favorable_completion": false,
+        "fraction_width_pct": 22.363197027595458,
+        "greatest_lower_pp": -40.83919499804611,
+        "residual_width_pp": 128.022385976665,
+        "smallest_upper_pp": 50.30648132641099
+      },
+      "invalid_records": 288,
+      "sessions": 183,
+      "strict_rejected_records": 211,
+      "unknown_weight_units": 792687,
+      "unknowns": 517
+    }
+  },
+  "strict_gate_coexistence": {
+    "strict_and_RS1_sessions": 60,
+    "strict_and_RS2_sessions": 181,
+    "strict_and_both_sessions": 58
+  },
+  "known_resolver_pairs": {
+    "RV2_vs_other": 7,
+    "cross_severity": 82,
+    "distinct_resolver": 7,
+    "pairs": 120,
+    "sessions_with_RS1": 325,
+    "sessions_with_RV2_and_other": 6,
+    "sessions_with_two_or_more_RS1": 79
+  },
+  "unknown_sibling_transport": {
+    "RV2_sibling": 619,
+    "RV2_sibling_weight_units": 803685,
+    "any_RS1_sibling": 683,
+    "any_RS1_sibling_weight_units": 883485,
+    "both_resolver_types": 9,
+    "both_resolver_types_weight_units": 7476,
+    "other_resolver_sibling": 73,
+    "other_resolver_sibling_weight_units": 87276,
+    "unknowns": 2352,
+    "weight_units": 3544605
+  },
+  "released_literal_packet_pairs": {
+    "RV2_vs_other_pairs": 2,
+    "identical_literal_quote_set": 0,
+    "identical_literal_quote_set_RV2_vs_other": 0,
+    "identical_literal_quote_set_status_discordant": 0,
+    "pairs": 1547,
+    "shared_latest_literal_quote": 7,
+    "shared_latest_literal_quote_RV2_vs_other": 0,
+    "shared_latest_literal_quote_status_discordant": 0,
+    "shared_literal_quote": 65,
+    "shared_literal_quote_RV2_vs_other": 0,
+    "shared_literal_quote_status_discordant": 20,
+    "status_discordant_pairs": 401
+  },
+  "matched_gate_strata": {
+    "specstory/absent/all": {
+      "RS1": 202,
+      "RS1_signed_units": 136518,
+      "RV2_signed_units": 110898,
+      "episodes": 1618,
+      "sessions": 479,
+      "unknown_weight_units": 2070198,
+      "unknowns": 1416
+    },
+    "specstory/absent/strict_endpoint_visibility_rejection": {
+      "RS1": 29,
+      "RS1_signed_units": 11592,
+      "RV2_signed_units": 6552,
+      "episodes": 300,
+      "sessions": 97,
+      "unknown_weight_units": 437472,
+      "unknowns": 271
+    },
+    "specstory/released/all": {
+      "RS1": 126,
+      "RS1_signed_units": 83682,
+      "RV2_signed_units": 69822,
+      "episodes": 672,
+      "sessions": 219,
+      "unknown_weight_units": 869922,
+      "unknowns": 546
+    },
+    "specstory/released/strict_endpoint_visibility_rejection": {
+      "RS1": 26,
+      "RS1_signed_units": -1050,
+      "RV2_signed_units": -1050,
+      "episodes": 146,
+      "sessions": 46,
+      "unknown_weight_units": 187950,
+      "unknowns": 120
+    },
+    "swe/released/all": {
+      "RS1": 95,
+      "RS1_signed_units": 79905,
+      "RV2_signed_units": 71085,
+      "episodes": 485,
+      "sessions": 155,
+      "unknown_weight_units": 604485,
+      "unknowns": 390
+    },
+    "swe/released/strict_endpoint_visibility_rejection": {
+      "RS1": 23,
+      "RS1_signed_units": 14385,
+      "RV2_signed_units": 15645,
+      "episodes": 149,
+      "sessions": 40,
+      "unknown_weight_units": 167265,
+      "unknowns": 126
+    }
+  },
+  "G6_TARGETING": {
+    "absent_sessions": 479,
+    "matched_sessions": 853,
+    "objectives": {
+      "half_width": {
+        "additional_threshold_units": "595791/2",
+        "guaranteed_tolerance_to_any_wholly_unresolved_target_sessions": 27,
+        "required_fraction_of_target_weight_pct": 68.09475806451613,
+        "restricted_min_episodes": {
+          "achieved_units": 298620,
+          "count": 129,
+          "previous_units": 297360
+        },
+        "restricted_min_sessions": {
+          "achieved_units": 302400,
+          "count": 60,
+          "previous_units": 297360
+        },
+        "strict": false,
+        "unrestricted_min_episodes": {
+          "achieved_units": 299880,
+          "count": 119,
+          "previous_units": 297360
+        },
+        "unrestricted_min_sessions": {
+          "achieved_units": 302400,
+          "count": 60,
+          "previous_units": 297360
+        }
+      },
+      "negative_sign_possible": {
+        "additional_threshold_units": "399648",
+        "guaranteed_tolerance_to_any_wholly_unresolved_target_sessions": 7,
+        "required_fraction_of_target_weight_pct": 91.35396093921439,
+        "restricted_min_episodes": {
+          "achieved_units": 400260,
+          "count": 218,
+          "previous_units": 399420
+        },
+        "restricted_min_sessions": {
+          "achieved_units": 402192,
+          "count": 82,
+          "previous_units": 398412
+        },
+        "strict": true,
+        "unrestricted_min_episodes": {
+          "achieved_units": 400680,
+          "count": 159,
+          "previous_units": 398160
+        },
+        "unrestricted_min_sessions": {
+          "achieved_units": 403200,
+          "count": 80,
+          "previous_units": 398160
+        }
+      },
+      "positive_sign_possible": {
+        "additional_threshold_units": "196143",
+        "guaranteed_tolerance_to_any_wholly_unresolved_target_sessions": 47,
+        "required_fraction_of_target_weight_pct": 44.83555518981786,
+        "restricted_min_episodes": {
+          "achieved_units": 196560,
+          "count": 78,
+          "previous_units": 194040
+        },
+        "restricted_min_sessions": {
+          "achieved_units": 196560,
+          "count": 39,
+          "previous_units": 191520
+        },
+        "strict": true,
+        "unrestricted_min_episodes": {
+          "achieved_units": 196560,
+          "count": 78,
+          "previous_units": 194040
+        },
+        "unrestricted_min_sessions": {
+          "achieved_units": 196560,
+          "count": 39,
+          "previous_units": 191520
+        }
+      }
+    },
+    "optimal_same_k_sessions_weight_units": 488880,
+    "qualification": "Perfect ascertainment assumed for all published unknowns plus selected additional unknowns. Different favorable completions for positive/negative. Session count not audit cost. Rejection flag is not a failure label or proof of access. Uniform comparator is exact finite-frame expectation, not a test or observed retrieval.",
+    "released_unknown_weight_units": 1474407,
+    "released_unknowns": 936,
+    "strict_over_optimal_same_k_weight_ratio": 0.8948453608247423,
+    "strict_over_uniform_expected_weight_ratio": 1.043523313368412,
+    "strict_target_absent_weight_share_pct": 21.13189173209519,
+    "strict_target_session_share_pct": 20.25052192066806,
+    "strict_target_sessions": 97,
+    "strict_target_unknowns": 271,
+    "strict_target_weight_units": 437472,
+    "uniform_random_same_k_expected_weight_units": 419225.8997912317,
+    "uniform_random_same_k_expected_weight_units_exact": "200809206/479",
+    "union_greatest_possible_lower_pp": 11.226902249762743,
+    "union_residual_width_pp": 75.95628872885614,
+    "union_smallest_possible_upper_pp": -1.7596159213978675,
+    "union_unknowns": 1207,
+    "union_weight_units": 1911879,
+    "union_width_reduction_pct": 53.937716614404145
+  }
+}
