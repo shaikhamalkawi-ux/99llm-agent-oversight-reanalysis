@@ -1,0 +1,47 @@
+name: G3 License-metadata ascertainment ceiling (candidate)
+on:
+  push:
+    branches: [novelty-g3-license-metadata-gate]
+    paths:
+      - 'novelty_g3/**'
+      - '.github/workflows/novelty-g3-evidence-access.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  hash-pinned-exact-g3:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Download the original-author release ephemerally and verify SHA
+        run: |
+          python - <<'PY'
+          import urllib.request, hashlib
+          url="https://raw.githubusercontent.com/ND-SaNDwichLAB/coding-agent-misalignment/c887cc920129b2db0bdf218c8550e98f74f42f7c/data/core/annotated_misalignments.json"
+          b=urllib.request.urlopen(url,timeout=120).read()
+          assert hashlib.sha256(b).hexdigest()=="7e0693675242a625bdb586bcd8cef23f5da76c65cf840108c3c24b6b479b9f57"
+          open('/tmp/99llm_source_ephemeral.json','wb').write(b)
+          print('Pinned original source SHA-256 PASS; raw file not published')
+          PY
+      - name: Compute exact license-gated ceilings on pinned source
+        run: |
+          python novelty_g3/verify_access_gate.py --annotations /tmp/99llm_source_ephemeral.json --output /tmp/g3_aggregate_only.json
+          python - <<'PY'
+          import json
+          a=json.load(open('/tmp/g3_aggregate_only.json'))
+          assert a['exact_minimum_unknown_episodes_unrestricted_half_width']==704
+          assert a['exact_minimum_no_license_at_total_704']['no_license']==291
+          assert a['min_no_license_if_all_other_ascertained']==68
+          assert a['max_shrink_pct_excluding_no_license'] < 50
+          assert a['max_possible_lower_bound_pp'] < 0 < a['min_possible_upper_bound_pp']
+          assert a['original_rows_or_identifiers_exported'] is False
+          print('G3 exact source-admission and non-identifiability gates PASS')
+          PY
+      - name: Delete original-author raw data (never upload)
+        if: always()
+        run: rm -f /tmp/99llm_source_ephemeral.json
