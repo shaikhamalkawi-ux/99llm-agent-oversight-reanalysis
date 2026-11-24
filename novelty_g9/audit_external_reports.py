@@ -91,7 +91,7 @@ def add_condition(z,label,on,report,parts,ids,m):
     z[label+'_both_failure_runs']+=bool(f[1] and p[1])
     z[label+'_local_reported_ftp_names_failed_in_report_runs']+=bool(ids&f[1])
     z[label+'_local_reported_ptp_names_failed_in_report_runs']+=bool(ids&p[1])
-def analyze_one(iid,raws,official,meta,detail):
+def analyze_one(iid,raws,official,meta,detail,legacy_flat=False):
     c=C();z=C();static=None
     c['official_frame_member']=1
     required={'report','patch','traj'}
@@ -111,6 +111,13 @@ def analyze_one(iid,raws,official,meta,detail):
     c['submission_equals_evaluated_patch']=1
     if detail is None or not isinstance(detail.get('resolved'),bool):
         c['no_official_row_verdict']=1;return c,z,None
+    # Older official archive files use an unwrapped per-task report at an exact task path.
+    # Accept only a bool verdict and an explicit test-status dictionary; full name partition follows.
+    report_raw=raws['report']
+    if legacy_flat and isinstance(report,dict) and isinstance(report.get('resolved'),bool) and isinstance(report.get('tests_status'),dict):
+        c['legacy_flat_report_recognized']=1
+        report={iid:report}
+        report_raw=json.dumps(report).encode()
     if iid not in report or report[iid].get('resolved')!=detail['resolved']:
         c['official_report_verdict_mismatch']=1
         c['report_root_has_resolved']+=int(isinstance(report,dict) and isinstance(report.get('resolved'),bool))
@@ -125,7 +132,7 @@ def analyze_one(iid,raws,official,meta,detail):
             c['flat_report_has_tests_status']+=int(isinstance(report.get('tests_status'),dict))
         return c,z,None
     c['official_report_verdict_agrees']=1
-    rep,state=read_report(raws['report'],iid,meta)
+    rep,state=read_report(report_raw,iid,meta)
     c[state]+=1
     if state!='admitted':return c,z,None
     r,parts=rep
@@ -194,7 +201,12 @@ def selftest():
     assert q['all_three_artifacts']==1 and q['admitted']==1
     assert z['full_ftp_single_runs']==1 and z['full_ftp_single_ftp_failure_runs']==1
     assert st is not None
-    print('G9 external partition, receipt and full admission fixture PASS')
+    raw['report']=json.dumps(j['i']).encode()
+    q,z,st=analyze_one('i',raw,{'i':{'resolved':False}},m,{'resolved':False},legacy_flat=True)
+    assert q['legacy_flat_report_recognized']==1 and q['admitted']==1
+    q,z,st=analyze_one('i',raw,{'i':{'resolved':False}},m,{'resolved':False},legacy_flat=False)
+    assert q['official_report_verdict_mismatch']==1 and q['admitted']==0
+    print('G9 external nested/flat report and admission fixtures PASS')
 def main(root,run):
     meta,mh=read_meta(root)
     runid=RUNS[run]
@@ -248,7 +260,7 @@ def main(root,run):
             errors.update(errs)
             independently_loaded['triples']+=set(raw)=={'report','patch','traj'}
             for k,b in raw.items():hash_rows.append((iid,k,sha(b)));independently_loaded[k]+=1
-            c,z,s=analyze_one(iid,dict(raw),official,meta[iid],official.get(iid))
+            c,z,s=analyze_one(iid,dict(raw),official,meta[iid],official.get(iid),legacy_flat=(run!='gemini'))
             assert c['all_three_artifacts']==int(set(raw)=={'report','patch','traj'})
             tally.update(c);counts.update(z)
             if s is not None:
@@ -269,7 +281,7 @@ def main(root,run):
          'independent_read_counts':dict(independently_loaded),'artifact_bytes_read_count':len(hash_rows),'fetch_errors':dict(errors),'cohort':dict(tally),'local_reference_scope':dict(counts),
          'static_final_test_identity':{k:dict(v) for k,v in static_counts.items()},'static_run_flags':{k:dict(v) for k,v in static_runs.items()},
          'static_base_files':len(base_cache),'static_base_file_status':dict(C(x[0] for x in base_cache.values())),
-         'qualification':'Separate archived submission cohorts. Final patch equality to trajectory submission does not bind earlier local receipts to final patch; report-level grade is source-reported. Same test names may have different code, runtime or selection. Adjacent equal recorded git diff is a narrow screen, not full environment identity. Static final test AST does not identify executed local AST. Unavailable artifacts retained in 500-task frame, not failures. No data or source identifiers exported; S3 snapshot manifest is a digest, not an immutable origin guarantee.'}
+         'qualification':'Separate archived submission cohorts. Legacy flat reports use exact task archive paths and full test-name partitions rather than internal task keys. Final patch equality to trajectory submission does not bind earlier local receipts to final patch; report-level grade is source-reported. Same test names may have different code, runtime or selection. Adjacent equal recorded git diff is a narrow screen, not full environment identity. Static final test AST does not identify executed local AST. Unavailable artifacts retained in 500-task frame, not failures. No data or source identifiers exported; S3 snapshot manifest is a digest, not an immutable origin guarantee.'}
     return out
 if __name__=='__main__':
     a=argparse.ArgumentParser();a.add_argument('--selftest',action='store_true');a.add_argument('--run',choices=list(RUNS));a.add_argument('--root');a.add_argument('--out');o=a.parse_args()

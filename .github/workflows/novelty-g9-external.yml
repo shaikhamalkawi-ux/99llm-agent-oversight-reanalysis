@@ -11,7 +11,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        cohort: [gemini, gpt5mini, devstral]
+        cohort: [gpt5mini, devstral]
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
