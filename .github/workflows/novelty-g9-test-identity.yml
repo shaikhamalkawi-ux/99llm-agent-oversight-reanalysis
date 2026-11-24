@@ -1,0 +1,35 @@
+name: G9 static test-identity and external archive admission
+on:
+  push:
+    branches: [novelty-g9-test-identity]
+    paths: ['novelty_g9/**', '.github/workflows/novelty-g9-test-identity.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  static-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python novelty_g9/audit_test_identity.py --selftest
+      - run: pip install --disable-pip-version-check pyarrow==22.0.0
+      - name: Reconstruct frozen G8 subset from pinned data
+        run: |
+          mkdir -p /tmp/g9_out
+          python novelty_g9/audit_test_identity.py --input-dir /tmp/g9_data --out /tmp/g9_out/G9_aggregate.json
+      - if: always()
+        run: rm -rf /tmp/g9_data
+      - uses: actions/upload-artifact@v4
+        with:
+          name: G9-aggregate-only
+          path: /tmp/g9_out/
+  external-admission:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - run: python novelty_g9/probe_archive.py

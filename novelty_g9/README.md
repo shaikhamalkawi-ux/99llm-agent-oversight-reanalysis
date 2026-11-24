@@ -1,0 +1,3 @@
+# G9 — Static test identity and independent archive admission (candidate)
+
+Definitions frozen before G9 outcomes: exact G8 all-FTP-name subset (13 runs, 6 benchmark nonpasses). Retrieve base test files at immutable commits, apply only stored file-specific diffs using git apply without executing code, compare named function AST and full file bytes. Count visible PASS_TO_PASS name coverage from same receipt and union of final-linked positive receipts. Distinguish absent node from parse/retrieval failure. Probe official public logs and trajectories as a separate cohort; never transfer benchmark labels between different patches. No source data or private content redistributed. MR31R9-EP2 and G8 unchanged. No causal or semantic-equivalence claim. Results pending execution.
