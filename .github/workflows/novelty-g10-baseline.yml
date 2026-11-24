@@ -1,0 +1,31 @@
+name: G10 full Verified static name identity baseline
+on:
+  push:
+    branches: [novelty-g10-baseline-name-identity]
+    paths: ['novelty_g10/full_frame_identity.py', '.github/workflows/novelty-g10-baseline.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  baseline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install --disable-pip-version-check pyarrow==22.0.0
+      - name: Full frame static reconstruction
+        run: |
+          mkdir -p /tmp/g10_baseline_out
+          python novelty_g10/full_frame_identity.py --root /tmp/g10_baseline --out /tmp/g10_baseline_out/aggregate.json
+      - if: always()
+        run: rm -rf /tmp/g10_baseline
+      - uses: actions/upload-artifact@v4
+        with:
+          name: G10-full-frame-aggregate
+          path: /tmp/g10_baseline_out/
+          if-no-files-found: error

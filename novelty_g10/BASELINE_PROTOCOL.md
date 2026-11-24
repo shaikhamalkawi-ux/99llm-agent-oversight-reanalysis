@@ -1,0 +1,3 @@
+# Full-frame context audit (G10)
+
+Freeze the entire 500-task SWE-bench Verified metadata frame before analysis. For every reference FAIL_TO_PASS identifier, parse only exact supported pytest node names, retrieve the immutable base file, apply the exact reference test-file diff, and compare the named definitions. Count changed AST, equal AST, missing/ambiguous base definition, unsupported identifier, and reconstruction failures separately. Report task-level all-name existence and any changed definition; no dropping unknowns from the full denominator. This is a structural benchmark-design audit, not a prediction or execution result.
