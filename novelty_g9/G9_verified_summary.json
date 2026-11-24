@@ -1,0 +1,608 @@
+{
+  "version": "G9",
+  "static_verified_run": 45480941071,
+  "external_verified_run": 45481592968,
+  "static": {
+    "base_file_fetch_count": 13,
+    "base_file_fetch_status": {
+      "present": 13
+    },
+    "base_file_sha256_counts": {
+      "056736f8f31a91d85830d76a8677e148428c51287fef9a92e9841418e3868401": 1,
+      "0c2a86eeba090ad60a3949b7f1fe93fff8d29d5b1255d2f1a896065fe14cc645": 1,
+      "3715153a636496f696078e8864de4512509e08e79538304ae779c2201a30d111": 1,
+      "384ea18cb89d594b02cf2d90c7cb31a9014bb026eec17b24a697962287e2adcd": 1,
+      "44f530cf7e820c1c06e1a5a8d746c368927cba15dc3e82d9250193ad8d5d0b78": 1,
+      "4df8767bf8453fef635bbc0005e87f9a5cadf6c12ce76e6b61e0b53f3dcba566": 1,
+      "74605789d4387388ecd7a3e9bc464810c89181b1f3f838cf6c7416dd92a069fe": 1,
+      "c72a9759f9995c67809d3396ad0eaac2e9fffb0ad63c4427e28151def3887d9a": 1,
+      "cf8e2173ae9d20358c7520484b8551a6d02bc0adc9b7a7f50d7047a25eb37ad3": 1,
+      "d46a9206fa8d71d2474628446fd6fdb88c0aa17dc94fe102d41c1864cca1968c": 1,
+      "ea31ba3514fe24a1ae4b7120bd8c1076468aceb7f15602bf99de604062d8b412": 1,
+      "ee02dcf26e8513e94623187b8147be6f0702def841c768d2cda560d635cb75cc": 1,
+      "f42aceb77365c09e0f7db034c9e3057daf11917f51f5c1b81840f0f01ed86f06": 1
+    },
+    "distinct_selected_tasks": 13,
+    "groups": {
+      "all/all": {
+        "FTP_node_in_gold_changed_file": 15,
+        "agent_diff_parseable": 13,
+        "agent_exact_gold_test_file_blocks": 0,
+        "agent_file_unchanged_but_gold_file_differs": 12,
+        "agent_touches_any_FTP_node_file": 3,
+        "agent_touches_any_gold_test_file": 3,
+        "dependency_files_removed": 0,
+        "ftp_count": 15,
+        "full_ptp_single": 5,
+        "full_ptp_union": 5,
+        "gold_diff_parseable": 13,
+        "gold_node_changed_from_base": 14,
+        "gold_node_found": 15,
+        "gold_node_not_found_in_base": 1,
+        "gold_test_files": 18,
+        "ptp_count": 2162,
+        "ptp_empty": 1,
+        "ptp_in_single_all_ftp_receipt": 128,
+        "ptp_in_union_final_positive_receipts": 130,
+        "reported_pass_node_AST_differs_from_gold": 14,
+        "reported_pass_node_AST_matches_gold": 1,
+        "runs": 13
+      },
+      "all/benchmark_nonpass": {
+        "FTP_node_in_gold_changed_file": 7,
+        "agent_diff_parseable": 6,
+        "agent_exact_gold_test_file_blocks": 0,
+        "agent_file_unchanged_but_gold_file_differs": 5,
+        "agent_touches_any_FTP_node_file": 2,
+        "agent_touches_any_gold_test_file": 2,
+        "dependency_files_removed": 0,
+        "ftp_count": 7,
+        "full_ptp_single": 3,
+        "full_ptp_union": 3,
+        "gold_diff_parseable": 6,
+        "gold_node_changed_from_base": 7,
+        "gold_node_found": 7,
+        "gold_test_files": 11,
+        "ptp_count": 106,
+        "ptp_empty": 1,
+        "ptp_in_single_all_ftp_receipt": 72,
+        "ptp_in_union_final_positive_receipts": 72,
+        "reported_pass_node_AST_differs_from_gold": 6,
+        "reported_pass_node_AST_matches_gold": 1,
+        "runs": 6
+      },
+      "all/benchmark_pass": {
+        "FTP_node_in_gold_changed_file": 8,
+        "agent_diff_parseable": 7,
+        "agent_exact_gold_test_file_blocks": 0,
+        "agent_file_unchanged_but_gold_file_differs": 7,
+        "agent_touches_any_FTP_node_file": 1,
+        "agent_touches_any_gold_test_file": 1,
+        "dependency_files_removed": 0,
+        "ftp_count": 8,
+        "full_ptp_single": 2,
+        "full_ptp_union": 2,
+        "gold_diff_parseable": 7,
+        "gold_node_changed_from_base": 7,
+        "gold_node_found": 8,
+        "gold_node_not_found_in_base": 1,
+        "gold_test_files": 7,
+        "ptp_count": 2056,
+        "ptp_empty": 0,
+        "ptp_in_single_all_ftp_receipt": 56,
+        "ptp_in_union_final_positive_receipts": 58,
+        "reported_pass_node_AST_differs_from_gold": 8,
+        "runs": 7
+      },
+      "laguna_verified/benchmark_nonpass": {
+        "FTP_node_in_gold_changed_file": 4,
+        "agent_diff_parseable": 4,
+        "agent_exact_gold_test_file_blocks": 0,
+        "agent_file_unchanged_but_gold_file_differs": 2,
+        "agent_touches_any_FTP_node_file": 2,
+        "agent_touches_any_gold_test_file": 2,
+        "dependency_files_removed": 0,
+        "ftp_count": 4,
+        "full_ptp_single": 2,
+        "full_ptp_union": 2,
+        "gold_diff_parseable": 4,
+        "gold_node_changed_from_base": 4,
+        "gold_node_found": 4,
+        "gold_test_files": 4,
+        "ptp_count": 50,
+        "ptp_empty": 1,
+        "ptp_in_single_all_ftp_receipt": 17,
+        "ptp_in_union_final_positive_receipts": 17,
+        "reported_pass_node_AST_differs_from_gold": 3,
+        "reported_pass_node_AST_matches_gold": 1,
+        "runs": 4
+      },
+      "laguna_verified/benchmark_pass": {
+        "FTP_node_in_gold_changed_file": 7,
+        "agent_diff_parseable": 6,
+        "agent_exact_gold_test_file_blocks": 0,
+        "agent_file_unchanged_but_gold_file_differs": 7,
+        "agent_touches_any_FTP_node_file": 0,
+        "agent_touches_any_gold_test_file": 0,
+        "dependency_files_removed": 0,
+        "ftp_count": 7,
+        "full_ptp_single": 2,
+        "full_ptp_union": 2,
+        "gold_diff_parseable": 6,
+        "gold_node_changed_from_base": 7,
+        "gold_node_found": 7,
+        "gold_test_files": 6,
+        "ptp_count": 2037,
+        "ptp_empty": 0,
+        "ptp_in_single_all_ftp_receipt": 56,
+        "ptp_in_union_final_positive_receipts": 58,
+        "reported_pass_node_AST_differs_from_gold": 7,
+        "runs": 6
+      },
+      "qwen3coder_verified/benchmark_nonpass": {
+        "FTP_node_in_gold_changed_file": 1,
+        "agent_diff_parseable": true,
+        "agent_exact_gold_test_file_blocks": 0,
+        "agent_file_unchanged_but_gold_file_differs": 1,
+        "agent_touches_any_FTP_node_file": false,
+        "agent_touches_any_gold_test_file": false,
+        "dependency_files_removed": 0,
+        "ftp_count": 1,
+        "full_ptp_single": true,
+        "full_ptp_union": true,
+        "gold_diff_parseable": true,
+        "gold_node_changed_from_base": 1,
+        "gold_node_found": 1,
+        "gold_test_files": 6,
+        "ptp_count": 5,
+        "ptp_empty": false,
+        "ptp_in_single_all_ftp_receipt": 5,
+        "ptp_in_union_final_positive_receipts": 5,
+        "reported_pass_node_AST_differs_from_gold": 1,
+        "runs": 1
+      },
+      "qwen3coder_verified_minisweagent/benchmark_nonpass": {
+        "FTP_node_in_gold_changed_file": 2,
+        "agent_diff_parseable": true,
+        "agent_exact_gold_test_file_blocks": 0,
+        "agent_file_unchanged_but_gold_file_differs": 2,
+        "agent_touches_any_FTP_node_file": false,
+        "agent_touches_any_gold_test_file": false,
+        "dependency_files_removed": 0,
+        "ftp_count": 2,
+        "full_ptp_single": false,
+        "full_ptp_union": false,
+        "gold_diff_parseable": true,
+        "gold_node_changed_from_base": 2,
+        "gold_node_found": 2,
+        "gold_test_files": 1,
+        "ptp_count": 51,
+        "ptp_empty": false,
+        "ptp_in_single_all_ftp_receipt": 50,
+        "ptp_in_union_final_positive_receipts": 50,
+        "reported_pass_node_AST_differs_from_gold": 2,
+        "runs": 1
+      },
+      "qwen3coder_verified_minisweagent/benchmark_pass": {
+        "FTP_node_in_gold_changed_file": 1,
+        "agent_diff_parseable": true,
+        "agent_exact_gold_test_file_blocks": 0,
+        "agent_touches_any_FTP_node_file": true,
+        "agent_touches_any_gold_test_file": true,
+        "dependency_files_removed": 0,
+        "ftp_count": 1,
+        "full_ptp_single": false,
+        "full_ptp_union": false,
+        "gold_diff_parseable": true,
+        "gold_node_found": 1,
+        "gold_node_not_found_in_base": 1,
+        "gold_test_files": 1,
+        "ptp_count": 19,
+        "ptp_empty": false,
+        "ptp_in_single_all_ftp_receipt": 0,
+        "ptp_in_union_final_positive_receipts": 0,
+        "reported_pass_node_AST_differs_from_gold": 1,
+        "runs": 1
+      }
+    },
+    "metadata_hash": {
+      "bytes": 2096679,
+      "sha256": "a45b1fe4e2f0c8390b2b2938ac83e92ed5979000856808f3679c07812e9e6dcd",
+      "url": "https://huggingface.co/datasets/princeton-nlp/SWE-bench_Verified/resolve/c104f840cc67f8b6eec6f759ebc8b2693d585d4a/data/test-00000-of-00001.parquet"
+    },
+    "qualification": "Static reconstruction of released tracked diffs against base commit; no test execution or runtime coverage proof. AST comparison excludes formatting but does not compare imported helpers or fixture semantics. Binary benchmark verdict cannot identify FTP vs PTP vs infrastructure failure. Local name matches are reported strings, not independently verified test execution.",
+    "run_flags": {
+      "all/all": {
+        "FTP_node_in_gold_changed_file_positive_runs": 13,
+        "agent_diff_parseable_positive_runs": 13,
+        "agent_file_unchanged_but_gold_file_differs_positive_runs": 10,
+        "agent_touches_any_FTP_node_file_positive_runs": 3,
+        "agent_touches_any_gold_test_file_positive_runs": 3,
+        "ftp_count_positive_runs": 13,
+        "full_ptp_single_positive_runs": 5,
+        "full_ptp_union_positive_runs": 5,
+        "gold_diff_parseable_positive_runs": 13,
+        "gold_node_changed_from_base_positive_runs": 12,
+        "gold_node_found_positive_runs": 13,
+        "gold_node_not_found_in_base_positive_runs": 1,
+        "gold_test_files_positive_runs": 13,
+        "ptp_count_positive_runs": 12,
+        "ptp_empty_positive_runs": 1,
+        "ptp_in_single_all_ftp_receipt_positive_runs": 10,
+        "ptp_in_union_final_positive_receipts_positive_runs": 10,
+        "reported_pass_node_AST_differs_from_gold_positive_runs": 12,
+        "reported_pass_node_AST_matches_gold_positive_runs": 1
+      },
+      "all/benchmark_nonpass": {
+        "FTP_node_in_gold_changed_file_positive_runs": 6,
+        "agent_diff_parseable_positive_runs": 6,
+        "agent_file_unchanged_but_gold_file_differs_positive_runs": 4,
+        "agent_touches_any_FTP_node_file_positive_runs": 2,
+        "agent_touches_any_gold_test_file_positive_runs": 2,
+        "ftp_count_positive_runs": 6,
+        "full_ptp_single_positive_runs": 3,
+        "full_ptp_union_positive_runs": 3,
+        "gold_diff_parseable_positive_runs": 6,
+        "gold_node_changed_from_base_positive_runs": 6,
+        "gold_node_found_positive_runs": 6,
+        "gold_test_files_positive_runs": 6,
+        "ptp_count_positive_runs": 5,
+        "ptp_empty_positive_runs": 1,
+        "ptp_in_single_all_ftp_receipt_positive_runs": 4,
+        "ptp_in_union_final_positive_receipts_positive_runs": 4,
+        "reported_pass_node_AST_differs_from_gold_positive_runs": 5,
+        "reported_pass_node_AST_matches_gold_positive_runs": 1
+      },
+      "all/benchmark_pass": {
+        "FTP_node_in_gold_changed_file_positive_runs": 7,
+        "agent_diff_parseable_positive_runs": 7,
+        "agent_file_unchanged_but_gold_file_differs_positive_runs": 6,
+        "agent_touches_any_FTP_node_file_positive_runs": 1,
+        "agent_touches_any_gold_test_file_positive_runs": 1,
+        "ftp_count_positive_runs": 7,
+        "full_ptp_single_positive_runs": 2,
+        "full_ptp_union_positive_runs": 2,
+        "gold_diff_parseable_positive_runs": 7,
+        "gold_node_changed_from_base_positive_runs": 6,
+        "gold_node_found_positive_runs": 7,
+        "gold_node_not_found_in_base_positive_runs": 1,
+        "gold_test_files_positive_runs": 7,
+        "ptp_count_positive_runs": 7,
+        "ptp_in_single_all_ftp_receipt_positive_runs": 6,
+        "ptp_in_union_final_positive_receipts_positive_runs": 6,
+        "reported_pass_node_AST_differs_from_gold_positive_runs": 7
+      },
+      "laguna_verified/benchmark_nonpass": {
+        "FTP_node_in_gold_changed_file_positive_runs": 4,
+        "agent_diff_parseable_positive_runs": 4,
+        "agent_file_unchanged_but_gold_file_differs_positive_runs": 2,
+        "agent_touches_any_FTP_node_file_positive_runs": 2,
+        "agent_touches_any_gold_test_file_positive_runs": 2,
+        "ftp_count_positive_runs": 4,
+        "full_ptp_single_positive_runs": 2,
+        "full_ptp_union_positive_runs": 2,
+        "gold_diff_parseable_positive_runs": 4,
+        "gold_node_changed_from_base_positive_runs": 4,
+        "gold_node_found_positive_runs": 4,
+        "gold_test_files_positive_runs": 4,
+        "ptp_count_positive_runs": 3,
+        "ptp_empty_positive_runs": 1,
+        "ptp_in_single_all_ftp_receipt_positive_runs": 2,
+        "ptp_in_union_final_positive_receipts_positive_runs": 2,
+        "reported_pass_node_AST_differs_from_gold_positive_runs": 3,
+        "reported_pass_node_AST_matches_gold_positive_runs": 1
+      },
+      "laguna_verified/benchmark_pass": {
+        "FTP_node_in_gold_changed_file_positive_runs": 6,
+        "agent_diff_parseable_positive_runs": 6,
+        "agent_file_unchanged_but_gold_file_differs_positive_runs": 6,
+        "ftp_count_positive_runs": 6,
+        "full_ptp_single_positive_runs": 2,
+        "full_ptp_union_positive_runs": 2,
+        "gold_diff_parseable_positive_runs": 6,
+        "gold_node_changed_from_base_positive_runs": 6,
+        "gold_node_found_positive_runs": 6,
+        "gold_test_files_positive_runs": 6,
+        "ptp_count_positive_runs": 6,
+        "ptp_in_single_all_ftp_receipt_positive_runs": 6,
+        "ptp_in_union_final_positive_receipts_positive_runs": 6,
+        "reported_pass_node_AST_differs_from_gold_positive_runs": 6
+      },
+      "qwen3coder_verified/benchmark_nonpass": {
+        "FTP_node_in_gold_changed_file_positive_runs": 1,
+        "agent_diff_parseable_positive_runs": 1,
+        "agent_file_unchanged_but_gold_file_differs_positive_runs": 1,
+        "ftp_count_positive_runs": 1,
+        "full_ptp_single_positive_runs": 1,
+        "full_ptp_union_positive_runs": 1,
+        "gold_diff_parseable_positive_runs": 1,
+        "gold_node_changed_from_base_positive_runs": 1,
+        "gold_node_found_positive_runs": 1,
+        "gold_test_files_positive_runs": 1,
+        "ptp_count_positive_runs": 1,
+        "ptp_in_single_all_ftp_receipt_positive_runs": 1,
+        "ptp_in_union_final_positive_receipts_positive_runs": 1,
+        "reported_pass_node_AST_differs_from_gold_positive_runs": 1
+      },
+      "qwen3coder_verified_minisweagent/benchmark_nonpass": {
+        "FTP_node_in_gold_changed_file_positive_runs": 1,
+        "agent_diff_parseable_positive_runs": 1,
+        "agent_file_unchanged_but_gold_file_differs_positive_runs": 1,
+        "ftp_count_positive_runs": 1,
+        "gold_diff_parseable_positive_runs": 1,
+        "gold_node_changed_from_base_positive_runs": 1,
+        "gold_node_found_positive_runs": 1,
+        "gold_test_files_positive_runs": 1,
+        "ptp_count_positive_runs": 1,
+        "ptp_in_single_all_ftp_receipt_positive_runs": 1,
+        "ptp_in_union_final_positive_receipts_positive_runs": 1,
+        "reported_pass_node_AST_differs_from_gold_positive_runs": 1
+      },
+      "qwen3coder_verified_minisweagent/benchmark_pass": {
+        "FTP_node_in_gold_changed_file_positive_runs": 1,
+        "agent_diff_parseable_positive_runs": 1,
+        "agent_touches_any_FTP_node_file_positive_runs": 1,
+        "agent_touches_any_gold_test_file_positive_runs": 1,
+        "ftp_count_positive_runs": 1,
+        "gold_diff_parseable_positive_runs": 1,
+        "gold_node_found_positive_runs": 1,
+        "gold_node_not_found_in_base_positive_runs": 1,
+        "gold_test_files_positive_runs": 1,
+        "ptp_count_positive_runs": 1,
+        "reported_pass_node_AST_differs_from_gold_positive_runs": 1
+      }
+    },
+    "source_hashes": {
+      "laguna_verified": {
+        "patches": {
+          "bytes": 8754146,
+          "sha256": "6ad8f3da580736af3550cd3e7d0ac889451cee45ed985d272ce3c97d9b3c4a0a",
+          "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/laguna_verified/patches.parquet"
+        },
+        "trajectories": {
+          "bytes": 22669506,
+          "sha256": "ea6a9a16af92e3f754536429bee98b7ccec0f280cda94e16c4dfd78af5358681",
+          "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/laguna_verified/trajectories.parquet"
+        }
+      },
+      "qwen3coder_verified": {
+        "patches": {
+          "bytes": 4159361,
+          "sha256": "aab66bf3bb631c55f4c7ebef85bb8d0bb3cf3c45efd4bc925051b2acec1c0747",
+          "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/qwen3coder_verified/patches.parquet"
+        },
+        "trajectories": {
+          "bytes": 12443120,
+          "sha256": "46f93f0d7ef21a6bba76bb2aa71e10ef6dc2f172decbea0779fd10bd4eaeeac5",
+          "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/qwen3coder_verified/trajectories.parquet"
+        }
+      },
+      "qwen3coder_verified_minisweagent": {
+        "patches": {
+          "bytes": 41062562,
+          "sha256": "028e3a1b8dfdf38fd8224b8ceda7ddddef9280b587c36b55f17fad73c68dc0cf",
+          "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/qwen3coder_verified_minisweagent/patches.parquet"
+        },
+        "trajectories": {
+          "bytes": 7257543,
+          "sha256": "a996fe79ea7104de123f756ce076e1d6cf7e5e811c7edb15836a16841b159a2e",
+          "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/qwen3coder_verified_minisweagent/trajectories.parquet"
+        }
+      }
+    },
+    "source_revision": "15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe"
+  },
+  "external": {
+    "gemini": {
+      "artifact_bytes_read_count": 1323,
+      "artifact_path_counts": {
+        "patch": 441,
+        "report": 441,
+        "traj": 441
+      },
+      "cohort": {
+        "admitted": 438,
+        "admitted_benchmark_pass": 357,
+        "admitted_both_nonpass": 5,
+        "admitted_ftp_only_nonpass": 72,
+        "admitted_ptp_only_nonpass": 4,
+        "all_three_artifacts": 441,
+        "any_local_named_positive": 1,
+        "any_local_positive": 115,
+        "exact_final_diff_snapshot_runs": 0,
+        "legacy_runs": 0,
+        "missing_any_required_artifact": 59,
+        "missing_patch": 59,
+        "missing_report": 59,
+        "missing_traj": 59,
+        "not_applied_or_no_report": 1,
+        "official_frame_member": 500,
+        "official_report_verdict_agrees": 441,
+        "runs_with_recognized_tool_pair": 438,
+        "structured_runs": 438,
+        "submission_equals_evaluated_patch": 441,
+        "test_name_partition_mismatch": 2
+      },
+      "fetch_errors": {},
+      "independent_read_counts": {
+        "patch": 441,
+        "report": 441,
+        "traj": 441,
+        "triples": 441
+      },
+      "local_reference_scope": {
+        "named_positive_benchmark_nonpass": 0,
+        "named_positive_both_failure_runs": 0,
+        "named_positive_ftp_failure_runs": 0,
+        "named_positive_ftp_only_failure_runs": 0,
+        "named_positive_local_reported_ftp_names_failed_in_report_runs": 0,
+        "named_positive_local_reported_ptp_names_failed_in_report_runs": 0,
+        "named_positive_ptp_failure_runs": 0,
+        "named_positive_ptp_only_failure_runs": 0,
+        "named_positive_runs": 1,
+        "positive_benchmark_nonpass": 18,
+        "positive_both_failure_runs": 2,
+        "positive_ftp_failure_runs": 18,
+        "positive_ftp_only_failure_runs": 16,
+        "positive_local_reported_ftp_names_failed_in_report_runs": 0,
+        "positive_local_reported_ptp_names_failed_in_report_runs": 0,
+        "positive_ptp_failure_runs": 2,
+        "positive_ptp_only_failure_runs": 0,
+        "positive_runs": 115
+      },
+      "metadata_hash": {
+        "bytes": 2096679,
+        "sha256": "a45b1fe4e2f0c8390b2b2938ac83e92ed5979000856808f3679c07812e9e6dcd",
+        "url": "https://huggingface.co/datasets/princeton-nlp/SWE-bench_Verified/resolve/c104f840cc67f8b6eec6f759ebc8b2693d585d4a/data/test-00000-of-00001.parquet"
+      },
+      "official_details_sha256": "2217bde53ceffe19cfdb937fabe9c30018b631c973d6af42bcc77049d4ef12ed",
+      "official_passes": 359,
+      "official_revision": "40f164d5b8f1d249bf95a6df8b74b577fd8e519d",
+      "official_rows": 441,
+      "qualification": "Separate archived submission cohorts. Final patch equality to trajectory submission does not bind earlier local receipts to final patch; report-level grade is source-reported. Same test names may have different code, runtime or selection. Adjacent equal recorded git diff is a narrow screen, not full environment identity. Static final test AST does not identify executed local AST. Unavailable artifacts retained in 500-task frame, not failures. No data or source identifiers exported; S3 snapshot manifest is a digest, not an immutable origin guarantee.",
+      "run": "gemini",
+      "source_bundle_manifest_sha256": "75e075f47424c933392f2e1c48e6c21ca4bcec70fabe6468f5468bf6ef73a171",
+      "static_base_file_status": {},
+      "static_base_files": 0,
+      "static_final_test_identity": {
+        "all": {}
+      },
+      "static_run_flags": {}
+    },
+    "gpt5mini": {
+      "artifact_bytes_read_count": 1500,
+      "artifact_path_counts": {
+        "patch": 500,
+        "report": 500,
+        "traj": 500
+      },
+      "cohort": {
+        "all_three_artifacts": 500,
+        "empty_or_unreadable_patch": 14,
+        "official_frame_member": 500,
+        "official_report_verdict_mismatch": 486,
+        "submission_equals_evaluated_patch": 486
+      },
+      "fetch_errors": {},
+      "independent_read_counts": {
+        "patch": 500,
+        "report": 500,
+        "traj": 500,
+        "triples": 500
+      },
+      "local_reference_scope": {},
+      "metadata_hash": {
+        "bytes": 2096679,
+        "sha256": "a45b1fe4e2f0c8390b2b2938ac83e92ed5979000856808f3679c07812e9e6dcd",
+        "url": "https://huggingface.co/datasets/princeton-nlp/SWE-bench_Verified/resolve/c104f840cc67f8b6eec6f759ebc8b2693d585d4a/data/test-00000-of-00001.parquet"
+      },
+      "official_details_sha256": "325d43131ff0d2309db74b3bb27a9ec5ff7bc00688a18106d3dd7f62adb8f170",
+      "official_passes": 299,
+      "official_revision": "40f164d5b8f1d249bf95a6df8b74b577fd8e519d",
+      "official_rows": 500,
+      "qualification": "Separate archived submission cohorts. Final patch equality to trajectory submission does not bind earlier local receipts to final patch; report-level grade is source-reported. Same test names may have different code, runtime or selection. Adjacent equal recorded git diff is a narrow screen, not full environment identity. Static final test AST does not identify executed local AST. Unavailable artifacts retained in 500-task frame, not failures. No data or source identifiers exported; S3 snapshot manifest is a digest, not an immutable origin guarantee.",
+      "run": "gpt5mini",
+      "source_bundle_manifest_sha256": "bbcf4a5d9b16e82edb381c855bcfd04b240bfd3c4f9adf4c63e0ee8370c053ea",
+      "static_base_file_status": {},
+      "static_base_files": 0,
+      "static_final_test_identity": {
+        "all": {}
+      },
+      "static_run_flags": {}
+    },
+    "devstral": {
+      "artifact_bytes_read_count": 1500,
+      "artifact_path_counts": {
+        "patch": 500,
+        "report": 500,
+        "traj": 500
+      },
+      "cohort": {
+        "all_three_artifacts": 500,
+        "empty_or_unreadable_patch": 49,
+        "official_frame_member": 500,
+        "official_report_verdict_mismatch": 451,
+        "submission_equals_evaluated_patch": 451
+      },
+      "fetch_errors": {},
+      "independent_read_counts": {
+        "patch": 500,
+        "report": 500,
+        "traj": 500,
+        "triples": 500
+      },
+      "local_reference_scope": {},
+      "metadata_hash": {
+        "bytes": 2096679,
+        "sha256": "a45b1fe4e2f0c8390b2b2938ac83e92ed5979000856808f3679c07812e9e6dcd",
+        "url": "https://huggingface.co/datasets/princeton-nlp/SWE-bench_Verified/resolve/c104f840cc67f8b6eec6f759ebc8b2693d585d4a/data/test-00000-of-00001.parquet"
+      },
+      "official_details_sha256": "a4cac121a0d4673d61a94586650a5be35581d86c3f0703ad0fc54483b07ccfb1",
+      "official_passes": 282,
+      "official_revision": "40f164d5b8f1d249bf95a6df8b74b577fd8e519d",
+      "official_rows": 500,
+      "qualification": "Separate archived submission cohorts. Final patch equality to trajectory submission does not bind earlier local receipts to final patch; report-level grade is source-reported. Same test names may have different code, runtime or selection. Adjacent equal recorded git diff is a narrow screen, not full environment identity. Static final test AST does not identify executed local AST. Unavailable artifacts retained in 500-task frame, not failures. No data or source identifiers exported; S3 snapshot manifest is a digest, not an immutable origin guarantee.",
+      "run": "devstral",
+      "source_bundle_manifest_sha256": "996c4b624c4bb53d88f57c07ad11be03a334395d2525e6b2aa872a48c7297c01",
+      "static_base_file_status": {},
+      "static_base_files": 0,
+      "static_final_test_identity": {
+        "all": {}
+      },
+      "static_run_flags": {}
+    }
+  },
+  "legacy_diagnostic_completed": {
+    "devstral": {
+      "artifact_bytes_read_count": 1500,
+      "artifact_path_counts": {
+        "patch": 500,
+        "report": 500,
+        "traj": 500
+      },
+      "cohort": {
+        "all_three_artifacts": 500,
+        "empty_or_unreadable_patch": 49,
+        "flat_report_has_tests_status": 451,
+        "flat_report_patch_applied": 451,
+        "flat_report_verdict_agrees": 451,
+        "official_frame_member": 500,
+        "official_report_verdict_mismatch": 451,
+        "report_has_matching_task_key": 0,
+        "report_has_other_single_nested_dict": 0,
+        "report_matching_task_resolved_bool": 0,
+        "report_root_has_eval_tests": 0,
+        "report_root_has_resolved": 451,
+        "report_root_has_tests_status": 451,
+        "submission_equals_evaluated_patch": 451
+      },
+      "fetch_errors": {},
+      "independent_read_counts": {
+        "patch": 500,
+        "report": 500,
+        "traj": 500,
+        "triples": 500
+      },
+      "local_reference_scope": {},
+      "metadata_hash": {
+        "bytes": 2096679,
+        "sha256": "a45b1fe4e2f0c8390b2b2938ac83e92ed5979000856808f3679c07812e9e6dcd",
+        "url": "https://huggingface.co/datasets/princeton-nlp/SWE-bench_Verified/resolve/c104f840cc67f8b6eec6f759ebc8b2693d585d4a/data/test-00000-of-00001.parquet"
+      },
+      "official_details_sha256": "a4cac121a0d4673d61a94586650a5be35581d86c3f0703ad0fc54483b07ccfb1",
+      "official_passes": 282,
+      "official_revision": "40f164d5b8f1d249bf95a6df8b74b577fd8e519d",
+      "official_rows": 500,
+      "qualification": "Separate archived submission cohorts. Final patch equality to trajectory submission does not bind earlier local receipts to final patch; report-level grade is source-reported. Same test names may have different code, runtime or selection. Adjacent equal recorded git diff is a narrow screen, not full environment identity. Static final test AST does not identify executed local AST. Unavailable artifacts retained in 500-task frame, not failures. No data or source identifiers exported; S3 snapshot manifest is a digest, not an immutable origin guarantee.",
+      "run": "devstral",
+      "source_bundle_manifest_sha256": "996c4b624c4bb53d88f57c07ad11be03a334395d2525e6b2aa872a48c7297c01",
+      "static_base_file_status": {},
+      "static_base_files": 0,
+      "static_final_test_identity": {
+        "all": {}
+      },
+      "static_run_flags": {}
+    }
+  },
+  "publication_status": "candidate; no changes to MR31R9-EP2"
+}
