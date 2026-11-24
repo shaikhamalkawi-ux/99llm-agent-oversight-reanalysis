@@ -1,0 +1,33 @@
+name: G7 patch-linked test receipt audit
+on:
+  push:
+    branches: [novelty-g7-patch-linked-receipts]
+    paths: ['novelty_g7/**', '.github/workflows/novelty-g7-patch-receipts.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source-revision-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Synthetic receipt and patch-alignment tests
+        run: python novelty_g7/audit_patch_receipts.py --selftest
+      - name: Install parquet reader
+        run: pip install --disable-pip-version-check pyarrow==22.0.0
+      - name: Source revision replay
+        run: |
+          mkdir -p /tmp/g7_out
+          python novelty_g7/audit_patch_receipts.py --input-dir /tmp/g7_source --out /tmp/g7_out/G7_aggregate.json
+      - name: Remove original data
+        if: always()
+        run: rm -rf /tmp/g7_source
+      - uses: actions/upload-artifact@v4
+        with:
+          name: G7-aggregate-only
+          path: /tmp/g7_out/
+          if-no-files-found: error

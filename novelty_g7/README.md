@@ -1,0 +1,7 @@
+# G7 — Patch-linked test-receipt audit (exploratory research candidate)
+
+Before source outcomes are viewed: evaluate all six publicly released settings in Cim, Topcu & Kandemir, Termination Lag: Coding Agents Solve Early but Stop Late (arXiv:2611.14960), using the pinned Hugging Face revision. External benchmark challenge, not recoding Tang et al.
+
+Question: does a positive local test marker coexist with a benchmark failure when linked to the exact same nonempty recorded Git diff as the submitted patch? The narrow screen uses one terminal/bash call and observation, simple pytest/python -m pytest/python -m unittest, one numeric summary, and nonzero-exit rejection. Require identical nonempty patch IDs before and after the receipt step; three-snapshot and explicit zero-exit sensitivities. Do not execute transcript commands. Report all six settings; repeated tasks are not independent. First-receipt replay selects a recorded patch, not a new rollout.
+
+Cim et al. already establish early correctness, termination lag and occasional loss of correctness. Candidate novelty is an exact-state audit of recorded local test evidence versus independently graded same-patch outcomes, with explicit coverage. No original rows, identifiers, prompts, code, quotations or private information are exported. No new benchmark reruns, final task truth or causal effect claimed. G6 and MR31R9-EP2 unchanged. Results pending verification.
