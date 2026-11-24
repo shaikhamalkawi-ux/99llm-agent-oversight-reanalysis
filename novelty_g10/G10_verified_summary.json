@@ -1,0 +1,310 @@
+{
+  "version": "G10",
+  "pilot_verified_run": 45484175756,
+  "pilot_code_commit": "e6e256a58b296e70087459ac6c69db16a6204584",
+  "baseline_verified_run": 45484269694,
+  "baseline_code_commit": "29bfd3b68f2cfa3e210db149067d49a8d903e089",
+  "results": {
+    "qwen3coder_verified": {
+      "candidate_patch_sha256": "9570698b4cbea7b22d470241360d67ede6a207e85f753d94c66fb557aaddcd25",
+      "cells": {
+        "base_local": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "8a10c8a63269be9cec979109bda4debbe4b89181d059068ae7f789125fca68cd",
+          "passed": 1,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "base_reference": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 1,
+          "non_test_tree_digest": "8a10c8a63269be9cec979109bda4debbe4b89181d059068ae7f789125fca68cd",
+          "passed": 0,
+          "pytest_returncode": 1,
+          "pytest_verdict": "FAIL",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "candidate_local": {
+          "status": "HOLD_EXACT_PATCH_APPLICATION"
+        },
+        "candidate_reference": {
+          "status": "HOLD_EXACT_PATCH_APPLICATION"
+        },
+        "gold_reference": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "10bb294bae35c5a9f47f51ad547c2db601d4870a0c64d08c520bd847cb7df8d0",
+          "passed": 1,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        }
+      },
+      "ftp_count": 1,
+      "gold_patch_sha256": "1128c4768da30ad17958def8839dcdf3921c820a3328b28d75d2e21c53e8d5f8",
+      "image_id": "sha256:455d642453b0c1ace5e25dd27f661d22c52a1d5d698b8344de1b5ebe40c077f8",
+      "image_tag": "swebench/sweb.eval.x86_64.sphinx-doc_1776_sphinx-10614:latest",
+      "qualification": "One fixed pilot per setting, no replacement, named FTP tests only. New controlled test-file intervention in official image, not a rerun of full benchmark or original historical environment. PASS/FAIL only with completed JUnit report; collection, infrastructure and timeout remain HOLD.",
+      "reference_test_patch_sha256": "67701d18fdee1c802c86f12bafbedc42250bec185a6db83e06f5a9162ec8aa94",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.sphinx-doc_1776_sphinx-10614@sha256:455d642453b0c1ace5e25dd27f661d22c52a1d5d698b8344de1b5ebe40c077f8"
+      ],
+      "selection": {
+        "eligible_nonpassing_runs": 1,
+        "selection": "lexicographically first frozen G8 nonpass, one per setting; preparation cannot replace it",
+        "source_hashes": {
+          "meta": {
+            "bytes": 2096679,
+            "sha256": "a45b1fe4e2f0c8390b2b2938ac83e92ed5979000856808f3679c07812e9e6dcd",
+            "url": "https://huggingface.co/datasets/princeton-nlp/SWE-bench_Verified/resolve/c104f840cc67f8b6eec6f759ebc8b2693d585d4a/data/test-00000-of-00001.parquet"
+          },
+          "patches": {
+            "bytes": 4159361,
+            "sha256": "aab66bf3bb631c55f4c7ebef85bb8d0bb3cf3c45efd4bc925051b2acec1c0747",
+            "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/qwen3coder_verified/patches.parquet"
+          },
+          "trajectories": {
+            "bytes": 12443120,
+            "sha256": "46f93f0d7ef21a6bba76bb2aa71e10ef6dc2f172decbea0779fd10bd4eaeeac5",
+            "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/qwen3coder_verified/trajectories.parquet"
+          }
+        }
+      },
+      "setting": "qwen3coder_verified",
+      "status": "PARTIAL_OR_HOLD",
+      "task_id_sha256": "a488980f478d2dfe4a1e25bdf08df4f5bef47e0d2b5129778414b2d02bcad227"
+    },
+    "laguna_verified": {
+      "candidate_patch_sha256": "8373dd0c8c9c04f01e88203dee210addfdd8fede556aaf4c5d8a976418a7350e",
+      "cells": {
+        "base_local": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "756f4d13f01a377ef2167c0ca13d58b87a86ddff45ba8bc0de5cc53f08a7a707",
+          "passed": 1,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "base_reference": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 1,
+          "non_test_tree_digest": "756f4d13f01a377ef2167c0ca13d58b87a86ddff45ba8bc0de5cc53f08a7a707",
+          "passed": 0,
+          "pytest_returncode": 1,
+          "pytest_verdict": "FAIL",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "candidate_local": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "d2e0b60ce474d428041ac196cfb343bd91c766e840fa7e8f9bd6bd58ffbb8c69",
+          "passed": 1,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "candidate_reference": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 1,
+          "non_test_tree_digest": "d2e0b60ce474d428041ac196cfb343bd91c766e840fa7e8f9bd6bd58ffbb8c69",
+          "passed": 0,
+          "pytest_returncode": 1,
+          "pytest_verdict": "FAIL",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "gold_reference": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "10c3e8fa492b3a3f62f2940e5d7ac77ff1119d77a2dd8269c46cd907b87925de",
+          "passed": 1,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        }
+      },
+      "controlled_witness": true,
+      "ftp_count": 1,
+      "gold_patch_sha256": "7de34e6ed106dd91f81473f3646ed1340692a28c437324bf78adaf093d2c0c8d",
+      "image_id": "sha256:22f4f193fbf69d61c59e285494be18041934f8b528190dfe8c6c0d8051d8d6de",
+      "image_tag": "swebench/sweb.eval.x86_64.astropy_1776_astropy-13033:latest",
+      "non_test_tree_same_base": true,
+      "non_test_tree_same_candidate": true,
+      "qualification": "One fixed pilot per setting, no replacement, named FTP tests only. New controlled test-file intervention in official image, not a rerun of full benchmark or original historical environment. PASS/FAIL only with completed JUnit report; collection, infrastructure and timeout remain HOLD.",
+      "reference_test_patch_sha256": "d8d016d036e3f70137f8769246a57180e177ae2afc7e6ac41dfd80893d967b5d",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.astropy_1776_astropy-13033@sha256:22f4f193fbf69d61c59e285494be18041934f8b528190dfe8c6c0d8051d8d6de"
+      ],
+      "selection": {
+        "eligible_nonpassing_runs": 4,
+        "selection": "lexicographically first frozen G8 nonpass, one per setting; preparation cannot replace it",
+        "source_hashes": {
+          "meta": {
+            "bytes": 2096679,
+            "sha256": "a45b1fe4e2f0c8390b2b2938ac83e92ed5979000856808f3679c07812e9e6dcd",
+            "url": "https://huggingface.co/datasets/princeton-nlp/SWE-bench_Verified/resolve/c104f840cc67f8b6eec6f759ebc8b2693d585d4a/data/test-00000-of-00001.parquet"
+          },
+          "patches": {
+            "bytes": 8754146,
+            "sha256": "6ad8f3da580736af3550cd3e7d0ac889451cee45ed985d272ce3c97d9b3c4a0a",
+            "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/laguna_verified/patches.parquet"
+          },
+          "trajectories": {
+            "bytes": 22669506,
+            "sha256": "ea6a9a16af92e3f754536429bee98b7ccec0f280cda94e16c4dfd78af5358681",
+            "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/laguna_verified/trajectories.parquet"
+          }
+        }
+      },
+      "setting": "laguna_verified",
+      "status": "COMPLETED_PILOT",
+      "task_id_sha256": "70daba531152a74521e3a0751a713980aa2bfff9744bfd3be29c011051a3c12d"
+    },
+    "qwen3coder_verified_minisweagent": {
+      "candidate_patch_sha256": "248304cfac885b2497a3311469ea9d3abc3b5e0c2a3845baebc61e8364175f95",
+      "cells": {
+        "base_local": {
+          "collected": 2,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "3a51916dddb51fb2098608698f85266e937e2baad8876e288318d8087d4935b5",
+          "passed": 2,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "base_reference": {
+          "collected": 2,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 2,
+          "non_test_tree_digest": "3a51916dddb51fb2098608698f85266e937e2baad8876e288318d8087d4935b5",
+          "passed": 0,
+          "pytest_returncode": 1,
+          "pytest_verdict": "FAIL",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "candidate_local": {
+          "status": "HOLD_EXACT_PATCH_APPLICATION"
+        },
+        "candidate_reference": {
+          "status": "HOLD_EXACT_PATCH_APPLICATION"
+        },
+        "gold_reference": {
+          "collected": 2,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "29832e8e3805b73d21f25565b735c91bc57cb17dcd0fc23e618c2535442ee1e7",
+          "passed": 2,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        }
+      },
+      "ftp_count": 2,
+      "gold_patch_sha256": "7f6486d010e024a28295d8370931a9079d48e4b2ea3b8a6f66447ce2c73b5778",
+      "image_id": "sha256:21a4deef9114348ab02986927e057d6bc0caf46fceca06414493f91ce4c64283",
+      "image_tag": "swebench/sweb.eval.x86_64.pytest-dev_1776_pytest-5840:latest",
+      "qualification": "One fixed pilot per setting, no replacement, named FTP tests only. New controlled test-file intervention in official image, not a rerun of full benchmark or original historical environment. PASS/FAIL only with completed JUnit report; collection, infrastructure and timeout remain HOLD.",
+      "reference_test_patch_sha256": "f4974c373808cd5a9309b75e2eec2a9a6540fb3017f94a991bd23c9b6ffdbd1d",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.pytest-dev_1776_pytest-5840@sha256:21a4deef9114348ab02986927e057d6bc0caf46fceca06414493f91ce4c64283"
+      ],
+      "selection": {
+        "eligible_nonpassing_runs": 1,
+        "selection": "lexicographically first frozen G8 nonpass, one per setting; preparation cannot replace it",
+        "source_hashes": {
+          "meta": {
+            "bytes": 2096679,
+            "sha256": "a45b1fe4e2f0c8390b2b2938ac83e92ed5979000856808f3679c07812e9e6dcd",
+            "url": "https://huggingface.co/datasets/princeton-nlp/SWE-bench_Verified/resolve/c104f840cc67f8b6eec6f759ebc8b2693d585d4a/data/test-00000-of-00001.parquet"
+          },
+          "patches": {
+            "bytes": 41062562,
+            "sha256": "028e3a1b8dfdf38fd8224b8ceda7ddddef9280b587c36b55f17fad73c68dc0cf",
+            "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/qwen3coder_verified_minisweagent/patches.parquet"
+          },
+          "trajectories": {
+            "bytes": 7257543,
+            "sha256": "a996fe79ea7104de123f756ce076e1d6cf7e5e811c7edb15836a16841b159a2e",
+            "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/qwen3coder_verified_minisweagent/trajectories.parquet"
+          }
+        }
+      },
+      "setting": "qwen3coder_verified_minisweagent",
+      "status": "PARTIAL_OR_HOLD",
+      "task_id_sha256": "f782635980b309ef5b96dd4b55a275abdb4d98530fc6af22d4c82d6de43a7479"
+    },
+    "baseline": {
+      "base_file_fetches_within_task_cache": 203,
+      "distinct_task_function_counts": {
+        "base_definition_absent_or_ambiguous": 152,
+        "changed_function_AST": 78,
+        "reference_definition_not_found": 1,
+        "same_function_AST": 47,
+        "unparseable_reference_diff": 1
+      },
+      "identifier_counts": {
+        "base_definition_absent_or_ambiguous": 212,
+        "changed_function_AST": 98,
+        "identifiers": 1516,
+        "parseable_identifiers": 364,
+        "reference_definition_not_found": 1,
+        "same_function_AST": 52,
+        "unparseable_reference_diff": 1,
+        "unsupported_node_syntax": 1152
+      },
+      "metadata": {
+        "bytes": 2096679,
+        "sha256": "a45b1fe4e2f0c8390b2b2938ac83e92ed5979000856808f3679c07812e9e6dcd",
+        "url": "https://huggingface.co/datasets/princeton-nlp/SWE-bench_Verified/resolve/c104f840cc67f8b6eec6f759ebc8b2693d585d4a/data/test-00000-of-00001.parquet"
+      },
+      "present_base_file_hashes_within_task_cache": 201,
+      "qualification": "Static benchmark design audit over the full 500-task metadata frame. Unsupported identifiers and failed reconstruction remain unknown. Pytest parameterized IDs map to named function definitions, not necessarily the exact parameter instance; AST difference is not semantic inequivalence. Base definition absent or ambiguous is not proof of a new test. No outcomes, agent success or prevalence outside Verified are inferred.",
+      "task_counts": {
+        "all_found_and_all_changed": 60,
+        "all_found_and_all_same": 3,
+        "all_found_and_any_changed": 60,
+        "all_identifiers_have_both_found_definitions": 63,
+        "all_identifiers_supported": 194,
+        "all_reference_found_and_at_least_one_base_missing_or_ambiguous": 129,
+        "any_absent_or_ambiguous_base": 129,
+        "any_changed_AST": 66,
+        "any_same_AST": 8,
+        "tasks": 500
+      }
+    }
+  },
+  "qualification": "One controlled candidate witness; two candidate patch application HOLDs. Full-frame static audit is a lower bound under supported node syntax. No whole benchmark regrading or historical repair causality."
+}
