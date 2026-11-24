@@ -18,7 +18,9 @@ jobs:
         with:
           python-version: '3.11'
       - name: Synthetic scope tests
-        run: python novelty_g6/audit_validation_scope.py --selftest
+        run: |
+          python novelty_g6/audit_validation_scope.py --selftest
+          python novelty_g6/compare_targeting.py --selftest
       - name: Fetch pinned original releases ephemerally
         run: |
           python - <<'PY'
@@ -32,6 +34,8 @@ jobs:
         run: |
           mkdir -p /tmp/g6_output
           python novelty_g6/audit_validation_scope.py --annotations /tmp/g6_annotations.json --excerpts /tmp/g6_excerpts.json --validation /tmp/g6_validation.json --out /tmp/g6_output/G6_aggregate.json
+      - name: Exact targeting comparator and objective sensitivity
+        run: python novelty_g6/compare_targeting.py --annotations /tmp/g6_annotations.json --excerpts /tmp/g6_excerpts.json --validation /tmp/g6_validation.json --out /tmp/g6_output/G6_targeting.json
       - name: Remove original records
         if: always()
         run: rm -f /tmp/g6_annotations.json /tmp/g6_excerpts.json /tmp/g6_validation.json
