@@ -9,6 +9,9 @@ ANSI=re.compile(r'\x1b\[[0-?]*[ -/]*[@-~]')
 SHELL=re.compile(r'[\n\r;&|<>\x60$]')
 PYTHON=re.compile(r'^python(?:[0-9]+(?:\.[0-9]+)*)?$')
 EXIT=re.compile(r'\b(?:exit code|return code|returncode)\s*(?:[:=]|is)?\s*(-?\d+)\b',re.I)
+XML_EXIT=re.compile(r'<(?:returncode|exit_code)>\s*(-?\d+)\s*</(?:returncode|exit_code)>',re.I)
+def exit_codes(o):
+    return [int(c) for c in EXIT.findall(o)+XML_EXIT.findall(o)]
 PYTEST_SUMMARY=re.compile(r'^\s*=*\s*(?P<summary>(?:\d+\s+(?:passed|failed|errors?|skipped|deselected|xfailed|xpassed|warnings?)(?:,\s*)?)+)\s+in\s+\d+(?:\.\d+)?s(?:\s+\([^)]*\))?\s*=*\s*$',re.I|re.M)
 UN_RUN=re.compile(r'^\s*Ran\s+(\d+)\s+tests?\s+in\s+\d+(?:\.\d+)?s\s*$',re.I|re.M)
 UN_OK=re.compile(r'^\s*OK(?:\s+\(([^)]*)\))?\s*$',re.M)
@@ -42,7 +45,7 @@ def command_kind(step):
     return kind,ANSI.sub('',o).replace('\r\n','\n').replace('\r','\n')
 def receipt(kind,o):
     if not kind or o is None:return None
-    codes=[int(c) for c in EXIT.findall(o)];nonzero=any(c!=0 for c in codes)
+    codes=exit_codes(o);nonzero=any(c!=0 for c in codes)
     if kind=='pytest':
         m=list(PYTEST_SUMMARY.finditer(o))
         if len(m)!=1:return None
@@ -103,7 +106,7 @@ def summarize(trajectories,patches,expected):
             receipt_counts[x+'_stable_patch']+=1;receipt_counts[x+'_stable_benchmark_pass']+=ok
             if x=='pass':
                 if stable3(ids,s):triple.append(q)
-                if EXIT.findall(o) and all(int(z)==0 for z in EXIT.findall(o)):narrow_pos.append(q)
+                if exit_codes(o) and all(z==0 for z in exit_codes(o)):narrow_pos.append(q)
         count['any_pass_marker']+=bool(observed_pos);count['any_fail_marker']+=bool(observed_neg)
         count['any_patch_linked_pass']+=bool(pos);count['any_patch_linked_fail']+=bool(neg)
         count['any_triple_linked_pass']+=bool(triple);count['any_explicit_zero_exit_linked_pass']+=bool(narrow_pos)
@@ -133,6 +136,9 @@ def selftest():
     assert receipt('pytest','===== 3 passed, 1 skipped in 0.21s =====')=='pass'
     assert receipt('pytest','=== 2 failed, 3 passed in 1.0s ===')=='fail'
     assert receipt('pytest','3 passed in 0.20s\nExit code: 1') is None
+    assert receipt('pytest','3 passed in 0.20s\n<returncode>1</returncode>') is None
+    assert receipt('pytest','3 passed in 0.20s\n<returncode>0</returncode>')=='pass'
+    assert exit_codes('<returncode>0</returncode>')==[0]
     assert receipt('pytest','0 passed in 0.0s') is None
     assert receipt('pytest','3 passed') is None
     assert receipt('unittest','Ran 2 tests in 0.02s\n\nOK')=='pass'
