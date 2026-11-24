@@ -1,0 +1,33 @@
+name: G8 same-command transition and benchmark test scope audit
+on:
+  push:
+    branches: [novelty-g8-test-scope-and-transition]
+    paths: ['novelty_g8/**', '.github/workflows/novelty-g8-scope.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Test frozen definitions
+        run: python novelty_g8/audit_test_scope_transition.py --selftest
+      - name: Install parquet reader
+        run: pip install --disable-pip-version-check pyarrow==22.0.0
+      - name: Replay original data and verify G7 denominator
+        run: |
+          mkdir -p /tmp/g8_out
+          python novelty_g8/audit_test_scope_transition.py --input-dir /tmp/g8_data --out /tmp/g8_out/G8_aggregate.json
+      - name: Remove source data
+        if: always()
+        run: rm -rf /tmp/g8_data
+      - uses: actions/upload-artifact@v4
+        with:
+          name: G8-aggregate-only
+          path: /tmp/g8_out/
+          if-no-files-found: error
