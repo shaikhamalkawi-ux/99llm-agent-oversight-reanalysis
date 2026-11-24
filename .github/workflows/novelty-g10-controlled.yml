@@ -1,0 +1,35 @@
+name: G10 isolated controlled test-version pilot
+on:
+  push:
+    branches: [novelty-g10-controlled-test-version]
+    paths: ['novelty_g10/**', '.github/workflows/novelty-g10-controlled.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  pilot:
+    strategy:
+      fail-fast: false
+      matrix:
+        setting: [qwen3coder_verified, laguna_verified, qwen3coder_verified_minisweagent]
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install --disable-pip-version-check pyarrow==22.0.0
+      - name: Source-locked isolated pilot
+        run: |
+          mkdir -p /tmp/g10_out
+          python novelty_g10/run_pilot.py --setting ${{ matrix.setting }} --root /tmp/g10_data --out /tmp/g10_out/aggregate.json
+      - if: always()
+        run: rm -rf /tmp/g10_data
+      - uses: actions/upload-artifact@v4
+        with:
+          name: G10-${{ matrix.setting }}-aggregate
+          path: /tmp/g10_out/
+          if-no-files-found: error
