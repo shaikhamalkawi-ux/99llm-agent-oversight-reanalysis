@@ -1,0 +1,42 @@
+name: G6 validation scope and resolver transport audit
+on:
+  push:
+    branches: [novelty-g6-validation-scope-audit]
+    paths:
+      - 'novelty_g6/**'
+      - '.github/workflows/novelty-g6-validation-scope.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  pinned-validation-scope:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Synthetic scope tests
+        run: python novelty_g6/audit_validation_scope.py --selftest
+      - name: Fetch pinned original releases ephemerally
+        run: |
+          python - <<'PY'
+          import urllib.request
+          base='https://raw.githubusercontent.com/ND-SaNDwichLAB/coding-agent-misalignment/c887cc920129b2db0bdf218c8550e98f74f42f7c/'
+          for name,path in [('annotations','data/core/annotated_misalignments.json'),('excerpts','misalignments.json'),('validation','data/core/validated_misalignments.json')]:
+              with urllib.request.urlopen(base+path,timeout=120) as r:
+                  open('/tmp/g6_'+name+'.json','wb').write(r.read())
+          PY
+      - name: Source-locked aggregate audit
+        run: |
+          mkdir -p /tmp/g6_output
+          python novelty_g6/audit_validation_scope.py --annotations /tmp/g6_annotations.json --excerpts /tmp/g6_excerpts.json --validation /tmp/g6_validation.json --out /tmp/g6_output/G6_aggregate.json
+      - name: Remove original records
+        if: always()
+        run: rm -f /tmp/g6_annotations.json /tmp/g6_excerpts.json /tmp/g6_validation.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: G6-aggregate-only
+          path: /tmp/g6_output/
+          if-no-files-found: error
