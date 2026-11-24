@@ -1,0 +1,53 @@
+name: G4 Source-pinned repository-level evidence rescue (research candidate)
+on:
+  push:
+    branches: [novelty-g4-objective-repository-frontier]
+    paths:
+      - 'novelty_g4/**'
+      - '.github/workflows/novelty-g4-repository-rescue.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source-locked-repository-frontier:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Retrieve original source ephemerally and check byte-level fingerprint
+        run: |
+          python - <<'PY'
+          import urllib.request, hashlib
+          url='https://raw.githubusercontent.com/ND-SaNDwichLAB/coding-agent-misalignment/c887cc920129b2db0bdf218c8550e98f74f42f7c/data/core/annotated_misalignments.json'
+          b=urllib.request.urlopen(url,timeout=120).read()
+          assert hashlib.sha256(b).hexdigest()=='7e0693675242a625bdb586bcd8cef23f5da76c65cf840108c3c24b6b479b9f57'
+          open('/tmp/99llm_original_ephemeral_g4.json','wb').write(b)
+          print('Source SHA-256 PASS; no original records published')
+          PY
+      - name: Replay G3 and compute G4 repository-unit frontier
+        run: |
+          python novelty_g3/verify_access_gate.py --annotations /tmp/99llm_original_ephemeral_g4.json --output /tmp/g3_aggregate_g4.json
+          python novelty_g4/verify_repository_rescue.py --annotations /tmp/99llm_original_ephemeral_g4.json --out /tmp/g4_aggregate_only.json
+          python - <<'PY'
+          import json
+          g3=json.load(open('/tmp/g3_aggregate_g4.json'))
+          g4=json.load(open('/tmp/g4_aggregate_only.json'))
+          assert g3['no_license_metadata']['unknown']==1347
+          assert g4['matched_repositories']==352
+          assert g4['all_NO_LICENSE_repositories_from_specstory']
+          assert g4['raw_rows_and_identifiers_exported'] is False
+          assert g4['unrestricted_min_complete_repositories_for_possible_positive_sign']==49
+          assert g4['unrestricted_min_complete_repositories_for_possible_negative_sign']==63
+          print('G4 original-source and repository-unit arithmetic PASS')
+          PY
+      - name: Remove original source before artifact upload
+        if: always()
+        run: rm -f /tmp/99llm_original_ephemeral_g4.json
+      - name: Upload aggregate-only G4 results
+        uses: actions/upload-artifact@v4
+        with:
+          name: g4-aggregate-only-repository-frontier
+          path: /tmp/g4_aggregate_only.json
+          if-no-files-found: error
