@@ -1,0 +1,970 @@
+{
+  "version": "G7",
+  "verification_run": 45468524785,
+  "verification_commit": "79e075a3399cce1d8db1f864bb1a8700b1cb9e57",
+  "dataset": "musacim/termination-lag-trajectories",
+  "revision": "15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe",
+  "primary_by_setting": {
+    "qwen3coder_verified": {
+      "cohort": {
+        "aligned_complete": 486,
+        "aligned_complete_final_resolved": 216,
+        "all": 500,
+        "all_final_resolved": 219,
+        "any_explicit_zero_exit_linked_pass": 0,
+        "any_fail_marker": 95,
+        "any_pass_linked_to_final_patch": 29,
+        "any_pass_marker": 41,
+        "any_patch_linked_fail": 81,
+        "any_patch_linked_pass": 41,
+        "any_triple_linked_pass": 41,
+        "final_patch_linked_pass_benchmark_fail": 17,
+        "nonfinal_only_pass_final_benchmark_fail": 10,
+        "pass_linked_only_to_nonfinal_patches": 12,
+        "triple_final_patch_linked_pass_benchmark_fail": 14,
+        "triple_pass_linked_to_final_patch": 24
+      },
+      "patch_rows": 3463,
+      "receipt_events": {
+        "eligible_single_test_commands": 966,
+        "fail_marker": 127,
+        "fail_no_stable_nonempty_patch": 18,
+        "fail_stable_benchmark_pass": 25,
+        "fail_stable_patch": 109,
+        "pass_marker": 157,
+        "pass_no_stable_nonempty_patch": 4,
+        "pass_stable_benchmark_pass": 50,
+        "pass_stable_patch": 153
+      },
+      "tables": {
+        "first_fail": {
+          "benchmark_pass_at_receipt": 21,
+          "changed_final_patch_benchmark_fail": 46,
+          "changed_final_patch_id": 67,
+          "final_resolved": 26,
+          "n": 81,
+          "receipt_fail_final_pass": 5,
+          "receipt_pass_final_fail": 0,
+          "same_final_patch_benchmark_fail": 9,
+          "same_final_patch_id": 14,
+          "steps_after_receipt": 1356
+        },
+        "first_pass": {
+          "benchmark_pass_at_receipt": 12,
+          "changed_final_patch_benchmark_fail": 22,
+          "changed_final_patch_id": 31,
+          "final_resolved": 14,
+          "n": 41,
+          "receipt_fail_final_pass": 2,
+          "receipt_pass_final_fail": 0,
+          "same_final_patch_benchmark_fail": 5,
+          "same_final_patch_id": 10,
+          "steps_after_receipt": 641
+        },
+        "first_triple_pass": {
+          "benchmark_pass_at_receipt": 12,
+          "changed_final_patch_benchmark_fail": 21,
+          "changed_final_patch_id": 29,
+          "final_resolved": 14,
+          "n": 41,
+          "receipt_fail_final_pass": 2,
+          "receipt_pass_final_fail": 0,
+          "same_final_patch_benchmark_fail": 6,
+          "same_final_patch_id": 12,
+          "steps_after_receipt": 612
+        },
+        "last_pass": {
+          "benchmark_pass_at_receipt": 14,
+          "changed_final_patch_benchmark_fail": 10,
+          "changed_final_patch_id": 12,
+          "final_resolved": 14,
+          "n": 41,
+          "receipt_fail_final_pass": 0,
+          "receipt_pass_final_fail": 0,
+          "same_final_patch_benchmark_fail": 17,
+          "same_final_patch_id": 29,
+          "steps_after_receipt": 179
+        }
+      }
+    },
+    "qwen3coder_multilingual": {
+      "cohort": {
+        "aligned_complete": 281,
+        "aligned_complete_final_resolved": 64,
+        "all": 300,
+        "all_final_resolved": 67,
+        "any_explicit_zero_exit_linked_pass": 0,
+        "any_fail_marker": 0,
+        "any_pass_marker": 0,
+        "any_patch_linked_fail": 0,
+        "any_patch_linked_pass": 0,
+        "any_triple_linked_pass": 0
+      },
+      "patch_rows": 2938,
+      "receipt_events": {
+        "eligible_single_test_commands": 7
+      },
+      "tables": {}
+    },
+    "laguna_verified": {
+      "cohort": {
+        "aligned_complete": 474,
+        "aligned_complete_final_resolved": 276,
+        "all": 500,
+        "all_final_resolved": 280,
+        "any_explicit_zero_exit_linked_pass": 0,
+        "any_fail_marker": 53,
+        "any_pass_linked_to_final_patch": 71,
+        "any_pass_marker": 133,
+        "any_patch_linked_fail": 52,
+        "any_patch_linked_pass": 133,
+        "any_triple_linked_pass": 128,
+        "final_patch_linked_pass_benchmark_fail": 37,
+        "nonfinal_only_pass_final_benchmark_fail": 29,
+        "pass_linked_only_to_nonfinal_patches": 62,
+        "triple_final_patch_linked_pass_benchmark_fail": 28,
+        "triple_pass_linked_to_final_patch": 53
+      },
+      "patch_rows": 7265,
+      "receipt_events": {
+        "eligible_single_test_commands": 990,
+        "fail_marker": 107,
+        "fail_no_stable_nonempty_patch": 5,
+        "fail_stable_benchmark_pass": 31,
+        "fail_stable_patch": 102,
+        "pass_marker": 625,
+        "pass_no_stable_nonempty_patch": 3,
+        "pass_stable_benchmark_pass": 317,
+        "pass_stable_patch": 622
+      },
+      "tables": {
+        "first_fail": {
+          "benchmark_pass_at_receipt": 15,
+          "changed_final_patch_benchmark_fail": 30,
+          "changed_final_patch_id": 46,
+          "final_resolved": 18,
+          "n": 52,
+          "receipt_fail_final_pass": 3,
+          "receipt_pass_final_fail": 0,
+          "same_final_patch_benchmark_fail": 4,
+          "same_final_patch_id": 6,
+          "steps_after_receipt": 2631
+        },
+        "first_pass": {
+          "benchmark_pass_at_receipt": 61,
+          "changed_final_patch_benchmark_fail": 55,
+          "changed_final_patch_id": 106,
+          "final_resolved": 67,
+          "n": 133,
+          "receipt_fail_final_pass": 6,
+          "receipt_pass_final_fail": 0,
+          "same_final_patch_benchmark_fail": 11,
+          "same_final_patch_id": 27,
+          "steps_after_receipt": 6351
+        },
+        "first_triple_pass": {
+          "benchmark_pass_at_receipt": 62,
+          "changed_final_patch_benchmark_fail": 54,
+          "changed_final_patch_id": 102,
+          "final_resolved": 64,
+          "n": 128,
+          "receipt_fail_final_pass": 2,
+          "receipt_pass_final_fail": 0,
+          "same_final_patch_benchmark_fail": 10,
+          "same_final_patch_id": 26,
+          "steps_after_receipt": 5942
+        },
+        "last_pass": {
+          "benchmark_pass_at_receipt": 65,
+          "changed_final_patch_benchmark_fail": 30,
+          "changed_final_patch_id": 64,
+          "final_resolved": 67,
+          "n": 133,
+          "receipt_fail_final_pass": 2,
+          "receipt_pass_final_fail": 0,
+          "same_final_patch_benchmark_fail": 36,
+          "same_final_patch_id": 69,
+          "steps_after_receipt": 2390
+        }
+      }
+    },
+    "laguna_multilingual": {
+      "cohort": {
+        "aligned_complete": 271,
+        "aligned_complete_final_resolved": 143,
+        "all": 300,
+        "all_final_resolved": 144,
+        "any_explicit_zero_exit_linked_pass": 0,
+        "any_fail_marker": 0,
+        "any_pass_marker": 0,
+        "any_patch_linked_fail": 0,
+        "any_patch_linked_pass": 0,
+        "any_triple_linked_pass": 0
+      },
+      "patch_rows": 5897,
+      "receipt_events": {},
+      "tables": {}
+    },
+    "seedoss_pro300": {
+      "cohort": {
+        "aligned_complete": 264,
+        "aligned_complete_final_resolved": 20,
+        "all": 300,
+        "all_final_resolved": 23,
+        "any_explicit_zero_exit_linked_pass": 0,
+        "any_fail_marker": 9,
+        "any_pass_linked_to_final_patch": 29,
+        "any_pass_marker": 32,
+        "any_patch_linked_fail": 9,
+        "any_patch_linked_pass": 32,
+        "any_triple_linked_pass": 30,
+        "final_patch_linked_pass_benchmark_fail": 24,
+        "nonfinal_only_pass_final_benchmark_fail": 3,
+        "pass_linked_only_to_nonfinal_patches": 3,
+        "triple_final_patch_linked_pass_benchmark_fail": 20,
+        "triple_pass_linked_to_final_patch": 25
+      },
+      "patch_rows": 2711,
+      "receipt_events": {
+        "eligible_single_test_commands": 151,
+        "fail_marker": 19,
+        "fail_stable_benchmark_pass": 0,
+        "fail_stable_patch": 19,
+        "pass_marker": 63,
+        "pass_no_stable_nonempty_patch": 3,
+        "pass_stable_benchmark_pass": 10,
+        "pass_stable_patch": 60
+      },
+      "tables": {
+        "first_fail": {
+          "benchmark_pass_at_receipt": 0,
+          "changed_final_patch_benchmark_fail": 6,
+          "changed_final_patch_id": 6,
+          "final_resolved": 0,
+          "n": 9,
+          "receipt_fail_final_pass": 0,
+          "receipt_pass_final_fail": 0,
+          "same_final_patch_benchmark_fail": 3,
+          "same_final_patch_id": 3,
+          "steps_after_receipt": 148
+        },
+        "first_pass": {
+          "benchmark_pass_at_receipt": 5,
+          "changed_final_patch_benchmark_fail": 7,
+          "changed_final_patch_id": 7,
+          "final_resolved": 5,
+          "n": 32,
+          "receipt_fail_final_pass": 0,
+          "receipt_pass_final_fail": 0,
+          "same_final_patch_benchmark_fail": 20,
+          "same_final_patch_id": 25,
+          "steps_after_receipt": 263
+        },
+        "first_triple_pass": {
+          "benchmark_pass_at_receipt": 5,
+          "changed_final_patch_benchmark_fail": 7,
+          "changed_final_patch_id": 7,
+          "final_resolved": 5,
+          "n": 30,
+          "receipt_fail_final_pass": 0,
+          "receipt_pass_final_fail": 0,
+          "same_final_patch_benchmark_fail": 18,
+          "same_final_patch_id": 23,
+          "steps_after_receipt": 261
+        },
+        "last_pass": {
+          "benchmark_pass_at_receipt": 5,
+          "changed_final_patch_benchmark_fail": 3,
+          "changed_final_patch_id": 3,
+          "final_resolved": 5,
+          "n": 32,
+          "receipt_fail_final_pass": 0,
+          "receipt_pass_final_fail": 0,
+          "same_final_patch_benchmark_fail": 24,
+          "same_final_patch_id": 29,
+          "steps_after_receipt": 119
+        }
+      }
+    },
+    "qwen3coder_verified_minisweagent": {
+      "cohort": {
+        "aligned_complete": 499,
+        "aligned_complete_final_resolved": 162,
+        "all": 500,
+        "all_final_resolved": 162,
+        "any_explicit_zero_exit_linked_pass": 84,
+        "any_fail_marker": 56,
+        "any_pass_linked_to_final_patch": 13,
+        "any_pass_marker": 85,
+        "any_patch_linked_fail": 55,
+        "any_patch_linked_pass": 84,
+        "any_triple_linked_pass": 82,
+        "final_patch_linked_pass_benchmark_fail": 9,
+        "nonfinal_only_pass_final_benchmark_fail": 45,
+        "pass_linked_only_to_nonfinal_patches": 71,
+        "triple_final_patch_linked_pass_benchmark_fail": 8,
+        "triple_pass_linked_to_final_patch": 11,
+        "zero_exit_final_patch_linked_pass_benchmark_fail": 9,
+        "zero_exit_pass_linked_to_final_patch": 13
+      },
+      "patch_rows": 4392,
+      "receipt_events": {
+        "eligible_single_test_commands": 620,
+        "fail_marker": 91,
+        "fail_no_stable_nonempty_patch": 2,
+        "fail_stable_benchmark_pass": 23,
+        "fail_stable_patch": 89,
+        "pass_marker": 205,
+        "pass_no_stable_nonempty_patch": 4,
+        "pass_stable_benchmark_pass": 69,
+        "pass_stable_patch": 201
+      },
+      "tables": {
+        "first_fail": {
+          "benchmark_pass_at_receipt": 15,
+          "changed_final_patch_benchmark_fail": 35,
+          "changed_final_patch_id": 52,
+          "final_resolved": 20,
+          "n": 55,
+          "receipt_fail_final_pass": 5,
+          "receipt_pass_final_fail": 0,
+          "same_final_patch_benchmark_fail": 0,
+          "same_final_patch_id": 3,
+          "steps_after_receipt": 1167
+        },
+        "first_pass": {
+          "benchmark_pass_at_receipt": 31,
+          "changed_final_patch_benchmark_fail": 48,
+          "changed_final_patch_id": 75,
+          "final_resolved": 30,
+          "n": 84,
+          "receipt_fail_final_pass": 0,
+          "receipt_pass_final_fail": 1,
+          "same_final_patch_benchmark_fail": 6,
+          "same_final_patch_id": 9,
+          "steps_after_receipt": 1185
+        },
+        "first_triple_pass": {
+          "benchmark_pass_at_receipt": 31,
+          "changed_final_patch_benchmark_fail": 46,
+          "changed_final_patch_id": 73,
+          "final_resolved": 30,
+          "n": 82,
+          "receipt_fail_final_pass": 0,
+          "receipt_pass_final_fail": 1,
+          "same_final_patch_benchmark_fail": 6,
+          "same_final_patch_id": 9,
+          "steps_after_receipt": 1064
+        },
+        "first_zero_exit_pass": {
+          "benchmark_pass_at_receipt": 31,
+          "changed_final_patch_benchmark_fail": 48,
+          "changed_final_patch_id": 75,
+          "final_resolved": 30,
+          "n": 84,
+          "receipt_fail_final_pass": 0,
+          "receipt_pass_final_fail": 1,
+          "same_final_patch_benchmark_fail": 6,
+          "same_final_patch_id": 9,
+          "steps_after_receipt": 1185
+        },
+        "last_pass": {
+          "benchmark_pass_at_receipt": 31,
+          "changed_final_patch_benchmark_fail": 45,
+          "changed_final_patch_id": 71,
+          "final_resolved": 30,
+          "n": 84,
+          "receipt_fail_final_pass": 0,
+          "receipt_pass_final_fail": 1,
+          "same_final_patch_benchmark_fail": 9,
+          "same_final_patch_id": 13,
+          "steps_after_receipt": 735
+        }
+      }
+    }
+  },
+  "scope_by_setting": {
+    "qwen3coder_verified": {
+      "all_linked_patch_units": {
+        "both_benchmark_fail_patches": 18,
+        "both_distinct_literal_commands_benchmark_fail_patches": 18,
+        "both_distinct_literal_commands_patches": 22,
+        "both_patches": 22,
+        "both_triple_benchmark_fail_patches": 15,
+        "both_triple_patches": 19,
+        "clean_summary_pass_benchmark_fail_patches": 51,
+        "clean_summary_pass_patches": 73,
+        "fail_benchmark_fail_patches": 75,
+        "fail_patches": 97,
+        "pass_benchmark_fail_patches": 59,
+        "pass_patches": 83,
+        "three_distinct_pass_commands_benchmark_fail_patches": 12,
+        "three_distinct_pass_commands_patches": 20,
+        "two_distinct_clean_pass_commands_benchmark_fail_patches": 20,
+        "two_distinct_clean_pass_commands_patches": 31,
+        "two_distinct_pass_commands_benchmark_fail_patches": 27,
+        "two_distinct_pass_commands_patches": 40,
+        "two_distinct_triple_pass_commands_benchmark_fail_patches": 21,
+        "two_distinct_triple_pass_commands_patches": 32,
+        "two_pass_events_benchmark_fail_patches": 27,
+        "two_pass_events_patches": 40,
+        "two_triple_pass_events_benchmark_fail_patches": 21,
+        "two_triple_pass_events_patches": 32
+      },
+      "cohort": {
+        "aligned_complete": 486,
+        "all": 500,
+        "any_patch_both_distinct_literal_commands_runs": 19,
+        "any_patch_both_runs": 19,
+        "any_patch_both_triple_runs": 18,
+        "any_patch_clean_summary_pass_runs": 40,
+        "any_patch_fail_runs": 81,
+        "any_patch_pass_runs": 41,
+        "any_patch_three_distinct_pass_commands_runs": 20,
+        "any_patch_two_distinct_clean_pass_commands_runs": 24,
+        "any_patch_two_distinct_pass_commands_runs": 31,
+        "any_patch_two_distinct_triple_pass_commands_runs": 29,
+        "any_patch_two_pass_events_runs": 31,
+        "any_patch_two_triple_pass_events_runs": 29
+      },
+      "final_patch_run_units": {
+        "both_benchmark_fail_runs": 7,
+        "both_distinct_literal_commands_benchmark_fail_runs": 7,
+        "both_distinct_literal_commands_runs": 8,
+        "both_runs": 8,
+        "both_triple_benchmark_fail_runs": 6,
+        "both_triple_runs": 7,
+        "clean_summary_pass_benchmark_fail_runs": 14,
+        "clean_summary_pass_runs": 26,
+        "fail_benchmark_fail_runs": 14,
+        "fail_runs": 20,
+        "pass_benchmark_fail_runs": 17,
+        "pass_runs": 29,
+        "three_distinct_pass_commands_benchmark_fail_runs": 5,
+        "three_distinct_pass_commands_runs": 9,
+        "two_distinct_clean_pass_commands_benchmark_fail_runs": 7,
+        "two_distinct_clean_pass_commands_runs": 13,
+        "two_distinct_pass_commands_benchmark_fail_runs": 9,
+        "two_distinct_pass_commands_runs": 17,
+        "two_distinct_triple_pass_commands_benchmark_fail_runs": 8,
+        "two_distinct_triple_pass_commands_runs": 15,
+        "two_pass_events_benchmark_fail_runs": 9,
+        "two_pass_events_runs": 17,
+        "two_triple_pass_events_benchmark_fail_runs": 8,
+        "two_triple_pass_events_runs": 15
+      },
+      "receipt_syntax": {
+        "exit_code_underscore_fail": 1,
+        "linked_fail": 109,
+        "linked_pass": 153,
+        "parsed_exit_mentioned_fail": 109
+      }
+    },
+    "qwen3coder_multilingual": {
+      "all_linked_patch_units": {},
+      "cohort": {
+        "aligned_complete": 281,
+        "all": 300
+      },
+      "final_patch_run_units": {},
+      "receipt_syntax": {}
+    },
+    "laguna_verified": {
+      "all_linked_patch_units": {
+        "both_benchmark_fail_patches": 18,
+        "both_distinct_literal_commands_benchmark_fail_patches": 18,
+        "both_distinct_literal_commands_patches": 33,
+        "both_patches": 33,
+        "both_same_literal_command_benchmark_fail_patches": 1,
+        "both_same_literal_command_patches": 2,
+        "both_triple_benchmark_fail_patches": 15,
+        "both_triple_patches": 28,
+        "clean_summary_pass_benchmark_fail_patches": 152,
+        "clean_summary_pass_patches": 283,
+        "fail_benchmark_fail_patches": 62,
+        "fail_patches": 87,
+        "pass_benchmark_fail_patches": 169,
+        "pass_patches": 315,
+        "three_distinct_pass_commands_benchmark_fail_patches": 30,
+        "three_distinct_pass_commands_patches": 69,
+        "two_distinct_clean_pass_commands_benchmark_fail_patches": 49,
+        "two_distinct_clean_pass_commands_patches": 103,
+        "two_distinct_pass_commands_benchmark_fail_patches": 65,
+        "two_distinct_pass_commands_patches": 141,
+        "two_distinct_triple_pass_commands_benchmark_fail_patches": 47,
+        "two_distinct_triple_pass_commands_patches": 109,
+        "two_pass_events_benchmark_fail_patches": 68,
+        "two_pass_events_patches": 146,
+        "two_triple_pass_events_benchmark_fail_patches": 49,
+        "two_triple_pass_events_patches": 113
+      },
+      "cohort": {
+        "aligned_complete": 474,
+        "all": 500,
+        "any_patch_both_distinct_literal_commands_runs": 31,
+        "any_patch_both_runs": 31,
+        "any_patch_both_same_literal_command_runs": 2,
+        "any_patch_both_triple_runs": 28,
+        "any_patch_clean_summary_pass_runs": 129,
+        "any_patch_fail_runs": 52,
+        "any_patch_pass_runs": 133,
+        "any_patch_three_distinct_pass_commands_runs": 60,
+        "any_patch_two_distinct_clean_pass_commands_runs": 75,
+        "any_patch_two_distinct_pass_commands_runs": 97,
+        "any_patch_two_distinct_triple_pass_commands_runs": 86,
+        "any_patch_two_pass_events_runs": 101,
+        "any_patch_two_triple_pass_events_runs": 90
+      },
+      "final_patch_run_units": {
+        "both_benchmark_fail_runs": 5,
+        "both_distinct_literal_commands_benchmark_fail_runs": 5,
+        "both_distinct_literal_commands_runs": 8,
+        "both_runs": 8,
+        "both_same_literal_command_benchmark_fail_runs": 1,
+        "both_same_literal_command_runs": 1,
+        "both_triple_benchmark_fail_runs": 5,
+        "both_triple_runs": 8,
+        "clean_summary_pass_benchmark_fail_runs": 32,
+        "clean_summary_pass_runs": 65,
+        "fail_benchmark_fail_runs": 5,
+        "fail_runs": 8,
+        "pass_benchmark_fail_runs": 37,
+        "pass_runs": 71,
+        "three_distinct_pass_commands_benchmark_fail_runs": 11,
+        "three_distinct_pass_commands_runs": 21,
+        "two_distinct_clean_pass_commands_benchmark_fail_runs": 16,
+        "two_distinct_clean_pass_commands_runs": 30,
+        "two_distinct_pass_commands_benchmark_fail_runs": 20,
+        "two_distinct_pass_commands_runs": 39,
+        "two_distinct_triple_pass_commands_benchmark_fail_runs": 16,
+        "two_distinct_triple_pass_commands_runs": 33,
+        "two_pass_events_benchmark_fail_runs": 20,
+        "two_pass_events_runs": 41,
+        "two_triple_pass_events_benchmark_fail_runs": 16,
+        "two_triple_pass_events_runs": 35
+      },
+      "receipt_syntax": {
+        "exit_code_underscore_fail": 1,
+        "linked_fail": 102,
+        "linked_pass": 622,
+        "parsed_exit_mentioned_fail": 102
+      }
+    },
+    "laguna_multilingual": {
+      "all_linked_patch_units": {},
+      "cohort": {
+        "aligned_complete": 271,
+        "all": 300
+      },
+      "final_patch_run_units": {},
+      "receipt_syntax": {}
+    },
+    "seedoss_pro300": {
+      "all_linked_patch_units": {
+        "both_benchmark_fail_patches": 1,
+        "both_distinct_literal_commands_benchmark_fail_patches": 1,
+        "both_distinct_literal_commands_patches": 1,
+        "both_patches": 1,
+        "both_triple_benchmark_fail_patches": 1,
+        "both_triple_patches": 1,
+        "clean_summary_pass_benchmark_fail_patches": 31,
+        "clean_summary_pass_patches": 36,
+        "fail_benchmark_fail_patches": 16,
+        "fail_patches": 16,
+        "pass_benchmark_fail_patches": 32,
+        "pass_patches": 37,
+        "three_distinct_pass_commands_benchmark_fail_patches": 2,
+        "three_distinct_pass_commands_patches": 3,
+        "two_distinct_clean_pass_commands_benchmark_fail_patches": 12,
+        "two_distinct_clean_pass_commands_patches": 14,
+        "two_distinct_pass_commands_benchmark_fail_patches": 13,
+        "two_distinct_pass_commands_patches": 17,
+        "two_distinct_triple_pass_commands_benchmark_fail_patches": 9,
+        "two_distinct_triple_pass_commands_patches": 12,
+        "two_pass_events_benchmark_fail_patches": 15,
+        "two_pass_events_patches": 19,
+        "two_triple_pass_events_benchmark_fail_patches": 9,
+        "two_triple_pass_events_patches": 12
+      },
+      "cohort": {
+        "aligned_complete": 264,
+        "all": 300,
+        "any_patch_both_distinct_literal_commands_runs": 1,
+        "any_patch_both_runs": 1,
+        "any_patch_both_triple_runs": 1,
+        "any_patch_clean_summary_pass_runs": 31,
+        "any_patch_fail_runs": 9,
+        "any_patch_pass_runs": 32,
+        "any_patch_three_distinct_pass_commands_runs": 3,
+        "any_patch_two_distinct_clean_pass_commands_runs": 14,
+        "any_patch_two_distinct_pass_commands_runs": 17,
+        "any_patch_two_distinct_triple_pass_commands_runs": 12,
+        "any_patch_two_pass_events_runs": 19,
+        "any_patch_two_triple_pass_events_runs": 12
+      },
+      "final_patch_run_units": {
+        "both_benchmark_fail_runs": 1,
+        "both_distinct_literal_commands_benchmark_fail_runs": 1,
+        "both_distinct_literal_commands_runs": 1,
+        "both_runs": 1,
+        "both_triple_benchmark_fail_runs": 1,
+        "both_triple_runs": 1,
+        "clean_summary_pass_benchmark_fail_runs": 23,
+        "clean_summary_pass_runs": 28,
+        "fail_benchmark_fail_runs": 3,
+        "fail_runs": 3,
+        "pass_benchmark_fail_runs": 24,
+        "pass_runs": 29,
+        "three_distinct_pass_commands_benchmark_fail_runs": 2,
+        "three_distinct_pass_commands_runs": 3,
+        "two_distinct_clean_pass_commands_benchmark_fail_runs": 11,
+        "two_distinct_clean_pass_commands_runs": 13,
+        "two_distinct_pass_commands_benchmark_fail_runs": 12,
+        "two_distinct_pass_commands_runs": 16,
+        "two_distinct_triple_pass_commands_benchmark_fail_runs": 8,
+        "two_distinct_triple_pass_commands_runs": 11,
+        "two_pass_events_benchmark_fail_runs": 14,
+        "two_pass_events_runs": 18,
+        "two_triple_pass_events_benchmark_fail_runs": 8,
+        "two_triple_pass_events_runs": 11
+      },
+      "receipt_syntax": {
+        "linked_fail": 19,
+        "linked_pass": 60,
+        "parsed_exit_mentioned_fail": 19
+      }
+    },
+    "qwen3coder_verified_minisweagent": {
+      "all_linked_patch_units": {
+        "both_benchmark_fail_patches": 15,
+        "both_distinct_literal_commands_benchmark_fail_patches": 15,
+        "both_distinct_literal_commands_patches": 21,
+        "both_patches": 21,
+        "both_triple_benchmark_fail_patches": 13,
+        "both_triple_patches": 19,
+        "clean_summary_pass_benchmark_fail_patches": 59,
+        "clean_summary_pass_patches": 87,
+        "fail_benchmark_fail_patches": 61,
+        "fail_patches": 80,
+        "pass_benchmark_fail_patches": 68,
+        "pass_patches": 104,
+        "three_distinct_pass_commands_benchmark_fail_patches": 18,
+        "three_distinct_pass_commands_patches": 24,
+        "two_distinct_clean_pass_commands_benchmark_fail_patches": 26,
+        "two_distinct_clean_pass_commands_patches": 37,
+        "two_distinct_pass_commands_benchmark_fail_patches": 37,
+        "two_distinct_pass_commands_patches": 61,
+        "two_distinct_triple_pass_commands_benchmark_fail_patches": 35,
+        "two_distinct_triple_pass_commands_patches": 54,
+        "two_pass_events_benchmark_fail_patches": 37,
+        "two_pass_events_patches": 61,
+        "two_triple_pass_events_benchmark_fail_patches": 35,
+        "two_triple_pass_events_patches": 54
+      },
+      "cohort": {
+        "aligned_complete": 499,
+        "all": 500,
+        "any_patch_both_distinct_literal_commands_runs": 19,
+        "any_patch_both_runs": 19,
+        "any_patch_both_triple_runs": 19,
+        "any_patch_clean_summary_pass_runs": 70,
+        "any_patch_fail_runs": 55,
+        "any_patch_pass_runs": 84,
+        "any_patch_three_distinct_pass_commands_runs": 23,
+        "any_patch_two_distinct_clean_pass_commands_runs": 34,
+        "any_patch_two_distinct_pass_commands_runs": 55,
+        "any_patch_two_distinct_triple_pass_commands_runs": 51,
+        "any_patch_two_pass_events_runs": 55,
+        "any_patch_two_triple_pass_events_runs": 51
+      },
+      "final_patch_run_units": {
+        "both_benchmark_fail_runs": 1,
+        "both_distinct_literal_commands_benchmark_fail_runs": 1,
+        "both_distinct_literal_commands_runs": 2,
+        "both_runs": 2,
+        "both_triple_benchmark_fail_runs": 1,
+        "both_triple_runs": 2,
+        "clean_summary_pass_benchmark_fail_runs": 8,
+        "clean_summary_pass_runs": 12,
+        "fail_benchmark_fail_runs": 1,
+        "fail_runs": 5,
+        "pass_benchmark_fail_runs": 9,
+        "pass_runs": 13,
+        "three_distinct_pass_commands_benchmark_fail_runs": 2,
+        "three_distinct_pass_commands_runs": 4,
+        "two_distinct_clean_pass_commands_benchmark_fail_runs": 5,
+        "two_distinct_clean_pass_commands_runs": 6,
+        "two_distinct_pass_commands_benchmark_fail_runs": 5,
+        "two_distinct_pass_commands_runs": 8,
+        "two_distinct_triple_pass_commands_benchmark_fail_runs": 4,
+        "two_distinct_triple_pass_commands_runs": 7,
+        "two_pass_events_benchmark_fail_runs": 5,
+        "two_pass_events_runs": 8,
+        "two_triple_pass_events_benchmark_fail_runs": 4,
+        "two_triple_pass_events_runs": 7
+      },
+      "receipt_syntax": {
+        "linked_fail": 89,
+        "linked_pass": 201,
+        "parsed_exit_mentioned_fail": 89,
+        "parsed_exit_mentioned_pass": 201,
+        "xml_returncode_fail": 89,
+        "xml_returncode_pass": 201
+      }
+    }
+  },
+  "primary_total": {
+    "cohort": {
+      "aligned_complete": 2275,
+      "aligned_complete_final_resolved": 881,
+      "all": 2400,
+      "all_final_resolved": 895,
+      "any_explicit_zero_exit_linked_pass": 84,
+      "any_fail_marker": 213,
+      "any_pass_linked_to_final_patch": 142,
+      "any_pass_marker": 291,
+      "any_patch_linked_fail": 197,
+      "any_patch_linked_pass": 290,
+      "any_triple_linked_pass": 281,
+      "final_patch_linked_pass_benchmark_fail": 87,
+      "nonfinal_only_pass_final_benchmark_fail": 87,
+      "pass_linked_only_to_nonfinal_patches": 148,
+      "triple_final_patch_linked_pass_benchmark_fail": 70,
+      "triple_pass_linked_to_final_patch": 113,
+      "zero_exit_final_patch_linked_pass_benchmark_fail": 9,
+      "zero_exit_pass_linked_to_final_patch": 13
+    },
+    "receipt_events": {
+      "eligible_single_test_commands": 2734,
+      "fail_marker": 344,
+      "fail_no_stable_nonempty_patch": 25,
+      "fail_stable_benchmark_pass": 79,
+      "fail_stable_patch": 319,
+      "pass_marker": 1050,
+      "pass_no_stable_nonempty_patch": 14,
+      "pass_stable_benchmark_pass": 446,
+      "pass_stable_patch": 1036
+    },
+    "tables": {
+      "first_fail": {
+        "benchmark_pass_at_receipt": 51,
+        "changed_final_patch_benchmark_fail": 117,
+        "changed_final_patch_id": 171,
+        "final_resolved": 64,
+        "n": 197,
+        "receipt_fail_final_pass": 13,
+        "receipt_pass_final_fail": 0,
+        "same_final_patch_benchmark_fail": 16,
+        "same_final_patch_id": 26,
+        "steps_after_receipt": 5302
+      },
+      "first_pass": {
+        "benchmark_pass_at_receipt": 109,
+        "changed_final_patch_benchmark_fail": 132,
+        "changed_final_patch_id": 219,
+        "final_resolved": 116,
+        "n": 290,
+        "receipt_fail_final_pass": 8,
+        "receipt_pass_final_fail": 1,
+        "same_final_patch_benchmark_fail": 42,
+        "same_final_patch_id": 71,
+        "steps_after_receipt": 8440
+      },
+      "first_triple_pass": {
+        "benchmark_pass_at_receipt": 110,
+        "changed_final_patch_benchmark_fail": 128,
+        "changed_final_patch_id": 211,
+        "final_resolved": 113,
+        "n": 281,
+        "receipt_fail_final_pass": 4,
+        "receipt_pass_final_fail": 1,
+        "same_final_patch_benchmark_fail": 40,
+        "same_final_patch_id": 70,
+        "steps_after_receipt": 7879
+      },
+      "first_zero_exit_pass": {
+        "benchmark_pass_at_receipt": 31,
+        "changed_final_patch_benchmark_fail": 48,
+        "changed_final_patch_id": 75,
+        "final_resolved": 30,
+        "n": 84,
+        "receipt_fail_final_pass": 0,
+        "receipt_pass_final_fail": 1,
+        "same_final_patch_benchmark_fail": 6,
+        "same_final_patch_id": 9,
+        "steps_after_receipt": 1185
+      },
+      "last_pass": {
+        "benchmark_pass_at_receipt": 115,
+        "changed_final_patch_benchmark_fail": 88,
+        "changed_final_patch_id": 150,
+        "final_resolved": 116,
+        "n": 290,
+        "receipt_fail_final_pass": 2,
+        "receipt_pass_final_fail": 1,
+        "same_final_patch_benchmark_fail": 86,
+        "same_final_patch_id": 140,
+        "steps_after_receipt": 3423
+      }
+    }
+  },
+  "scope_total": {
+    "all_linked_patch_units": {
+      "both_benchmark_fail_patches": 52,
+      "both_distinct_literal_commands_benchmark_fail_patches": 52,
+      "both_distinct_literal_commands_patches": 77,
+      "both_patches": 77,
+      "both_same_literal_command_benchmark_fail_patches": 1,
+      "both_same_literal_command_patches": 2,
+      "both_triple_benchmark_fail_patches": 44,
+      "both_triple_patches": 67,
+      "clean_summary_pass_benchmark_fail_patches": 293,
+      "clean_summary_pass_patches": 479,
+      "fail_benchmark_fail_patches": 214,
+      "fail_patches": 280,
+      "pass_benchmark_fail_patches": 328,
+      "pass_patches": 539,
+      "three_distinct_pass_commands_benchmark_fail_patches": 62,
+      "three_distinct_pass_commands_patches": 116,
+      "two_distinct_clean_pass_commands_benchmark_fail_patches": 107,
+      "two_distinct_clean_pass_commands_patches": 185,
+      "two_distinct_pass_commands_benchmark_fail_patches": 142,
+      "two_distinct_pass_commands_patches": 259,
+      "two_distinct_triple_pass_commands_benchmark_fail_patches": 112,
+      "two_distinct_triple_pass_commands_patches": 207,
+      "two_pass_events_benchmark_fail_patches": 147,
+      "two_pass_events_patches": 266,
+      "two_triple_pass_events_benchmark_fail_patches": 114,
+      "two_triple_pass_events_patches": 211
+    },
+    "cohort": {
+      "aligned_complete": 2275,
+      "all": 2400,
+      "any_patch_both_distinct_literal_commands_runs": 70,
+      "any_patch_both_runs": 70,
+      "any_patch_both_same_literal_command_runs": 2,
+      "any_patch_both_triple_runs": 66,
+      "any_patch_clean_summary_pass_runs": 270,
+      "any_patch_fail_runs": 197,
+      "any_patch_pass_runs": 290,
+      "any_patch_three_distinct_pass_commands_runs": 106,
+      "any_patch_two_distinct_clean_pass_commands_runs": 147,
+      "any_patch_two_distinct_pass_commands_runs": 200,
+      "any_patch_two_distinct_triple_pass_commands_runs": 178,
+      "any_patch_two_pass_events_runs": 206,
+      "any_patch_two_triple_pass_events_runs": 182
+    },
+    "final_patch_run_units": {
+      "both_benchmark_fail_runs": 14,
+      "both_distinct_literal_commands_benchmark_fail_runs": 14,
+      "both_distinct_literal_commands_runs": 19,
+      "both_runs": 19,
+      "both_same_literal_command_benchmark_fail_runs": 1,
+      "both_same_literal_command_runs": 1,
+      "both_triple_benchmark_fail_runs": 13,
+      "both_triple_runs": 18,
+      "clean_summary_pass_benchmark_fail_runs": 77,
+      "clean_summary_pass_runs": 131,
+      "fail_benchmark_fail_runs": 23,
+      "fail_runs": 36,
+      "pass_benchmark_fail_runs": 87,
+      "pass_runs": 142,
+      "three_distinct_pass_commands_benchmark_fail_runs": 20,
+      "three_distinct_pass_commands_runs": 37,
+      "two_distinct_clean_pass_commands_benchmark_fail_runs": 39,
+      "two_distinct_clean_pass_commands_runs": 62,
+      "two_distinct_pass_commands_benchmark_fail_runs": 46,
+      "two_distinct_pass_commands_runs": 80,
+      "two_distinct_triple_pass_commands_benchmark_fail_runs": 36,
+      "two_distinct_triple_pass_commands_runs": 66,
+      "two_pass_events_benchmark_fail_runs": 48,
+      "two_pass_events_runs": 84,
+      "two_triple_pass_events_benchmark_fail_runs": 36,
+      "two_triple_pass_events_runs": 68
+    },
+    "receipt_syntax": {
+      "exit_code_underscore_fail": 2,
+      "linked_fail": 319,
+      "linked_pass": 1036,
+      "parsed_exit_mentioned_fail": 319,
+      "parsed_exit_mentioned_pass": 201,
+      "xml_returncode_fail": 89,
+      "xml_returncode_pass": 201
+    }
+  },
+  "source_hashes": {
+    "laguna_multilingual": {
+      "patches": {
+        "bytes": 14363741,
+        "sha256": "1e297c73e2db1aa731c649836227fd78cb7c945b81e944d8c124deb044deca97",
+        "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/laguna_multilingual/patches.parquet"
+      },
+      "trajectories": {
+        "bytes": 14113216,
+        "sha256": "01d56ac9a8a76f082a181e40edc0398a93a6f2a28efcbd40007bb4d9264f1b1d",
+        "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/laguna_multilingual/trajectories.parquet"
+      }
+    },
+    "laguna_verified": {
+      "patches": {
+        "bytes": 8754146,
+        "sha256": "6ad8f3da580736af3550cd3e7d0ac889451cee45ed985d272ce3c97d9b3c4a0a",
+        "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/laguna_verified/patches.parquet"
+      },
+      "trajectories": {
+        "bytes": 22669506,
+        "sha256": "ea6a9a16af92e3f754536429bee98b7ccec0f280cda94e16c4dfd78af5358681",
+        "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/laguna_verified/trajectories.parquet"
+      }
+    },
+    "qwen3coder_multilingual": {
+      "patches": {
+        "bytes": 16375851,
+        "sha256": "6adace9f5d8ec08ecf3de8aa6b2e619cbb69ba63370214504886e68f8823c07e",
+        "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/qwen3coder_multilingual/patches.parquet"
+      },
+      "trajectories": {
+        "bytes": 8514417,
+        "sha256": "0c952c79fde5fa91c55fc2c4d235d1689fc21afb9d5a19919fea34ecfe604d78",
+        "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/qwen3coder_multilingual/trajectories.parquet"
+      }
+    },
+    "qwen3coder_verified": {
+      "patches": {
+        "bytes": 4159361,
+        "sha256": "aab66bf3bb631c55f4c7ebef85bb8d0bb3cf3c45efd4bc925051b2acec1c0747",
+        "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/qwen3coder_verified/patches.parquet"
+      },
+      "trajectories": {
+        "bytes": 12443120,
+        "sha256": "46f93f0d7ef21a6bba76bb2aa71e10ef6dc2f172decbea0779fd10bd4eaeeac5",
+        "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/qwen3coder_verified/trajectories.parquet"
+      }
+    },
+    "qwen3coder_verified_minisweagent": {
+      "patches": {
+        "bytes": 41062562,
+        "sha256": "028e3a1b8dfdf38fd8224b8ceda7ddddef9280b587c36b55f17fad73c68dc0cf",
+        "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/qwen3coder_verified_minisweagent/patches.parquet"
+      },
+      "trajectories": {
+        "bytes": 7257543,
+        "sha256": "a996fe79ea7104de123f756ce076e1d6cf7e5e811c7edb15836a16841b159a2e",
+        "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/qwen3coder_verified_minisweagent/trajectories.parquet"
+      }
+    },
+    "seedoss_pro300": {
+      "patches": {
+        "bytes": 1382162,
+        "sha256": "f13ddc9454e16ae6a7c5980398ed0bc9a32f143634f89be33c4ec2ba335b4ad3",
+        "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/seedoss_pro300/patches.parquet"
+      },
+      "trajectories": {
+        "bytes": 11370814,
+        "sha256": "945b45c33df2227098932a14651f16fb191eeb9d036cb22dd784d566edb000ea",
+        "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/seedoss_pro300/trajectories.parquet"
+      }
+    }
+  },
+  "qualification": "Aggregate-only source-locked replay; benchmark grades from original study, local test text and recorded patch IDs, not newly executed tests or independent task truth."
+}
