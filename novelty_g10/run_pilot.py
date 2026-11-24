@@ -33,16 +33,13 @@ def select(root,setting):
         if not full:continue
         a=pm[iid,fin]['patch'];g=m['test_patch'];prod=gold[iid]
         assert not pm[iid,fin]['resolved']
-        ad,gd,pd=parse_diff(a),parse_diff(g),parse_diff(prod)
-        if not ad or not gd or pd is None:continue
-        if not all(safe(x) for x in set(ad)|set(gd)|set(pd)):continue
-        if not all(node_parts(x) is not None for x in m['ftp']):continue
-        # No outcome-driven replacement. A deterministic first eligible run per setting.
+        # Select on the frozen G8 conditions alone. Technical preparation is
+        # evaluated AFTER selection, never by substituting a different task.
         elig.append((iid,m,a,g,prod))
     expected={'qwen3coder_verified':1,'laguna_verified':4,'qwen3coder_verified_minisweagent':1}
     assert len(elig)==expected[setting],(len(elig),expected[setting])
     iid,m,a,g,prod=sorted(elig,key=lambda x:x[0])[0]
-    return iid,m,a,g,prod,{'eligible_nonpassing_runs':len(elig),'selection':'lexicographically first eligible instance, one per setting','source_hashes':{'meta':mh,'trajectories':th,'patches':ph}}
+    return iid,m,a,g,prod,{'eligible_nonpassing_runs':len(elig),'selection':'lexicographically first frozen G8 nonpass, one per setting; preparation cannot replace it','source_hashes':{'meta':mh,'trajectories':th,'patches':ph}}
 
 def command(args,timeout):
     try:
@@ -56,6 +53,11 @@ def replay(setting,root):
     assert re.fullmatch(r'[a-zA-Z0-9_.-]+__[a-zA-Z0-9_.-]+',iid)
     img='swebench/sweb.eval.x86_64.'+iid.lower().replace('__','_1776_')+':latest'
     out={'setting':setting,'selection':sel,'task_id_sha256':sha(iid.encode()),'image_tag':img,'candidate_patch_sha256':sha(candidate.encode()),'reference_test_patch_sha256':sha(testpatch.encode()),'gold_patch_sha256':sha(gold.encode()),'ftp_count':len(m['ftp']),'cells':{}}
+    gd=parse_diff(testpatch)
+    if not gd or not all(safe(x) for x in gd) or not all(node_parts(x) is not None for x in m['ftp']) or not isinstance(candidate,str) or not candidate.strip() or not isinstance(gold,str) or not gold.strip():
+        out['status']='HOLD_PREPARATION';return out
+    # Non-test candidate/gold diffs are applied only inside the isolated container,
+    # using git apply's default path safety and exact application checks.
     rc,so,se=command(['docker','pull',img],210)
     if rc!=0:
         out['status']='HOLD_IMAGE_PULL';out['pull_returncode']=rc
