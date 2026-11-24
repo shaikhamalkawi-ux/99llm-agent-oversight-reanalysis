@@ -112,7 +112,18 @@ def analyze_one(iid,raws,official,meta,detail):
     if detail is None or not isinstance(detail.get('resolved'),bool):
         c['no_official_row_verdict']=1;return c,z,None
     if iid not in report or report[iid].get('resolved')!=detail['resolved']:
-        c['official_report_verdict_mismatch']=1;return c,z,None
+        c['official_report_verdict_mismatch']=1
+        c['report_root_has_resolved']+=int(isinstance(report,dict) and isinstance(report.get('resolved'),bool))
+        c['report_root_has_tests_status']+=int(isinstance(report,dict) and isinstance(report.get('tests_status'),dict))
+        c['report_has_matching_task_key']+=int(iid in report)
+        c['report_has_other_single_nested_dict']+=int(isinstance(report,dict) and len(report)==1 and isinstance(next(iter(report.values())),dict))
+        c['report_matching_task_resolved_bool']+=int(iid in report and isinstance(report[iid],dict) and isinstance(report[iid].get('resolved'),bool))
+        c['report_root_has_eval_tests']+=int(isinstance(report,dict) and isinstance(report.get('tests'),dict))
+        if isinstance(report,dict) and isinstance(report.get('resolved'),bool):
+            c['flat_report_verdict_agrees']+=int(report['resolved']==detail['resolved'])
+            c['flat_report_patch_applied']+=int(report.get('patch_successfully_applied') is True)
+            c['flat_report_has_tests_status']+=int(isinstance(report.get('tests_status'),dict))
+        return c,z,None
     c['official_report_verdict_agrees']=1
     rep,state=read_report(raws['report'],iid,meta)
     c[state]+=1
