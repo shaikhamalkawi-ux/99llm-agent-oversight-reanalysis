@@ -1,0 +1,44 @@
+name: G5 Observed excerpt-release and linked-context audit
+on:
+  push:
+    branches: [novelty-g5-observed-release-context]
+    paths:
+      - 'novelty_g5/**'
+      - '.github/workflows/novelty-g5-release-context.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  pinned-source-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Test independent context definitions
+        run: python novelty_g5/verify_release_context.py --selftest
+      - name: Download three original release files ephemerally
+        run: |
+          python - <<'PY'
+          import urllib.request
+          base='https://raw.githubusercontent.com/ND-SaNDwichLAB/coding-agent-misalignment/c887cc920129b2db0bdf218c8550e98f74f42f7c/'
+          for name,path in [('annotations','data/core/annotated_misalignments.json'),('excerpts','misalignments.json'),('mapping','data/core/session_mapping.json')]:
+              with urllib.request.urlopen(base+path,timeout=120) as r:
+                  open('/tmp/99llm_g5_'+name+'.json','wb').write(r.read())
+          print('Original files retrieved; no rows printed.')
+          PY
+      - name: Verify source bytes and all joins; compute aggregate-only results
+        run: |
+          mkdir -p /tmp/99llm_g5_output
+          python novelty_g5/verify_release_context.py --annotations /tmp/99llm_g5_annotations.json --excerpts /tmp/99llm_g5_excerpts.json --mapping /tmp/99llm_g5_mapping.json --out /tmp/99llm_g5_output/G5_aggregate_results.json
+          cp novelty_g5/verify_release_context.py /tmp/99llm_g5_output/
+      - name: Remove all original rows before upload
+        if: always()
+        run: rm -f /tmp/99llm_g5_annotations.json /tmp/99llm_g5_excerpts.json /tmp/99llm_g5_mapping.json
+      - name: Upload aggregate-only evidence and executable analysis
+        uses: actions/upload-artifact@v4
+        with:
+          name: G5-aggregate-only-verified
+          path: /tmp/99llm_g5_output/
+          if-no-files-found: error
