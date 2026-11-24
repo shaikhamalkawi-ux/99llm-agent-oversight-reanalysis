@@ -17,8 +17,16 @@ def apply(path):
 def main(cell):
     if cell not in ('base_local','base_reference','candidate_local','candidate_reference','gold_reference'):fail('HOLD_BAD_CELL')
     os.chdir('/testbed');m=json.loads(Path('/audit/meta.json').read_text())
+    initial_head=git('rev-parse','HEAD').decode().strip()
+    if git('status','--porcelain','--untracked-files=all'):fail('HOLD_DIRTY_BASE')
+    # Published images may use a setup commit. Check out the exact requested
+    # commit only if the object is already present offline; never fetch inside.
+    if initial_head!=m['base_commit']:
+        if run(['git','-c','safe.directory=/testbed','cat-file','-e',m['base_commit']+'^{commit}']).returncode:fail('HOLD_BASE_COMMIT_NOT_IN_IMAGE')
+        git('checkout','--detach',m['base_commit'])
     if git('rev-parse','HEAD').decode().strip()!=m['base_commit']:fail('HOLD_BASE_COMMIT_MISMATCH')
     if git('status','--porcelain','--untracked-files=all'):fail('HOLD_DIRTY_BASE')
+    base_restored=initial_head!=m['base_commit']
     # Apply the fixed production/candidate patch, then change only reference test paths.
     if cell.startswith('candidate_'):apply('/audit/candidate.diff')
     if cell.startswith('gold_'):apply('/audit/gold.diff')
@@ -58,7 +66,7 @@ def main(cell):
         elif p.returncode==0 and passed==n:verdict='PASS'
         elif p.returncode==1 and failed>0:verdict='FAIL'
         else:verdict='HOLD'
-        result={'status':'EXECUTED','pytest_verdict':verdict,'pytest_returncode':p.returncode,'collected':n,'passed':passed,'failed':failed,'errors':errors,'skipped':skipped,'non_test_tree_digest':digest}
+        result={'status':'EXECUTED','pytest_verdict':verdict,'pytest_returncode':p.returncode,'collected':n,'passed':passed,'failed':failed,'errors':errors,'skipped':skipped,'non_test_tree_digest':digest,'exact_base_restored_offline':base_restored}
         print('G10_CELL '+json.dumps(result,sort_keys=True))
 if __name__=='__main__':
     try:main(sys.argv[1])
