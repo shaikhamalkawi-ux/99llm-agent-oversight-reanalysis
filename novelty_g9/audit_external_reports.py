@@ -227,8 +227,9 @@ def main(root,run):
             if k not in all_paths:continue
             try:
                 source=all_paths[k]
-                raw[k]=Path(source).read_bytes() if clone else fetch(S3+urllib.parse.quote(source,safe='/'))
+                raw[kind]=Path(source).read_bytes() if clone else fetch(S3+urllib.parse.quote(source,safe='/'))
             except Exception as ex:e[k+'_fetch_'+type(ex).__name__]+=1
+        assert set(raw)<= {'report','patch','traj'}
         return iid,raw,e
     # Full 500-task frame, no replacing unavailable cases.
     with concurrent.futures.ThreadPoolExecutor(max_workers=12) as ex:
