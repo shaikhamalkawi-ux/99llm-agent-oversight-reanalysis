@@ -16,13 +16,17 @@ jobs:
         with:
           python-version: '3.11'
       - name: Synthetic receipt and patch-alignment tests
-        run: python novelty_g7/audit_patch_receipts.py --selftest
+        run: |
+          python novelty_g7/audit_patch_receipts.py --selftest
+          python novelty_g7/audit_receipt_scope.py --selftest
       - name: Install parquet reader
         run: pip install --disable-pip-version-check pyarrow==22.0.0
       - name: Source revision replay
         run: |
           mkdir -p /tmp/g7_out
           python novelty_g7/audit_patch_receipts.py --input-dir /tmp/g7_source --out /tmp/g7_out/G7_aggregate.json
+      - name: Within-patch scope and receipt multiplicity challenge
+        run: python novelty_g7/audit_receipt_scope.py --input-dir /tmp/g7_source --out /tmp/g7_out/G7_scope_aggregate.json
       - name: Remove original data
         if: always()
         run: rm -rf /tmp/g7_source
