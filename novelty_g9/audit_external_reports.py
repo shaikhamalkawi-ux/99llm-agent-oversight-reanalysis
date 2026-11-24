@@ -94,7 +94,8 @@ def add_condition(z,label,on,report,parts,ids,m):
 def analyze_one(iid,raws,official,meta,detail):
     c=C();z=C();static=None
     c['official_frame_member']=1
-    if not all(k in raws for k in ('report','patch','traj')):
+    required={'report','patch','traj'}
+    if not required.issubset(set(raws.keys())):
         c['missing_any_required_artifact']=1
         for k in ('report','patch','traj'):c['missing_'+k]+=k not in raws
         return c,z,None
@@ -173,7 +174,16 @@ def selftest():
     assert positive(rec[0][1],rec[0][2],rec[0][3])=={'tests/a.py::test_a'}
     assert positive('pytest',1,'1 passed in 0.1s') is None
     assert norm_patch('a\n')==norm_patch('a') and norm_patch('a ' )!=norm_patch('a')
-    print('G9 external partition and receipt synthetic PASS')
+    # Full end-to-end fixture: identical nonempty submission and evaluation patch,
+    # report contains all required names, explicit positive local receipt.
+    j['i']['tests_status']['FAIL_TO_PASS']['failure']=['tests/a.py::test_a']
+    t={'instance_id':'i','info':{'submission':'diff --git a/a b/a\n'},'messages':[a,b]}
+    raw={'report':json.dumps(j).encode(),'patch':b'diff --git a/a b/a\n','traj':json.dumps(t).encode()}
+    q,z,st=analyze_one('i',raw,{'i':{'resolved':False}},m,{'resolved':False})
+    assert q['all_three_artifacts']==1 and q['admitted']==1
+    assert z['full_ftp_single_runs']==1 and z['full_ftp_single_ftp_failure_runs']==1
+    assert st is not None
+    print('G9 external partition, receipt and full admission fixture PASS')
 def main(root,run):
     meta,mh=read_meta(root)
     runid=RUNS[run]
@@ -209,7 +219,7 @@ def main(root,run):
                 if k in all_paths:raise ValueError('duplicate archive object per task/kind')
                 all_paths[k]=key
     print('G9_EXTERNAL_INVENTORY',run,json.dumps({'official_rows':len(official),'artifact_paths':dict(C(k for _,k in all_paths)),'unknown_keys':dict(unknown_keys)},sort_keys=True),flush=True)
-    tally=C();counts=C();static_counts=collections.defaultdict(C);static_runs=collections.defaultdict(C);hash_rows=[];base_cache={};base_hashes=C();errors=C()
+    independently_loaded=C();tally=C();counts=C();static_counts=collections.defaultdict(C);static_runs=collections.defaultdict(C);hash_rows=[];base_cache={};base_hashes=C();errors=C()
     def load(iid):
         raw={};e=C()
         for kind in ('report','patch','traj'):
@@ -224,8 +234,10 @@ def main(root,run):
     with concurrent.futures.ThreadPoolExecutor(max_workers=12) as ex:
         for iid,raw,errs in ex.map(load,sorted(meta)):
             errors.update(errs)
-            for k,b in raw.items():hash_rows.append((iid,k,sha(b)))
-            c,z,s=analyze_one(iid,raw,official,meta[iid],official.get(iid))
+            independently_loaded['triples']+=set(raw)=={'report','patch','traj'}
+            for k,b in raw.items():hash_rows.append((iid,k,sha(b)));independently_loaded[k]+=1
+            c,z,s=analyze_one(iid,dict(raw),official,meta[iid],official.get(iid))
+            assert c['all_three_artifacts']==int(set(raw)=={'report','patch','traj'})
             tally.update(c);counts.update(z)
             if s is not None:
                 ok,ids,union,patch=s
@@ -234,11 +246,15 @@ def main(root,run):
                     static_counts[tag].update(a);static_counts[tag]['runs']+=1
                     for k,v in a.items():static_runs[tag][k+'_positive_runs']+=bool(v)
     assert tally['official_frame_member']==500
+    assert tally['all_three_artifacts']==independently_loaded['triples']
+    for kind in ('report','patch','traj'):assert tally['missing_'+kind]<=500-independently_loaded[kind]
+    assert tally['all_three_artifacts']+tally['missing_any_required_artifact']==500
+    assert tally['all_three_artifacts']>0,'No complete artifacts: external result is not admitted'
     assert tally['admitted']==tally['admitted_benchmark_pass']+tally['admitted_ftp_only_nonpass']+tally['admitted_ptp_only_nonpass']+tally['admitted_both_nonpass']
     assert counts['full_ftp_single_runs']==static_counts['all']['runs']
     out={'run':run,'official_revision':OFFICIAL,'official_details_sha256':sha(official_raw),'official_rows':len(official),'official_passes':sum(bool(x.get('resolved')) for x in official.values()),
          'artifact_path_counts':dict(C(k for _,k in all_paths)),'metadata_hash':mh,'source_bundle_manifest_sha256':sha(json.dumps(sorted(hash_rows),separators=(',',':')).encode()),
-         'artifact_bytes_read_count':len(hash_rows),'fetch_errors':dict(errors),'cohort':dict(tally),'local_reference_scope':dict(counts),
+         'independent_read_counts':dict(independently_loaded),'artifact_bytes_read_count':len(hash_rows),'fetch_errors':dict(errors),'cohort':dict(tally),'local_reference_scope':dict(counts),
          'static_final_test_identity':{k:dict(v) for k,v in static_counts.items()},'static_run_flags':{k:dict(v) for k,v in static_runs.items()},
          'static_base_files':len(base_cache),'static_base_file_status':dict(C(x[0] for x in base_cache.values())),
          'qualification':'Separate archived submission cohorts. Final patch equality to trajectory submission does not bind earlier local receipts to final patch; report-level grade is source-reported. Same test names may have different code, runtime or selection. Adjacent equal recorded git diff is a narrow screen, not full environment identity. Static final test AST does not identify executed local AST. Unavailable artifacts retained in 500-task frame, not failures. No data or source identifiers exported; S3 snapshot manifest is a digest, not an immutable origin guarantee.'}
