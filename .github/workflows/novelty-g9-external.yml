@@ -1,0 +1,33 @@
+name: G9 external official per-test report challenge
+on:
+  push:
+    branches: [novelty-g9-test-identity]
+    paths: ['novelty_g9/audit_external_reports.py', '.github/workflows/novelty-g9-external.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  official-report-audit:
+    strategy:
+      fail-fast: false
+      matrix:
+        cohort: [gemini, gpt5mini, devstral]
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python novelty_g9/audit_external_reports.py --selftest
+      - run: pip install --disable-pip-version-check pyarrow==22.0.0
+      - name: Read official archived reports and trajectories
+        run: |
+          mkdir -p /tmp/g9_external_out
+          python novelty_g9/audit_external_reports.py --run ${{ matrix.cohort }} --root /tmp/g9_external --out /tmp/g9_external_out/aggregate.json
+      - if: always()
+        run: rm -rf /tmp/g9_external
+      - uses: actions/upload-artifact@v4
+        with:
+          name: G9-external-${{ matrix.cohort }}-aggregate
+          path: /tmp/g9_external_out/
