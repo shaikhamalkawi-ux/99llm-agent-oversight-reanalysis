@@ -1,0 +1,1627 @@
+{
+  "version": "G10-full",
+  "run": 45484549077,
+  "initial_pilot_run": 45484175756,
+  "source_frame": 13,
+  "source_pass": 7,
+  "source_nonpass": 6,
+  "repeat_same_image_patch_and_cell_records": true,
+  "base_version_reversal_count": 10,
+  "reference_base_gold_controls_count": 12,
+  "candidate_pairs": {
+    "PASS/HOLD": 1,
+    "PASS/PASS": 9,
+    "PASS/FAIL": 1,
+    "HOLD": 2
+  },
+  "reference_distinguishes_base_candidate_but_old_tests_do_not": 7,
+  "table": [
+    {
+      "setting": "laguna_verified",
+      "source_verdict": "nonpass",
+      "rank": 1,
+      "task_id_sha256": "85b4edc0fbb4eba1c4f031934c2b8b4f9e89e44cad1d328230aec7b7bc89b49e",
+      "base_local": "PASS",
+      "base_reference": "HOLD",
+      "candidate_local": "PASS",
+      "candidate_reference": "HOLD",
+      "gold_reference": "HOLD",
+      "base_tree_invariant": true,
+      "candidate_tree_invariant": true,
+      "job_id": 138766308430
+    },
+    {
+      "setting": "laguna_verified",
+      "source_verdict": "pass",
+      "rank": 2,
+      "task_id_sha256": "f14b80f569fbf03f1f3a33e322c03f1f3d2ffb6ff01e5526331c9347621c07bd",
+      "base_local": "PASS",
+      "base_reference": "FAIL",
+      "candidate_local": "PASS",
+      "candidate_reference": "PASS",
+      "gold_reference": "PASS",
+      "base_tree_invariant": true,
+      "candidate_tree_invariant": true,
+      "job_id": 138766308580
+    },
+    {
+      "setting": "laguna_verified",
+      "source_verdict": "nonpass",
+      "rank": 3,
+      "task_id_sha256": "f27e0ae58601d89502238e7a4fe6fd0d32e84d44d4b55d2321a947ec6008b7b1",
+      "base_local": "HOLD",
+      "base_reference": "FAIL",
+      "candidate_local": "PASS",
+      "candidate_reference": "PASS",
+      "gold_reference": "PASS",
+      "base_tree_invariant": true,
+      "candidate_tree_invariant": true,
+      "job_id": 138766308623
+    },
+    {
+      "setting": "laguna_verified",
+      "source_verdict": "pass",
+      "rank": 0,
+      "task_id_sha256": "0b57ac1f5984f794818eb66b60882eb0ac55b633229c0fd89a5975ac9351dbac",
+      "base_local": "PASS",
+      "base_reference": "FAIL",
+      "candidate_local": "PASS",
+      "candidate_reference": "PASS",
+      "gold_reference": "PASS",
+      "base_tree_invariant": true,
+      "candidate_tree_invariant": true,
+      "job_id": 138766308669
+    },
+    {
+      "setting": "laguna_verified",
+      "source_verdict": "pass",
+      "rank": 5,
+      "task_id_sha256": "7b6dcc43e066de42086866f68d85a0a1a25d4d6004b5785a33c22f699e207f27",
+      "base_local": "PASS",
+      "base_reference": "FAIL",
+      "candidate_local": "PASS",
+      "candidate_reference": "PASS",
+      "gold_reference": "PASS",
+      "base_tree_invariant": true,
+      "candidate_tree_invariant": true,
+      "job_id": 138766308765
+    },
+    {
+      "setting": "laguna_verified",
+      "source_verdict": "pass",
+      "rank": 4,
+      "task_id_sha256": "41200bd5e54c785d38a249772e7498693ffa6087dd5780b3e297448300b4089c",
+      "base_local": "PASS",
+      "base_reference": "FAIL",
+      "candidate_local": "PASS",
+      "candidate_reference": "PASS",
+      "gold_reference": "PASS",
+      "base_tree_invariant": true,
+      "candidate_tree_invariant": true,
+      "job_id": 138766308870
+    },
+    {
+      "setting": "laguna_verified",
+      "source_verdict": "nonpass",
+      "rank": 0,
+      "task_id_sha256": "70daba531152a74521e3a0751a713980aa2bfff9744bfd3be29c011051a3c12d",
+      "base_local": "PASS",
+      "base_reference": "FAIL",
+      "candidate_local": "PASS",
+      "candidate_reference": "FAIL",
+      "gold_reference": "PASS",
+      "base_tree_invariant": true,
+      "candidate_tree_invariant": true,
+      "job_id": 138766308875
+    },
+    {
+      "setting": "laguna_verified",
+      "source_verdict": "pass",
+      "rank": 3,
+      "task_id_sha256": "d4108325d98aa16f5f33499a20da423052467a551b4d6083372b1008a4a7146f",
+      "base_local": "PASS",
+      "base_reference": "FAIL",
+      "candidate_local": "PASS",
+      "candidate_reference": "PASS",
+      "gold_reference": "PASS",
+      "base_tree_invariant": true,
+      "candidate_tree_invariant": true,
+      "job_id": 138766308938
+    },
+    {
+      "setting": "qwen3coder_verified_minisweagent",
+      "source_verdict": "pass",
+      "rank": 0,
+      "task_id_sha256": "4d9d4e3f32b601241d2e84a01d23b9c8a63e92bc6453e2b3e8fd799ec45a04ca",
+      "base_local": "HOLD",
+      "base_reference": "FAIL",
+      "candidate_local": "PASS",
+      "candidate_reference": "PASS",
+      "gold_reference": "PASS",
+      "base_tree_invariant": true,
+      "candidate_tree_invariant": true,
+      "job_id": 138766308950
+    },
+    {
+      "setting": "laguna_verified",
+      "source_verdict": "nonpass",
+      "rank": 2,
+      "task_id_sha256": "a31e4f099b5a5be1e69ec67a278e5dc557d5cb4fee5bed01d4102a692c9dea96",
+      "base_local": "PASS",
+      "base_reference": "FAIL",
+      "candidate_local": "PASS",
+      "candidate_reference": "PASS",
+      "gold_reference": "PASS",
+      "base_tree_invariant": true,
+      "candidate_tree_invariant": true,
+      "job_id": 138766309001
+    },
+    {
+      "setting": "laguna_verified",
+      "source_verdict": "pass",
+      "rank": 1,
+      "task_id_sha256": "869ed4f5f437097436e59f52d9071f4dac22c4c37704793812c296f2d6464687",
+      "base_local": "PASS",
+      "base_reference": "FAIL",
+      "candidate_local": "PASS",
+      "candidate_reference": "PASS",
+      "gold_reference": "PASS",
+      "base_tree_invariant": true,
+      "candidate_tree_invariant": true,
+      "job_id": 138766309065
+    },
+    {
+      "setting": "qwen3coder_verified",
+      "source_verdict": "nonpass",
+      "rank": 0,
+      "task_id_sha256": "a488980f478d2dfe4a1e25bdf08df4f5bef47e0d2b5129778414b2d02bcad227",
+      "base_local": "PASS",
+      "base_reference": "FAIL",
+      "candidate_local": "HOLD",
+      "candidate_reference": "HOLD",
+      "gold_reference": "PASS",
+      "base_tree_invariant": true,
+      "candidate_tree_invariant": false,
+      "job_id": 138764990557
+    },
+    {
+      "setting": "qwen3coder_verified_minisweagent",
+      "source_verdict": "nonpass",
+      "rank": 0,
+      "task_id_sha256": "f782635980b309ef5b96dd4b55a275abdb4d98530fc6af22d4c82d6de43a7479",
+      "base_local": "PASS",
+      "base_reference": "FAIL",
+      "candidate_local": "HOLD",
+      "candidate_reference": "HOLD",
+      "gold_reference": "PASS",
+      "base_tree_invariant": true,
+      "candidate_tree_invariant": false,
+      "job_id": 138764991199
+    }
+  ],
+  "rows": [
+    {
+      "candidate_patch_sha256": "94ad81f4c940751dbd7ba01c08f23914ece0d8ae21c74977bd9aeb1170982aa1",
+      "cells": {
+        "base_local": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "485a3c00f4b51823586ba596cf19d6a24bc981bc7d42dada0e432c02d627d530",
+          "passed": 1,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "base_reference": {
+          "collected": 1,
+          "errors": 1,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "485a3c00f4b51823586ba596cf19d6a24bc981bc7d42dada0e432c02d627d530",
+          "passed": 0,
+          "pytest_returncode": 4,
+          "pytest_verdict": "HOLD",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "candidate_local": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "7708bdd8bb4c9a03fc0c3997a4f678d5e446d269b75c2f0dd5cc2af5dde9ff12",
+          "passed": 1,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "candidate_reference": {
+          "collected": 1,
+          "errors": 1,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "7708bdd8bb4c9a03fc0c3997a4f678d5e446d269b75c2f0dd5cc2af5dde9ff12",
+          "passed": 0,
+          "pytest_returncode": 4,
+          "pytest_verdict": "HOLD",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "gold_reference": {
+          "status": "HOLD_NO_JUNIT_REPORT"
+        }
+      },
+      "ftp_count": 1,
+      "gold_patch_sha256": "43b3e2e849942d287987af5f42b532695dac6e68625778d6d29981cb0dcb3b59",
+      "image_id": "sha256:92b83a19cbeaac3d64a0efab6cd73011c68f48e1c720b1b64f75b8bb436bf0ee",
+      "image_tag": "swebench/sweb.eval.x86_64.pylint-dev_1776_pylint-4661:latest",
+      "qualification": "Frozen G8 13-run cohort extension, no replacement, named FTP tests only. New controlled test-file intervention in official image, not a rerun of full benchmark or original historical environment. PASS/FAIL only with completed JUnit report; collection, infrastructure and timeout remain HOLD.",
+      "rank": 1,
+      "reference_test_patch_sha256": "ee7c4ca17fff72e7af07a9876cf1aa07552ae49099831b42f5d429c3132dcaaf",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.pylint-dev_1776_pylint-4661@sha256:92b83a19cbeaac3d64a0efab6cd73011c68f48e1c720b1b64f75b8bb436bf0ee"
+      ],
+      "selection": {
+        "eligible_stratum_runs": 4,
+        "rank": 1,
+        "selection": "fixed G8 all-FTP-name receipt cohort; deterministic rank within setting and source verdict",
+        "source_hashes": {
+          "meta": {
+            "bytes": 2096679,
+            "sha256": "a45b1fe4e2f0c8390b2b2938ac83e92ed5979000856808f3679c07812e9e6dcd",
+            "url": "https://huggingface.co/datasets/princeton-nlp/SWE-bench_Verified/resolve/c104f840cc67f8b6eec6f759ebc8b2693d585d4a/data/test-00000-of-00001.parquet"
+          },
+          "patches": {
+            "bytes": 8754146,
+            "sha256": "6ad8f3da580736af3550cd3e7d0ac889451cee45ed985d272ce3c97d9b3c4a0a",
+            "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/laguna_verified/patches.parquet"
+          },
+          "trajectories": {
+            "bytes": 22669506,
+            "sha256": "ea6a9a16af92e3f754536429bee98b7ccec0f280cda94e16c4dfd78af5358681",
+            "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/laguna_verified/trajectories.parquet"
+          }
+        },
+        "source_verdict": "nonpass"
+      },
+      "setting": "laguna_verified",
+      "source_verdict": "nonpass",
+      "status": "PARTIAL_OR_HOLD",
+      "task_id_sha256": "85b4edc0fbb4eba1c4f031934c2b8b4f9e89e44cad1d328230aec7b7bc89b49e",
+      "job_id": 138766308430
+    },
+    {
+      "candidate_patch_sha256": "6265a4fd511b3cbdeb96e573219552cfd08edc1631de319ab2e9a0207fdee18e",
+      "cells": {
+        "base_local": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "d05c06f36ef6d85367da0ef61714a523ebafee3a1a27568abb562e365c257273",
+          "passed": 1,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "base_reference": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 1,
+          "non_test_tree_digest": "d05c06f36ef6d85367da0ef61714a523ebafee3a1a27568abb562e365c257273",
+          "passed": 0,
+          "pytest_returncode": 1,
+          "pytest_verdict": "FAIL",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "candidate_local": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "3237d5ffedac599dee97aa9b28e1afa009654a489ee64bc61ad13f6d986b8ed0",
+          "passed": 1,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "candidate_reference": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "3237d5ffedac599dee97aa9b28e1afa009654a489ee64bc61ad13f6d986b8ed0",
+          "passed": 1,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "gold_reference": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "63f4d7cb49dbf697daa976ac117afaad17703d20bd2970f0fa0991718154871d",
+          "passed": 1,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        }
+      },
+      "controlled_witness": false,
+      "ftp_count": 1,
+      "gold_patch_sha256": "79eac1b06943072daa994e5fb5e7fc9e5eef5e6c34ea151cb550aa09f2da2b3a",
+      "image_id": "sha256:6bcd1fe581af0796691ac3527b940d43e5e1bfd6539adeecebb12f3e4b25dc2c",
+      "image_tag": "swebench/sweb.eval.x86_64.pydata_1776_xarray-4094:latest",
+      "non_test_tree_same_base": true,
+      "non_test_tree_same_candidate": true,
+      "qualification": "Frozen G8 13-run cohort extension, no replacement, named FTP tests only. New controlled test-file intervention in official image, not a rerun of full benchmark or original historical environment. PASS/FAIL only with completed JUnit report; collection, infrastructure and timeout remain HOLD.",
+      "rank": 2,
+      "reference_test_patch_sha256": "3caf7bfbd1a31fc971a0aff74f090c426939bd36946300c3c5f54c30908ad24b",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.pydata_1776_xarray-4094@sha256:6bcd1fe581af0796691ac3527b940d43e5e1bfd6539adeecebb12f3e4b25dc2c"
+      ],
+      "selection": {
+        "eligible_stratum_runs": 6,
+        "rank": 2,
+        "selection": "fixed G8 all-FTP-name receipt cohort; deterministic rank within setting and source verdict",
+        "source_hashes": {
+          "meta": {
+            "bytes": 2096679,
+            "sha256": "a45b1fe4e2f0c8390b2b2938ac83e92ed5979000856808f3679c07812e9e6dcd",
+            "url": "https://huggingface.co/datasets/princeton-nlp/SWE-bench_Verified/resolve/c104f840cc67f8b6eec6f759ebc8b2693d585d4a/data/test-00000-of-00001.parquet"
+          },
+          "patches": {
+            "bytes": 8754146,
+            "sha256": "6ad8f3da580736af3550cd3e7d0ac889451cee45ed985d272ce3c97d9b3c4a0a",
+            "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/laguna_verified/patches.parquet"
+          },
+          "trajectories": {
+            "bytes": 22669506,
+            "sha256": "ea6a9a16af92e3f754536429bee98b7ccec0f280cda94e16c4dfd78af5358681",
+            "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/laguna_verified/trajectories.parquet"
+          }
+        },
+        "source_verdict": "pass"
+      },
+      "setting": "laguna_verified",
+      "source_verdict": "pass",
+      "status": "COMPLETED_PILOT",
+      "task_id_sha256": "f14b80f569fbf03f1f3a33e322c03f1f3d2ffb6ff01e5526331c9347621c07bd",
+      "job_id": 138766308580
+    },
+    {
+      "candidate_patch_sha256": "74b3ef28157149afaec3db656a28bb4fbab3817672fc5a584433d8f836e55486",
+      "cells": {
+        "base_local": {
+          "collected": 0,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "be0d7380efbb8cdcb008e061a578d2633d220bafaae8198409f2c074b2a0de86",
+          "passed": 0,
+          "pytest_returncode": 4,
+          "pytest_verdict": "HOLD",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "base_reference": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 1,
+          "non_test_tree_digest": "be0d7380efbb8cdcb008e061a578d2633d220bafaae8198409f2c074b2a0de86",
+          "passed": 0,
+          "pytest_returncode": 1,
+          "pytest_verdict": "FAIL",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "candidate_local": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "fc4c3df941ef7b5aef8059ed3526b01ecc9ee509aa39a1aa4ec7e6152f3880be",
+          "passed": 1,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "candidate_reference": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "fc4c3df941ef7b5aef8059ed3526b01ecc9ee509aa39a1aa4ec7e6152f3880be",
+          "passed": 1,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "gold_reference": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "1b7be44c529e32b73ba7ea944ef7f32631149eb3cca6f1ad24915ad279bcce69",
+          "passed": 1,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        }
+      },
+      "controlled_witness": false,
+      "ftp_count": 1,
+      "gold_patch_sha256": "ec53e5fbf7ff38374de4700b9f6c2fb91630d7b525f2e0bafafa00c1cec42a77",
+      "image_id": "sha256:ce3659548ac712a11d3c45a9c47fe8010de0e3a83efee229dcdd9646069dfec1",
+      "image_tag": "swebench/sweb.eval.x86_64.sphinx-doc_1776_sphinx-9367:latest",
+      "non_test_tree_same_base": true,
+      "non_test_tree_same_candidate": true,
+      "qualification": "Frozen G8 13-run cohort extension, no replacement, named FTP tests only. New controlled test-file intervention in official image, not a rerun of full benchmark or original historical environment. PASS/FAIL only with completed JUnit report; collection, infrastructure and timeout remain HOLD.",
+      "rank": 3,
+      "reference_test_patch_sha256": "b1bc20d773cab4c012782bcee77d374fa2ffd33567f0d1a4757198204641bf4f",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.sphinx-doc_1776_sphinx-9367@sha256:ce3659548ac712a11d3c45a9c47fe8010de0e3a83efee229dcdd9646069dfec1"
+      ],
+      "selection": {
+        "eligible_stratum_runs": 4,
+        "rank": 3,
+        "selection": "fixed G8 all-FTP-name receipt cohort; deterministic rank within setting and source verdict",
+        "source_hashes": {
+          "meta": {
+            "bytes": 2096679,
+            "sha256": "a45b1fe4e2f0c8390b2b2938ac83e92ed5979000856808f3679c07812e9e6dcd",
+            "url": "https://huggingface.co/datasets/princeton-nlp/SWE-bench_Verified/resolve/c104f840cc67f8b6eec6f759ebc8b2693d585d4a/data/test-00000-of-00001.parquet"
+          },
+          "patches": {
+            "bytes": 8754146,
+            "sha256": "6ad8f3da580736af3550cd3e7d0ac889451cee45ed985d272ce3c97d9b3c4a0a",
+            "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/laguna_verified/patches.parquet"
+          },
+          "trajectories": {
+            "bytes": 22669506,
+            "sha256": "ea6a9a16af92e3f754536429bee98b7ccec0f280cda94e16c4dfd78af5358681",
+            "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/laguna_verified/trajectories.parquet"
+          }
+        },
+        "source_verdict": "nonpass"
+      },
+      "setting": "laguna_verified",
+      "source_verdict": "nonpass",
+      "status": "COMPLETED_PILOT",
+      "task_id_sha256": "f27e0ae58601d89502238e7a4fe6fd0d32e84d44d4b55d2321a947ec6008b7b1",
+      "job_id": 138766308623
+    },
+    {
+      "candidate_patch_sha256": "9f7b4bb90c89e66b4c8f3d460a6292452b6ae5aca93ce0f9cca36c39d654aca9",
+      "cells": {
+        "base_local": {
+          "collected": 2,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "617924ca0d7ed0d8ec5bce2e17268a6a0931691801a1c33e602e851c126cf4c9",
+          "passed": 2,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "base_reference": {
+          "collected": 2,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 2,
+          "non_test_tree_digest": "617924ca0d7ed0d8ec5bce2e17268a6a0931691801a1c33e602e851c126cf4c9",
+          "passed": 0,
+          "pytest_returncode": 1,
+          "pytest_verdict": "FAIL",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "candidate_local": {
+          "collected": 2,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "6463a04cfb4ce75b5763ab27e102b3e059fe0bd8a05ec186cc036cb30890534b",
+          "passed": 2,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "candidate_reference": {
+          "collected": 2,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "6463a04cfb4ce75b5763ab27e102b3e059fe0bd8a05ec186cc036cb30890534b",
+          "passed": 2,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "gold_reference": {
+          "collected": 2,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "0a1de030371e5913ba609ecd7539d1ce8cbd5cd6629bbe0fd6e84590cbce41ca",
+          "passed": 2,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        }
+      },
+      "controlled_witness": false,
+      "ftp_count": 2,
+      "gold_patch_sha256": "7fb9c0edadd2946da359462ccfd37a80a3a044ca0a1f76c60167bb3cb809ce24",
+      "image_id": "sha256:17553d6f09cbc0b9e5b3d7a8c527f609caced536a09056d72d97917eb5f877eb",
+      "image_tag": "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-24026:latest",
+      "non_test_tree_same_base": true,
+      "non_test_tree_same_candidate": true,
+      "qualification": "Frozen G8 13-run cohort extension, no replacement, named FTP tests only. New controlled test-file intervention in official image, not a rerun of full benchmark or original historical environment. PASS/FAIL only with completed JUnit report; collection, infrastructure and timeout remain HOLD.",
+      "rank": 0,
+      "reference_test_patch_sha256": "e33b1ea467889b7efd3cd13564e4e34379e9b687b26d44c7d971a7b4a6fc730b",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-24026@sha256:17553d6f09cbc0b9e5b3d7a8c527f609caced536a09056d72d97917eb5f877eb"
+      ],
+      "selection": {
+        "eligible_stratum_runs": 6,
+        "rank": 0,
+        "selection": "fixed G8 all-FTP-name receipt cohort; deterministic rank within setting and source verdict",
+        "source_hashes": {
+          "meta": {
+            "bytes": 2096679,
+            "sha256": "a45b1fe4e2f0c8390b2b2938ac83e92ed5979000856808f3679c07812e9e6dcd",
+            "url": "https://huggingface.co/datasets/princeton-nlp/SWE-bench_Verified/resolve/c104f840cc67f8b6eec6f759ebc8b2693d585d4a/data/test-00000-of-00001.parquet"
+          },
+          "patches": {
+            "bytes": 8754146,
+            "sha256": "6ad8f3da580736af3550cd3e7d0ac889451cee45ed985d272ce3c97d9b3c4a0a",
+            "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/laguna_verified/patches.parquet"
+          },
+          "trajectories": {
+            "bytes": 22669506,
+            "sha256": "ea6a9a16af92e3f754536429bee98b7ccec0f280cda94e16c4dfd78af5358681",
+            "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/laguna_verified/trajectories.parquet"
+          }
+        },
+        "source_verdict": "pass"
+      },
+      "setting": "laguna_verified",
+      "source_verdict": "pass",
+      "status": "COMPLETED_PILOT",
+      "task_id_sha256": "0b57ac1f5984f794818eb66b60882eb0ac55b633229c0fd89a5975ac9351dbac",
+      "job_id": 138766308669
+    },
+    {
+      "candidate_patch_sha256": "11476aa67b90601866f79d3ef1f9b65169005c6ad10fb22c2247989547e7baec",
+      "cells": {
+        "base_local": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "68cb67ee942a6afed04e5aac26335c8acfb3fdb6525b828728091405dfb792c6",
+          "passed": 1,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "base_reference": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 1,
+          "non_test_tree_digest": "68cb67ee942a6afed04e5aac26335c8acfb3fdb6525b828728091405dfb792c6",
+          "passed": 0,
+          "pytest_returncode": 1,
+          "pytest_verdict": "FAIL",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "candidate_local": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "08ceb9172f81d55cb68759721478e52feda8ee9880d6efa69c9c1b53d04bf223",
+          "passed": 1,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "candidate_reference": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "08ceb9172f81d55cb68759721478e52feda8ee9880d6efa69c9c1b53d04bf223",
+          "passed": 1,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "gold_reference": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "08ceb9172f81d55cb68759721478e52feda8ee9880d6efa69c9c1b53d04bf223",
+          "passed": 1,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        }
+      },
+      "controlled_witness": false,
+      "ftp_count": 1,
+      "gold_patch_sha256": "8e8d4cc0896699078510b4f349a9ae79819f89cfc18e69a06a764153060e6be5",
+      "image_id": "sha256:c0f6a733154dad51cb8f617ca2ea09d095a6f56a1576740c2d43f9020294f2e0",
+      "image_tag": "swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-14141:latest",
+      "non_test_tree_same_base": true,
+      "non_test_tree_same_candidate": true,
+      "qualification": "Frozen G8 13-run cohort extension, no replacement, named FTP tests only. New controlled test-file intervention in official image, not a rerun of full benchmark or original historical environment. PASS/FAIL only with completed JUnit report; collection, infrastructure and timeout remain HOLD.",
+      "rank": 5,
+      "reference_test_patch_sha256": "24c7e9c541cbffcca07fc6970fb26e84627095875b9603a586f8b77d1a05c2ff",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-14141@sha256:c0f6a733154dad51cb8f617ca2ea09d095a6f56a1576740c2d43f9020294f2e0"
+      ],
+      "selection": {
+        "eligible_stratum_runs": 6,
+        "rank": 5,
+        "selection": "fixed G8 all-FTP-name receipt cohort; deterministic rank within setting and source verdict",
+        "source_hashes": {
+          "meta": {
+            "bytes": 2096679,
+            "sha256": "a45b1fe4e2f0c8390b2b2938ac83e92ed5979000856808f3679c07812e9e6dcd",
+            "url": "https://huggingface.co/datasets/princeton-nlp/SWE-bench_Verified/resolve/c104f840cc67f8b6eec6f759ebc8b2693d585d4a/data/test-00000-of-00001.parquet"
+          },
+          "patches": {
+            "bytes": 8754146,
+            "sha256": "6ad8f3da580736af3550cd3e7d0ac889451cee45ed985d272ce3c97d9b3c4a0a",
+            "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/laguna_verified/patches.parquet"
+          },
+          "trajectories": {
+            "bytes": 22669506,
+            "sha256": "ea6a9a16af92e3f754536429bee98b7ccec0f280cda94e16c4dfd78af5358681",
+            "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/laguna_verified/trajectories.parquet"
+          }
+        },
+        "source_verdict": "pass"
+      },
+      "setting": "laguna_verified",
+      "source_verdict": "pass",
+      "status": "COMPLETED_PILOT",
+      "task_id_sha256": "7b6dcc43e066de42086866f68d85a0a1a25d4d6004b5785a33c22f699e207f27",
+      "job_id": 138766308765
+    },
+    {
+      "candidate_patch_sha256": "a447eea64b9bfae983c6c7e7d720221b1f69c0eb85a42521c53cac73b3da35cf",
+      "cells": {
+        "base_local": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "70434971cffd024bf5c914b74b9ec935c1173355f50ff7afc5e380424961e911",
+          "passed": 1,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "base_reference": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 1,
+          "non_test_tree_digest": "70434971cffd024bf5c914b74b9ec935c1173355f50ff7afc5e380424961e911",
+          "passed": 0,
+          "pytest_returncode": 1,
+          "pytest_verdict": "FAIL",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "candidate_local": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "0a8774da62148007cf599eb297ed74e5b0f6126172bcfc8003928e0e00784ab7",
+          "passed": 1,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "candidate_reference": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "0a8774da62148007cf599eb297ed74e5b0f6126172bcfc8003928e0e00784ab7",
+          "passed": 1,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "gold_reference": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "49a90458fb6477522fc76ca5a7fc19fd87dde6836af01276c68b641472d70266",
+          "passed": 1,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        }
+      },
+      "controlled_witness": false,
+      "ftp_count": 1,
+      "gold_patch_sha256": "c15f2cddfd5ec4b3d372389bd64b2453a27595b3f5e2dd2d1cbaa5363db257d3",
+      "image_id": "sha256:40cedc799d11ccfe146a36c217b112a3cf0836c87ea24656152b0dd46cbeccdd",
+      "image_tag": "swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-14053:latest",
+      "non_test_tree_same_base": true,
+      "non_test_tree_same_candidate": true,
+      "qualification": "Frozen G8 13-run cohort extension, no replacement, named FTP tests only. New controlled test-file intervention in official image, not a rerun of full benchmark or original historical environment. PASS/FAIL only with completed JUnit report; collection, infrastructure and timeout remain HOLD.",
+      "rank": 4,
+      "reference_test_patch_sha256": "c2e36339c3ce91cc91f34f38d5c1ad33e3ed8319d34c33d0527621ca3f475def",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-14053@sha256:40cedc799d11ccfe146a36c217b112a3cf0836c87ea24656152b0dd46cbeccdd"
+      ],
+      "selection": {
+        "eligible_stratum_runs": 6,
+        "rank": 4,
+        "selection": "fixed G8 all-FTP-name receipt cohort; deterministic rank within setting and source verdict",
+        "source_hashes": {
+          "meta": {
+            "bytes": 2096679,
+            "sha256": "a45b1fe4e2f0c8390b2b2938ac83e92ed5979000856808f3679c07812e9e6dcd",
+            "url": "https://huggingface.co/datasets/princeton-nlp/SWE-bench_Verified/resolve/c104f840cc67f8b6eec6f759ebc8b2693d585d4a/data/test-00000-of-00001.parquet"
+          },
+          "patches": {
+            "bytes": 8754146,
+            "sha256": "6ad8f3da580736af3550cd3e7d0ac889451cee45ed985d272ce3c97d9b3c4a0a",
+            "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/laguna_verified/patches.parquet"
+          },
+          "trajectories": {
+            "bytes": 22669506,
+            "sha256": "ea6a9a16af92e3f754536429bee98b7ccec0f280cda94e16c4dfd78af5358681",
+            "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/laguna_verified/trajectories.parquet"
+          }
+        },
+        "source_verdict": "pass"
+      },
+      "setting": "laguna_verified",
+      "source_verdict": "pass",
+      "status": "COMPLETED_PILOT",
+      "task_id_sha256": "41200bd5e54c785d38a249772e7498693ffa6087dd5780b3e297448300b4089c",
+      "job_id": 138766308870
+    },
+    {
+      "candidate_patch_sha256": "8373dd0c8c9c04f01e88203dee210addfdd8fede556aaf4c5d8a976418a7350e",
+      "cells": {
+        "base_local": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "756f4d13f01a377ef2167c0ca13d58b87a86ddff45ba8bc0de5cc53f08a7a707",
+          "passed": 1,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "base_reference": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 1,
+          "non_test_tree_digest": "756f4d13f01a377ef2167c0ca13d58b87a86ddff45ba8bc0de5cc53f08a7a707",
+          "passed": 0,
+          "pytest_returncode": 1,
+          "pytest_verdict": "FAIL",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "candidate_local": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "d2e0b60ce474d428041ac196cfb343bd91c766e840fa7e8f9bd6bd58ffbb8c69",
+          "passed": 1,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "candidate_reference": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 1,
+          "non_test_tree_digest": "d2e0b60ce474d428041ac196cfb343bd91c766e840fa7e8f9bd6bd58ffbb8c69",
+          "passed": 0,
+          "pytest_returncode": 1,
+          "pytest_verdict": "FAIL",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "gold_reference": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "10c3e8fa492b3a3f62f2940e5d7ac77ff1119d77a2dd8269c46cd907b87925de",
+          "passed": 1,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        }
+      },
+      "controlled_witness": true,
+      "ftp_count": 1,
+      "gold_patch_sha256": "7de34e6ed106dd91f81473f3646ed1340692a28c437324bf78adaf093d2c0c8d",
+      "image_id": "sha256:22f4f193fbf69d61c59e285494be18041934f8b528190dfe8c6c0d8051d8d6de",
+      "image_tag": "swebench/sweb.eval.x86_64.astropy_1776_astropy-13033:latest",
+      "non_test_tree_same_base": true,
+      "non_test_tree_same_candidate": true,
+      "qualification": "Frozen G8 13-run cohort extension, no replacement, named FTP tests only. New controlled test-file intervention in official image, not a rerun of full benchmark or original historical environment. PASS/FAIL only with completed JUnit report; collection, infrastructure and timeout remain HOLD.",
+      "rank": 0,
+      "reference_test_patch_sha256": "d8d016d036e3f70137f8769246a57180e177ae2afc7e6ac41dfd80893d967b5d",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.astropy_1776_astropy-13033@sha256:22f4f193fbf69d61c59e285494be18041934f8b528190dfe8c6c0d8051d8d6de"
+      ],
+      "selection": {
+        "eligible_stratum_runs": 4,
+        "rank": 0,
+        "selection": "fixed G8 all-FTP-name receipt cohort; deterministic rank within setting and source verdict",
+        "source_hashes": {
+          "meta": {
+            "bytes": 2096679,
+            "sha256": "a45b1fe4e2f0c8390b2b2938ac83e92ed5979000856808f3679c07812e9e6dcd",
+            "url": "https://huggingface.co/datasets/princeton-nlp/SWE-bench_Verified/resolve/c104f840cc67f8b6eec6f759ebc8b2693d585d4a/data/test-00000-of-00001.parquet"
+          },
+          "patches": {
+            "bytes": 8754146,
+            "sha256": "6ad8f3da580736af3550cd3e7d0ac889451cee45ed985d272ce3c97d9b3c4a0a",
+            "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/laguna_verified/patches.parquet"
+          },
+          "trajectories": {
+            "bytes": 22669506,
+            "sha256": "ea6a9a16af92e3f754536429bee98b7ccec0f280cda94e16c4dfd78af5358681",
+            "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/laguna_verified/trajectories.parquet"
+          }
+        },
+        "source_verdict": "nonpass"
+      },
+      "setting": "laguna_verified",
+      "source_verdict": "nonpass",
+      "status": "COMPLETED_PILOT",
+      "task_id_sha256": "70daba531152a74521e3a0751a713980aa2bfff9744bfd3be29c011051a3c12d",
+      "job_id": 138766308875
+    },
+    {
+      "candidate_patch_sha256": "216eeb485063ac4e84382d4e921a8f4a3cc7c76b87add47b9e87faff924b5d58",
+      "cells": {
+        "base_local": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "94ba4dbc5151b17277af85d25996c9e3f4679f0f44915594e0794c147f836906",
+          "passed": 1,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "base_reference": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 1,
+          "non_test_tree_digest": "94ba4dbc5151b17277af85d25996c9e3f4679f0f44915594e0794c147f836906",
+          "passed": 0,
+          "pytest_returncode": 1,
+          "pytest_verdict": "FAIL",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "candidate_local": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "b093da0a2094a0308ae5e1809ce6abf086a17ffafcceb11da0278d5df7d9a0cc",
+          "passed": 1,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "candidate_reference": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "b093da0a2094a0308ae5e1809ce6abf086a17ffafcceb11da0278d5df7d9a0cc",
+          "passed": 1,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "gold_reference": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "e743e32e07b96cfbc7a98ad7569331dacd3cd52989d8304dc04f175dceb0c6ff",
+          "passed": 1,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        }
+      },
+      "controlled_witness": false,
+      "ftp_count": 1,
+      "gold_patch_sha256": "137b29ccacb6a0413a53a39363b8c4e0ae2d88bf8491fb9b561188e04b97598f",
+      "image_id": "sha256:0c61d64ae4c3b8a215ecc4f8efbde87dd6bb9d2583579a82b24ecc7780631775",
+      "image_tag": "swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-13439:latest",
+      "non_test_tree_same_base": true,
+      "non_test_tree_same_candidate": true,
+      "qualification": "Frozen G8 13-run cohort extension, no replacement, named FTP tests only. New controlled test-file intervention in official image, not a rerun of full benchmark or original historical environment. PASS/FAIL only with completed JUnit report; collection, infrastructure and timeout remain HOLD.",
+      "rank": 3,
+      "reference_test_patch_sha256": "5c14f0eb166a9588475359ba0f6fb5ab20852b52614b00f9dbf9fd33d15bc072",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-13439@sha256:0c61d64ae4c3b8a215ecc4f8efbde87dd6bb9d2583579a82b24ecc7780631775"
+      ],
+      "selection": {
+        "eligible_stratum_runs": 6,
+        "rank": 3,
+        "selection": "fixed G8 all-FTP-name receipt cohort; deterministic rank within setting and source verdict",
+        "source_hashes": {
+          "meta": {
+            "bytes": 2096679,
+            "sha256": "a45b1fe4e2f0c8390b2b2938ac83e92ed5979000856808f3679c07812e9e6dcd",
+            "url": "https://huggingface.co/datasets/princeton-nlp/SWE-bench_Verified/resolve/c104f840cc67f8b6eec6f759ebc8b2693d585d4a/data/test-00000-of-00001.parquet"
+          },
+          "patches": {
+            "bytes": 8754146,
+            "sha256": "6ad8f3da580736af3550cd3e7d0ac889451cee45ed985d272ce3c97d9b3c4a0a",
+            "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/laguna_verified/patches.parquet"
+          },
+          "trajectories": {
+            "bytes": 22669506,
+            "sha256": "ea6a9a16af92e3f754536429bee98b7ccec0f280cda94e16c4dfd78af5358681",
+            "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/laguna_verified/trajectories.parquet"
+          }
+        },
+        "source_verdict": "pass"
+      },
+      "setting": "laguna_verified",
+      "source_verdict": "pass",
+      "status": "COMPLETED_PILOT",
+      "task_id_sha256": "d4108325d98aa16f5f33499a20da423052467a551b4d6083372b1008a4a7146f",
+      "job_id": 138766308938
+    },
+    {
+      "candidate_patch_sha256": "fbaf848ff10a0df9f7c0e70260ea24f16e78d97ece5eeda3b0bae723cddd3d93",
+      "cells": {
+        "base_local": {
+          "collected": 0,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "bc032c50bcdbab3252fef47f4f3e974a71e4a53fb70e3ba69814da08c38f4898",
+          "passed": 0,
+          "pytest_returncode": 4,
+          "pytest_verdict": "HOLD",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "base_reference": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 1,
+          "non_test_tree_digest": "bc032c50bcdbab3252fef47f4f3e974a71e4a53fb70e3ba69814da08c38f4898",
+          "passed": 0,
+          "pytest_returncode": 1,
+          "pytest_verdict": "FAIL",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "candidate_local": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "9bd18b50278ba8ae30abfb139050fc783f85dd64bf58ad40d32945548703f05e",
+          "passed": 1,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "candidate_reference": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "9bd18b50278ba8ae30abfb139050fc783f85dd64bf58ad40d32945548703f05e",
+          "passed": 1,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "gold_reference": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "28e54c99ebea010bfa97364b191f0320813f413054104d43cc5fbfac805430c9",
+          "passed": 1,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        }
+      },
+      "controlled_witness": false,
+      "ftp_count": 1,
+      "gold_patch_sha256": "01a911f7883efec86adb960ec5819e5d06a75edbc86fee097d00bad123bdec29",
+      "image_id": "sha256:adee9f4911a853e64f9ae4ebd7b1bf32615cbf52c3210873e9a752fb5fb975e6",
+      "image_tag": "swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-13496:latest",
+      "non_test_tree_same_base": true,
+      "non_test_tree_same_candidate": true,
+      "qualification": "Frozen G8 13-run cohort extension, no replacement, named FTP tests only. New controlled test-file intervention in official image, not a rerun of full benchmark or original historical environment. PASS/FAIL only with completed JUnit report; collection, infrastructure and timeout remain HOLD.",
+      "rank": 0,
+      "reference_test_patch_sha256": "d19944bb26313ad80921a7af040da991ff2f090609271c40b11540e601429b39",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-13496@sha256:adee9f4911a853e64f9ae4ebd7b1bf32615cbf52c3210873e9a752fb5fb975e6"
+      ],
+      "selection": {
+        "eligible_stratum_runs": 1,
+        "rank": 0,
+        "selection": "fixed G8 all-FTP-name receipt cohort; deterministic rank within setting and source verdict",
+        "source_hashes": {
+          "meta": {
+            "bytes": 2096679,
+            "sha256": "a45b1fe4e2f0c8390b2b2938ac83e92ed5979000856808f3679c07812e9e6dcd",
+            "url": "https://huggingface.co/datasets/princeton-nlp/SWE-bench_Verified/resolve/c104f840cc67f8b6eec6f759ebc8b2693d585d4a/data/test-00000-of-00001.parquet"
+          },
+          "patches": {
+            "bytes": 41062562,
+            "sha256": "028e3a1b8dfdf38fd8224b8ceda7ddddef9280b587c36b55f17fad73c68dc0cf",
+            "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/qwen3coder_verified_minisweagent/patches.parquet"
+          },
+          "trajectories": {
+            "bytes": 7257543,
+            "sha256": "a996fe79ea7104de123f756ce076e1d6cf7e5e811c7edb15836a16841b159a2e",
+            "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/qwen3coder_verified_minisweagent/trajectories.parquet"
+          }
+        },
+        "source_verdict": "pass"
+      },
+      "setting": "qwen3coder_verified_minisweagent",
+      "source_verdict": "pass",
+      "status": "COMPLETED_PILOT",
+      "task_id_sha256": "4d9d4e3f32b601241d2e84a01d23b9c8a63e92bc6453e2b3e8fd799ec45a04ca",
+      "job_id": 138766308950
+    },
+    {
+      "candidate_patch_sha256": "dc46b7353e7e1378bb873a43b9251851dff9813b937a2594fa82ffc26b2aa3eb",
+      "cells": {
+        "base_local": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "aae64d0ad480e3759f24492182c3a8488c7feb0aae64237fd5ca3522263ee619",
+          "passed": 1,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "base_reference": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 1,
+          "non_test_tree_digest": "aae64d0ad480e3759f24492182c3a8488c7feb0aae64237fd5ca3522263ee619",
+          "passed": 0,
+          "pytest_returncode": 1,
+          "pytest_verdict": "FAIL",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "candidate_local": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "5998f46539c5656fde854aaeca788290640e19d9c23c5d2a69e08e5b14a90715",
+          "passed": 1,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "candidate_reference": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "5998f46539c5656fde854aaeca788290640e19d9c23c5d2a69e08e5b14a90715",
+          "passed": 1,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "gold_reference": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "2d29f8d10259b23484f6d7a1c063ec780c0ad54ce7a9e6e03a10631d170ef6a1",
+          "passed": 1,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        }
+      },
+      "controlled_witness": false,
+      "ftp_count": 1,
+      "gold_patch_sha256": "a727a484adfbad40fecad3e54fcab9662064b0aa7a6ee6fdb1f2f3481afb5b44",
+      "image_id": "sha256:57a4cf422e77ed0fa7993c550ce5f7e36e40b455ca8842baa9974ae0b9aeeed3",
+      "image_tag": "swebench/sweb.eval.x86_64.sphinx-doc_1776_sphinx-7889:latest",
+      "non_test_tree_same_base": true,
+      "non_test_tree_same_candidate": true,
+      "qualification": "Frozen G8 13-run cohort extension, no replacement, named FTP tests only. New controlled test-file intervention in official image, not a rerun of full benchmark or original historical environment. PASS/FAIL only with completed JUnit report; collection, infrastructure and timeout remain HOLD.",
+      "rank": 2,
+      "reference_test_patch_sha256": "9ab028f6205f70e8513d29a21f7eeb1c3187bc745c69399b4377c459ddefdc47",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.sphinx-doc_1776_sphinx-7889@sha256:57a4cf422e77ed0fa7993c550ce5f7e36e40b455ca8842baa9974ae0b9aeeed3"
+      ],
+      "selection": {
+        "eligible_stratum_runs": 4,
+        "rank": 2,
+        "selection": "fixed G8 all-FTP-name receipt cohort; deterministic rank within setting and source verdict",
+        "source_hashes": {
+          "meta": {
+            "bytes": 2096679,
+            "sha256": "a45b1fe4e2f0c8390b2b2938ac83e92ed5979000856808f3679c07812e9e6dcd",
+            "url": "https://huggingface.co/datasets/princeton-nlp/SWE-bench_Verified/resolve/c104f840cc67f8b6eec6f759ebc8b2693d585d4a/data/test-00000-of-00001.parquet"
+          },
+          "patches": {
+            "bytes": 8754146,
+            "sha256": "6ad8f3da580736af3550cd3e7d0ac889451cee45ed985d272ce3c97d9b3c4a0a",
+            "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/laguna_verified/patches.parquet"
+          },
+          "trajectories": {
+            "bytes": 22669506,
+            "sha256": "ea6a9a16af92e3f754536429bee98b7ccec0f280cda94e16c4dfd78af5358681",
+            "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/laguna_verified/trajectories.parquet"
+          }
+        },
+        "source_verdict": "nonpass"
+      },
+      "setting": "laguna_verified",
+      "source_verdict": "nonpass",
+      "status": "COMPLETED_PILOT",
+      "task_id_sha256": "a31e4f099b5a5be1e69ec67a278e5dc557d5cb4fee5bed01d4102a692c9dea96",
+      "job_id": 138766309001
+    },
+    {
+      "candidate_patch_sha256": "272250f59f93939186f19b48351f71595413f3cd4b5551e0523135bc21345e6f",
+      "cells": {
+        "base_local": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "070818bed635117529cd383ec86d1017766cec563d19781791152e78a004132a",
+          "passed": 1,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "base_reference": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 1,
+          "non_test_tree_digest": "070818bed635117529cd383ec86d1017766cec563d19781791152e78a004132a",
+          "passed": 0,
+          "pytest_returncode": 1,
+          "pytest_verdict": "FAIL",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "candidate_local": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "4df24d7b5641723988d253a0791b2fdca6dbee55f8dd89cc5856f937d0d4f2bf",
+          "passed": 1,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "candidate_reference": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "4df24d7b5641723988d253a0791b2fdca6dbee55f8dd89cc5856f937d0d4f2bf",
+          "passed": 1,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "gold_reference": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "f95fd5c90525d240755b17bf58861816dc61fb6b62a40f406e3e0d7b0887074a",
+          "passed": 1,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        }
+      },
+      "controlled_witness": false,
+      "ftp_count": 1,
+      "gold_patch_sha256": "4bf05606ff37d427b5d1eff27a61b41489785d022c234933fbc8879cad5fd762",
+      "image_id": "sha256:23c72d6ce177631efc8094bf28418e3a960d96ca23e8ad727a18c644de257e9f",
+      "image_tag": "swebench/sweb.eval.x86_64.pydata_1776_xarray-2905:latest",
+      "non_test_tree_same_base": true,
+      "non_test_tree_same_candidate": true,
+      "qualification": "Frozen G8 13-run cohort extension, no replacement, named FTP tests only. New controlled test-file intervention in official image, not a rerun of full benchmark or original historical environment. PASS/FAIL only with completed JUnit report; collection, infrastructure and timeout remain HOLD.",
+      "rank": 1,
+      "reference_test_patch_sha256": "49945ef0c157e31201d3d14768dfa052381edb5915a91e5662b65a37b1683c7a",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.pydata_1776_xarray-2905@sha256:23c72d6ce177631efc8094bf28418e3a960d96ca23e8ad727a18c644de257e9f"
+      ],
+      "selection": {
+        "eligible_stratum_runs": 6,
+        "rank": 1,
+        "selection": "fixed G8 all-FTP-name receipt cohort; deterministic rank within setting and source verdict",
+        "source_hashes": {
+          "meta": {
+            "bytes": 2096679,
+            "sha256": "a45b1fe4e2f0c8390b2b2938ac83e92ed5979000856808f3679c07812e9e6dcd",
+            "url": "https://huggingface.co/datasets/princeton-nlp/SWE-bench_Verified/resolve/c104f840cc67f8b6eec6f759ebc8b2693d585d4a/data/test-00000-of-00001.parquet"
+          },
+          "patches": {
+            "bytes": 8754146,
+            "sha256": "6ad8f3da580736af3550cd3e7d0ac889451cee45ed985d272ce3c97d9b3c4a0a",
+            "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/laguna_verified/patches.parquet"
+          },
+          "trajectories": {
+            "bytes": 22669506,
+            "sha256": "ea6a9a16af92e3f754536429bee98b7ccec0f280cda94e16c4dfd78af5358681",
+            "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/laguna_verified/trajectories.parquet"
+          }
+        },
+        "source_verdict": "pass"
+      },
+      "setting": "laguna_verified",
+      "source_verdict": "pass",
+      "status": "COMPLETED_PILOT",
+      "task_id_sha256": "869ed4f5f437097436e59f52d9071f4dac22c4c37704793812c296f2d6464687",
+      "job_id": 138766309065
+    },
+    {
+      "candidate_patch_sha256": "9570698b4cbea7b22d470241360d67ede6a207e85f753d94c66fb557aaddcd25",
+      "cells": {
+        "base_local": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "8a10c8a63269be9cec979109bda4debbe4b89181d059068ae7f789125fca68cd",
+          "passed": 1,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "base_reference": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 1,
+          "non_test_tree_digest": "8a10c8a63269be9cec979109bda4debbe4b89181d059068ae7f789125fca68cd",
+          "passed": 0,
+          "pytest_returncode": 1,
+          "pytest_verdict": "FAIL",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "candidate_local": {
+          "status": "HOLD_EXACT_PATCH_APPLICATION"
+        },
+        "candidate_reference": {
+          "status": "HOLD_EXACT_PATCH_APPLICATION"
+        },
+        "gold_reference": {
+          "collected": 1,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "10bb294bae35c5a9f47f51ad547c2db601d4870a0c64d08c520bd847cb7df8d0",
+          "passed": 1,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        }
+      },
+      "ftp_count": 1,
+      "gold_patch_sha256": "1128c4768da30ad17958def8839dcdf3921c820a3328b28d75d2e21c53e8d5f8",
+      "image_id": "sha256:455d642453b0c1ace5e25dd27f661d22c52a1d5d698b8344de1b5ebe40c077f8",
+      "image_tag": "swebench/sweb.eval.x86_64.sphinx-doc_1776_sphinx-10614:latest",
+      "qualification": "One fixed pilot per setting, no replacement, named FTP tests only. New controlled test-file intervention in official image, not a rerun of full benchmark or original historical environment. PASS/FAIL only with completed JUnit report; collection, infrastructure and timeout remain HOLD.",
+      "reference_test_patch_sha256": "67701d18fdee1c802c86f12bafbedc42250bec185a6db83e06f5a9162ec8aa94",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.sphinx-doc_1776_sphinx-10614@sha256:455d642453b0c1ace5e25dd27f661d22c52a1d5d698b8344de1b5ebe40c077f8"
+      ],
+      "selection": {
+        "eligible_nonpassing_runs": 1,
+        "selection": "lexicographically first frozen G8 nonpass, one per setting; preparation cannot replace it",
+        "source_hashes": {
+          "meta": {
+            "bytes": 2096679,
+            "sha256": "a45b1fe4e2f0c8390b2b2938ac83e92ed5979000856808f3679c07812e9e6dcd",
+            "url": "https://huggingface.co/datasets/princeton-nlp/SWE-bench_Verified/resolve/c104f840cc67f8b6eec6f759ebc8b2693d585d4a/data/test-00000-of-00001.parquet"
+          },
+          "patches": {
+            "bytes": 4159361,
+            "sha256": "aab66bf3bb631c55f4c7ebef85bb8d0bb3cf3c45efd4bc925051b2acec1c0747",
+            "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/qwen3coder_verified/patches.parquet"
+          },
+          "trajectories": {
+            "bytes": 12443120,
+            "sha256": "46f93f0d7ef21a6bba76bb2aa71e10ef6dc2f172decbea0779fd10bd4eaeeac5",
+            "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/qwen3coder_verified/trajectories.parquet"
+          }
+        }
+      },
+      "setting": "qwen3coder_verified",
+      "status": "PARTIAL_OR_HOLD",
+      "task_id_sha256": "a488980f478d2dfe4a1e25bdf08df4f5bef47e0d2b5129778414b2d02bcad227",
+      "job_id": 138764990557,
+      "source_verdict": "nonpass",
+      "rank": 0
+    },
+    {
+      "candidate_patch_sha256": "248304cfac885b2497a3311469ea9d3abc3b5e0c2a3845baebc61e8364175f95",
+      "cells": {
+        "base_local": {
+          "collected": 2,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "3a51916dddb51fb2098608698f85266e937e2baad8876e288318d8087d4935b5",
+          "passed": 2,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "base_reference": {
+          "collected": 2,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 2,
+          "non_test_tree_digest": "3a51916dddb51fb2098608698f85266e937e2baad8876e288318d8087d4935b5",
+          "passed": 0,
+          "pytest_returncode": 1,
+          "pytest_verdict": "FAIL",
+          "skipped": 0,
+          "status": "EXECUTED"
+        },
+        "candidate_local": {
+          "status": "HOLD_EXACT_PATCH_APPLICATION"
+        },
+        "candidate_reference": {
+          "status": "HOLD_EXACT_PATCH_APPLICATION"
+        },
+        "gold_reference": {
+          "collected": 2,
+          "errors": 0,
+          "exact_base_restored_offline": true,
+          "failed": 0,
+          "non_test_tree_digest": "29832e8e3805b73d21f25565b735c91bc57cb17dcd0fc23e618c2535442ee1e7",
+          "passed": 2,
+          "pytest_returncode": 0,
+          "pytest_verdict": "PASS",
+          "skipped": 0,
+          "status": "EXECUTED"
+        }
+      },
+      "ftp_count": 2,
+      "gold_patch_sha256": "7f6486d010e024a28295d8370931a9079d48e4b2ea3b8a6f66447ce2c73b5778",
+      "image_id": "sha256:21a4deef9114348ab02986927e057d6bc0caf46fceca06414493f91ce4c64283",
+      "image_tag": "swebench/sweb.eval.x86_64.pytest-dev_1776_pytest-5840:latest",
+      "qualification": "One fixed pilot per setting, no replacement, named FTP tests only. New controlled test-file intervention in official image, not a rerun of full benchmark or original historical environment. PASS/FAIL only with completed JUnit report; collection, infrastructure and timeout remain HOLD.",
+      "reference_test_patch_sha256": "f4974c373808cd5a9309b75e2eec2a9a6540fb3017f94a991bd23c9b6ffdbd1d",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.pytest-dev_1776_pytest-5840@sha256:21a4deef9114348ab02986927e057d6bc0caf46fceca06414493f91ce4c64283"
+      ],
+      "selection": {
+        "eligible_nonpassing_runs": 1,
+        "selection": "lexicographically first frozen G8 nonpass, one per setting; preparation cannot replace it",
+        "source_hashes": {
+          "meta": {
+            "bytes": 2096679,
+            "sha256": "a45b1fe4e2f0c8390b2b2938ac83e92ed5979000856808f3679c07812e9e6dcd",
+            "url": "https://huggingface.co/datasets/princeton-nlp/SWE-bench_Verified/resolve/c104f840cc67f8b6eec6f759ebc8b2693d585d4a/data/test-00000-of-00001.parquet"
+          },
+          "patches": {
+            "bytes": 41062562,
+            "sha256": "028e3a1b8dfdf38fd8224b8ceda7ddddef9280b587c36b55f17fad73c68dc0cf",
+            "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/qwen3coder_verified_minisweagent/patches.parquet"
+          },
+          "trajectories": {
+            "bytes": 7257543,
+            "sha256": "a996fe79ea7104de123f756ce076e1d6cf7e5e811c7edb15836a16841b159a2e",
+            "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/qwen3coder_verified_minisweagent/trajectories.parquet"
+          }
+        }
+      },
+      "setting": "qwen3coder_verified_minisweagent",
+      "status": "PARTIAL_OR_HOLD",
+      "task_id_sha256": "f782635980b309ef5b96dd4b55a275abdb4d98530fc6af22d4c82d6de43a7479",
+      "job_id": 138764991199,
+      "source_verdict": "nonpass",
+      "rank": 0
+    }
+  ],
+  "replication_record": {
+    "candidate_patch_sha256": "8373dd0c8c9c04f01e88203dee210addfdd8fede556aaf4c5d8a976418a7350e",
+    "cells": {
+      "base_local": {
+        "collected": 1,
+        "errors": 0,
+        "exact_base_restored_offline": true,
+        "failed": 0,
+        "non_test_tree_digest": "756f4d13f01a377ef2167c0ca13d58b87a86ddff45ba8bc0de5cc53f08a7a707",
+        "passed": 1,
+        "pytest_returncode": 0,
+        "pytest_verdict": "PASS",
+        "skipped": 0,
+        "status": "EXECUTED"
+      },
+      "base_reference": {
+        "collected": 1,
+        "errors": 0,
+        "exact_base_restored_offline": true,
+        "failed": 1,
+        "non_test_tree_digest": "756f4d13f01a377ef2167c0ca13d58b87a86ddff45ba8bc0de5cc53f08a7a707",
+        "passed": 0,
+        "pytest_returncode": 1,
+        "pytest_verdict": "FAIL",
+        "skipped": 0,
+        "status": "EXECUTED"
+      },
+      "candidate_local": {
+        "collected": 1,
+        "errors": 0,
+        "exact_base_restored_offline": true,
+        "failed": 0,
+        "non_test_tree_digest": "d2e0b60ce474d428041ac196cfb343bd91c766e840fa7e8f9bd6bd58ffbb8c69",
+        "passed": 1,
+        "pytest_returncode": 0,
+        "pytest_verdict": "PASS",
+        "skipped": 0,
+        "status": "EXECUTED"
+      },
+      "candidate_reference": {
+        "collected": 1,
+        "errors": 0,
+        "exact_base_restored_offline": true,
+        "failed": 1,
+        "non_test_tree_digest": "d2e0b60ce474d428041ac196cfb343bd91c766e840fa7e8f9bd6bd58ffbb8c69",
+        "passed": 0,
+        "pytest_returncode": 1,
+        "pytest_verdict": "FAIL",
+        "skipped": 0,
+        "status": "EXECUTED"
+      },
+      "gold_reference": {
+        "collected": 1,
+        "errors": 0,
+        "exact_base_restored_offline": true,
+        "failed": 0,
+        "non_test_tree_digest": "10c3e8fa492b3a3f62f2940e5d7ac77ff1119d77a2dd8269c46cd907b87925de",
+        "passed": 1,
+        "pytest_returncode": 0,
+        "pytest_verdict": "PASS",
+        "skipped": 0,
+        "status": "EXECUTED"
+      }
+    },
+    "controlled_witness": true,
+    "ftp_count": 1,
+    "gold_patch_sha256": "7de34e6ed106dd91f81473f3646ed1340692a28c437324bf78adaf093d2c0c8d",
+    "image_id": "sha256:22f4f193fbf69d61c59e285494be18041934f8b528190dfe8c6c0d8051d8d6de",
+    "image_tag": "swebench/sweb.eval.x86_64.astropy_1776_astropy-13033:latest",
+    "non_test_tree_same_base": true,
+    "non_test_tree_same_candidate": true,
+    "qualification": "One fixed pilot per setting, no replacement, named FTP tests only. New controlled test-file intervention in official image, not a rerun of full benchmark or original historical environment. PASS/FAIL only with completed JUnit report; collection, infrastructure and timeout remain HOLD.",
+    "reference_test_patch_sha256": "d8d016d036e3f70137f8769246a57180e177ae2afc7e6ac41dfd80893d967b5d",
+    "repo_digests": [
+      "swebench/sweb.eval.x86_64.astropy_1776_astropy-13033@sha256:22f4f193fbf69d61c59e285494be18041934f8b528190dfe8c6c0d8051d8d6de"
+    ],
+    "selection": {
+      "eligible_nonpassing_runs": 4,
+      "selection": "lexicographically first frozen G8 nonpass, one per setting; preparation cannot replace it",
+      "source_hashes": {
+        "meta": {
+          "bytes": 2096679,
+          "sha256": "a45b1fe4e2f0c8390b2b2938ac83e92ed5979000856808f3679c07812e9e6dcd",
+          "url": "https://huggingface.co/datasets/princeton-nlp/SWE-bench_Verified/resolve/c104f840cc67f8b6eec6f759ebc8b2693d585d4a/data/test-00000-of-00001.parquet"
+        },
+        "patches": {
+          "bytes": 8754146,
+          "sha256": "6ad8f3da580736af3550cd3e7d0ac889451cee45ed985d272ce3c97d9b3c4a0a",
+          "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/laguna_verified/patches.parquet"
+        },
+        "trajectories": {
+          "bytes": 22669506,
+          "sha256": "ea6a9a16af92e3f754536429bee98b7ccec0f280cda94e16c4dfd78af5358681",
+          "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/laguna_verified/trajectories.parquet"
+        }
+      }
+    },
+    "setting": "laguna_verified",
+    "status": "COMPLETED_PILOT",
+    "task_id_sha256": "70daba531152a74521e3a0751a713980aa2bfff9744bfd3be29c011051a3c12d",
+    "job_id": 138764991096
+  },
+  "qualification": "Selected historical all-FTP-name single-receipt cohort; no frequency inference. HOLD is not FAIL. FTP-only intervention, not official full benchmark. Non-test staged tree digest invariant; other runtime state not guaranteed identical."
+}
