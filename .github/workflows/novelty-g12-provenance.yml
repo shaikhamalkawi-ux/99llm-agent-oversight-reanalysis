@@ -1,0 +1,32 @@
+name: G12 released patch provenance and grade transport
+on:
+  push:
+    branches: [novelty-g12-patch-provenance]
+    paths: ['novelty_g12/**', '.github/workflows/novelty-g12-provenance.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  provenance:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python novelty_g12/audit_patch_provenance.py --selftest
+      - run: pip install --disable-pip-version-check pyarrow==22.0.0
+      - name: Source-locked full patch inventory
+        run: |
+          mkdir -p /tmp/g12_out
+          python novelty_g12/audit_patch_provenance.py --root /tmp/g12_data --out /tmp/g12_out/aggregate.json
+      - if: always()
+        run: rm -rf /tmp/g12_data
+      - uses: actions/upload-artifact@v4
+        with:
+          name: G12-aggregate-only
+          path: /tmp/g12_out/
+          if-no-files-found: error
