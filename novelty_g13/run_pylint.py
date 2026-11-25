@@ -91,7 +91,11 @@ def replay(setting,root,verdict,rank):
             marker=[x for x in so.splitlines() if x.startswith(b'G10_CELL ')]
             try:res=json.loads(marker[-1][len(b'G10_CELL '):]) if rc==0 and len(marker)==1 else None
             except ValueError:res=None
-            if res is None:res={'status':'HOLD_CONTAINER_OR_TIMEOUT','container_returncode':rc}
+            if res is None:
+                # Report bounded runtime categories, not source messages.
+                diag=(se+so).decode('utf-8',errors='ignore')
+                known=['SyntaxError','ImportError','ModuleNotFoundError','AttributeError','TypeError','NameError','RuntimeError','ValueError','PermissionError','UsageError','PluginValidationError','FileNotFoundError']
+                res={'status':'HOLD_CONTAINER_OR_TIMEOUT','container_returncode':rc,'runtime_categories':[x for x in known if x in diag]}
             out['cells'][cell]=res
             print('G10_CELL_AGGREGATE',setting,cell,json.dumps(res,sort_keys=True),flush=True)
             if rc==124:command(['docker','rm','-f',cname],20)

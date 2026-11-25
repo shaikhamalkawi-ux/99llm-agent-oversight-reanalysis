@@ -56,6 +56,8 @@ def main(cell):
     if any('::' not in x or not x.split('::',1)[0].endswith('.py') or '..' in Path(x.split('::',1)[0]).parts or x.startswith('/') for x in nodes):fail('HOLD_UNSUPPORTED_NODE_SYNTAX')
     files=sorted({x.split('::',1)[0] for x in nodes})
     if any(not Path(p).is_file() for p in files):fail('HOLD_FILE_MISSING')
+    # Match python -m pytest's initial repository import path.
+    sys.path.insert(0,os.getcwd())
     import pytest
     class Receipt:
         def __init__(self):
@@ -97,4 +99,8 @@ def main(cell):
 
 if __name__=='__main__':
     try:main(sys.argv[1])
-    except (OSError,ValueError,KeyError,subprocess.TimeoutExpired):fail('HOLD_RUNTIME_OR_SETUP')
+    except Exception as exc:
+        import traceback
+        # Own script line locations and exception class only, no source output.
+        lines=[f.lineno for f in traceback.extract_tb(exc.__traceback__) if f.filename==__file__]
+        print('G10_CELL '+json.dumps({'status':'HOLD_RUNTIME_OR_SETUP','exception_type':type(exc).__name__,'audit_lines':lines},sort_keys=True),flush=True)
