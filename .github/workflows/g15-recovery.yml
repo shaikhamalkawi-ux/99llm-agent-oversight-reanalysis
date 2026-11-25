@@ -1,0 +1,27 @@
+name: G15 authoritative PDF source recovery
+on:
+  push:
+    branches: [production-g15-native-source-recovery]
+    paths: ['production_g15/**', '.github/workflows/g15-recovery.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  recovery:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install --disable-pip-version-check pymupdf==1.26.5
+      - name: Read-only recovery of locked PDF text layers
+        run: python production_g15/recover_visible_fragments.py --out /tmp/g15
+      - uses: actions/upload-artifact@v4
+        with:
+          name: G15-source-recovery-ledger
+          path: /tmp/g15/
+          if-no-files-found: error
