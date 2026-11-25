@@ -9,8 +9,11 @@ BLOB="f65eb0485eee897f652795f2b684410d1af55bfc"
 def sha(b):return hashlib.sha256(b).hexdigest()
 def git_blob(b):return hashlib.sha1(("blob "+str(len(b))+"\0").encode()+b).hexdigest()
 def overlap_fraction(a,b):
-    if a.get_area()<=0:return 0
-    return (a&b).get_area()/a.get_area()
+    area=max(0.0,a.width)*max(0.0,a.height)
+    if area<=0:return 0
+    w=max(0.0,min(a.x1,b.x1)-max(a.x0,b.x0))
+    h=max(0.0,min(a.y1,b.y1)-max(a.y0,b.y0))
+    return w*h/area
 def opaque_rects(page):
     # Strict admission: exact axis-aligned rectangle fill, fully opaque;
     # ignore any merely rectangular bounding box of a nonrectangular path.
