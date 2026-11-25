@@ -1,0 +1,35 @@
+name: G11 fixed-task repair and regression contract
+on:
+  push:
+    branches: [novelty-g11-regression-contract]
+    paths: ['novelty_g11/**', '.github/workflows/novelty-g11-contract.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  contract:
+    strategy:
+      fail-fast: false
+      matrix:
+        case: [sphinx_a, sphinx_b, hold_a, hold_b]
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install --disable-pip-version-check pyarrow==22.0.0
+      - name: Exact-source regression contract
+        run: |
+          mkdir -p /tmp/g11_out
+          python novelty_g11/run_contract.py --case ${{ matrix.case }} --root /tmp/g11_data --out /tmp/g11_out/aggregate.json
+      - if: always()
+        run: rm -rf /tmp/g11_data
+      - uses: actions/upload-artifact@v4
+        with:
+          name: G11-${{ matrix.case }}-aggregate
+          path: /tmp/g11_out/
+          if-no-files-found: error
