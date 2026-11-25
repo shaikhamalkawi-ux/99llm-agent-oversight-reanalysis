@@ -1,0 +1,581 @@
+{
+  "final_runs": {
+    "all_runs": 2400,
+    "empty_final_patch_id": 29,
+    "grade_pass": 895,
+    "id_16_lower_hex": 2371,
+    "mismatch_any_simple_newline_variant": 0,
+    "mismatch_append_newline_matches": 0,
+    "mismatch_crlf_matches": 0,
+    "mismatch_lf_matches": 0,
+    "mismatch_one_final_newline_matches": 0,
+    "mismatch_remove_one_newline_matches": 0,
+    "mismatch_strip_final_newlines_matches": 0,
+    "raw_id_match": 2350,
+    "raw_id_mismatch": 21,
+    "removed_null": 0,
+    "removed_positive": 20,
+    "removed_positive_match": 0,
+    "removed_positive_mismatch": 20,
+    "removed_zero": 2351,
+    "removed_zero_match": 2350,
+    "removed_zero_mismatch": 1,
+    "rows": 2371
+  },
+  "frozen_13": {
+    "git_numstat_parse": 12,
+    "git_recount_numstat_parse_diagnostic": 12,
+    "grade_pass": 7,
+    "id_16_lower_hex": 13,
+    "raw_id_match": 13,
+    "removed_null": 0,
+    "removed_positive": 0,
+    "removed_zero": 13,
+    "rows": 13
+  },
+  "frozen_13_by_source_verdict": {
+    "nonpass": {
+      "git_numstat_parse": 5,
+      "git_recount_numstat_parse_diagnostic": 5,
+      "grade_pass": 0,
+      "id_16_lower_hex": 6,
+      "raw_id_match": 6,
+      "removed_null": 0,
+      "removed_positive": 0,
+      "removed_zero": 6,
+      "rows": 6
+    },
+    "pass": {
+      "git_numstat_parse": 7,
+      "git_recount_numstat_parse_diagnostic": 7,
+      "grade_pass": 7,
+      "id_16_lower_hex": 7,
+      "raw_id_match": 7,
+      "removed_null": 0,
+      "removed_positive": 0,
+      "removed_zero": 7,
+      "rows": 7
+    }
+  },
+  "frozen_13_diagnostics": [
+    {
+      "git_numstat_parse": true,
+      "git_recount_numstat_parse_diagnostic": true,
+      "grade_pass": false,
+      "id_16_lower_hex": true,
+      "rank": 0,
+      "raw_id_match": true,
+      "removed_null": false,
+      "removed_positive": false,
+      "removed_zero": true,
+      "rows": 1,
+      "setting": "laguna_verified",
+      "source_verdict": "nonpass"
+    },
+    {
+      "git_numstat_parse": true,
+      "git_recount_numstat_parse_diagnostic": true,
+      "grade_pass": false,
+      "id_16_lower_hex": true,
+      "rank": 1,
+      "raw_id_match": true,
+      "removed_null": false,
+      "removed_positive": false,
+      "removed_zero": true,
+      "rows": 1,
+      "setting": "laguna_verified",
+      "source_verdict": "nonpass"
+    },
+    {
+      "git_numstat_parse": true,
+      "git_recount_numstat_parse_diagnostic": true,
+      "grade_pass": false,
+      "id_16_lower_hex": true,
+      "rank": 2,
+      "raw_id_match": true,
+      "removed_null": false,
+      "removed_positive": false,
+      "removed_zero": true,
+      "rows": 1,
+      "setting": "laguna_verified",
+      "source_verdict": "nonpass"
+    },
+    {
+      "git_numstat_parse": true,
+      "git_recount_numstat_parse_diagnostic": true,
+      "grade_pass": false,
+      "id_16_lower_hex": true,
+      "rank": 3,
+      "raw_id_match": true,
+      "removed_null": false,
+      "removed_positive": false,
+      "removed_zero": true,
+      "rows": 1,
+      "setting": "laguna_verified",
+      "source_verdict": "nonpass"
+    },
+    {
+      "git_numstat_parse": true,
+      "git_recount_numstat_parse_diagnostic": true,
+      "grade_pass": true,
+      "id_16_lower_hex": true,
+      "rank": 0,
+      "raw_id_match": true,
+      "removed_null": false,
+      "removed_positive": false,
+      "removed_zero": true,
+      "rows": 1,
+      "setting": "laguna_verified",
+      "source_verdict": "pass"
+    },
+    {
+      "git_numstat_parse": true,
+      "git_recount_numstat_parse_diagnostic": true,
+      "grade_pass": true,
+      "id_16_lower_hex": true,
+      "rank": 1,
+      "raw_id_match": true,
+      "removed_null": false,
+      "removed_positive": false,
+      "removed_zero": true,
+      "rows": 1,
+      "setting": "laguna_verified",
+      "source_verdict": "pass"
+    },
+    {
+      "git_numstat_parse": true,
+      "git_recount_numstat_parse_diagnostic": true,
+      "grade_pass": true,
+      "id_16_lower_hex": true,
+      "rank": 2,
+      "raw_id_match": true,
+      "removed_null": false,
+      "removed_positive": false,
+      "removed_zero": true,
+      "rows": 1,
+      "setting": "laguna_verified",
+      "source_verdict": "pass"
+    },
+    {
+      "git_numstat_parse": true,
+      "git_recount_numstat_parse_diagnostic": true,
+      "grade_pass": true,
+      "id_16_lower_hex": true,
+      "rank": 3,
+      "raw_id_match": true,
+      "removed_null": false,
+      "removed_positive": false,
+      "removed_zero": true,
+      "rows": 1,
+      "setting": "laguna_verified",
+      "source_verdict": "pass"
+    },
+    {
+      "git_numstat_parse": true,
+      "git_recount_numstat_parse_diagnostic": true,
+      "grade_pass": true,
+      "id_16_lower_hex": true,
+      "rank": 4,
+      "raw_id_match": true,
+      "removed_null": false,
+      "removed_positive": false,
+      "removed_zero": true,
+      "rows": 1,
+      "setting": "laguna_verified",
+      "source_verdict": "pass"
+    },
+    {
+      "git_numstat_parse": true,
+      "git_recount_numstat_parse_diagnostic": true,
+      "grade_pass": true,
+      "id_16_lower_hex": true,
+      "rank": 5,
+      "raw_id_match": true,
+      "removed_null": false,
+      "removed_positive": false,
+      "removed_zero": true,
+      "rows": 1,
+      "setting": "laguna_verified",
+      "source_verdict": "pass"
+    },
+    {
+      "git_numstat_parse": true,
+      "git_recount_numstat_parse_diagnostic": true,
+      "grade_pass": false,
+      "id_16_lower_hex": true,
+      "rank": 0,
+      "raw_id_match": true,
+      "removed_null": false,
+      "removed_positive": false,
+      "removed_zero": true,
+      "rows": 1,
+      "setting": "qwen3coder_verified",
+      "source_verdict": "nonpass"
+    },
+    {
+      "git_numstat_parse": false,
+      "git_recount_numstat_parse_diagnostic": false,
+      "grade_pass": false,
+      "id_16_lower_hex": true,
+      "rank": 0,
+      "raw_id_match": true,
+      "removed_null": false,
+      "removed_positive": false,
+      "removed_zero": true,
+      "rows": 1,
+      "setting": "qwen3coder_verified_minisweagent",
+      "source_verdict": "nonpass"
+    },
+    {
+      "git_numstat_parse": true,
+      "git_recount_numstat_parse_diagnostic": true,
+      "grade_pass": true,
+      "id_16_lower_hex": true,
+      "rank": 0,
+      "raw_id_match": true,
+      "removed_null": false,
+      "removed_positive": false,
+      "removed_zero": true,
+      "rows": 1,
+      "setting": "qwen3coder_verified_minisweagent",
+      "source_verdict": "pass"
+    }
+  ],
+  "patch_rows": {
+    "grade_pass": 5563,
+    "id_16_lower_hex": 26666,
+    "mismatch_any_simple_newline_variant": 0,
+    "mismatch_append_newline_matches": 0,
+    "mismatch_crlf_matches": 0,
+    "mismatch_lf_matches": 0,
+    "mismatch_one_final_newline_matches": 0,
+    "mismatch_remove_one_newline_matches": 0,
+    "mismatch_strip_final_newlines_matches": 0,
+    "raw_id_match": 26448,
+    "raw_id_mismatch": 218,
+    "removed_null": 0,
+    "removed_positive": 211,
+    "removed_positive_match": 0,
+    "removed_positive_mismatch": 211,
+    "removed_zero": 26455,
+    "removed_zero_match": 26448,
+    "removed_zero_mismatch": 7,
+    "rows": 26666,
+    "settings": 6
+  },
+  "qualification": "The upstream grading script generates a 16-hex SHA1 prefix from full input patch text; dataset card does not explicitly promise this convention for every release identifier. Digest match is consistency with that convention, not proof of historical execution or full environment identity. Digest mismatch is not evidence of corrupt grading. Public release documents removing dependency files while retaining full-patch grades. Same released bytes can share a projection or differ in environment. Syntax check is nonapplying; --recount is diagnostic only. No source code or tests executed, no original rows or patch content exported.",
+  "same_task_reported_id_different_released_bytes_groups": 0,
+  "same_task_same_id_same_released_bytes_mixed_grade_groups": 0,
+  "same_task_same_released_bytes_final_groups": {
+    "different_patch_ids_groups": 0,
+    "different_settings_groups": 9,
+    "mixed_grade_and_different_ids_groups": 0,
+    "mixed_grade_and_different_settings_groups": 0,
+    "mixed_grade_group_rows": 0,
+    "mixed_grade_groups": 0,
+    "multirow_group_rows": 18,
+    "multirow_groups": 9
+  },
+  "same_task_same_released_bytes_patch_groups": {
+    "different_patch_ids_groups": 22,
+    "different_settings_groups": 127,
+    "mixed_grade_and_different_ids_groups": 0,
+    "mixed_grade_and_different_settings_groups": 0,
+    "mixed_grade_group_rows": 0,
+    "mixed_grade_groups": 0,
+    "multirow_group_rows": 362,
+    "multirow_groups": 149
+  },
+  "same_task_same_reported_id_groups": {
+    "different_patch_ids_groups": 0,
+    "different_settings_groups": 127,
+    "mixed_grade_and_different_ids_groups": 0,
+    "mixed_grade_and_different_settings_groups": 0,
+    "mixed_grade_group_rows": 0,
+    "mixed_grade_groups": 0,
+    "multirow_group_rows": 317,
+    "multirow_groups": 127
+  },
+  "settings": {
+    "laguna_multilingual": {
+      "final_runs": {
+        "all_runs": 300,
+        "empty_final_patch_id": 10,
+        "grade_pass": 144,
+        "id_16_lower_hex": 290,
+        "mismatch_any_simple_newline_variant": 0,
+        "mismatch_append_newline_matches": 0,
+        "mismatch_crlf_matches": 0,
+        "mismatch_lf_matches": 0,
+        "mismatch_one_final_newline_matches": 0,
+        "mismatch_remove_one_newline_matches": 0,
+        "mismatch_strip_final_newlines_matches": 0,
+        "raw_id_match": 284,
+        "raw_id_mismatch": 6,
+        "removed_null": 0,
+        "removed_positive": 5,
+        "removed_positive_match": 0,
+        "removed_positive_mismatch": 5,
+        "removed_zero": 285,
+        "removed_zero_match": 284,
+        "removed_zero_mismatch": 1,
+        "rows": 290
+      },
+      "patch_rows": {
+        "grade_pass": 1566,
+        "id_16_lower_hex": 5897,
+        "mismatch_any_simple_newline_variant": 0,
+        "mismatch_append_newline_matches": 0,
+        "mismatch_crlf_matches": 0,
+        "mismatch_lf_matches": 0,
+        "mismatch_one_final_newline_matches": 0,
+        "mismatch_remove_one_newline_matches": 0,
+        "mismatch_strip_final_newlines_matches": 0,
+        "raw_id_match": 5827,
+        "raw_id_mismatch": 70,
+        "removed_null": 0,
+        "removed_positive": 63,
+        "removed_positive_match": 0,
+        "removed_positive_mismatch": 63,
+        "removed_zero": 5834,
+        "removed_zero_match": 5827,
+        "removed_zero_mismatch": 7,
+        "rows": 5897,
+        "settings": 1
+      }
+    },
+    "laguna_verified": {
+      "final_runs": {
+        "all_runs": 500,
+        "empty_final_patch_id": 9,
+        "grade_pass": 280,
+        "id_16_lower_hex": 491,
+        "raw_id_match": 491,
+        "removed_null": 0,
+        "removed_positive": 0,
+        "removed_zero": 491,
+        "removed_zero_match": 491,
+        "removed_zero_mismatch": 0,
+        "rows": 491
+      },
+      "patch_rows": {
+        "grade_pass": 2448,
+        "id_16_lower_hex": 7265,
+        "raw_id_match": 7265,
+        "removed_null": 0,
+        "removed_positive": 0,
+        "removed_zero": 7265,
+        "removed_zero_match": 7265,
+        "removed_zero_mismatch": 0,
+        "rows": 7265,
+        "settings": 1
+      }
+    },
+    "qwen3coder_multilingual": {
+      "final_runs": {
+        "all_runs": 300,
+        "empty_final_patch_id": 3,
+        "grade_pass": 67,
+        "id_16_lower_hex": 297,
+        "mismatch_any_simple_newline_variant": 0,
+        "mismatch_append_newline_matches": 0,
+        "mismatch_crlf_matches": 0,
+        "mismatch_lf_matches": 0,
+        "mismatch_one_final_newline_matches": 0,
+        "mismatch_remove_one_newline_matches": 0,
+        "mismatch_strip_final_newlines_matches": 0,
+        "raw_id_match": 282,
+        "raw_id_mismatch": 15,
+        "removed_null": 0,
+        "removed_positive": 15,
+        "removed_positive_match": 0,
+        "removed_positive_mismatch": 15,
+        "removed_zero": 282,
+        "removed_zero_match": 282,
+        "removed_zero_mismatch": 0,
+        "rows": 297
+      },
+      "patch_rows": {
+        "grade_pass": 277,
+        "id_16_lower_hex": 2938,
+        "mismatch_any_simple_newline_variant": 0,
+        "mismatch_append_newline_matches": 0,
+        "mismatch_crlf_matches": 0,
+        "mismatch_lf_matches": 0,
+        "mismatch_one_final_newline_matches": 0,
+        "mismatch_remove_one_newline_matches": 0,
+        "mismatch_strip_final_newlines_matches": 0,
+        "raw_id_match": 2790,
+        "raw_id_mismatch": 148,
+        "removed_null": 0,
+        "removed_positive": 148,
+        "removed_positive_match": 0,
+        "removed_positive_mismatch": 148,
+        "removed_zero": 2790,
+        "removed_zero_match": 2790,
+        "removed_zero_mismatch": 0,
+        "rows": 2938,
+        "settings": 1
+      }
+    },
+    "qwen3coder_verified": {
+      "final_runs": {
+        "all_runs": 500,
+        "empty_final_patch_id": 1,
+        "grade_pass": 219,
+        "id_16_lower_hex": 499,
+        "raw_id_match": 499,
+        "removed_null": 0,
+        "removed_positive": 0,
+        "removed_zero": 499,
+        "removed_zero_match": 499,
+        "removed_zero_mismatch": 0,
+        "rows": 499
+      },
+      "patch_rows": {
+        "grade_pass": 731,
+        "id_16_lower_hex": 3463,
+        "raw_id_match": 3463,
+        "removed_null": 0,
+        "removed_positive": 0,
+        "removed_zero": 3463,
+        "removed_zero_match": 3463,
+        "removed_zero_mismatch": 0,
+        "rows": 3463,
+        "settings": 1
+      }
+    },
+    "qwen3coder_verified_minisweagent": {
+      "final_runs": {
+        "all_runs": 500,
+        "empty_final_patch_id": 3,
+        "grade_pass": 162,
+        "id_16_lower_hex": 497,
+        "raw_id_match": 497,
+        "removed_null": 0,
+        "removed_positive": 0,
+        "removed_zero": 497,
+        "removed_zero_match": 497,
+        "removed_zero_mismatch": 0,
+        "rows": 497
+      },
+      "patch_rows": {
+        "grade_pass": 459,
+        "id_16_lower_hex": 4392,
+        "raw_id_match": 4392,
+        "removed_null": 0,
+        "removed_positive": 0,
+        "removed_zero": 4392,
+        "removed_zero_match": 4392,
+        "removed_zero_mismatch": 0,
+        "rows": 4392,
+        "settings": 1
+      }
+    },
+    "seedoss_pro300": {
+      "final_runs": {
+        "all_runs": 300,
+        "empty_final_patch_id": 3,
+        "grade_pass": 23,
+        "id_16_lower_hex": 297,
+        "raw_id_match": 297,
+        "removed_null": 0,
+        "removed_positive": 0,
+        "removed_zero": 297,
+        "removed_zero_match": 297,
+        "removed_zero_mismatch": 0,
+        "rows": 297
+      },
+      "patch_rows": {
+        "grade_pass": 82,
+        "id_16_lower_hex": 2711,
+        "raw_id_match": 2711,
+        "removed_null": 0,
+        "removed_positive": 0,
+        "removed_zero": 2711,
+        "removed_zero_match": 2711,
+        "removed_zero_mismatch": 0,
+        "rows": 2711,
+        "settings": 1
+      }
+    }
+  },
+  "source_hashes": {
+    "laguna_multilingual": {
+      "patches": {
+        "bytes": 14363741,
+        "sha256": "1e297c73e2db1aa731c649836227fd78cb7c945b81e944d8c124deb044deca97",
+        "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/laguna_multilingual/patches.parquet"
+      },
+      "trajectories": {
+        "bytes": 14113216,
+        "sha256": "01d56ac9a8a76f082a181e40edc0398a93a6f2a28efcbd40007bb4d9264f1b1d",
+        "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/laguna_multilingual/trajectories.parquet"
+      }
+    },
+    "laguna_verified": {
+      "patches": {
+        "bytes": 8754146,
+        "sha256": "6ad8f3da580736af3550cd3e7d0ac889451cee45ed985d272ce3c97d9b3c4a0a",
+        "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/laguna_verified/patches.parquet"
+      },
+      "trajectories": {
+        "bytes": 22669506,
+        "sha256": "ea6a9a16af92e3f754536429bee98b7ccec0f280cda94e16c4dfd78af5358681",
+        "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/laguna_verified/trajectories.parquet"
+      }
+    },
+    "qwen3coder_multilingual": {
+      "patches": {
+        "bytes": 16375851,
+        "sha256": "6adace9f5d8ec08ecf3de8aa6b2e619cbb69ba63370214504886e68f8823c07e",
+        "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/qwen3coder_multilingual/patches.parquet"
+      },
+      "trajectories": {
+        "bytes": 8514417,
+        "sha256": "0c952c79fde5fa91c55fc2c4d235d1689fc21afb9d5a19919fea34ecfe604d78",
+        "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/qwen3coder_multilingual/trajectories.parquet"
+      }
+    },
+    "qwen3coder_verified": {
+      "patches": {
+        "bytes": 4159361,
+        "sha256": "aab66bf3bb631c55f4c7ebef85bb8d0bb3cf3c45efd4bc925051b2acec1c0747",
+        "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/qwen3coder_verified/patches.parquet"
+      },
+      "trajectories": {
+        "bytes": 12443120,
+        "sha256": "46f93f0d7ef21a6bba76bb2aa71e10ef6dc2f172decbea0779fd10bd4eaeeac5",
+        "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/qwen3coder_verified/trajectories.parquet"
+      }
+    },
+    "qwen3coder_verified_minisweagent": {
+      "patches": {
+        "bytes": 41062562,
+        "sha256": "028e3a1b8dfdf38fd8224b8ceda7ddddef9280b587c36b55f17fad73c68dc0cf",
+        "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/qwen3coder_verified_minisweagent/patches.parquet"
+      },
+      "trajectories": {
+        "bytes": 7257543,
+        "sha256": "a996fe79ea7104de123f756ce076e1d6cf7e5e811c7edb15836a16841b159a2e",
+        "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/qwen3coder_verified_minisweagent/trajectories.parquet"
+      }
+    },
+    "seedoss_pro300": {
+      "patches": {
+        "bytes": 1382162,
+        "sha256": "f13ddc9454e16ae6a7c5980398ed0bc9a32f143634f89be33c4ec2ba335b4ad3",
+        "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/seedoss_pro300/patches.parquet"
+      },
+      "trajectories": {
+        "bytes": 11370814,
+        "sha256": "945b45c33df2227098932a14651f16fb191eeb9d036cb22dd784d566edb000ea",
+        "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/seedoss_pro300/trajectories.parquet"
+      }
+    }
+  },
+  "source_revision": "15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe",
+  "upstream_grading_code_commit": "40a5b65aabf02063cd7a940a82bdee10fdbc91e6",
+  "verified_run": 45620862263,
+  "code_commit": "0bea3f17ddcc7a4ab0b94e1b24c810ec80bb735a"
+}
