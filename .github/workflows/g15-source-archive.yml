@@ -1,0 +1,33 @@
+name: G15 recover original PDF and native source lineage
+on:
+  push:
+    branches: [production-g15-native-source-recovery]
+    paths: ['.github/workflows/g15-source-archive.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Verify and copy source reference files
+        run: |
+          set -eu
+          test "$(git hash-object paper/99llm_MR31R9_EP2_GitHubSynced_AUTHOR_REVIEW.pdf)" = f65eb0485eee897f652795f2b684410d1af55bfc
+          test "$(sha256sum paper/99llm_MR31R9_EP2_GitHubSynced_AUTHOR_REVIEW.pdf | cut -d ' ' -f 1)" = 6a1b061f76561e2d9bd5739b2a3cf5bfba7b6837c71ea6647004f55007c7833f
+          mkdir -p /tmp/g15_sources
+          cp -a paper mr31 novelty_g14 production_g15 /tmp/g15_sources/
+          cd /tmp/g15_sources
+          find . -type f -print0 | sort -z | xargs -0 sha256sum > /tmp/G15_SHA256SUMS.txt
+          cp /tmp/G15_SHA256SUMS.txt SHA256SUMS.txt
+          sha256sum -c SHA256SUMS.txt
+          echo 'G15 original PDF and editable lineage archive PASS'
+      - uses: actions/upload-artifact@v4
+        with:
+          name: G15-locked-pdf-and-native-lineage
+          path: /tmp/g15_sources/
+          if-no-files-found: error
