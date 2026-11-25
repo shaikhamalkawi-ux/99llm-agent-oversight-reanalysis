@@ -1,0 +1,753 @@
+{
+  "version": "G11",
+  "source_commit": "127f725a99072c2b277b9eec4981abec3cc0c515",
+  "verified_runs": {
+    "45551510016": {
+      "sphinx_b": {
+        "candidate_patch_sha256": "74b3ef28157149afaec3db656a28bb4fbab3817672fc5a584433d8f836e55486",
+        "case": "sphinx_b",
+        "cells": {
+          "base": {
+            "collected_count": 0,
+            "collection_errors": 0,
+            "exact_collection": false,
+            "ftp": {
+              "fail": 0,
+              "hold": 1,
+              "n": 1,
+              "pass": 0
+            },
+            "fully_determinate": false,
+            "ptp": {
+              "fail": 0,
+              "hold": 25,
+              "n": 25,
+              "pass": 0
+            },
+            "pytest_returncode": 4,
+            "status": "EXECUTED",
+            "tree_digest": "4d2237e1947a2841e142c6b3f2ec725eeb630db44557984b6f59907866021fac"
+          },
+          "candidate": {
+            "collected_count": 0,
+            "collection_errors": 0,
+            "exact_collection": false,
+            "ftp": {
+              "fail": 0,
+              "hold": 1,
+              "n": 1,
+              "pass": 0
+            },
+            "fully_determinate": false,
+            "ptp": {
+              "fail": 0,
+              "hold": 25,
+              "n": 25,
+              "pass": 0
+            },
+            "pytest_returncode": 4,
+            "status": "EXECUTED",
+            "tree_digest": "afe2abd93cc70d07b0d9a6090ac2ed87a6a5a2635c989122cd1806b536739ea3"
+          },
+          "gold": {
+            "collected_count": 0,
+            "collection_errors": 0,
+            "exact_collection": false,
+            "ftp": {
+              "fail": 0,
+              "hold": 1,
+              "n": 1,
+              "pass": 0
+            },
+            "fully_determinate": false,
+            "ptp": {
+              "fail": 0,
+              "hold": 25,
+              "n": 25,
+              "pass": 0
+            },
+            "pytest_returncode": 4,
+            "status": "EXECUTED",
+            "tree_digest": "d6a2781c855781712a3de0a6dd58982f8161d40b0f710b92f7d04dc9bf4152ed"
+          }
+        },
+        "ftp_count": 1,
+        "gold_patch_sha256": "ec53e5fbf7ff38374de4700b9f6c2fb91630d7b525f2e0bafafa00c1cec42a77",
+        "image_digest": "swebench/sweb.eval.x86_64.sphinx-doc_1776_sphinx-9367@sha256:ce3659548ac712a11d3c45a9c47fe8010de0e3a83efee229dcdd9646069dfec1",
+        "image_id": "sha256:ce3659548ac712a11d3c45a9c47fe8010de0e3a83efee229dcdd9646069dfec1",
+        "ptp_count": 25,
+        "qualification": "Exact G10 task and image digest, named FTP and PTP union under pytest, not original harness rerun. Strict exact collection and setup/call/teardown receipts. No fuzzy application, no replacement. Historical nonpass cause remains unproven if not reproduced.",
+        "reference_test_patch_sha256": "b1bc20d773cab4c012782bcee77d374fa2ffd33567f0d1a4757198204641bf4f",
+        "selection": {
+          "eligible_stratum_runs": 4,
+          "rank": 3,
+          "selection": "fixed G8 all-FTP-name receipt cohort; deterministic rank within setting and source verdict",
+          "source_hashes": {
+            "meta": {
+              "bytes": 2096679,
+              "sha256": "a45b1fe4e2f0c8390b2b2938ac83e92ed5979000856808f3679c07812e9e6dcd",
+              "url": "https://huggingface.co/datasets/princeton-nlp/SWE-bench_Verified/resolve/c104f840cc67f8b6eec6f759ebc8b2693d585d4a/data/test-00000-of-00001.parquet"
+            },
+            "patches": {
+              "bytes": 8754146,
+              "sha256": "6ad8f3da580736af3550cd3e7d0ac889451cee45ed985d272ce3c97d9b3c4a0a",
+              "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/laguna_verified/patches.parquet"
+            },
+            "trajectories": {
+              "bytes": 22669506,
+              "sha256": "ea6a9a16af92e3f754536429bee98b7ccec0f280cda94e16c4dfd78af5358681",
+              "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/laguna_verified/trajectories.parquet"
+            }
+          },
+          "source_verdict": "nonpass"
+        },
+        "status": "CHECKED",
+        "task_id_sha256": "f27e0ae58601d89502238e7a4fe6fd0d32e84d44d4b55d2321a947ec6008b7b1"
+      },
+      "hold_a": {
+        "candidate_patch_sha256": "9570698b4cbea7b22d470241360d67ede6a207e85f753d94c66fb557aaddcd25",
+        "case": "hold_a",
+        "cells": {
+          "candidate": {
+            "patch_role": "candidate",
+            "reason": "patch_context_mismatch",
+            "status": "HOLD_EXACT_PATCH_APPLICATION"
+          }
+        },
+        "ftp_count": 1,
+        "gold_patch_sha256": "1128c4768da30ad17958def8839dcdf3921c820a3328b28d75d2e21c53e8d5f8",
+        "image_digest": "swebench/sweb.eval.x86_64.sphinx-doc_1776_sphinx-10614@sha256:455d642453b0c1ace5e25dd27f661d22c52a1d5d698b8344de1b5ebe40c077f8",
+        "image_id": "sha256:455d642453b0c1ace5e25dd27f661d22c52a1d5d698b8344de1b5ebe40c077f8",
+        "ptp_count": 5,
+        "qualification": "Exact G10 task and image digest, named FTP and PTP union under pytest, not original harness rerun. Strict exact collection and setup/call/teardown receipts. No fuzzy application, no replacement. Historical nonpass cause remains unproven if not reproduced.",
+        "reference_test_patch_sha256": "67701d18fdee1c802c86f12bafbedc42250bec185a6db83e06f5a9162ec8aa94",
+        "selection": {
+          "eligible_stratum_runs": 1,
+          "rank": 0,
+          "selection": "fixed G8 all-FTP-name receipt cohort; deterministic rank within setting and source verdict",
+          "source_hashes": {
+            "meta": {
+              "bytes": 2096679,
+              "sha256": "a45b1fe4e2f0c8390b2b2938ac83e92ed5979000856808f3679c07812e9e6dcd",
+              "url": "https://huggingface.co/datasets/princeton-nlp/SWE-bench_Verified/resolve/c104f840cc67f8b6eec6f759ebc8b2693d585d4a/data/test-00000-of-00001.parquet"
+            },
+            "patches": {
+              "bytes": 4159361,
+              "sha256": "aab66bf3bb631c55f4c7ebef85bb8d0bb3cf3c45efd4bc925051b2acec1c0747",
+              "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/qwen3coder_verified/patches.parquet"
+            },
+            "trajectories": {
+              "bytes": 12443120,
+              "sha256": "46f93f0d7ef21a6bba76bb2aa71e10ef6dc2f172decbea0779fd10bd4eaeeac5",
+              "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/qwen3coder_verified/trajectories.parquet"
+            }
+          },
+          "source_verdict": "nonpass"
+        },
+        "status": "CHECKED",
+        "task_id_sha256": "a488980f478d2dfe4a1e25bdf08df4f5bef47e0d2b5129778414b2d02bcad227"
+      },
+      "sphinx_a": {
+        "candidate_ftp_pass": true,
+        "candidate_patch_sha256": "dc46b7353e7e1378bb873a43b9251851dff9813b937a2594fa82ffc26b2aa3eb",
+        "candidate_ptp_pass": true,
+        "case": "sphinx_a",
+        "cells": {
+          "base": {
+            "collected_count": 6,
+            "collection_errors": 0,
+            "exact_collection": true,
+            "ftp": {
+              "fail": 1,
+              "hold": 0,
+              "n": 1,
+              "pass": 0
+            },
+            "fully_determinate": true,
+            "ptp": {
+              "fail": 0,
+              "hold": 0,
+              "n": 5,
+              "pass": 5
+            },
+            "pytest_returncode": 1,
+            "status": "EXECUTED",
+            "tree_digest": "27c60f69edd9fe498db4c27b586672493ed1b3a10013a2fb26e753cdfe2574a3"
+          },
+          "candidate": {
+            "collected_count": 6,
+            "collection_errors": 0,
+            "exact_collection": true,
+            "ftp": {
+              "fail": 0,
+              "hold": 0,
+              "n": 1,
+              "pass": 1
+            },
+            "fully_determinate": true,
+            "ptp": {
+              "fail": 0,
+              "hold": 0,
+              "n": 5,
+              "pass": 5
+            },
+            "pytest_returncode": 0,
+            "status": "EXECUTED",
+            "tree_digest": "00c6be03d6401a12319a98c50c19fd778b88f0929e25ff0bd0bc83ee1265c2f0"
+          },
+          "gold": {
+            "collected_count": 6,
+            "collection_errors": 0,
+            "exact_collection": true,
+            "ftp": {
+              "fail": 0,
+              "hold": 0,
+              "n": 1,
+              "pass": 1
+            },
+            "fully_determinate": true,
+            "ptp": {
+              "fail": 0,
+              "hold": 0,
+              "n": 5,
+              "pass": 5
+            },
+            "pytest_returncode": 0,
+            "status": "EXECUTED",
+            "tree_digest": "a44965ed28e54a1413d331f1851dd3c7420fed0a22927a2583b785a53b6a446f"
+          }
+        },
+        "ftp_count": 1,
+        "gold_patch_sha256": "a727a484adfbad40fecad3e54fcab9662064b0aa7a6ee6fdb1f2f3481afb5b44",
+        "image_digest": "swebench/sweb.eval.x86_64.sphinx-doc_1776_sphinx-7889@sha256:57a4cf422e77ed0fa7993c550ce5f7e36e40b455ca8842baa9974ae0b9aeeed3",
+        "image_id": "sha256:57a4cf422e77ed0fa7993c550ce5f7e36e40b455ca8842baa9974ae0b9aeeed3",
+        "ptp_count": 5,
+        "ptp_only_nonpass_witness": false,
+        "qualification": "Exact G10 task and image digest, named FTP and PTP union under pytest, not original harness rerun. Strict exact collection and setup/call/teardown receipts. No fuzzy application, no replacement. Historical nonpass cause remains unproven if not reproduced.",
+        "reference_controls_valid": true,
+        "reference_test_patch_sha256": "9ab028f6205f70e8513d29a21f7eeb1c3187bc745c69399b4377c459ddefdc47",
+        "selection": {
+          "eligible_stratum_runs": 4,
+          "rank": 2,
+          "selection": "fixed G8 all-FTP-name receipt cohort; deterministic rank within setting and source verdict",
+          "source_hashes": {
+            "meta": {
+              "bytes": 2096679,
+              "sha256": "a45b1fe4e2f0c8390b2b2938ac83e92ed5979000856808f3679c07812e9e6dcd",
+              "url": "https://huggingface.co/datasets/princeton-nlp/SWE-bench_Verified/resolve/c104f840cc67f8b6eec6f759ebc8b2693d585d4a/data/test-00000-of-00001.parquet"
+            },
+            "patches": {
+              "bytes": 8754146,
+              "sha256": "6ad8f3da580736af3550cd3e7d0ac889451cee45ed985d272ce3c97d9b3c4a0a",
+              "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/laguna_verified/patches.parquet"
+            },
+            "trajectories": {
+              "bytes": 22669506,
+              "sha256": "ea6a9a16af92e3f754536429bee98b7ccec0f280cda94e16c4dfd78af5358681",
+              "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/laguna_verified/trajectories.parquet"
+            }
+          },
+          "source_verdict": "nonpass"
+        },
+        "status": "CHECKED",
+        "task_id_sha256": "a31e4f099b5a5be1e69ec67a278e5dc557d5cb4fee5bed01d4102a692c9dea96"
+      },
+      "hold_b": {
+        "candidate_patch_sha256": "248304cfac885b2497a3311469ea9d3abc3b5e0c2a3845baebc61e8364175f95",
+        "case": "hold_b",
+        "cells": {
+          "candidate": {
+            "patch_role": "candidate",
+            "reason": "corrupt_patch",
+            "status": "HOLD_EXACT_PATCH_APPLICATION"
+          }
+        },
+        "ftp_count": 2,
+        "gold_patch_sha256": "7f6486d010e024a28295d8370931a9079d48e4b2ea3b8a6f66447ce2c73b5778",
+        "image_digest": "swebench/sweb.eval.x86_64.pytest-dev_1776_pytest-5840@sha256:21a4deef9114348ab02986927e057d6bc0caf46fceca06414493f91ce4c64283",
+        "image_id": "sha256:21a4deef9114348ab02986927e057d6bc0caf46fceca06414493f91ce4c64283",
+        "ptp_count": 51,
+        "qualification": "Exact G10 task and image digest, named FTP and PTP union under pytest, not original harness rerun. Strict exact collection and setup/call/teardown receipts. No fuzzy application, no replacement. Historical nonpass cause remains unproven if not reproduced.",
+        "reference_test_patch_sha256": "f4974c373808cd5a9309b75e2eec2a9a6540fb3017f94a991bd23c9b6ffdbd1d",
+        "selection": {
+          "eligible_stratum_runs": 1,
+          "rank": 0,
+          "selection": "fixed G8 all-FTP-name receipt cohort; deterministic rank within setting and source verdict",
+          "source_hashes": {
+            "meta": {
+              "bytes": 2096679,
+              "sha256": "a45b1fe4e2f0c8390b2b2938ac83e92ed5979000856808f3679c07812e9e6dcd",
+              "url": "https://huggingface.co/datasets/princeton-nlp/SWE-bench_Verified/resolve/c104f840cc67f8b6eec6f759ebc8b2693d585d4a/data/test-00000-of-00001.parquet"
+            },
+            "patches": {
+              "bytes": 41062562,
+              "sha256": "028e3a1b8dfdf38fd8224b8ceda7ddddef9280b587c36b55f17fad73c68dc0cf",
+              "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/qwen3coder_verified_minisweagent/patches.parquet"
+            },
+            "trajectories": {
+              "bytes": 7257543,
+              "sha256": "a996fe79ea7104de123f756ce076e1d6cf7e5e811c7edb15836a16841b159a2e",
+              "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/qwen3coder_verified_minisweagent/trajectories.parquet"
+            }
+          },
+          "source_verdict": "nonpass"
+        },
+        "status": "CHECKED",
+        "task_id_sha256": "f782635980b309ef5b96dd4b55a275abdb4d98530fc6af22d4c82d6de43a7479"
+      }
+    },
+    "45551510130": {
+      "sphinx_b": {
+        "candidate_patch_sha256": "74b3ef28157149afaec3db656a28bb4fbab3817672fc5a584433d8f836e55486",
+        "case": "sphinx_b",
+        "cells": {
+          "base": {
+            "collected_count": 42,
+            "collection_errors": 0,
+            "extra": {
+              "fail": 0,
+              "hold": 0,
+              "n": 29,
+              "pass": 29
+            },
+            "ftp": {
+              "fail": 1,
+              "hold": 0,
+              "n": 1,
+              "pass": 0
+            },
+            "fully_determinate": false,
+            "identifier_representation_diagnostics": {
+              "current_log_control_whitespace": {
+                "missing_total": 13,
+                "none_or_ambiguous": 13
+              },
+              "legacy_first_token": {
+                "missing_total": 13,
+                "none_or_ambiguous": 2,
+                "unique_mapped_FAIL": 0,
+                "unique_mapped_HOLD": 0,
+                "unique_mapped_PASS": 11,
+                "unique_unused_mapping": 11
+              },
+              "whitespace_normalization": {
+                "missing_total": 13,
+                "none_or_ambiguous": 13
+              }
+            },
+            "parameter_family_diagnostics": {
+              "missing_total": 13,
+              "missing_with_open_bracket": 13,
+              "missing_with_whitespace": 0,
+              "multiple_family_candidates": 12,
+              "same_parameter_family_candidates": 13,
+              "single_family_candidate": 1
+            },
+            "ptp": {
+              "fail": 0,
+              "hold": 13,
+              "n": 25,
+              "pass": 12
+            },
+            "pytest_returncode": 1,
+            "required_collection_complete": false,
+            "required_not_collected": 13,
+            "status": "EXECUTED",
+            "tree_digest": "4d2237e1947a2841e142c6b3f2ec725eeb630db44557984b6f59907866021fac"
+          },
+          "candidate": {
+            "collected_count": 42,
+            "collection_errors": 0,
+            "extra": {
+              "fail": 0,
+              "hold": 0,
+              "n": 29,
+              "pass": 29
+            },
+            "ftp": {
+              "fail": 0,
+              "hold": 0,
+              "n": 1,
+              "pass": 1
+            },
+            "fully_determinate": false,
+            "identifier_representation_diagnostics": {
+              "current_log_control_whitespace": {
+                "missing_total": 13,
+                "none_or_ambiguous": 13
+              },
+              "legacy_first_token": {
+                "missing_total": 13,
+                "none_or_ambiguous": 2,
+                "unique_mapped_FAIL": 0,
+                "unique_mapped_HOLD": 0,
+                "unique_mapped_PASS": 11,
+                "unique_unused_mapping": 11
+              },
+              "whitespace_normalization": {
+                "missing_total": 13,
+                "none_or_ambiguous": 13
+              }
+            },
+            "parameter_family_diagnostics": {
+              "missing_total": 13,
+              "missing_with_open_bracket": 13,
+              "missing_with_whitespace": 0,
+              "multiple_family_candidates": 12,
+              "same_parameter_family_candidates": 13,
+              "single_family_candidate": 1
+            },
+            "ptp": {
+              "fail": 0,
+              "hold": 13,
+              "n": 25,
+              "pass": 12
+            },
+            "pytest_returncode": 0,
+            "required_collection_complete": false,
+            "required_not_collected": 13,
+            "status": "EXECUTED",
+            "tree_digest": "afe2abd93cc70d07b0d9a6090ac2ed87a6a5a2635c989122cd1806b536739ea3"
+          },
+          "gold": {
+            "collected_count": 42,
+            "collection_errors": 0,
+            "extra": {
+              "fail": 0,
+              "hold": 0,
+              "n": 29,
+              "pass": 29
+            },
+            "ftp": {
+              "fail": 0,
+              "hold": 0,
+              "n": 1,
+              "pass": 1
+            },
+            "fully_determinate": false,
+            "identifier_representation_diagnostics": {
+              "current_log_control_whitespace": {
+                "missing_total": 13,
+                "none_or_ambiguous": 13
+              },
+              "legacy_first_token": {
+                "missing_total": 13,
+                "none_or_ambiguous": 2,
+                "unique_mapped_FAIL": 0,
+                "unique_mapped_HOLD": 0,
+                "unique_mapped_PASS": 11,
+                "unique_unused_mapping": 11
+              },
+              "whitespace_normalization": {
+                "missing_total": 13,
+                "none_or_ambiguous": 13
+              }
+            },
+            "parameter_family_diagnostics": {
+              "missing_total": 13,
+              "missing_with_open_bracket": 13,
+              "missing_with_whitespace": 0,
+              "multiple_family_candidates": 12,
+              "same_parameter_family_candidates": 13,
+              "single_family_candidate": 1
+            },
+            "ptp": {
+              "fail": 0,
+              "hold": 13,
+              "n": 25,
+              "pass": 12
+            },
+            "pytest_returncode": 0,
+            "required_collection_complete": false,
+            "required_not_collected": 13,
+            "status": "EXECUTED",
+            "tree_digest": "d6a2781c855781712a3de0a6dd58982f8161d40b0f710b92f7d04dc9bf4152ed"
+          }
+        },
+        "ftp_count": 1,
+        "gold_patch_sha256": "ec53e5fbf7ff38374de4700b9f6c2fb91630d7b525f2e0bafafa00c1cec42a77",
+        "image_digest": "swebench/sweb.eval.x86_64.sphinx-doc_1776_sphinx-9367@sha256:ce3659548ac712a11d3c45a9c47fe8010de0e3a83efee229dcdd9646069dfec1",
+        "image_id": "sha256:ce3659548ac712a11d3c45a9c47fe8010de0e3a83efee229dcdd9646069dfec1",
+        "ptp_count": 25,
+        "qualification": "Exact G10 task and image digest, file-level pytest collection with exact required FTP/PTP membership, not original harness rerun. Strict exact collection and setup/call/teardown receipts. No fuzzy application, no replacement. Historical nonpass cause remains unproven if not reproduced.",
+        "reference_test_patch_sha256": "b1bc20d773cab4c012782bcee77d374fa2ffd33567f0d1a4757198204641bf4f",
+        "selection": {
+          "eligible_stratum_runs": 4,
+          "rank": 3,
+          "selection": "fixed G8 all-FTP-name receipt cohort; deterministic rank within setting and source verdict",
+          "source_hashes": {
+            "meta": {
+              "bytes": 2096679,
+              "sha256": "a45b1fe4e2f0c8390b2b2938ac83e92ed5979000856808f3679c07812e9e6dcd",
+              "url": "https://huggingface.co/datasets/princeton-nlp/SWE-bench_Verified/resolve/c104f840cc67f8b6eec6f759ebc8b2693d585d4a/data/test-00000-of-00001.parquet"
+            },
+            "patches": {
+              "bytes": 8754146,
+              "sha256": "6ad8f3da580736af3550cd3e7d0ac889451cee45ed985d272ce3c97d9b3c4a0a",
+              "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/laguna_verified/patches.parquet"
+            },
+            "trajectories": {
+              "bytes": 22669506,
+              "sha256": "ea6a9a16af92e3f754536429bee98b7ccec0f280cda94e16c4dfd78af5358681",
+              "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/laguna_verified/trajectories.parquet"
+            }
+          },
+          "source_verdict": "nonpass"
+        },
+        "status": "CHECKED",
+        "task_id_sha256": "f27e0ae58601d89502238e7a4fe6fd0d32e84d44d4b55d2321a947ec6008b7b1"
+      }
+    },
+    "45551350071": {
+      "sphinx_b": {
+        "candidate_patch_sha256": "74b3ef28157149afaec3db656a28bb4fbab3817672fc5a584433d8f836e55486",
+        "case": "sphinx_b",
+        "cells": {
+          "base": {
+            "collected_count": 42,
+            "collection_errors": 0,
+            "extra": {
+              "fail": 0,
+              "hold": 0,
+              "n": 29,
+              "pass": 29
+            },
+            "ftp": {
+              "fail": 1,
+              "hold": 0,
+              "n": 1,
+              "pass": 0
+            },
+            "fully_determinate": false,
+            "ptp": {
+              "fail": 0,
+              "hold": 13,
+              "n": 25,
+              "pass": 12
+            },
+            "pytest_returncode": 1,
+            "required_collection_complete": false,
+            "required_not_collected": 13,
+            "status": "EXECUTED",
+            "tree_digest": "4d2237e1947a2841e142c6b3f2ec725eeb630db44557984b6f59907866021fac"
+          },
+          "candidate": {
+            "collected_count": 42,
+            "collection_errors": 0,
+            "extra": {
+              "fail": 0,
+              "hold": 0,
+              "n": 29,
+              "pass": 29
+            },
+            "ftp": {
+              "fail": 0,
+              "hold": 0,
+              "n": 1,
+              "pass": 1
+            },
+            "fully_determinate": false,
+            "ptp": {
+              "fail": 0,
+              "hold": 13,
+              "n": 25,
+              "pass": 12
+            },
+            "pytest_returncode": 0,
+            "required_collection_complete": false,
+            "required_not_collected": 13,
+            "status": "EXECUTED",
+            "tree_digest": "afe2abd93cc70d07b0d9a6090ac2ed87a6a5a2635c989122cd1806b536739ea3"
+          },
+          "gold": {
+            "collected_count": 42,
+            "collection_errors": 0,
+            "extra": {
+              "fail": 0,
+              "hold": 0,
+              "n": 29,
+              "pass": 29
+            },
+            "ftp": {
+              "fail": 0,
+              "hold": 0,
+              "n": 1,
+              "pass": 1
+            },
+            "fully_determinate": false,
+            "ptp": {
+              "fail": 0,
+              "hold": 13,
+              "n": 25,
+              "pass": 12
+            },
+            "pytest_returncode": 0,
+            "required_collection_complete": false,
+            "required_not_collected": 13,
+            "status": "EXECUTED",
+            "tree_digest": "d6a2781c855781712a3de0a6dd58982f8161d40b0f710b92f7d04dc9bf4152ed"
+          }
+        },
+        "ftp_count": 1,
+        "gold_patch_sha256": "ec53e5fbf7ff38374de4700b9f6c2fb91630d7b525f2e0bafafa00c1cec42a77",
+        "image_digest": "swebench/sweb.eval.x86_64.sphinx-doc_1776_sphinx-9367@sha256:ce3659548ac712a11d3c45a9c47fe8010de0e3a83efee229dcdd9646069dfec1",
+        "image_id": "sha256:ce3659548ac712a11d3c45a9c47fe8010de0e3a83efee229dcdd9646069dfec1",
+        "ptp_count": 25,
+        "qualification": "Exact G10 task and image digest, file-level pytest collection with exact required FTP/PTP membership, not original harness rerun. Strict exact collection and setup/call/teardown receipts. No fuzzy application, no replacement. Historical nonpass cause remains unproven if not reproduced.",
+        "reference_test_patch_sha256": "b1bc20d773cab4c012782bcee77d374fa2ffd33567f0d1a4757198204641bf4f",
+        "selection": {
+          "eligible_stratum_runs": 4,
+          "rank": 3,
+          "selection": "fixed G8 all-FTP-name receipt cohort; deterministic rank within setting and source verdict",
+          "source_hashes": {
+            "meta": {
+              "bytes": 2096679,
+              "sha256": "a45b1fe4e2f0c8390b2b2938ac83e92ed5979000856808f3679c07812e9e6dcd",
+              "url": "https://huggingface.co/datasets/princeton-nlp/SWE-bench_Verified/resolve/c104f840cc67f8b6eec6f759ebc8b2693d585d4a/data/test-00000-of-00001.parquet"
+            },
+            "patches": {
+              "bytes": 8754146,
+              "sha256": "6ad8f3da580736af3550cd3e7d0ac889451cee45ed985d272ce3c97d9b3c4a0a",
+              "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/laguna_verified/patches.parquet"
+            },
+            "trajectories": {
+              "bytes": 22669506,
+              "sha256": "ea6a9a16af92e3f754536429bee98b7ccec0f280cda94e16c4dfd78af5358681",
+              "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/laguna_verified/trajectories.parquet"
+            }
+          },
+          "source_verdict": "nonpass"
+        },
+        "status": "CHECKED",
+        "task_id_sha256": "f27e0ae58601d89502238e7a4fe6fd0d32e84d44d4b55d2321a947ec6008b7b1"
+      },
+      "sphinx_a": {
+        "candidate_ftp_pass": true,
+        "candidate_patch_sha256": "dc46b7353e7e1378bb873a43b9251851dff9813b937a2594fa82ffc26b2aa3eb",
+        "candidate_ptp_pass": true,
+        "case": "sphinx_a",
+        "cells": {
+          "base": {
+            "collected_count": 6,
+            "collection_errors": 0,
+            "extra": {
+              "fail": 0,
+              "hold": 0,
+              "n": 0,
+              "pass": 0
+            },
+            "ftp": {
+              "fail": 1,
+              "hold": 0,
+              "n": 1,
+              "pass": 0
+            },
+            "fully_determinate": true,
+            "ptp": {
+              "fail": 0,
+              "hold": 0,
+              "n": 5,
+              "pass": 5
+            },
+            "pytest_returncode": 1,
+            "required_collection_complete": true,
+            "required_not_collected": 0,
+            "status": "EXECUTED",
+            "tree_digest": "27c60f69edd9fe498db4c27b586672493ed1b3a10013a2fb26e753cdfe2574a3"
+          },
+          "candidate": {
+            "collected_count": 6,
+            "collection_errors": 0,
+            "extra": {
+              "fail": 0,
+              "hold": 0,
+              "n": 0,
+              "pass": 0
+            },
+            "ftp": {
+              "fail": 0,
+              "hold": 0,
+              "n": 1,
+              "pass": 1
+            },
+            "fully_determinate": true,
+            "ptp": {
+              "fail": 0,
+              "hold": 0,
+              "n": 5,
+              "pass": 5
+            },
+            "pytest_returncode": 0,
+            "required_collection_complete": true,
+            "required_not_collected": 0,
+            "status": "EXECUTED",
+            "tree_digest": "00c6be03d6401a12319a98c50c19fd778b88f0929e25ff0bd0bc83ee1265c2f0"
+          },
+          "gold": {
+            "collected_count": 6,
+            "collection_errors": 0,
+            "extra": {
+              "fail": 0,
+              "hold": 0,
+              "n": 0,
+              "pass": 0
+            },
+            "ftp": {
+              "fail": 0,
+              "hold": 0,
+              "n": 1,
+              "pass": 1
+            },
+            "fully_determinate": true,
+            "ptp": {
+              "fail": 0,
+              "hold": 0,
+              "n": 5,
+              "pass": 5
+            },
+            "pytest_returncode": 0,
+            "required_collection_complete": true,
+            "required_not_collected": 0,
+            "status": "EXECUTED",
+            "tree_digest": "a44965ed28e54a1413d331f1851dd3c7420fed0a22927a2583b785a53b6a446f"
+          }
+        },
+        "ftp_count": 1,
+        "gold_patch_sha256": "a727a484adfbad40fecad3e54fcab9662064b0aa7a6ee6fdb1f2f3481afb5b44",
+        "image_digest": "swebench/sweb.eval.x86_64.sphinx-doc_1776_sphinx-7889@sha256:57a4cf422e77ed0fa7993c550ce5f7e36e40b455ca8842baa9974ae0b9aeeed3",
+        "image_id": "sha256:57a4cf422e77ed0fa7993c550ce5f7e36e40b455ca8842baa9974ae0b9aeeed3",
+        "ptp_count": 5,
+        "ptp_only_nonpass_witness": false,
+        "qualification": "Exact G10 task and image digest, file-level pytest collection with exact required FTP/PTP membership, not original harness rerun. Strict exact collection and setup/call/teardown receipts. No fuzzy application, no replacement. Historical nonpass cause remains unproven if not reproduced.",
+        "reference_controls_valid": true,
+        "reference_test_patch_sha256": "9ab028f6205f70e8513d29a21f7eeb1c3187bc745c69399b4377c459ddefdc47",
+        "selection": {
+          "eligible_stratum_runs": 4,
+          "rank": 2,
+          "selection": "fixed G8 all-FTP-name receipt cohort; deterministic rank within setting and source verdict",
+          "source_hashes": {
+            "meta": {
+              "bytes": 2096679,
+              "sha256": "a45b1fe4e2f0c8390b2b2938ac83e92ed5979000856808f3679c07812e9e6dcd",
+              "url": "https://huggingface.co/datasets/princeton-nlp/SWE-bench_Verified/resolve/c104f840cc67f8b6eec6f759ebc8b2693d585d4a/data/test-00000-of-00001.parquet"
+            },
+            "patches": {
+              "bytes": 8754146,
+              "sha256": "6ad8f3da580736af3550cd3e7d0ac889451cee45ed985d272ce3c97d9b3c4a0a",
+              "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/laguna_verified/patches.parquet"
+            },
+            "trajectories": {
+              "bytes": 22669506,
+              "sha256": "ea6a9a16af92e3f754536429bee98b7ccec0f280cda94e16c4dfd78af5358681",
+              "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/laguna_verified/trajectories.parquet"
+            }
+          },
+          "source_verdict": "nonpass"
+        },
+        "status": "CHECKED",
+        "task_id_sha256": "a31e4f099b5a5be1e69ec67a278e5dc557d5cb4fee5bed01d4102a692c9dea96"
+      }
+    }
+  },
+  "qualification": "Source-pinned image controlled reruns. No historical cause adjudication, no original benchmark verdict changed. Two exact patch application HOLDs."
+}
