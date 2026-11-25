@@ -1,0 +1,126 @@
+{
+  "verified_run": 45621655555,
+  "code_commit": "2635e510602040640ef3b41cfae55c1285a02c84",
+  "candidate_patch_sha256": "94ad81f4c940751dbd7ba01c08f23914ece0d8ae21c74977bd9aeb1170982aa1",
+  "cells": {
+    "base_local": {
+      "all_file_collected": 51,
+      "collection_error_categories": {},
+      "collection_errors": 0,
+      "exact_base_restored_offline": true,
+      "failed": 0,
+      "held": 0,
+      "non_test_tree_digest": "485a3c00f4b51823586ba596cf19d6a24bc981bc7d42dada0e432c02d627d530",
+      "passed": 1,
+      "pytest_returncode": 0,
+      "pytest_verdict": "PASS",
+      "required_collected": 1,
+      "required_missing": 0,
+      "status": "EXECUTED"
+    },
+    "base_reference": {
+      "all_file_collected": 0,
+      "collection_error_categories": {
+        "module_not_found": 1
+      },
+      "collection_errors": 1,
+      "exact_base_restored_offline": true,
+      "failed": 0,
+      "held": 1,
+      "non_test_tree_digest": "485a3c00f4b51823586ba596cf19d6a24bc981bc7d42dada0e432c02d627d530",
+      "passed": 0,
+      "pytest_returncode": 2,
+      "pytest_verdict": "HOLD",
+      "required_collected": 0,
+      "required_missing": 1,
+      "status": "EXECUTED"
+    },
+    "candidate_local": {
+      "all_file_collected": 51,
+      "collection_error_categories": {},
+      "collection_errors": 0,
+      "exact_base_restored_offline": true,
+      "failed": 0,
+      "held": 0,
+      "non_test_tree_digest": "7708bdd8bb4c9a03fc0c3997a4f678d5e446d269b75c2f0dd5cc2af5dde9ff12",
+      "passed": 1,
+      "pytest_returncode": 0,
+      "pytest_verdict": "PASS",
+      "required_collected": 1,
+      "required_missing": 0,
+      "status": "EXECUTED"
+    },
+    "candidate_reference": {
+      "all_file_collected": 0,
+      "collection_error_categories": {
+        "module_not_found": 1
+      },
+      "collection_errors": 1,
+      "exact_base_restored_offline": true,
+      "failed": 0,
+      "held": 1,
+      "non_test_tree_digest": "7708bdd8bb4c9a03fc0c3997a4f678d5e446d269b75c2f0dd5cc2af5dde9ff12",
+      "passed": 0,
+      "pytest_returncode": 2,
+      "pytest_verdict": "HOLD",
+      "required_collected": 0,
+      "required_missing": 1,
+      "status": "EXECUTED"
+    },
+    "gold_reference": {
+      "all_file_collected": 0,
+      "collection_error_categories": {},
+      "collection_errors": 0,
+      "exact_base_restored_offline": true,
+      "failed": 0,
+      "held": 1,
+      "non_test_tree_digest": "5125aae6facca30030e3aac8561c11a9183dc1abf2dc6cbae7676f35ff748615",
+      "passed": 0,
+      "pytest_returncode": 4,
+      "pytest_verdict": "HOLD",
+      "required_collected": 0,
+      "required_missing": 1,
+      "status": "EXECUTED"
+    }
+  },
+  "controlled_witness": false,
+  "ftp_count": 1,
+  "gold_patch_sha256": "43b3e2e849942d287987af5f42b532695dac6e68625778d6d29981cb0dcb3b59",
+  "image_id": "sha256:92b83a19cbeaac3d64a0efab6cd73011c68f48e1c720b1b64f75b8bb436bf0ee",
+  "image_tag": "swebench/sweb.eval.x86_64.pylint-dev_1776_pylint-4661@sha256:92b83a19cbeaac3d64a0efab6cd73011c68f48e1c720b1b64f75b8bb436bf0ee",
+  "non_test_tree_same_base": true,
+  "non_test_tree_same_candidate": true,
+  "qualification": "Fixed G10 Pylint HOLD, same image digest, base and candidate patches. File-level discovery, exact required FTP identity, phase receipts. No heuristic ID mapping or original historical grade change.",
+  "rank": 1,
+  "reference_test_patch_sha256": "ee7c4ca17fff72e7af07a9876cf1aa07552ae49099831b42f5d429c3132dcaaf",
+  "repo_digests": [
+    "swebench/sweb.eval.x86_64.pylint-dev_1776_pylint-4661@sha256:92b83a19cbeaac3d64a0efab6cd73011c68f48e1c720b1b64f75b8bb436bf0ee"
+  ],
+  "selection": {
+    "eligible_stratum_runs": 4,
+    "rank": 1,
+    "selection": "fixed G8 all-FTP-name receipt cohort; deterministic rank within setting and source verdict",
+    "source_hashes": {
+      "meta": {
+        "bytes": 2096679,
+        "sha256": "a45b1fe4e2f0c8390b2b2938ac83e92ed5979000856808f3679c07812e9e6dcd",
+        "url": "https://huggingface.co/datasets/princeton-nlp/SWE-bench_Verified/resolve/c104f840cc67f8b6eec6f759ebc8b2693d585d4a/data/test-00000-of-00001.parquet"
+      },
+      "patches": {
+        "bytes": 8754146,
+        "sha256": "6ad8f3da580736af3550cd3e7d0ac889451cee45ed985d272ce3c97d9b3c4a0a",
+        "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/laguna_verified/patches.parquet"
+      },
+      "trajectories": {
+        "bytes": 22669506,
+        "sha256": "ea6a9a16af92e3f754536429bee98b7ccec0f280cda94e16c4dfd78af5358681",
+        "url": "https://huggingface.co/datasets/musacim/termination-lag-trajectories/resolve/15b2cea1f2bbf8c9945dea1f6311613ccb0b9ebe/data/laguna_verified/trajectories.parquet"
+      }
+    },
+    "source_verdict": "nonpass"
+  },
+  "setting": "laguna_verified",
+  "source_verdict": "nonpass",
+  "status": "COMPLETED_PILOT",
+  "task_id_sha256": "85b4edc0fbb4eba1c4f031934c2b8b4f9e89e44cad1d328230aec7b7bc89b49e"
+}
