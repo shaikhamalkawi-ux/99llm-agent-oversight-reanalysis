@@ -78,8 +78,8 @@ def main(cell):
                 s=str(report.longrepr)
                 k=('module_not_found' if 'ModuleNotFoundError' in s else 'import_error' if 'ImportError' in s else 'syntax_error' if 'SyntaxError' in s else 'attribute_error' if 'AttributeError' in s else 'type_error' if 'TypeError' in s else 'other')
                 self.collection_error_categories[k]+=1
-        def pytest_runtest_logreport(self,r):
-            self.reports[r.nodeid].append((r.when,r.outcome,bool(getattr(r,'wasxfail',False))))
+        def pytest_runtest_logreport(self,report):
+            self.reports[report.nodeid].append((report.when,report.outcome,bool(getattr(report,'wasxfail',False))))
     p=Receipt()
     rc=int(pytest.main(['-q','--disable-warnings',*files],plugins=[p]))
     def verdict(n):
