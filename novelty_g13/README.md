@@ -1,0 +1,3 @@
+# G13 — targeted exact collection challenge
+
+The remaining G10 Pylint HOLD (Laguna nonpass rank 1) is tested on the identical image digest and source patch bytes, without selecting alternatives. Use file-level collection and retain only exact required FTP node IDs; independently account for all discovered nodes, required nodes, phase receipts, and collection failures. No heuristic mapping, missing-test imputation, or third-party content export. Five existing G10 cells only. If controls or collection are incomplete, retain HOLD. This is not a whole benchmark rerun.

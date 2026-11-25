@@ -1,0 +1,31 @@
+name: G13 targeted Pylint exact collection challenge
+on:
+  push:
+    branches: [novelty-g13-targeted-hold-resolution]
+    paths: ['novelty_g13/**', '.github/workflows/novelty-g13-collection.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  fixed-pylint:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install --disable-pip-version-check pyarrow==22.0.0
+      - name: Exact image and file-level collection, no task substitution
+        run: |
+          mkdir -p /tmp/g13_out
+          python novelty_g13/run_pylint.py --setting laguna_verified --verdict nonpass --rank 1 --root /tmp/g13_data --out /tmp/g13_out/aggregate.json
+      - if: always()
+        run: rm -rf /tmp/g13_data
+      - uses: actions/upload-artifact@v4
+        with:
+          name: G13-pylint-aggregate-only
+          path: /tmp/g13_out/
+          if-no-files-found: error
