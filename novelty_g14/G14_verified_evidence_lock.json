@@ -1,0 +1,103 @@
+{
+  "G10": {
+    "base_gold_controls": 12,
+    "base_version_reversals": 10,
+    "candidate_pairs": {
+      "HOLD/HOLD": 2,
+      "PASS/FAIL": 1,
+      "PASS/HOLD": 1,
+      "PASS/PASS": 9
+    },
+    "controlled_witnesses": 1,
+    "determinate_pairs": 10,
+    "fixed_runs": 13,
+    "logical_witness_count_range": [
+      1,
+      4
+    ],
+    "logical_witness_fraction_range": [
+      "1/13",
+      "4/13"
+    ],
+    "qualification": "Count range over selected frame under arbitrary completions of unresolved outcomes; not confidence interval or population prevalence.",
+    "reference_discrimination_witnesses": 7,
+    "source_nonpass": 6,
+    "source_nonpass_both_test_versions_pass": 2,
+    "source_pass": 7,
+    "unresolved_pairs": 3
+  },
+  "G11": {
+    "case_A_candidate_named_pass": 6,
+    "case_B_collected": 42,
+    "case_B_required_PTP_hold": 13,
+    "case_B_required_PTP_pass": 12,
+    "exact_application_HOLD": 2
+  },
+  "G12": {
+    "declared_projection_mismatch": 211,
+    "digest_convention_matches": 26448,
+    "frozen_candidates_digest_match": 13,
+    "frozen_candidates_parseable": 12,
+    "mixed_grades_in_these_groups": 0,
+    "patch_rows": 26666,
+    "same_bytes_duplicate_groups": 149,
+    "unexplained_mismatch": 7
+  },
+  "G13": {
+    "additional_witnesses": 0,
+    "candidate_local": "PASS",
+    "candidate_reference": "HOLD",
+    "gold_reference": "HOLD"
+  },
+  "G6": {
+    "additional_sessions": 97,
+    "additional_unknowns": 271,
+    "hypothetical_union_width_fraction_exact": "212431/393845",
+    "hypothetical_union_width_pct": 53.937717,
+    "matched_sessions": 853,
+    "released_unknowns": 936,
+    "released_width_fraction_exact": "163823/393845",
+    "released_width_pct": 41.595805,
+    "unknown_episodes": 2352
+  },
+  "G7": {
+    "aligned": 2275,
+    "final_positive": 142,
+    "run_units": 2400,
+    "source_nonpass": 87,
+    "triple_nonpass": 70,
+    "triple_positive": 113
+  },
+  "G9": {
+    "AST_different": 14,
+    "definitions": 15,
+    "external_admitted": 1375,
+    "external_nonpass": 65,
+    "external_nonpass_partitions": [
+      56,
+      1,
+      8
+    ],
+    "external_positive": 242,
+    "selected": 13
+  },
+  "publication": {
+    "article_revision": "NOT_GENERATED",
+    "baseline": "MR31R9-EP2",
+    "candidate_text": "MANUSCRIPT_INSERTION.md",
+    "native_source_parity": "HOLD"
+  },
+  "scope": "Offline aggregate consistency; not fresh raw-source replay, new tests, full historical reproduction, or submission approval.",
+  "source_file_sha256": {
+    "novelty_g10/G10_full_cohort_summary.json": "cfce9f990961c985f957e34fe81ef0adc8caa8bf018eb3aa33ee1381f083634b",
+    "novelty_g11/G11_verified_summary.json": "fb854e1d268d29c272730c43d9ca2e4e3fdbdb681389e853a66d60eee5216dc8",
+    "novelty_g12/G12_verified_summary.json": "4351c47d8d7b2ecdf71900f27f4e409367dcc23e6427b60aef1f8ff726ac1adb",
+    "novelty_g13/G13_verified_summary.json": "fa8432f27cbd8e8e0e71ea595cf4e21c2fe35b8a343eb06fde2a1ef47e6b8ed6",
+    "novelty_g6/G6_verified_summary.json": "6d9c7f34ee4e0f5cdaacecc66d3c99095f497ea213c5b2fbbdb7b62dcf20db39",
+    "novelty_g7/G7_verified_summary.json": "040074e1697e22e7266660e501a53ae599185dbf29539b18ee52876107239adf",
+    "novelty_g9/G9_verified_summary.json": "f3204c0112fe8e627c7f5a075cd1ad3c95924ca39da5361377d85ed687c2f448"
+  },
+  "status": "AGGREGATE_LOCK_PASS",
+  "verified_run": 45623788579,
+  "code_commit": "72fe227483bc197264987c55dd60705bf50aa15a"
+}

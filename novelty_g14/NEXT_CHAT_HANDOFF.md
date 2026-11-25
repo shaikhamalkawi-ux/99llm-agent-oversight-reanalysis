@@ -1,0 +1,12 @@
+# 99llm — research continuation handoff (25 November 2026)
+
+Continue from this exact state, do not restart or repeat G5–G14. One-paper track only. The authoritative original author-review manuscript is MR31R9-EP2; preserve its 30-page main and 3-page supplement and its numerical claims. Its native source parity remains HOLD (prior PDF-overlay/reflow problem). The 28-page MDPI reconstruction is not certified. No manuscript has been submitted.
+
+G10 full fixed cohort: 13 selected runs, 10 determinate equal-non-test-tree pairs, nine PASS/PASS, one independently repeated PASS/FAIL witness, three HOLD. Seven discriminative reference-test controls. G11 two historical nonpass rechecks: one passes all six exact named FTP/PTP tests in our new harness; another has 42 collected passes but 13/25 required PTP IDs unresolved. No historic verdict changed. G12: 26,448/26,666 digest convention consistency; 211 declared-projection mismatches, seven unexplained; all 13 selected patches match, but two exact application failures remain. G13: Pylint local PASS, reference collection import error, gold reference HOLD; no new witness. G14 aggregate verification passed in run 45623788579, no new raw-source execution or empirical claim. See G14_verified_evidence_lock.json for all numeric anchors and source hashes. 
+
+Next valid action: recover the exact native MR31R9-EP2 source (or obtain author-approved faithful editorial rebuild with complete text/figures/tables/references verification), integrate only the compact candidate text in MANUSCRIPT_INSERTION.md, and perform numerical, citation, source/render parity and journal production checks. No need for further open-ended G15 experiments or field data. If original source remains unavailable, keep the candidate insertion separate, do not present a reconstructed PDF as source-certified. Author declarations, journal submission and final approval remain author-controlled. No raw third-party records redistributed. No model ranking, causal inference, independent human adjudication, general theorem, population prevalence, or full historical recovery claim.
+
+GitHub repository: https://github.com/shaikhamalkawi-ux/99llm-agent-oversight-reanalysis
+G14 successful verification: https://github.com/shaikhamalkawi-ux/99llm-agent-oversight-reanalysis/actions/runs/45623788579
+G13 verified run: https://github.com/shaikhamalkawi-ux/99llm-agent-oversight-reanalysis/actions/runs/45621655555
+Original production gate on Drive: https://docs.google.com/document/d/1okiYP1ORPwjpl46gKLNJ13W7_4rnYiLtbIHYMYKg8xU/edit
