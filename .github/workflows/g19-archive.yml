@@ -1,0 +1,32 @@
+name: G19 verified exact-node portable archive
+on:
+  push:
+    branches: [production-g19-exact-node-replay]
+    paths: ['novelty_g19/G19_verified_summary.json', '.github/workflows/g19-archive.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: |
+          python novelty_g19/verify_g19.py
+          mkdir -p /tmp/g19_archive/novelty_g19
+          cp novelty_g19/* /tmp/g19_archive/novelty_g19/
+          cd /tmp/g19_archive
+          find . -type f -print0 | sort -z | xargs -0 sha256sum > /tmp/g19_hashes
+          cp /tmp/g19_hashes SHA256SUMS.txt
+          sha256sum -c SHA256SUMS.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: G19-verified-exact-node-record
+          path: /tmp/g19_archive/
+          if-no-files-found: error
