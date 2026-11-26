@@ -1,0 +1,36 @@
+name: G19 exact node and phase receipt challenge
+on:
+  push:
+    branches: [production-g19-exact-node-replay]
+    paths: ['novelty_g19/**', '.github/workflows/g19-exact-node.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  strict:
+    strategy:
+      fail-fast: false
+      max-parallel: 6
+      matrix:
+        case: [{"setting":"qwen3coder_verified","verdict":"nonpass","rank":0},{"setting":"laguna_verified","verdict":"nonpass","rank":0},{"setting":"laguna_verified","verdict":"nonpass","rank":1},{"setting":"laguna_verified","verdict":"nonpass","rank":2},{"setting":"laguna_verified","verdict":"nonpass","rank":3},{"setting":"laguna_verified","verdict":"pass","rank":0},{"setting":"laguna_verified","verdict":"pass","rank":1},{"setting":"laguna_verified","verdict":"pass","rank":2},{"setting":"laguna_verified","verdict":"pass","rank":3},{"setting":"laguna_verified","verdict":"pass","rank":4},{"setting":"laguna_verified","verdict":"pass","rank":5},{"setting":"qwen3coder_verified_minisweagent","verdict":"nonpass","rank":0},{"setting":"qwen3coder_verified_minisweagent","verdict":"pass","rank":0}]
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install --disable-pip-version-check pyarrow==22.0.0
+      - name: Fixed cohort with exact IDs
+        run: |
+          mkdir -p /tmp/g19_out
+          python novelty_g19/run_exact.py --setting ${{ matrix.case.setting }} --verdict ${{ matrix.case.verdict }} --rank ${{ matrix.case.rank }} --root /tmp/g19_data --out /tmp/g19_out/aggregate.json
+      - if: always()
+        run: rm -rf /tmp/g19_data
+      - uses: actions/upload-artifact@v4
+        with:
+          name: G19-${{ matrix.case.setting }}-${{ matrix.case.verdict }}-${{ matrix.case.rank }}
+          path: /tmp/g19_out/
+          if-no-files-found: error
