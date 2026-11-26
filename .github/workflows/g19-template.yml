@@ -1,0 +1,25 @@
+name: G19 official publisher template acquisition
+on:
+  push:
+    branches: [production-g19-official-template-acquisition]
+    paths: ['production_g19/acquire_template.py', '.github/workflows/g19-template.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  template:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python production_g19/acquire_template.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: G19-official-template-acquisition
+          path: /tmp/g19_template/
+          if-no-files-found: error
